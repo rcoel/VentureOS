@@ -1,0 +1,86 @@
+{
+  "candidate_source": "hn_show",
+  "reference_url": "https://news.ycombinator.com/item?id=48966939",
+  "devpost_extras": null,
+  "final_state": {
+    "founder_name": "nullure",
+    "company": "Akashic",
+    "application_text": "Show HN launch: Show HN: Akashic \u2013 A self-hosted intelligence workspace inspired by Palantir\n\nURL: https://github.com/CaviraOSS/Akashic\n\nStory: ",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "caviraoss"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "developer tools"
+      ],
+      "product_urls": [
+        "https://github.com/CaviraOSS/Akashic"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not provide a coherent product description or identify a target customer.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "swot_analysis": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 1,
+        "explicit_url_handles": [
+          "caviraoss"
+        ],
+        "search_handles": [],
+        "is_research": false,
+        "categories": [
+          "developer tools"
+        ],
+        "duration_ms": 10411
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 899
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "1 GitHub handle hints (1 from deck URL(s)) \u2014 SerpAPI: 1 candidate(s) \u2192 0 verified. caviraoss: \u2717 no name-token match; no company mention; handle similarity < 0.6. Categories=['developer tools'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not provide a coherent product description or identify a target customer."
+      }
+    ]
+  }
+}

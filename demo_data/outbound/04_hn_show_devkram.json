@@ -1,0 +1,86 @@
+{
+  "candidate_source": "hn_show",
+  "reference_url": "https://news.ycombinator.com/item?id=48967004",
+  "devpost_extras": null,
+  "final_state": {
+    "founder_name": "ulrischa",
+    "company": "devkram",
+    "application_text": "Show HN launch: Show HN: Guys put QR codes on websites \u2013 offline QR decoder\n\nURL: https://devkram.de/these-guys-qr/\n\nStory: ",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "ulrischa"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "dev tools"
+      ],
+      "product_urls": [
+        "https://devkram.de/these-guys-qr/"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not clearly describe what the product is or who the target customer is.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "swot_analysis": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 1,
+        "explicit_url_handles": [],
+        "search_handles": [
+          "ulrischa"
+        ],
+        "is_research": false,
+        "categories": [
+          "dev tools"
+        ],
+        "duration_ms": 8522
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 1306
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "1 GitHub handle hints (1 from Tavily search) \u2014 SerpAPI returned no github URLs \u2192 fallback: ['ulrischa']. Categories=['dev tools'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not clearly describe what the product is or who the target customer is."
+      }
+    ]
+  }
+}

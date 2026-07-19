@@ -1,0 +1,1 @@
+"""Memo assembly (SWOT + 5-section Markdown) and natural-language query."""

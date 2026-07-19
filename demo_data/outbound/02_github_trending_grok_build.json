@@ -1,0 +1,88 @@
+{
+  "candidate_source": "github_trending",
+  "reference_url": "https://github.com/xai-org/grok-build",
+  "devpost_extras": null,
+  "final_state": {
+    "founder_name": "xai-org",
+    "company": "grok-build",
+    "application_text": "GitHub trending repo: xai-org/grok-build\n\nDescription: SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.\nStars: 19662\nURL: https://github.com/xai-org/grok-build\nLanguage: Rust\nCreated: 2026-07-14T20:04:23Z\n",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "xai-org"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "dev tools"
+      ],
+      "product_urls": [
+        "https://github.com/xai-org/grok-build"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not clearly describe the target customer or market for the product.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "swot_analysis": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 1,
+        "explicit_url_handles": [
+          "xai-org"
+        ],
+        "search_handles": [
+          "xai-org"
+        ],
+        "is_research": false,
+        "categories": [
+          "dev tools"
+        ],
+        "duration_ms": 1199
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 968
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "1 GitHub handle hints (1 from deck URL(s) + 1 from Tavily search) \u2014 SerpAPI: 1 candidate(s) \u2192 1 verified. xai-org: \u2713 handle 'xai-org' ~= name (similarity=1.00). Categories=['dev tools'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not clearly describe the target customer or market for the product."
+      }
+    ]
+  }
+}
