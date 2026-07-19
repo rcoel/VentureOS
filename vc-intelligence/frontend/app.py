@@ -1,5 +1,5 @@
 """
-Dashboard skeleton -- Phase 2, Person B.
+Dashboard skeleton -- Phase 2/4, Person B.
 
 Run with:
     streamlit run app.py
@@ -8,13 +8,24 @@ What this does right now:
   - Sidebar: Thesis Config, live-writing to thesis_config on every
     change (no save button -- Streamlit reruns the script top-to-bottom
     on any widget interaction, so we just upsert on every run).
-  - Main area: 5 tabs -- Overview (lists founders from the DB, this is
-    what the 11:30 AM meeting point checks), Founder, Market, SWOT,
-    Memo -- the last 4 are placeholders until Phase 4-6 wire real data in.
+  - Overview tab: a "Fetch Founders" button simulates the outbound
+    sourcing scan (pipeline.seed_initial_data) and populates the DB.
+    Each sourced opportunity shows as a card with an "Analyze" button.
+    Clicking Analyze calls pipeline.run_analysis(opportunity_id), which
+    SIMULATES the LLM/scoring pipeline and writes real values into the
+    DB -- then the page reruns and shows the updated columns.
+  - Founder / Market / SWOT / Memo tabs: now wired up. Each lets you
+    pick any *analyzed* opportunity (selection is shared across tabs
+    via session_state) and renders detail data from pipeline.py's
+    mock generators (get_founder_profile / get_market_research /
+    get_swot_analysis / get_memo). These are read-only mocks for now
+    -- swap their bodies in pipeline.py for real LLM calls later,
+    this file won't need to change.
 
-Nothing here is scoring/sourcing logic -- it only reads/writes through
-crud.py, which is what keeps this file safe to build in parallel with
-Person A's pipeline work.
+Nothing here talks to SQLAlchemy directly -- everything goes through
+crud.py, and the simulated pipeline logic lives in pipeline.py so it
+can be swapped for Person A's real LangGraph call later without
+touching this file.
 """
 
 from pathlib import Path
@@ -26,10 +37,9 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1] / "backend"
 if str(BACKEND_ROOT) not in sys.path:
     sys.path.insert(0, str(BACKEND_ROOT))
 
-from services import crud
+from services import crud, pipeline
 
 st.set_page_config(page_title="VC Brain", layout="wide")
-
 
 # ============================================================
 # Sidebar -- Thesis Config
@@ -41,8 +51,6 @@ def render_thesis_sidebar():
 
     existing = crud.get_thesis_config()
 
-    # Pre-fill widgets with whatever's already saved, so the sidebar
-    # doesn't reset to defaults every time the app reruns or reloads.
     available_sectors = ["AI Infra", "AI Applications", "Fintech", "Healthtech",
                          "Devtools", "Climate", "Consumer", "Enterprise SaaS", "Other"]
     default_sectors = existing.sectors if existing and existing.sectors else []
@@ -89,9 +97,6 @@ def render_thesis_sidebar():
         value=default_risk if default_risk in ["Low", "Medium", "High"] else "Medium",
     )
 
-    # Write on every rerun -- cheap upsert, and this is exactly what
-    # makes the "change geography live, watch badges update" demo
-    # moment work later once opportunity cards read this config.
     crud.upsert_thesis_config(
         sectors=sectors,
         stage=stage,
@@ -102,61 +107,308 @@ def render_thesis_sidebar():
         risk_appetite=risk,
     )
 
+# ============================================================
+# Shared helpers
+# ============================================================
+
+def get_founder_display_name(opp):
+    if not opp.founder_id:
+        return "Unknown founder"
+
+    try:
+        founder = opp.founder
+    except Exception:
+        founder = None
+
+    if founder is not None:
+        return founder.name
+
+    fallback = crud.get_founder(opp.founder_id)
+    return fallback.name if fallback else "Unknown founder"
+
+
+def get_analyzed_opportunities():
+    return [o for o in crud.get_all_opportunities() if o.screen_status not in (None, "pending")]
+
+
+def opportunity_selector(tab_key: str):
+    """Renders a selectbox of analyzed opportunities. Selection is
+    shared across tabs via st.session_state['selected_opportunity_id'],
+    so switching tabs keeps you looking at the same company."""
+    opportunities = get_analyzed_opportunities()
+    if not opportunities:
+        st.info("No analyzed opportunities yet. Click **Analyze** on a card in Overview first.")
+        return None
+
+    labels = [f"{o.company_name} — {get_founder_display_name(o)}" for o in opportunities]
+    ids = [o.id for o in opportunities]
+
+    default_index = 0
+    remembered_id = st.session_state.get("selected_opportunity_id")
+    if remembered_id in ids:
+        default_index = ids.index(remembered_id)
+
+    idx = st.selectbox(
+        "Select an opportunity",
+        options=range(len(labels)),
+        format_func=lambda i: labels[i],
+        index=default_index,
+        key=f"opp_select_{tab_key}",
+    )
+    selected = opportunities[idx]
+    st.session_state["selected_opportunity_id"] = selected.id
+    return selected
 
 # ============================================================
-# Tab: Overview -- what the 11:30 AM meeting point checks
+# Tab: Overview -- sourcing + per-opportunity Analyze button
 # ============================================================
 
 def render_overview_tab():
-    st.subheader("Sourced Founders")
+    st.subheader("Sourced Opportunities")
 
-    founders = crud.get_all_founders()
+    top_cols = st.columns([1, 3])
+    with top_cols[0]:
+        if st.button("🔎 Fetch Founders", use_container_width=True):
+            with st.spinner("Scanning sources..."):
+                new_ones = pipeline.seed_initial_data()
+            if new_ones:
+                st.success(f"Sourced {len(new_ones)} new opportunit{'y' if len(new_ones)==1 else 'ies'}.")
+            else:
+                st.info("Nothing new -- demo founders already sourced.")
+            st.rerun()
 
-    if not founders:
-        st.info("No founders yet. Once Person A's Sourcing/Screening node runs, they'll show up here.")
+    opportunities = crud.get_all_opportunities()
+
+    if not opportunities:
+        st.info("No opportunities yet. Click **Fetch Founders** to simulate an outbound scan.")
         return
 
-    for f in founders:
+    for opp in opportunities:
         with st.container(border=True):
-            cols = st.columns([3, 2, 2, 2])
-            cols[0].markdown(f"**{f.name}**")
-            cols[0].caption(f.bio or "No bio available")
-            cols[1].metric("Founder Score", f"{f.founder_score:.0f}" if f.founder_score else "—")
-            cols[2].write(f"Confidence: {f.founder_score_confidence or '—'}")
-            cols[3].write(f"Source: {f.source_type or '—'}")
+            header_cols = st.columns([3, 2, 2, 1.5, 1.5])
+            header_cols[0].markdown(f"**{opp.company_name}**")
+            founder_name = get_founder_display_name(opp)
+            header_cols[0].caption(
+                f"{founder_name} · {opp.sector or '—'} · {opp.stage or '—'}"
+            )
 
+            analyzed = opp.screen_status not in (None, "pending")
+
+            if not analyzed:
+                header_cols[3].markdown("🕗 *Not yet analyzed*")
+            else:
+                badge = "✅ Passed" if opp.screen_status == "passed" else "🚫 Screened out"
+                header_cols[1].write(badge)
+                thesis_badge = "🎯 In thesis" if opp.thesis_status == "in_thesis" else "↗️ Outside thesis"
+                header_cols[2].write(thesis_badge)
+
+            with header_cols[3]:
+                button_label = "🔁 Re-analyze" if analyzed else "▶️ Analyze"
+                if st.button(button_label, key=f"analyze_{opp.id}"):
+                    with st.spinner(f"Analyzing {opp.company_name}..."):
+                        pipeline.run_analysis(opp.id)
+                    st.session_state["selected_opportunity_id"] = opp.id
+                    st.rerun()
+
+            # Two-step delete: first click arms confirmation, second
+            # click (a different button, shown in place of the first)
+            # actually deletes. Prevents wiping a demo founder on a
+            # stray click.
+            confirm_key = f"confirm_delete_{opp.id}"
+            with header_cols[4]:
+                if st.session_state.get(confirm_key):
+                    if st.button("⚠️ Confirm", key=f"confirm_btn_{opp.id}"):
+                        if opp.founder_id:
+                            crud.delete_founder(opp.founder_id)  # cascades to opportunity, evidence, score history
+                        else:
+                            crud.delete_opportunity(opp.id)
+                        st.session_state.pop(confirm_key, None)
+                        st.rerun()
+                else:
+                    if st.button("🗑️ Delete", key=f"delete_btn_{opp.id}"):
+                        st.session_state[confirm_key] = True
+                        st.rerun()
+
+            if analyzed:
+                score_cols = st.columns(4)
+                score_cols[0].metric("Founder", f"{opp.founder_score:.0f}" if opp.founder_score else "—")
+                score_cols[1].metric("Market", f"{opp.market_score:.0f}" if opp.market_score else "—")
+                score_cols[2].metric("Product", f"{opp.product_score:.0f}" if opp.product_score else "—")
+                score_cols[3].metric("Confidence", f"{opp.confidence_score:.0f}" if opp.confidence_score else "—")
+
+                with st.expander("📋 Full analysis", expanded=False):
+                    render_opportunity_detail(opp)
+
+
+def render_opportunity_detail(opp):
+    """Renders the full analysis for one opportunity -- Founder,
+    Market, SWOT, Memo -- inline under its card in Overview. This is
+    the single place all the detail tabs pull from; it's just a
+    function, not a page, so it can be reused anywhere (e.g. if you
+    later want a standalone /opportunity/{id} view)."""
+    if opp.thesis_reason:
+        st.caption(f"Thesis: {opp.thesis_reason}")
+
+    tab_founder, tab_market, tab_swot, tab_memo = st.tabs(
+        ["👤 Founder", "📊 Market", "🔍 SWOT", "📝 Memo"]
+    )
+
+    with tab_founder:
+        profile = pipeline.get_founder_profile(opp.id)
+        st.markdown(f"**{profile['name']}**")
+        st.write(profile["background"])
+        col1, col2 = st.columns(2)
+        col1.markdown(f"**Education**  \n{profile['education']}")
+        col2.markdown(f"**Prior companies**  \n{', '.join(profile['prior_companies'])}")
+        st.markdown(f"**Network signal**  \n{profile['network_signal']}")
+        for flag in profile["risk_flags"]:
+            st.warning(flag)
+        st.caption(f"Scoring note: {profile['tier_note']}")
+
+    with tab_market:
+        research = pipeline.get_market_research(opp.id)
+        m1, m2, m3 = st.columns(3)
+        m1.metric("TAM", f"${research['tam_billion_usd']}B")
+        m2.metric("SAM", f"${research['sam_billion_usd']}B")
+        m3.metric("Growth", f"{research['growth_rate_pct']}%/yr")
+        st.markdown(f"**Competitors**  \n{', '.join(research['competitors'])}")
+        st.markdown(f"**Differentiation**  \n{research['differentiation']}")
+        st.caption(research["market_note"])
+
+    with tab_swot:
+        swot = pipeline.get_swot_analysis(opp.id)
+        s1, s2 = st.columns(2)
+        with s1:
+            st.markdown("**💪 Strengths**")
+            for item in swot["strengths"] or ["—"]:
+                st.write(f"- {item}")
+            st.markdown("**🌱 Opportunities**")
+            for item in swot["opportunities"] or ["—"]:
+                st.write(f"- {item}")
+        with s2:
+            st.markdown("**⚠️ Weaknesses**")
+            for item in swot["weaknesses"] or ["—"]:
+                st.write(f"- {item}")
+            st.markdown("**🚨 Threats**")
+            for item in swot["threats"] or ["—"]:
+                st.write(f"- {item}")
+
+    with tab_memo:
+        memo = pipeline.get_memo(opp.id)
+        st.markdown(memo["memo_md"])
+        if memo["outreach_draft"]:
+            st.markdown("**Outreach draft**")
+            st.text(memo["outreach_draft"])
 
 # ============================================================
-# Placeholder tabs -- Phases 4-6 fill these in
+# Tab: Founder -- deep-dive on the selected opportunity's founder
 # ============================================================
 
 def render_founder_tab():
     st.subheader("Founder Profile")
-    st.caption("Placeholder -- score, confidence range, history chart, and tier breakdown land here in Phase 4/7.")
+    opp = opportunity_selector("founder")
+    if opp is None:
+        return
 
-    founders = crud.get_all_founders()
-    if founders:
-        names = [f.name for f in founders]
-        selected = st.selectbox("Select a founder", names)
-        st.info(f"Detail view for **{selected}** goes here once scoring is wired in.")
-    else:
-        st.info("No founders yet.")
+    profile = pipeline.get_founder_profile(opp.id)
 
+    st.markdown(f"### {profile['name']}")
+    st.caption(f"{opp.company_name} · {opp.sector or '—'} · {opp.stage or '—'}")
+
+    st.metric("Founder Score", f"{opp.founder_score:.0f}" if opp.founder_score else "—")
+
+    st.markdown("**Background**")
+    st.write(profile["background"])
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("**Education**")
+        st.write(profile["education"])
+    with col2:
+        st.markdown("**Prior companies**")
+        st.write(", ".join(profile["prior_companies"]))
+
+    st.markdown("**Network signal**")
+    st.write(profile["network_signal"])
+
+    if profile["risk_flags"]:
+        for flag in profile["risk_flags"]:
+            st.warning(flag)
+
+    st.caption(f"Scoring note: {profile['tier_note']}")
+
+# ============================================================
+# Tab: Market -- sizing + competitive landscape
+# ============================================================
 
 def render_market_tab():
     st.subheader("Market Research")
-    st.caption("Placeholder -- category, competitors, sizing, bull/neutral/bear synthesis land here in Phase 5.")
+    opp = opportunity_selector("market")
+    if opp is None:
+        return
 
+    research = pipeline.get_market_research(opp.id)
+
+    st.caption(f"{opp.company_name} · {research['sector'] or '—'}")
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("TAM", f"${research['tam_billion_usd']}B")
+    col2.metric("SAM", f"${research['sam_billion_usd']}B")
+    col3.metric("Growth rate", f"{research['growth_rate_pct']}%/yr")
+
+    st.markdown("**Competitors**")
+    st.write(", ".join(research["competitors"]))
+
+    st.markdown("**Differentiation**")
+    st.write(research["differentiation"])
+
+    st.caption(research["market_note"])
+
+# ============================================================
+# Tab: SWOT
+# ============================================================
 
 def render_swot_tab():
     st.subheader("SWOT Analysis")
-    st.caption("Placeholder -- derived view over Founder evidence + Market gaps + contradictions, Phase 6.")
+    opp = opportunity_selector("swot")
+    if opp is None:
+        return
 
+    swot = pipeline.get_swot_analysis(opp.id)
+    st.caption(opp.company_name)
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("**💪 Strengths**")
+        for item in swot["strengths"] or ["—"]:
+            st.write(f"- {item}")
+        st.markdown("**🌱 Opportunities**")
+        for item in swot["opportunities"] or ["—"]:
+            st.write(f"- {item}")
+    with col2:
+        st.markdown("**⚠️ Weaknesses**")
+        for item in swot["weaknesses"] or ["—"]:
+            st.write(f"- {item}")
+        st.markdown("**🚨 Threats**")
+        for item in swot["threats"] or ["—"]:
+            st.write(f"- {item}")
+
+# ============================================================
+# Tab: Memo
+# ============================================================
 
 def render_memo_tab():
     st.subheader("Investment Memo")
-    st.caption("Placeholder -- assembled memo with inline Trust Scores and '[Not Disclosed]' fields, Phase 6.")
+    opp = opportunity_selector("memo")
+    if opp is None:
+        return
 
+    memo = pipeline.get_memo(opp.id)
+    st.markdown(memo["memo_md"])
+
+    if memo["outreach_draft"]:
+        st.markdown("**Outreach draft**")
+        st.text(memo["outreach_draft"])
 
 # ============================================================
 # Main
@@ -181,7 +433,6 @@ def main():
         render_swot_tab()
     with tab_memo:
         render_memo_tab()
-
 
 if __name__ == "__main__":
     main()
