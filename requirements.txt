@@ -1,0 +1,2 @@
+﻿SQLAlchemy==2.0.51
+python-dotenv==1.2.2
