@@ -15,6 +15,8 @@ BACKEND_ROOT = Path(__file__).resolve().parents[1]
 if str(BACKEND_ROOT) not in sys.path:
     sys.path.insert(0, str(BACKEND_ROOT))
 
+from sqlalchemy.orm import joinedload
+
 from db.database import SessionLocal
 from models.models import (
     Founder,
@@ -136,12 +138,21 @@ def create_opportunity(**kwargs) -> Opportunity:
 
 def get_opportunity(opportunity_id: str) -> Opportunity | None:
     with SessionLocal() as db:
-        return db.query(Opportunity).filter(Opportunity.id == opportunity_id).first()
+        return (
+            db.query(Opportunity)
+            .options(joinedload(Opportunity.founder))
+            .filter(Opportunity.id == opportunity_id)
+            .first()
+        )
 
 
 def get_all_opportunities() -> list[Opportunity]:
     with SessionLocal() as db:
-        return db.query(Opportunity).all()
+        return (
+            db.query(Opportunity)
+            .options(joinedload(Opportunity.founder))
+            .all()
+        )
 
 
 def get_opportunities_by_screen_status(status: str) -> list[Opportunity]:
