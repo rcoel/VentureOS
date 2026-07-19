@@ -134,6 +134,21 @@ def get_analyzed_opportunities():
     return [o for o in crud.get_all_opportunities() if o.screen_status == "passed"]
 
 
+def render_activation_card(opp):
+    """Activation card -- surfaces the drafted outreach message so
+    it's one click from being sent, instead of buried in the Memo
+    tab. Placed on the Founder view since outreach is founder-
+    directed; nothing here writes back, it just displays what
+    run_analysis already drafted into opportunity.outreach_draft."""
+    st.markdown("**📤 Activation**")
+    if not opp.outreach_draft:
+        st.caption("No outreach draft -- inbound founders don't get one; run Analyze on an outbound one to see it.")
+        return
+    with st.container(border=True):
+        st.text(opp.outreach_draft)
+        st.caption("Drafted outreach message -- copy and send, or edit before sending.")
+
+
 def render_claims_section(opp):
     """Renders every claim extracted from this opportunity's evidence
     -- the interpreted facts, as opposed to the raw evidence they
@@ -245,7 +260,7 @@ def render_overview_tab():
 
     for opp in opportunities:
         with st.container(border=True):
-            header_cols = st.columns([3, 2, 2, 1.5, 1.5])
+            header_cols = st.columns([3, 1.7, 1.7, 1.3, 1.2, 1.2])
             header_cols[0].markdown(f"**{opp.company_name}**")
             founder_name = get_founder_display_name(opp)
             header_cols[0].caption(
@@ -256,7 +271,7 @@ def render_overview_tab():
             passed = opp.screen_status == "passed"
 
             if not analyzed:
-                header_cols[3].markdown("🕗 *Not yet analyzed*")
+                header_cols[1].markdown("🕗 *Not yet analyzed*")
             elif not passed:
                 header_cols[1].write("🚫 Screened out")
                 header_cols[2].caption(opp.screen_reason or "")
@@ -265,7 +280,16 @@ def render_overview_tab():
                 thesis_badge = "🎯 In thesis" if opp.thesis_status == "in_thesis" else "↗️ Outside thesis"
                 header_cols[2].write(thesis_badge)
 
-            with header_cols[3]:
+                trend = pipeline.get_score_trend(opp.id)
+                trend_display = {
+                    "up": f"📈 +{trend['delta']}",
+                    "down": f"📉 {trend['delta']}",
+                    "flat": "➡️ Flat",
+                    "new": "🆕 New",
+                }
+                header_cols[3].write(trend_display.get(trend["direction"], "—"))
+
+            with header_cols[4]:
                 button_label = "🔁 Re-analyze" if analyzed else "▶️ Analyze"
                 if st.button(button_label, key=f"analyze_{opp.id}"):
                     with st.spinner(f"Analyzing {opp.company_name}..."):
@@ -278,7 +302,7 @@ def render_overview_tab():
             # actually deletes. Prevents wiping a demo founder on a
             # stray click.
             confirm_key = f"confirm_delete_{opp.id}"
-            with header_cols[4]:
+            with header_cols[5]:
                 if st.session_state.get(confirm_key):
                     if st.button("⚠️ Confirm", key=f"confirm_btn_{opp.id}"):
                         if opp.founder_id:
@@ -331,6 +355,8 @@ def render_opportunity_detail(opp):
         for flag in profile["risk_flags"]:
             st.warning(flag)
         st.caption(f"Scoring note: {profile['tier_note']}")
+        st.divider()
+        render_activation_card(opp)
 
     with tab_evidence:
         render_evidence_section(opp)
@@ -388,7 +414,27 @@ def render_founder_tab():
     st.markdown(f"### {profile['name']}")
     st.caption(f"{opp.company_name} · {opp.sector or '—'} · {opp.stage or '—'}")
 
-    st.metric("Founder Score", f"{opp.founder_score:.0f}" if opp.founder_score else "—")
+    trend = pipeline.get_score_trend(opp.id)
+    founder_history = pipeline.get_founder_score_history(opp.founder_id) if opp.founder_id else []
+    latest_range = founder_history[-1]["confidence_range"] if founder_history else None
+
+    trend_label = {
+        "up": f"📈 Improving (+{trend['delta']})",
+        "down": f"📉 Declining ({trend['delta']})",
+        "flat": "➡️ Steady",
+        "new": "🆕 First analysis",
+    }
+
+    score_cols = st.columns(3)
+    score_cols[0].metric("Founder Score", f"{opp.founder_score:.0f}" if opp.founder_score else "—")
+    score_cols[1].metric("Confidence range", latest_range or "—")
+    score_cols[2].metric("Trend", trend_label.get(trend["direction"], "—"))
+
+    if len(founder_history) > 1:
+        st.markdown("**Score history**")
+        st.line_chart([h["founder_score"] for h in founder_history if h["founder_score"] is not None])
+    elif founder_history:
+        st.caption("Only one analysis so far -- history chart will fill in after a re-analysis.")
 
     st.markdown("**Background**")
     st.write(profile["background"])
@@ -409,6 +455,8 @@ def render_founder_tab():
             st.warning(flag)
 
     st.caption(f"Scoring note: {profile['tier_note']}")
+    st.divider()
+    render_activation_card(opp)
 
 # ============================================================
 # Tab: Market -- sizing + competitive landscape
