@@ -1,0 +1,85 @@
+{
+  "candidate_source": "hn_show",
+  "reference_url": "https://news.ycombinator.com/item?id=48965552",
+  "final_state": {
+    "founder_name": "Aperswal",
+    "company": "FlexInference LLM Router",
+    "application_text": "Show HN launch: Show HN: FlexInference LLM Router\n\nURL: https://www.flexinference.com\n\nStory: Hey everyone, just added Bedrock and Vertex support to FlexInference. It now can do provider fallback on 429 and 5xx. Plus there is upstream retries you can setup via SDK. This way you can do routing for free through OpenAI, Anthropic, Google, Vertex, and Bedrock. Working on Foundry support next.",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "aperswal",
+        "apers-wal",
+        "apers.wal",
+        "aper"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "dev tools",
+        "llm routing"
+      ],
+      "product_urls": [
+        "https://www.flexinference.com"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not clearly describe the target customer or market.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 4,
+        "is_research": false,
+        "categories": [
+          "dev tools",
+          "llm routing"
+        ],
+        "duration_ms": 5
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 2
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "4 GitHub hints, categories=['dev tools', 'llm routing'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not clearly describe the target customer or market."
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "candidate_source": "devpost",
+  "reference_url": "https://irvinehacks-2026.devpost.com",
+  "devpost_extras": {
+    "hackathon_name": "IrvineHacks 2026",
+    "team_name": null,
+    "prize_or_placement": "Best Beginner Hack",
+    "github_url": null
+  },
+  "final_state": {
+    "founder_name": "Bose",
+    "company": "Bose QuietComfort SC Noise Canceling Headphones",
+    "application_text": "Devpost hackathon winner: Bose QuietComfort SC Noise Canceling Headphones\nHackathon: IrvineHacks 2026\nTeam: Bose\nPrize/Placement: Best Beginner Hack\nProject URL: https://irvinehacks-2026.devpost.com\nGitHub: not disclosed\n\nDescription: This project showcases the best beginner hack, emphasizing the growth and potential of new hackers.",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "bose"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "consumer electronics"
+      ],
+      "product_urls": [
+        "https://irvinehacks-2026.devpost.com"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not provide a coherent product description or identify a specific target customer.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 1,
+        "is_research": false,
+        "categories": [
+          "consumer electronics"
+        ],
+        "duration_ms": 2454
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 816
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "1 GitHub hints, categories=['consumer electronics'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not provide a coherent product description or identify a specific target customer."
+      }
+    ]
+  }
+}

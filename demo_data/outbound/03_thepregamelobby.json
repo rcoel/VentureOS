@@ -1,0 +1,676 @@
+{
+  "candidate_source": "hn_show",
+  "reference_url": "https://news.ycombinator.com/item?id=48965355",
+  "final_state": {
+    "founder_name": "gpsmsn",
+    "company": "thepregamelobby",
+    "application_text": "Show HN launch: Show HN: Voice chat in a nostalgic private lobby\n\nURL: https://thepregamelobby.com/\n\nStory: I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "gpsmsn",
+        "g-p-s-msn",
+        "g.psmsn",
+        "g_p_s_msn",
+        "g"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "social",
+        "voice chat"
+      ],
+      "product_urls": [
+        "https://thepregamelobby.com/"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "PASS",
+    "screen_reason": "The application clearly describes a product for voice chatting in private lobbies, targeting friends who want to connect.",
+    "raw_evidence": [
+      {
+        "id": "ev_5b51cb2d82cf",
+        "founder_name": "gpsmsn",
+        "source_type": "github",
+        "source_url": "https://github.com/gpsmsn",
+        "raw_content": {
+          "status": "not_found",
+          "username": "gpsmsn"
+        },
+        "query_used": "gpsmsn",
+        "fetched_at": "2026-07-19T07:02:20.991651+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_a40370da9886",
+        "founder_name": "gpsmsn",
+        "source_type": "github",
+        "source_url": "https://github.com/g-p-s-msn",
+        "raw_content": {
+          "status": "not_found",
+          "username": "g-p-s-msn"
+        },
+        "query_used": "g-p-s-msn",
+        "fetched_at": "2026-07-19T07:02:21.832028+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_1c04b4619e6c",
+        "founder_name": "gpsmsn",
+        "source_type": "github",
+        "source_url": "https://github.com/g.psmsn",
+        "raw_content": {
+          "status": "not_found",
+          "username": "g.psmsn"
+        },
+        "query_used": "g.psmsn",
+        "fetched_at": "2026-07-19T07:02:21.847023+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_ac9254949e45",
+        "founder_name": "gpsmsn",
+        "source_type": "hn",
+        "source_url": "https://hn.algolia.com/?q=thepregamelobby&type=show_hn",
+        "raw_content": {
+          "status": "ok",
+          "nb_hits": 1,
+          "hits": [
+            {
+              "object_id": "48965355",
+              "title": "Show HN: Voice chat in a nostalgic private lobby",
+              "url": "https://thepregamelobby.com/",
+              "author": "gpsmsn",
+              "points": 1,
+              "num_comments": 0,
+              "story_text": "I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!",
+              "comment_text": "",
+              "created_at": "2026-07-19T05:54:29Z",
+              "hn_url": "https://news.ycombinator.com/item?id=48965355"
+            }
+          ]
+        },
+        "query_used": "show_hn:thepregamelobby",
+        "fetched_at": "2026-07-19T07:02:21.919562+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_fe3f8552b558",
+        "founder_name": "gpsmsn",
+        "source_type": "hn",
+        "source_url": "https://hn.algolia.com/?q=thepregamelobby&type=story",
+        "raw_content": {
+          "status": "ok",
+          "nb_hits": 1,
+          "hits": [
+            {
+              "object_id": "48965355",
+              "title": "Show HN: Voice chat in a nostalgic private lobby",
+              "url": "https://thepregamelobby.com/",
+              "author": "gpsmsn",
+              "points": 1,
+              "num_comments": 0,
+              "story_text": "I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!",
+              "comment_text": "",
+              "created_at": "2026-07-19T05:54:29Z",
+              "hn_url": "https://news.ycombinator.com/item?id=48965355"
+            }
+          ]
+        },
+        "query_used": "story:thepregamelobby",
+        "fetched_at": "2026-07-19T07:02:23.343348+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_4dc0c4ad23cb",
+        "founder_name": "gpsmsn",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"gpsmsn\" thepregamelobby founder background",
+          "answer": null,
+          "results": [
+            {
+              "title": "Who is the founder of GPS?",
+              "url": "https://www.quora.com/Who-is-the-founder-of-GPS",
+              "content": "Who is the founder of GPS?",
+              "score": 0.07879127
+            },
+            {
+              "title": "Garmin Company History and Founders",
+              "url": "https://www.facebook.com/groups/garminforum/posts/2338143119878942",
+              "content": "Did You Know? The iconic GPS company Garmin, a pioneer in navigation technology, was named after its founders Gary Burrell and Min Kao, who first envisioned",
+              "score": 0.07870625
+            },
+            {
+              "title": "Co-founders of Garmin brought GPS technology to a broad ...",
+              "url": "https://www.facebook.com/National.Aviation.Hall.of.Fame/videos/co-founders-of-garmin-brought-gps-technology-to-a-broad-range-of-consumer-market/1616504195651070",
+              "content": "In nineteen thirty-seven Gary Burrell was born and raised in Wichita, Kansas, known as the Air Capital of the World. After high school, Burrell",
+              "score": 0.073277526
+            },
+            {
+              "title": "Brief History of GPS",
+              "url": "https://aerospace.org/article/brief-history-gps",
+              "content": "# A Brief History of GPS. Aerospace has played a key role in developing and advancing GPS and the technologies for space-based navigation since the very beginning. In fact, The Aerospace Corporation has played an instrumental role in advancing the concept and technology and continues to support these critical systems today. Here\u2019s a brief history of how how space-based navigation became such a foundational technology in our everyday lives. The first satellite for Transit launched in 1960 and the concept, developed by John Hopkins University APL, was capable of providing navigation to military and commercial users, including the Navy\u2019s missile submarines. Dr. Ivan Getting, founding President of The Aerospace Corporation, envisioned a more powerful and accurate system, which he saw as \u201clighthouses in the sky.\u201d In 1963, Aerospace began looking at ways to expand and improve a satellite navigation system. The development of atomic clocks at the Naval Research Laboratory\u2019s (NRL) Naval Center for Space Technology led to advances in a satellite-based navigation system known as Timation (Time Navigation).",
+              "score": 0.04778461
+            },
+            {
+              "title": "How We Came To Be",
+              "url": "https://www.gpscity.com/history",
+              "content": "We formed our company in November 1994 in Calgary, Alberta, and called it 'Imagine GPS'. We started small, acting as dealers for a few GPS/GIS products.",
+              "score": 0.046261825
+            }
+          ],
+          "response_time": 1.68
+        },
+        "query_used": "\"gpsmsn\" thepregamelobby founder background",
+        "fetched_at": "2026-07-19T07:02:23.794448+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_50e7af6ccc98",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:producthunt.com \"thepregamelobby\"",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=site%3Aproducthunt.com+%22thepregamelobby%22&oq=site%3Aproducthunt.com+%22thepregamelobby%22&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:producthunt.com \"thepregamelobby\"",
+        "fetched_at": "2026-07-19T07:02:24.080665+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_22b464fcfaec",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:ycombinator.com/companies \"thepregamelobby\"",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=site%3Aycombinator.com%2Fcompanies+%22thepregamelobby%22&oq=site%3Aycombinator.com%2Fcompanies+%22thepregamelobby%22&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:ycombinator.com/companies \"thepregamelobby\"",
+        "fetched_at": "2026-07-19T07:02:24.593904+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_a2904d3a2c61",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:linkedin.com/in \"gpsmsn\" thepregamelobby",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22gpsmsn%22+thepregamelobby&oq=site%3Alinkedin.com%2Fin+%22gpsmsn%22+thepregamelobby&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:linkedin.com/in \"gpsmsn\" thepregamelobby",
+        "fetched_at": "2026-07-19T07:02:24.207056+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_deck_585d35dc",
+        "founder_name": "gpsmsn",
+        "source_type": "deck",
+        "source_url": null,
+        "raw_content": {
+          "application_text": "Show HN launch: Show HN: Voice chat in a nostalgic private lobby\n\nURL: https://thepregamelobby.com/\n\nStory: I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!"
+        },
+        "query_used": "deck",
+        "fetched_at": "2026-07-19T07:02:24.595767+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_59921e0d634c",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"social\" alternatives",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=%22social%22+alternatives&oq=%22social%22+alternatives&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Social Alternatives: Welcome",
+              "link": "https://socialalternatives.com/",
+              "displayed_link": "https://socialalternatives.com",
+              "snippet": "Social Alternatives is an independent, quarterly refereed journal which aims to promote public debate, commentary and dialogue about contemporary social, ...",
+              "date": null,
+              "source": "Social Alternatives"
+            },
+            {
+              "position": 2,
+              "title": "Social Alternatives",
+              "link": "https://search.informit.org/journal/socalt",
+              "displayed_link": "https://search.informit.org \u203a journal \u203a socalt",
+              "snippet": "Social Alternatives analyses, critiques, and reviews contemporary social issues and problems. The journal seeks to generate insight, knowledge, and ...",
+              "date": null,
+              "source": "Informit"
+            },
+            {
+              "position": 3,
+              "title": "Social Alternatives",
+              "link": "https://espace.library.uq.edu.au/view/UQ:94457",
+              "displayed_link": "https://espace.library.uq.edu.au \u203a view",
+              "snippet": "Title. Social Alternatives ; Publication year. 2001 ; ISSN. 0115-0306 ; Publisher. Post Pressed ; Open access status. Not yet assessed.",
+              "date": null,
+              "source": "The University of Queensland"
+            },
+            {
+              "position": 4,
+              "title": "Social Alternatives",
+              "link": "https://www.rosalux.de/en/topics/social-alternatives",
+              "displayed_link": "https://www.rosalux.de \u203a topics \u203a social-alternatives",
+              "snippet": "Social Alternatives. Criticism of the dominant social relations is a necessary foundation of all left-wing politics, but it is not enough.",
+              "date": null,
+              "source": "Rosa-Luxemburg-Stiftung"
+            },
+            {
+              "position": 5,
+              "title": "Social Alternative",
+              "link": "https://en.wikipedia.org/wiki/Social_Alternative",
+              "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a Social_Alternative",
+              "snippet": "Social Alternative (Italian: Alternativa Sociale) was a coalition of far-right political parties in Italy.",
+              "date": null,
+              "source": "Wikipedia"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "\"social\" alternatives",
+        "fetched_at": "2026-07-19T07:02:29.512964+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_f0902a0869c0",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"social\" market size TAM",
+          "search_metadata": {
+            "total_results": 8980000,
+            "engine_url": "https://www.google.com/search?q=%22social%22+market+size+TAM&oq=%22social%22+market+size+TAM&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Social Commerce Market Size & Share Report, 2026-2033",
+              "link": "https://www.grandviewresearch.com/industry-analysis/social-commerce-market",
+              "displayed_link": "https://www.grandviewresearch.com \u203a industry-analysis",
+              "snippet": "Social commerce market size was valued at $1484.5 billion in 2025 and is projected to grow from $1925.3 billion in 2026 to $17828.8 billion by 2033, ...",
+              "date": null,
+              "source": "Grand View Research"
+            },
+            {
+              "position": 2,
+              "title": "Social Media Management Market Size, Share",
+              "link": "https://www.fortunebusinessinsights.com/industry-reports/social-media-management-market-100638",
+              "displayed_link": "https://www.fortunebusinessinsights.com \u203a industry-reports",
+              "snippet": "The global social media management market is projected to be worth $39.14 billion in 2026 and reach $164.52 billion by 2034, exhibiting a CAGR of 19.70%",
+              "date": null,
+              "source": "Fortune Business Insights"
+            },
+            {
+              "position": 3,
+              "title": "What Is Total Addressable Market? (TAM)",
+              "link": "https://www.salesforce.com/blog/sales/total-addressable-market/",
+              "displayed_link": "https://www.salesforce.com \u203a blog \u203a sales \u203a total-addres...",
+              "snippet": "Begin by identifying your target customers and determining the market size. ... Here's an example: One of the world's most well-known social media ...",
+              "date": "Mar 13, 2025",
+              "source": "Salesforce"
+            },
+            {
+              "position": 4,
+              "title": "Social Media Market Report 2026",
+              "link": "https://www.researchandmarkets.com/reports/5781298/social-media-market-report?srsltid=AfmBOooBU1GAu7llv9milxpIcE-HDgmzosvlE6pvWQ7_VdsfULxHe0Z4",
+              "displayed_link": "https://www.researchandmarkets.com \u203a reports \u203a social-...",
+              "snippet": "The Social Media Market, valued at USD 234.34B in 2026, is projected to reach USD 389.36B by 2030, growing at a 13.5% CAGR.",
+              "date": null,
+              "source": "Research and Markets"
+            },
+            {
+              "position": 5,
+              "title": "Total Addressable Market | Research Glossary",
+              "link": "https://visionone.co.uk/research-glossary/total-addressable-market/",
+              "displayed_link": "https://visionone.co.uk \u203a Research Glossaries",
+              "snippet": "TAM, SAM, and SOM are tools for sizing markets. TAM is the total demand ... Social Market Research \u00b7 Technology, IT & Digital Research \u00b7 Travel & Tourism ...",
+              "date": null,
+              "source": "Vision One Research"
+            },
+            {
+              "position": 6,
+              "title": "How to Grow Your Total Addressable Market in Today's ...",
+              "link": "https://www.idc.com/resource-center/blog/grow-your-total-addressable-market/",
+              "displayed_link": "https://www.idc.com \u203a resource-center \u203a blog \u203a grow-yo...",
+              "snippet": "Use social media and assets like IDC's social tile to reach a larger audience to expand your TAM, drive brand awareness, and attract new ...",
+              "date": "Apr 10, 2023",
+              "source": "IDC | Trusted Tech Intelligence"
+            },
+            {
+              "position": 7,
+              "title": "Total addressable market (TAM) is the amount of annual ...",
+              "link": "https://www.facebook.com/Semrush/posts/total-addressable-market-tam-is-the-amount-of-annual-revenue-your-business-would/986744233494834/",
+              "displayed_link": "9 reactions \u00b7 1 year ago",
+              "snippet": "Equation: Total Market Size x % of Market Segment = TAM \u27a1\ufe0f ... social media engagement, or online sales within that market segment.",
+              "date": null,
+              "source": "Facebook \u00b7 Semrush"
+            },
+            {
+              "position": 8,
+              "title": "the importance of the tam-sam-som model and how big ...",
+              "link": "https://www.researchgate.net/publication/377992593_THE_IMPORTANCE_OF_THE_TAM-SAM-SOM_MODEL_AND_HOW_BIG_DATA_AND_AI_HELP",
+              "displayed_link": "https://www.researchgate.net \u203a publication \u203a 37799259...",
+              "snippet": "THE IMPORTANCE OF THE TAM-SAM-SOM MODEL AND HOW BIG DATA AND AI HELP. January 2023; International Journal of Social ... Market Sizing Ladders (TAM ...",
+              "date": "Jun 23, 2026",
+              "source": "ResearchGate"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "\"social\" market size TAM",
+        "fetched_at": "2026-07-19T07:02:29.513390+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_4bcf7c4b18d3",
+        "founder_name": "gpsmsn",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "error",
+          "reason": "[SSL] passed invalid argument (_ssl.c:2590)"
+        },
+        "query_used": "market:social competitors 2026",
+        "fetched_at": "2026-07-19T07:02:29.512741+00:00",
+        "status": "error"
+      }
+    ],
+    "claims": [
+      {
+        "id": "48965355",
+        "founder_name": "gpsmsn",
+        "text": "Show HN post exists with 1 points and 0 comments",
+        "subject": "product",
+        "predicate": "launch_reception",
+        "value": "1 points, 0 comments",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_ac9254949e45",
+        "source_type": "hn"
+      },
+      {
+        "id": "48965355",
+        "founder_name": "gpsmsn",
+        "text": "Show HN post exists with 1 points and 0 comments",
+        "subject": "product",
+        "predicate": "launch_reception",
+        "value": "1 points, 0 comments",
+        "confidence": 0.9,
+        "source_evidence_id": "ev_fe3f8552b558",
+        "source_type": "hn"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "No relevant results found for the founder background of gpsmsn associated with thepregamelobby.",
+        "subject": "founder",
+        "predicate": "narrative_absence",
+        "value": "",
+        "confidence": 0.2,
+        "source_evidence_id": "ev_4dc0c4ad23cb",
+        "source_type": "tavily"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "No relevant hits found for thepregamelobby on Product Hunt.",
+        "subject": "product",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_50e7af6ccc98",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "No relevant hits found for thepregamelobby on Y Combinator's companies site.",
+        "subject": "company",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.7,
+        "source_evidence_id": "ev_22b464fcfaec",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "1",
+        "founder_name": "gpsmsn",
+        "text": "Search returned no relevant hits for gpsmsn on LinkedIn.",
+        "subject": "founder",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_a2904d3a2c61",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "Voice chat in a nostalgic private lobby",
+        "subject": "product",
+        "predicate": "product_description",
+        "value": "Voice chat in a nostalgic private lobby",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_deck_585d35dc",
+        "source_type": "deck"
+      },
+      {
+        "id": "claim_2",
+        "founder_name": "gpsmsn",
+        "text": "Create a private lobby and chat with your friends!",
+        "subject": "product",
+        "predicate": "product_description",
+        "value": "Create a private lobby and chat with your friends!",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_deck_585d35dc",
+        "source_type": "deck"
+      }
+    ],
+    "contradictions": [],
+    "verification_map": {
+      "claim_1": "unverifiable",
+      "1": "unverifiable",
+      "48965355": "unverifiable",
+      "claim_2": "unverifiable"
+    },
+    "attributes": {
+      "is_technical": null,
+      "location": null,
+      "categories": [
+        "social",
+        "voice chat"
+      ],
+      "customer_segment": null,
+      "prior_vc_backing": null,
+      "accelerator_tier": null,
+      "prior_exits": null,
+      "years_experience": null,
+      "is_researcher": false,
+      "h_index": null
+    },
+    "market_research": {
+      "competitors": [],
+      "market_size_estimate": "$234.34B in 2026, projected to reach $389.36B by 2030",
+      "stance": "neutral",
+      "reasoning": "The market research indicates that the social media market is substantial and growing, with a projected size of $389.36 billion by 2030. However, there is a lack of specific competitor information for 'thepregamelobby', and the search results did not provide insights into direct competitors or recent funding activities in this niche. This mixed information leads to a neutral stance, as the market is large but competitive dynamics are unclear.",
+      "evidence_refs": [
+        "https://www.researchandmarkets.com/reports/5781298/social-media-market-report?srsltid=AfmBOooBU1GAu7llv9milxpIcE-HDgmzosvlE6pvWQ7_VdsfULxHe0Z4"
+      ]
+    },
+    "preliminary_score": 35.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 5,
+        "is_research": false,
+        "categories": [
+          "social",
+          "voice chat"
+        ],
+        "duration_ms": 2616
+      },
+      {
+        "node": "screening",
+        "status": "PASS",
+        "mode": "llm",
+        "duration_ms": 1115
+      },
+      {
+        "node": "sourcing",
+        "tasks": 8,
+        "evidence_count": 9,
+        "by_source": {
+          "github": 3,
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 3
+        },
+        "ok_by_source": {
+          "hn": 2,
+          "tavily": 1
+        },
+        "research_branch": false,
+        "duration_ms": 3783
+      },
+      {
+        "node": "extraction",
+        "evidence_in": 10,
+        "claims_out": 8,
+        "by_source": {
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 3,
+          "deck": 2
+        },
+        "duration_ms": 3493
+      },
+      {
+        "node": "verification",
+        "groups_llm": 0,
+        "solo_claims": 4,
+        "tavily_fallbacks": 0,
+        "contradictions": 0,
+        "new_evidence_from_verify": 0,
+        "duration_ms": 0
+      },
+      {
+        "node": "attributes_rollup",
+        "claims_in": 8,
+        "is_technical": null,
+        "categories": [
+          "social",
+          "voice chat"
+        ],
+        "accelerator_tier": null,
+        "duration_ms": 1417
+      },
+      {
+        "node": "market_research",
+        "category": "social",
+        "queries_fired": 3,
+        "evidence_collected": 3,
+        "competitors_found": 0,
+        "stance": "neutral",
+        "duration_ms": 2047
+      },
+      {
+        "node": "activation",
+        "preliminary_score": 35.0,
+        "is_outbound": true,
+        "draft_generated": false,
+        "duration_ms": 0
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "5 GitHub hints, categories=['social', 'voice chat'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "PASS: The application clearly describes a product for voice chatting in private lobbies, targeting friends who want to connect."
+      },
+      {
+        "node": "sourcing",
+        "reason": "Fanned 8 tool calls \u2192 9 evidence items ({'hn': 2, 'tavily': 1} with content)."
+      },
+      {
+        "node": "extraction",
+        "reason": "10 evidence items \u2192 8 claims ({'hn': 2, 'tavily': 1, 'serpapi': 3, 'deck': 2})."
+      },
+      {
+        "node": "verification",
+        "reason": "0 LLM groups, 0 Tavily fallbacks, 0 contradictions flagged."
+      },
+      {
+        "node": "attributes_rollup",
+        "reason": "Rolled 8 claims \u2192 is_technical=None, categories=['social', 'voice chat'], accelerator=None, h_index=None"
+      },
+      {
+        "node": "market_research",
+        "reason": "Category=social \u2192 0 competitors, stance=neutral, market_size=$234.34B in 2026, projected to reach $389.36B by 2030"
+      },
+      {
+        "node": "activation",
+        "reason": "preliminary_score=35.0, is_outbound=True, drafted=False"
+      }
+    ]
+  }
+}

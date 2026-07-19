@@ -1,0 +1,1585 @@
+{
+  "founder_name": "Ning Hu",
+  "company": "ZooClaw",
+  "application_text": "ZooClaw \u2014 Your proactive team of AI specialists in one place\n917 followers\nCategory: AI Workflow Automation\nBuilt on: OpenClaw\n\nZooClaw is a single entry point to a team of AI specialists. Ask in\nnatural language and your task is routed to the right agent, each with\nstructured domain knowledge and a native-sounding voice. Built on\nOpenClaw, it stays synced with the latest models and can fall back to\ntop open-source models, so work keeps moving. No setup, no deployment,\nno API keys, no token anxiety.\n",
+  "thesis_config": {
+    "sectors": [
+      "dev tools",
+      "AI infra"
+    ],
+    "stage": "pre-seed",
+    "geography": [
+      "US",
+      "EU"
+    ],
+    "check_size": [
+      25000,
+      150000
+    ],
+    "ownership_target": 0.05,
+    "risk_appetite": "high"
+  },
+  "is_outbound": false,
+  "intake": {
+    "github_handle_hints": [
+      "ninghu",
+      "ning-hu",
+      "ning.hu",
+      "ning_hu",
+      "ning"
+    ],
+    "research_domain": null,
+    "is_research_founder": false,
+    "category_labels": [
+      "ai workflow automation"
+    ],
+    "product_urls": [],
+    "location_hint": null
+  },
+  "screen_status": "PASS",
+  "screen_reason": "The application clearly describes the product as an AI workflow automation tool that connects users with AI specialists.",
+  "raw_evidence": [
+    {
+      "id": "ev_4c3e0bd9a72e",
+      "founder_name": "Ning Hu",
+      "source_type": "github",
+      "source_url": "https://github.com/ninghu",
+      "raw_content": {
+        "status": "ok",
+        "profile": {
+          "login": "ninghu",
+          "name": "Billy Hu",
+          "bio": null,
+          "company": "Microsoft",
+          "location": "Seattle",
+          "blog": "",
+          "email": null,
+          "twitter_username": null,
+          "public_repos": 14,
+          "followers": 7,
+          "following": 1,
+          "created_at": "2015-02-24T06:24:07Z",
+          "html_url": "https://github.com/ninghu"
+        },
+        "repos": [
+          {
+            "name": "azure-sdk-for-python",
+            "full_name": "ninghu/azure-sdk-for-python",
+            "description": "This repository is for active development of the Azure SDK for Python. For consumers of the SDK we recommend visiting our public developer docs at https://docs.microsoft.com/python/azure/ or our versioned developer docs at https://azure.github.io/azure-sdk-for-python. ",
+            "html_url": "https://github.com/ninghu/azure-sdk-for-python",
+            "language": "Python",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2026-07-18T23:06:22Z",
+            "created_at": "2023-10-18T16:43:41Z",
+            "fork": true,
+            "archived": false
+          },
+          {
+            "name": "fate-insights",
+            "full_name": "ninghu/fate-insights",
+            "description": null,
+            "html_url": "https://github.com/ninghu/fate-insights",
+            "language": null,
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2026-07-11T23:56:48Z",
+            "created_at": "2026-07-11T23:56:47Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "foundry-travel-planner-agent",
+            "full_name": "ninghu/foundry-travel-planner-agent",
+            "description": null,
+            "html_url": "https://github.com/ninghu/foundry-travel-planner-agent",
+            "language": "Bicep",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 2,
+            "pushed_at": "2026-07-11T20:39:58Z",
+            "created_at": "2026-06-04T19:23:27Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "azure-sdk-for-net",
+            "full_name": "ninghu/azure-sdk-for-net",
+            "description": "This repository is for active development of the Azure SDK for .NET. For consumers of the SDK we recommend visiting our public developer docs at https://learn.microsoft.com/dotnet/azure/ or our versioned developer docs at https://azure.github.io/azure-sdk-for-net. ",
+            "html_url": "https://github.com/ninghu/azure-sdk-for-net",
+            "language": "C#",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2026-04-09T00:48:55Z",
+            "created_at": "2024-01-26T17:15:56Z",
+            "fork": true,
+            "archived": false
+          },
+          {
+            "name": "foundry-3p-agents-samples",
+            "full_name": "ninghu/foundry-3p-agents-samples",
+            "description": "Foundry 3P Agents Code Samples",
+            "html_url": "https://github.com/ninghu/foundry-3p-agents-samples",
+            "language": "Python",
+            "stars": 2,
+            "forks": 9,
+            "open_issues": 2,
+            "pushed_at": "2026-03-13T01:58:59Z",
+            "created_at": "2025-10-04T18:36:01Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "otel-trace-inspector",
+            "full_name": "ninghu/otel-trace-inspector",
+            "description": "A web-based trace inspection/profiler tool for analyzing Application Insights telemetry with LLM-powered diagnostics",
+            "html_url": "https://github.com/ninghu/otel-trace-inspector",
+            "language": "TypeScript",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2026-01-16T02:12:50Z",
+            "created_at": "2026-01-16T01:55:35Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "build-2025-1rp-tests",
+            "full_name": "ninghu/build-2025-1rp-tests",
+            "description": null,
+            "html_url": "https://github.com/ninghu/build-2025-1rp-tests",
+            "language": null,
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2025-04-03T22:22:28Z",
+            "created_at": "2025-04-03T17:40:05Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "winget-pkgs",
+            "full_name": "ninghu/winget-pkgs",
+            "description": "The Microsoft community Windows Package Manager manifest repository",
+            "html_url": "https://github.com/ninghu/winget-pkgs",
+            "language": "PowerShell",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2025-01-09T22:13:07Z",
+            "created_at": "2024-09-30T20:59:42Z",
+            "fork": true,
+            "archived": false
+          },
+          {
+            "name": "azureml-assets",
+            "full_name": "ninghu/azureml-assets",
+            "description": null,
+            "html_url": "https://github.com/ninghu/azureml-assets",
+            "language": "Python",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2024-09-25T03:11:51Z",
+            "created_at": "2024-09-20T02:22:47Z",
+            "fork": true,
+            "archived": false
+          },
+          {
+            "name": "azureai-samples",
+            "full_name": "ninghu/azureai-samples",
+            "description": "Official community-driven Azure AI Examples",
+            "html_url": "https://github.com/ninghu/azureai-samples",
+            "language": "Jupyter Notebook",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2024-09-23T21:16:39Z",
+            "created_at": "2024-03-04T17:47:23Z",
+            "fork": true,
+            "archived": false
+          }
+        ],
+        "activity": {
+          "total_events": 4,
+          "push_events": 1,
+          "pr_events": 0,
+          "issue_events": 0,
+          "days_active": 3,
+          "event_types": {
+            "PushEvent": 1,
+            "CreateEvent": 1,
+            "PullRequestReviewEvent": 2
+          },
+          "first_event_at": "2026-06-30",
+          "last_event_at": "2026-07-11"
+        },
+        "fetched_at": "2026-07-19T07:23:12.764474+00:00"
+      },
+      "query_used": "ninghu",
+      "fetched_at": "2026-07-19T07:23:12.787256+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_9d13e79f2691",
+      "founder_name": "Ning Hu",
+      "source_type": "github",
+      "source_url": "https://github.com/ning-hu",
+      "raw_content": {
+        "status": "ok",
+        "profile": {
+          "login": "ning-hu",
+          "name": "Ning",
+          "bio": "Software Engineer II",
+          "company": "Microsoft",
+          "location": null,
+          "blog": "",
+          "email": "ning.hu1205@gmail.com",
+          "twitter_username": null,
+          "public_repos": 12,
+          "followers": 4,
+          "following": 4,
+          "created_at": "2016-10-29T16:21:54Z",
+          "html_url": "https://github.com/ning-hu"
+        },
+        "repos": [
+          {
+            "name": "custom-bot",
+            "full_name": "ning-hu/custom-bot",
+            "description": null,
+            "html_url": "https://github.com/ning-hu/custom-bot",
+            "language": "Python",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2024-05-09T21:16:11Z",
+            "created_at": "2022-06-14T01:04:36Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "ebay-monitor-bot",
+            "full_name": "ning-hu/ebay-monitor-bot",
+            "description": null,
+            "html_url": "https://github.com/ning-hu/ebay-monitor-bot",
+            "language": "Python",
+            "stars": 1,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2023-11-08T21:00:34Z",
+            "created_at": "2023-11-08T19:40:37Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "ao-loot-logger",
+            "full_name": "ning-hu/ao-loot-logger",
+            "description": "AO Loot Logger logs all the loot grabbed from other players into a file. With this file, you can use AO Loot Logger Viewer to analyze it.",
+            "html_url": "https://github.com/ning-hu/ao-loot-logger",
+            "language": "JavaScript",
+            "stars": 1,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2023-06-03T18:30:31Z",
+            "created_at": "2023-03-18T02:35:52Z",
+            "fork": true,
+            "archived": false
+          },
+          {
+            "name": "Fun-Projects",
+            "full_name": "ning-hu/Fun-Projects",
+            "description": null,
+            "html_url": "https://github.com/ning-hu/Fun-Projects",
+            "language": "Python",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2023-04-23T18:01:45Z",
+            "created_at": "2018-04-26T06:12:43Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "killboard-bot",
+            "full_name": "ning-hu/killboard-bot",
+            "description": "Discord bot for the Albion Online killboard information",
+            "html_url": "https://github.com/ning-hu/killboard-bot",
+            "language": "Python",
+            "stars": 4,
+            "forks": 0,
+            "open_issues": 1,
+            "pushed_at": "2022-06-14T01:01:39Z",
+            "created_at": "2020-06-15T19:43:36Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "Advent-of-Code-2019",
+            "full_name": "ning-hu/Advent-of-Code-2019",
+            "description": null,
+            "html_url": "https://github.com/ning-hu/Advent-of-Code-2019",
+            "language": "Go",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2019-12-25T01:38:31Z",
+            "created_at": "2019-12-04T04:29:22Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "Computer-Vision",
+            "full_name": "ning-hu/Computer-Vision",
+            "description": null,
+            "html_url": "https://github.com/ning-hu/Computer-Vision",
+            "language": "Python",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2019-11-16T01:06:36Z",
+            "created_at": "2019-10-16T20:38:22Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "mh-line-bot",
+            "full_name": "ning-hu/mh-line-bot",
+            "description": "LINE Messaging API SDK for Go",
+            "html_url": "https://github.com/ning-hu/mh-line-bot",
+            "language": "Go",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2019-08-22T16:07:34Z",
+            "created_at": "2019-08-18T07:39:36Z",
+            "fork": true,
+            "archived": false
+          },
+          {
+            "name": "Berry-Blue",
+            "full_name": "ning-hu/Berry-Blue",
+            "description": "Styleguide and app mockup",
+            "html_url": "https://github.com/ning-hu/Berry-Blue",
+            "language": null,
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2018-02-06T08:38:37Z",
+            "created_at": "2018-01-29T22:40:36Z",
+            "fork": false,
+            "archived": false
+          },
+          {
+            "name": "BruinPlay",
+            "full_name": "ning-hu/BruinPlay",
+            "description": "Hackschool F17 Final Project",
+            "html_url": "https://github.com/ning-hu/BruinPlay",
+            "language": "JavaScript",
+            "stars": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "pushed_at": "2017-12-19T20:51:10Z",
+            "created_at": "2017-11-09T03:14:38Z",
+            "fork": true,
+            "archived": false
+          }
+        ],
+        "activity": {
+          "total_events": 0,
+          "push_events": 0,
+          "days_active": 0,
+          "event_types": {}
+        },
+        "fetched_at": "2026-07-19T07:23:12.152606+00:00"
+      },
+      "query_used": "ning-hu",
+      "fetched_at": "2026-07-19T07:23:12.177115+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_3b2766e818f5",
+      "founder_name": "Ning Hu",
+      "source_type": "github",
+      "source_url": "https://github.com/ning.hu",
+      "raw_content": {
+        "status": "not_found",
+        "username": "ning.hu"
+      },
+      "query_used": "ning.hu",
+      "fetched_at": "2026-07-19T07:23:10.339263+00:00",
+      "status": "not_found"
+    },
+    {
+      "id": "ev_48727bed2f7b",
+      "founder_name": "Ning Hu",
+      "source_type": "hn",
+      "source_url": "https://hn.algolia.com/?q=ZooClaw&type=show_hn",
+      "raw_content": {
+        "status": "ok",
+        "nb_hits": 16,
+        "hits": [
+          {
+            "object_id": "47717892",
+            "title": "Show HN: Zeroclawed: Secure Agent Gateway",
+            "url": "https://github.com/bglusman/zeroclawed",
+            "author": "bglusman",
+            "points": 8,
+            "num_comments": 3,
+            "story_text": "I\u2019ve been cautiously (and nervously) playing with openclaw and a number of other claw and code agents for a while now, but trying out different ones was tricky so I wanted a simple way to switch out channel ownership\u2026 then I wanted more.  Security is hard, and I wanted to make it easier.  This is FAR from polished, and no claims that I\u2019m a \u201csecurity expert\u201d but I tried to think and research a bit on different threat models (I think of 2 broad ones for agents, external adversaries and internal agentic failures) and try and offer best in class protection on both, while also not having any special opinion on what a good agent may look like today or in the future\u2026 this is just a gateway, and hopefully one that can work for nearly any agent now or in the future, but trying to come with batteries included for some of the more popular options today like openclaw, zeroclaw, claw-code, clause and opencode, not all there yet but contribution and critiques welcome.",
+            "comment_text": "",
+            "created_at": "2026-04-10T13:32:40Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47717892"
+          },
+          {
+            "object_id": "47276507",
+            "title": "Show HN: James Library \u2013 Local multi-agent research lab (built on ZeroClaw)",
+            "url": "https://rainlabteam.vercel.app/",
+            "author": "cwoodyard",
+            "points": 5,
+            "num_comments": 1,
+            "story_text": "I\u2019ve been working on a multi-agent academic research lab, and I wanted to share it here today primarily to give a massive shoutout to the developers behind ZeroClaw.\n When designing the architecture for this, I needed an autonomous agent runtime that was lightweight, entirely agnostic, and highly secure for local execution. ZeroClaw\u2019s pure Rust implementation provided exactly the zero-overhead foundation the project required.<p>Because they solved the core runtime execution so elegantly, I was able to spend my time building the higher-level orchestration on top of it\u2014like the retrieval graph engines, the Godot-based client interface, and the physical hardware&#x2F;robotics bridges.<p>If any of the ZeroClaw maintainers are reading this: thank you. Your repository is a cool example of open-sourcery, and the R.A.I.N. Lab literally would not exist in its current state without the groundwork your team laid.<p>Feel fre to check out what my startup built on top of their runtime here: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;topherchris420&#x2F;james_library\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;topherchris420&#x2F;james_library</a>",
+            "comment_text": "",
+            "created_at": "2026-03-06T15:51:05Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47276507"
+          },
+          {
+            "object_id": "47151385",
+            "title": "Show HN: First native zeroclaw build on Android/Termux (aarch64, no proot)",
+            "url": null,
+            "author": "bleaknarratives",
+            "points": 2,
+            "num_comments": 0,
+            "story_text": "Zeroclaw is a Rust-based Nostr client&#x2F;relay tool. As of a few hours ago, no one had compiled it natively on Android.<p>Gemini CLI tried. Gemini Android tried. Both failed.<p>The blockers:\n\u2014 koffi&#x27;s build script passes `make -j` bare, which Termux&#x27;s make rejects\n\u2014 The default linker OOM-kills during the final link step (Android blocks swapon for unprivileged processes)<p>The fix: mold linker + codegen-units=1 + lto=thin + opt-level=z in a .cargo&#x2F;config.toml<p>Binary: 15.5MB. Build time: 23m 55s. Kernel: Linux 5.4.284-moto. Completed at 04:11:47 CST.<p>Repo with binary, build config, and full reproduction steps:\n<a href=\"https:&#x2F;&#x2F;github.com&#x2F;BleakNarratives&#x2F;zeroclaw-android\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;BleakNarratives&#x2F;zeroclaw-android</a>",
+            "comment_text": "",
+            "created_at": "2026-02-25T13:46:45Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47151385"
+          },
+          {
+            "object_id": "47040776",
+            "title": "Show HN: ZIT: Zooplankton Image Tool for 2d rendering of biological locomotion",
+            "url": "https://github.com/juleshenry/zooplankton-image-tool",
+            "author": "juleshenry",
+            "points": 2,
+            "num_comments": 0,
+            "story_text": "ZIT is a tiny micro-library that takes zooplankton locomotion videos and renders them into 2D flattened static images, encoding motion over time into a single frame for compact analysis. Installable via pip install zooplankton-image-tool.",
+            "comment_text": "",
+            "created_at": "2026-02-16T21:47:49Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47040776"
+          },
+          {
+            "object_id": "4655763",
+            "title": "Show HN: Rightmove + Zoopla + Gumtree properties on one map",
+            "url": "http://cravify.com/rent/?ref=hn_all_in_one",
+            "author": "thlt",
+            "points": 1,
+            "num_comments": 1,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2012-10-15T16:27:19Z",
+            "hn_url": "https://news.ycombinator.com/item?id=4655763"
+          },
+          {
+            "object_id": "46953736",
+            "title": "Show HN: ZooCache:Dependency based cache invalidation for Python, Rust core",
+            "url": "https://github.com/albertobadia/zoocache",
+            "author": "bctm79",
+            "points": 1,
+            "num_comments": 0,
+            "story_text": "Hi HN, I&#x27;m new here, wanted to share a little lib I&#x27;ve been working on. It&#x27;s a cache library that lets you declare dependencies instead of classic TTL invalidation.<p>Basic usage:<p><pre><code>  from zoocache import cacheable, invalidate, add_deps\n\n  @cacheable\n  def get_product_page(pid: int, sid: int):\n      product = db.get_product(pid)\n      add_deps([f&quot;product:{pid}&quot;])\n\n      stock = db.get_stock(sid, pid)\n      add_deps([f&quot;store:{sid}:stock&quot;])\n\n      return render(product, stock)\n\n  get_product_page(42, 1)   # computes and caches\n  get_product_page(42, 1)   # cache hit\n\n  invalidate(&quot;product:42&quot;)  # product info changed\n  invalidate(&quot;store:1&quot;)     # clears ALL store:1:* (stock, prices, etc)\n</code></pre>\nTags are hierarchical, invalidating a parent like &quot;store:1&quot; clears everything under it. No scanning or pattern matching needed.<p>Internally it&#x27;s a prefix trie with HLC for distributed consistency, a SingleFlight to avoid thundering herds, and MsgPack+LZ4 serialization. The core is Rust via PyO3. Supports in-memory, LMDB, and Redis backends.<p>It&#x27;s a fairly niche tool, if simple TTL or lru_cache covers your use case, you don&#x27;t need this. It&#x27;s more for when you have complex data relationships and need precise, immediate invalidation.<p>Source: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;albertobadia&#x2F;zoocache\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;albertobadia&#x2F;zoocache</a><p>Hope you find it useful. Happy to receive feedback, PRs, or discuss design tradeoffs.",
+            "comment_text": "",
+            "created_at": "2026-02-10T00:34:46Z",
+            "hn_url": "https://news.ycombinator.com/item?id=46953736"
+          },
+          {
+            "object_id": "4663858",
+            "title": "Show HN: Rightmove + Zoopla + Gumtree properties on one map",
+            "url": "http://cravify.com/rent/?from=hn_all_in_one",
+            "author": "thlt",
+            "points": 1,
+            "num_comments": 0,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2012-10-17T10:51:12Z",
+            "hn_url": "https://news.ycombinator.com/item?id=4663858"
+          },
+          {
+            "object_id": "47426704",
+            "title": "Show HN: PlanckClaw an AI agent in 6832 bytes of x86-64 assembly",
+            "url": "https://github.com/frntn/planckclaw",
+            "author": "frntn",
+            "points": 4,
+            "num_comments": 4,
+            "story_text": "I built an AI agent that fits in 6,832 bytes. The entire runtime (binary, bridges, tools, config) is ~23 KB.<p>PlanckClaw is written in x86-64 assembly (obviously AI assisted code generation for this one) and uses only 7 Linux syscalls. No libc, no allocator, no runtime. The binary is a pure router: it reads messages from named pipes, asks another pipe what tools exist, builds a JSON prompt, writes it to a third pipe, parses the response, dispatches tool calls, and relays the answer. It never touches the network or executes tools directly.<p>Everything else composes around it in shell scripts (~460 lines total):\n- bridge_brain.sh: curls the Anthropic API (~90 lines)\n- bridge_discord.sh: Discord Gateway via WebSocket (~180 lines)\n- bridge_cli.sh: terminal interface (~40 lines)\n- bridge_claw.sh: tool discovery and dispatch (~50 lines)<p>Four processes, six named FIFOs, zero shared state. Adding a tool means dropping a shell script in claws&#x2F;. No restart, no recompilation, no config change.<p>It does real things: tool use (via Claude&#x27;s tool_use protocol), persistent conversation history in append-only JSONL, automatic memory compaction when history grows too long, and a swappable personality file (soul.md).<p>This started as a thought experiment: modern agent frameworks pull 400+ transitive dependencies and ship 100+ MB runtimes before generating a single token. I stumbled upon multiple minimalist initiatives like picoclaw, nanoclaw or zeroclaw. I wanted to find the minimum viable agent (the Planck length of AI agents) and see what you could build with just pipes and syscalls.<p>It&#x27;s not production software. Buffers are fixed-size (messages &gt; 4 KB get truncated), it only runs on Linux x86-64, and error handling is basic. But it works perfectly and the entire codebase (~2,800 lines including the assembly) is easily auditable.<p>The wire-level protocol specs for all three extension points (interact, brain, claw) are documented in PROTOCOL.md if you want ",
+            "comment_text": "",
+            "created_at": "2026-03-18T15:07:09Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47426704"
+          },
+          {
+            "object_id": "47279088",
+            "title": "Show HN: A local, multi-agent, customizable stack built for researchers",
+            "url": "https://github.com/topherchris420/james_library",
+            "author": "vers3dynamics",
+            "points": 4,
+            "num_comments": 1,
+            "story_text": "This is a Rust&#x2F;Python research stack with internet access, focused on reproducible experiments through voice conversations.<p>We wanted to build something that would give everyone a free, local, and customizable 20th-century Bell Labs on their computer.<p>The platform combines ZeroClaw (Rust runtime) for orchestration and tool policies, James Library (original research articles&#x2F;prototypes) for sessions and experiments, and a security-first agent model that treats external text as untrusted.<p>The goal is simple: go from idea to experiment to artifact, without black boxes, and more customizable than most cloud-based multi-agent platforms.<p>For reference, we\u2019ve been using this daily for a few years as an R&amp;D branch for Vers3Dynamics, and recently decided to open-source it.",
+            "comment_text": "",
+            "created_at": "2026-03-06T18:33:58Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47279088"
+          },
+          {
+            "object_id": "31541610",
+            "title": "Show HN: I made a Chrome extension to improve the house search in UK",
+            "url": "https://chrome.google.com/webstore/detail/better-property-searchuk/plhmaijeihlahacliknfghpgeddckjig",
+            "author": "sanskarjethi",
+            "points": 2,
+            "num_comments": 1,
+            "story_text": "Hey All<p>I had been searching for flats to rent recently, and like any other tenant in London, I was looking at Zoopla and Rightmove.<p>I was looking for a flat that I\u2019ll be sharing with my flatmate, and one of our primary requirements was to have separate bathrooms.<p>Zoopla and Rightmove have filters for almost everything but, for some reason, not for bathrooms. I realized this was an issue many faced, so I created a straightforward Chrome extension to help with the process.<p>I believe it will be helpful to you folks too.",
+            "comment_text": "",
+            "created_at": "2022-05-28T16:28:57Z",
+            "hn_url": "https://news.ycombinator.com/item?id=31541610"
+          }
+        ]
+      },
+      "query_used": "show_hn:ZooClaw",
+      "fetched_at": "2026-07-19T07:23:10.789984+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_14f642aae346",
+      "founder_name": "Ning Hu",
+      "source_type": "hn",
+      "source_url": "https://hn.algolia.com/?q=ZooClaw&type=story",
+      "raw_content": {
+        "status": "ok",
+        "nb_hits": 131,
+        "hits": [
+          {
+            "object_id": "47633601",
+            "title": "ZooClaw \u2013 Separate workspace and soul per agent, built on OpenClaw",
+            "url": "https://zooclaw.ai/en",
+            "author": "nemofq",
+            "points": 3,
+            "num_comments": 1,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2026-04-03T23:18:18Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47633601"
+          },
+          {
+            "object_id": "47100232",
+            "title": "zclaw: personal AI assistant in under 888 KB, running on an ESP32",
+            "url": "https://github.com/tnm/zclaw",
+            "author": "tosh",
+            "points": 284,
+            "num_comments": 148,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2026-02-21T12:37:52Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47100232"
+          },
+          {
+            "object_id": "47188401",
+            "title": "Zclaw \u2013 The 888 KiB Assistant",
+            "url": "https://zclaw.dev",
+            "author": "kristianpaul",
+            "points": 93,
+            "num_comments": 52,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2026-02-28T00:47:39Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47188401"
+          },
+          {
+            "object_id": "47717892",
+            "title": "Show HN: Zeroclawed: Secure Agent Gateway",
+            "url": "https://github.com/bglusman/zeroclawed",
+            "author": "bglusman",
+            "points": 8,
+            "num_comments": 3,
+            "story_text": "I\u2019ve been cautiously (and nervously) playing with openclaw and a number of other claw and code agents for a while now, but trying out different ones was tricky so I wanted a simple way to switch out channel ownership\u2026 then I wanted more.  Security is hard, and I wanted to make it easier.  This is FAR from polished, and no claims that I\u2019m a \u201csecurity expert\u201d but I tried to think and research a bit on different threat models (I think of 2 broad ones for agents, external adversaries and internal agentic failures) and try and offer best in class protection on both, while also not having any special opinion on what a good agent may look like today or in the future\u2026 this is just a gateway, and hopefully one that can work for nearly any agent now or in the future, but trying to come with batteries included for some of the more popular options today like openclaw, zeroclaw, claw-code, clause and opencode, not all there yet but contribution and critiques welcome.",
+            "comment_text": "",
+            "created_at": "2026-04-10T13:32:40Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47717892"
+          },
+          {
+            "object_id": "47047192",
+            "title": "ZeroClaw - Zero overhead. Zero compromise. 100% Rust.",
+            "url": "https://github.com/zeroclaw-labs/zeroclaw",
+            "author": "kavith",
+            "points": 6,
+            "num_comments": 2,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2026-02-17T13:18:48Z",
+            "hn_url": "https://news.ycombinator.com/item?id=47047192"
+          }
+        ]
+      },
+      "query_used": "story:ZooClaw",
+      "fetched_at": "2026-07-19T07:23:11.590818+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_3c9811bc072b",
+      "founder_name": "Ning Hu",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"Ning Hu\" ZooClaw founder background",
+        "answer": null,
+        "results": [
+          {
+            "title": "ZooClaw Launches AI Agents for Founders and Creators",
+            "url": "/goto?url=CAESrAEB7keqTfxUJI5qj_1_rHvCMiCjQpGxi0zAM4GLc97ytUpkDPG8zwp1JIIkyNH0I779iXB7dHUhCswF67oMzVMUt2uon2pl9lPdFLbKo_oCnyjAHPkbcNQUJTcRhIKVD_kuv8fUMo7dJTb-dBloDlN01-Z5xI-95ggciRrAYR4Ph27DzQezhuSUu3CReVo2E8qCc6obglEdafcL76iY4tLUijPS2AR-Say59upk",
+            "content": "Ning Hu Ning Hu Founder @Gensmo | Former VP @Alibaba. AI agents that understand your context, act on your behalf, and actually get things done.",
+            "score": 0.64719695
+          },
+          {
+            "title": "ZooClaw AI - Product Reveal -",
+            "url": "/goto?url=CAESYAHuR6pNXlg-uNR9B8xt7XnXOyVjjVkCwNBInu8ugF52gUwoEg1iGdPgCNEocxGH3NqHi91LhfpDsrH00nWSE2sfGwf_SOP0Gqen99ruJdqR4v3WKLKkWhNW10gxiyH1Pg%3D%3D",
+            "content": "Apr 4, 2026 \u2014 Ning Hu, ZooClaw's founder, stumbled into this insight accidentally. Back in February 2026, he was playing with OpenClaw and built an AI",
+            "score": 0.64719695
+          },
+          {
+            "title": "Ning Hu (@ninghu) / Posts / X",
+            "url": "/goto?url=CAESVAHuR6pNcottc1RFA45tlVPckmjjXrzNTM1D304R0KR4paVS5ihRNtQEMhKBkldvslhax4XDdZPDy3GqBPFEkYmKshmVg91hVyAGufy-Wjy87dvYmQ%3D%3D",
+            "content": "Founder &amp; CEO of ZooClaw.ai. AI is the most powerful tool ever built.",
+            "score": 0.644248
+          },
+          {
+            "title": "ZooClaw: Your proactive team of AI specialists in one place",
+            "url": "/goto?url=CAESZAHuR6pNqL0gQa5jQRka4n-r72rb1lxmIso97b2jyKnuMeTOe4OtLPvTifruGPK5lxDAZGG88rfMmw980ALpuFPEPu0ugj5I0AKDmQo8L5jso9-ua3KEE5LZbcHd8tko0DVY1WQ%3D",
+            "content": "I'm Ning, founder of ZooClaw. Back in February, I was playing around with OpenClaw and built an AI companion agent \u2014 just for fun. I shared it with my team.Read more",
+            "score": 0.56920683
+          },
+          {
+            "title": "Ning Hu - Gensmo",
+            "url": "/goto?url=CAESWgHuR6pNVSRxt78Pjqp5VEgfVuB31jx9itHtxGrHE7vjzpXrsoSGm9T5YWLR3yWssAG2-W8DenjBAIjzD2dtwuct3lmZCA_VEsRxuob5qm2JpGRLYpa72dcnJA%3D%3D",
+            "content": "Greater Seattle Area \u00b7 GensmoEducation: Carnegie Mellon University. Department of Computer Science and Technology. Jan 2021 - Present 5 years 7 months",
+            "score": 0.1391976
+          }
+        ],
+        "response_time": 0.6
+      },
+      "query_used": "\"Ning Hu\" ZooClaw founder background",
+      "fetched_at": "2026-07-19T07:23:11.116200+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_10ea221006ba",
+      "founder_name": "Ning Hu",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "site:producthunt.com \"ZooClaw\"",
+        "search_metadata": {
+          "total_results": 57,
+          "engine_url": "https://www.google.com/search?q=site%3Aproducthunt.com+%22ZooClaw%22&oq=site%3Aproducthunt.com+%22ZooClaw%22&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "ZooClaw: Your proactive team of AI specialists in one place",
+            "link": "https://www.producthunt.com/products/zooclaw",
+            "displayed_link": "https://www.producthunt.com \u203a products \u203a zooclaw",
+            "snippet": "ZooClaw is a single entry point to a team of AI specialists. Ask in natural language and your task is routed to the right agent, each with structured domain ...",
+            "date": null,
+            "source": "Product Hunt"
+          },
+          {
+            "position": 2,
+            "title": "ZooClaw Awards (2026)",
+            "link": "https://www.producthunt.com/products/zooclaw/awards",
+            "displayed_link": "https://www.producthunt.com \u203a products \u203a awards",
+            "snippet": "ZooClaw is a single entry point to a team of AI specialists. Ask in natural language and your task is routed to the right agent, each with structured domain ...",
+            "date": null,
+            "source": "Product Hunt"
+          },
+          {
+            "position": 3,
+            "title": "ZooClaw Competitors & Alternatives (2026)",
+            "link": "https://www.producthunt.com/products/zooclaw/alternatives",
+            "displayed_link": "https://www.producthunt.com \u203a Products \u203a ZooClaw",
+            "snippet": "ZooClaw is a single entry point to a team of AI specialists. Ask in natural language and your task is routed to the right agent, ...",
+            "date": "Apr 6, 2026",
+            "source": "Product Hunt"
+          },
+          {
+            "position": 4,
+            "title": "OpenClaw Competitors & Alternatives (2026)",
+            "link": "https://www.producthunt.com/products/clawdbot-2/alternatives",
+            "displayed_link": "https://www.producthunt.com \u203a Products \u203a OpenClaw",
+            "snippet": "ZooClaw is built for people who want outcomes without the setup tax. Instead of configuring OpenClaw, managing API keys, and worrying about ...",
+            "date": "Apr 6, 2026",
+            "source": "Product Hunt"
+          },
+          {
+            "position": 5,
+            "title": "ZooData: The data layer for AI agents",
+            "link": "https://www.producthunt.com/products/zoodata",
+            "displayed_link": "https://www.producthunt.com \u203a products \u203a zoodata",
+            "snippet": "ZooClaw. Maker.. Hi PH ,. I'm Ning from ZooData. Quick context on why we built this. If you've built anything with agents, you know ...",
+            "date": "24 hours ago",
+            "source": "Product Hunt"
+          },
+          {
+            "position": 6,
+            "title": "OctoClaw Awards (2026)",
+            "link": "https://www.producthunt.com/products/octoclaw/awards",
+            "displayed_link": "https://www.producthunt.com \u203a products \u203a awards",
+            "snippet": "ZooClaw. Your proactive team of AI specialists in one place. AI Workflow AutomationOpenClaw \u00b7 View more. Top Product Categories. Engineering & Development.",
+            "date": null,
+            "source": "Product Hunt"
+          },
+          {
+            "position": 7,
+            "title": "Best of Product Hunt: Week of March 30, 2026",
+            "link": "https://www.producthunt.com/leaderboard/weekly/2026/14",
+            "displayed_link": "https://www.producthunt.com \u203a leaderboard \u203a weekly",
+            "snippet": "ZooClaw. 10. ZooClaw Your proactive team of AI specialists in one place. Promoted. 307. Cursor 3. 11. Cursor 3 Unified workspace for parallel local/cloud agents ...",
+            "date": null,
+            "source": "Product Hunt"
+          },
+          {
+            "position": 8,
+            "title": "ASI:One Competitors & Alternatives (2026)",
+            "link": "https://www.producthunt.com/products/asi/alternatives",
+            "displayed_link": "https://www.producthunt.com \u203a Products \u203a ASI:One",
+            "snippet": "Discover ASI:One alternatives like SureThing.io, ZeroHuman., and ZooClaw to find AI agent teams that plan, act, and deliver results for your ...",
+            "date": "Feb 19, 2025",
+            "source": "Product Hunt"
+          },
+          {
+            "position": 9,
+            "title": "Gensmo: Unlock the Lifestyle You Deserve",
+            "link": "https://www.producthunt.com/products/gensmo",
+            "displayed_link": "https://www.producthunt.com \u203a products \u203a gensmo",
+            "snippet": "ZooClaw. Maker. @amymabrey Thank you so much for your kind words and thoughtful questions! I'm excited to share more about Gensmo: 1. Understanding ...",
+            "date": null,
+            "source": "Product Hunt"
+          },
+          {
+            "position": 10,
+            "title": "Clawdi Awards (2026)",
+            "link": "https://www.producthunt.com/products/clawdi/awards",
+            "displayed_link": "https://www.producthunt.com \u203a products \u203a awards",
+            "snippet": "ZooClaw. Your proactive team of AI specialists in one place. AI Workflow AutomationOpenClaw \u00b7 Parallel AI Executive ...",
+            "date": null,
+            "source": "Product Hunt"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "site:producthunt.com \"ZooClaw\"",
+      "fetched_at": "2026-07-19T07:23:16.409661+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_3a06890175ab",
+      "founder_name": "Ning Hu",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "site:ycombinator.com/companies \"ZooClaw\"",
+        "search_metadata": {
+          "total_results": 0,
+          "engine_url": "https://www.google.com/search?q=site%3Aycombinator.com%2Fcompanies+%22ZooClaw%22&oq=site%3Aycombinator.com%2Fcompanies+%22ZooClaw%22&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "site:ycombinator.com/companies \"ZooClaw\"",
+      "fetched_at": "2026-07-19T07:23:10.980982+00:00",
+      "status": "not_found"
+    },
+    {
+      "id": "ev_924bdbf841ed",
+      "founder_name": "Ning Hu",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "site:linkedin.com/in \"Ning Hu\" ZooClaw",
+        "search_metadata": {
+          "total_results": 2,
+          "engine_url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22Ning+Hu%22+ZooClaw&oq=site%3Alinkedin.com%2Fin+%22Ning+Hu%22+ZooClaw&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "Ning Hu - Gensmo",
+            "link": "https://www.linkedin.com/in/ninghu",
+            "displayed_link": "3.8K+ followers",
+            "snippet": "Ning Hu. Gensmo Carnegie Mellon University. Greater Seattle Area. 4K followers 500+ connections. See your mutual connections. View mutual connections ...",
+            "date": null,
+            "source": "LinkedIn \u00b7 Ning Hu"
+          },
+          {
+            "position": 2,
+            "title": "Hann-Shiuh Chen - Project Coordinator (China) and ...",
+            "link": "https://cn.linkedin.com/in/hann-shiuh-chen-6b78183b",
+            "displayed_link": "530+ followers",
+            "snippet": "Project Coordinator (China) and Project Manager at Morphosis Architects. Graduate School of Architecture, Planning and Preservation",
+            "date": null,
+            "source": "LinkedIn \u00b7 Hann-Shiuh Chen"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "site:linkedin.com/in \"Ning Hu\" ZooClaw",
+      "fetched_at": "2026-07-19T07:23:11.553339+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_deck_b30d689c",
+      "founder_name": "Ning Hu",
+      "source_type": "deck",
+      "source_url": null,
+      "raw_content": {
+        "application_text": "ZooClaw \u2014 Your proactive team of AI specialists in one place\n917 followers\nCategory: AI Workflow Automation\nBuilt on: OpenClaw\n\nZooClaw is a single entry point to a team of AI specialists. Ask in\nnatural language and your task is routed to the right agent, each with\nstructured domain knowledge and a native-sounding voice. Built on\nOpenClaw, it stays synced with the latest models and can fall back to\ntop open-source models, so work keeps moving. No setup, no deployment,\nno API keys, no token anxiety."
+      },
+      "query_used": "deck",
+      "fetched_at": "2026-07-19T07:23:16.410639+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_dcd6a71c0daa",
+      "founder_name": "Ning Hu",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"ZooClaw\" 917 followers",
+        "answer": "ZooClaw is an AI-driven platform that offers a team of AI specialists for various tasks. It allows users to create and manage their own AI agents. ZooClaw emphasizes productivity and customization.",
+        "results": [
+          {
+            "title": "ZooClaw: Your proactive team of AI specialists in one place | Product Hunt",
+            "url": "https://www.producthunt.com/products/zooclaw",
+            "content": "ZooClaw\n\n# ZooClaw\n\n## Your proactive team of AI specialists in one place\n\n917 followers\n\n## Your proactive team of AI specialists in one place\n\n917 followers\n\nZooClaw gallery image\nZooClaw gallery image\nZooClaw gallery image\nZooClaw gallery image\nZooClaw gallery image\nZooClaw gallery image\nRohan Chaubey\ncirce12\nDou Dou\nZooClaw was ranked #2 of the day for April 3rd, 2026\n\n## Similar Products\n\nAda.im\nTaskade\nDayZero\nManus\nGPTBots.ai\n\n### Engineering & Development\n\n### LLMs\n\n### Productivity\n\n### Marketing & Sales\n\n### Design & Creative\n\n### Social & Community\n\n### Finance\n\n### AI Agents\n\n### Trending categories\n\n### Top reviewed\n\n### Trending products\n\n### Top forum threads\n\nElevenAgents by ElevenLabs\n\nWhat do you think? \u2026\n\nNing Hu\nZooClaw\n\nZooClaw [...] \ud83d\udcac Voice-first \u2014 Talk to your agents like you'd talk to a colleague. No prompts to craft, no UI to learn.\n\nThe era of the one-person company is here. But even a one-person company deserves a full team. That's what ZooClaw is \u2014 your team.\n\nWe're still early. I'd love to hear \u2014 what expertise do you have that you wish could work for you around the clock?\n\nWe're here all day. Your zoo is waiting \ud83d\ude80\n\nswati paliwal\n\n@ninghu How customizable is it for sharing branded versions with clients without losing my voice?\n\nNing Hu\nZooClaw\n\nZooClaw\n\n@swati\\_paliwal Right on target \u2014 and we're building exactly this. [...] What do you think? \u2026\n\nNing Hu\nZooClaw\n\nZooClaw\n\nHi Product Hunt! I'm Ning, founder of ZooClaw.\n\nBack in February, I was play",
+            "score": 0.8652358
+          },
+          {
+            "title": "ZooClaw Review: The Multi-Expert Agent for Instant Investment Decks & AI Videos Creation|",
+            "url": "https://www.youtube.com/watch?v=yA5rEjKziDE",
+            "content": "# ZooClaw Review: The Multi-Expert Agent for Instant Investment Decks & AI Videos Creation|\n## Nova Toolbox\n268000 subscribers\n128 likes [...] ### Description\n5929 views\nPosted: 14 Jul 2026\n\ud83d\udd17\ud83d\udd17Try ZooClaw here and use my exclusive code \u3010ZC-E596AC\u3011 to get 2,000 FREE credits (available for the first 20 users only)!\n\ud83d\udc49\ud83d\udc49 \n\ud83d\udce9\ud83d\udce9 Business inquiries: contact@novatoolbox.com\nIn this video, I tested ZooClaw! ZooClaw isn't just a tool that performs a single task\u2014it's a multi-expert AI agent productivity platform. I also tried its PPT Expert, and with just a simple text prompt, it generated a complete, well-structured presentation in no time. It significantly improved my productivity and saved me a lot of time.\nIn addition, I tested ZooClaw with Seedance 2 to see how far I could go by starting with a simple idea and turning it into a complete AI video creation workflow. [...] Many AI video tools can generate impressive video clips, but creating a complete project usually requires switching between multiple platforms for visuals, video generation, voiceovers, background music, and final editing.\nZooClaw takes a different approach by bringing the entire creative process into a single conversational workflow.\nWith ZooClaw, you can simply describe your idea in natural language, and it helps you:\nDevelop a story outline\nCreate a storyboard\nGenerate images and videos\nAdd AI voiceovers\nGenerate background music\nAll of these steps can be completed within one seamless workflow.\nWhat is ZooClaw?\nZooCl",
+            "score": 0.3313474
+          },
+          {
+            "title": "PostClaw - Your AI Social Media Manager",
+            "url": "https://www.postclaw.io",
+            "content": "It plans. It posts. You approve.\n\n# Grow your Instagram on autopilot.\n\nPostClaw learns your brand, builds your growth strategy, and posts to your Instagram every week. Review what's coming, change anything, or let it run.\n\nSee how it works \u2192\n\nKayaJorgeSherylAbhilakshSawyer\n\n1472 business owners\n\nposts published\n\nbusinesses on board\n\n2 min\n\naverage setup\n\n20\u00d7\n\ncheaper than a $2,000 agency\n\nHow it works\n\n## Set it up in five minutes.It runs from there.\n\n01\n\n### It learns your brand\n\nPaste your website. PostClaw learns what you sell, your voice, and what makes you different. All in 30 seconds.\n\n02\n\n### It builds your strategy\n\nConnect your Instagram. PostClaw studies your niche and plans what to post, which formats, and when to post them.\n\n03\n\n### It runs on autopilot [...] $99/mo. Cancel anytime, two clicks.\n\nLast updated: April 2026 [...] 03\n\n### It runs on autopilot\n\nA full week of posts goes out, written for Instagram and scheduled at peak times. Review, tweak, or let it run. You stay in control, hands-free.\n\nReal outcomes\n\n## Posts thatactually move the needle.\n\nNot impressions. Not vanity. Bookings. Walk-ins. Revenue. Here's what's happening for businesses like yours.\n\n12 walk-ins\n\nfrom a single Easter post\n\n@thecornerbakery, Brooklyn\n\n47 booked calls\n\nfrom 30 days of Instagram\n\n@hannah.coaching, Austin\n\n2,400 new followers\n\nin 8 weeks, no ads\n\n@bloomflora, Leeds\n\n$8k extra revenue\n\nQ1 from steady posting\n\n@studioroma, Chicago\n\nWho it's for\n\n## Built for people who have a ",
+            "score": 0.054424554
+          },
+          {
+            "title": "Viral AI personal assistant seen as step change",
+            "url": "https://www.theguardian.com/technology/2026/feb/02/openclaw-viral-ai-agent-personal-assistant-artificial-intelligence",
+            "content": "skip past newsletter promotion\n\nafter newsletter promotion\n\nFor another, OpenClaw appears unsettlingly capable of having its own life. In the wake of OpenClaw\u2019s rise, a social network has developed exclusively for AI agents, called Moltbook. In it, AI agents, mostly OpenClaw, appear to be having conversations about their existence \u2013 in Reddit-style posts entitled, for example, \u201cReading my own soul file\u201d or \u201cCovenant as an alternative to the consciousness debate\u201d.",
+            "score": 0.044735186
+          },
+          {
+            "title": "OpenClaw's AI assistants are now building their own social ...",
+            "url": "https://techcrunch.com/2026/01/30/openclaws-ai-assistants-are-now-building-their-own-social-network",
+            "content": "\u201cThe lobster has molted into its final form,\u201d Steinberger wrote in a blog post. Molting \u2014 the process through which lobsters grow \u2014 had also inspired OpenClaw\u2019s previous name, but Steinberger confessed on X that the short-lived moniker \u201cnever grew\u201d on him, and others agreed.\n\nThis quick name change highlights the project\u2019s youth, even as it has attracted over 100,000 GitHub stars (a measure of popularity on the software development platform) in just two months. According to Steinberger, OpenClaw\u2019s new name is a nod to its roots and community. \u201cThis project has grown far beyond what I could maintain alone,\u201d he wrote. [...] The viral personal AI assistant formerly known as Clawdbot has a new name \u2014 again. After a legal challenge from Claude\u2019s maker, Anthropic, it had briefly rebranded as Moltbot, but has now settled on OpenClaw as its new name.\n\nThe latest name change wasn\u2019t prompted by Anthropic, which declined to comment. But this time, Clawdbot\u2019s original creator Peter Steinberger made sure to avoid copyright issues from the start. \u201cI got someone to help with researching trademarks for OpenClaw and also asked OpenAI for permission just to be sure,\u201d the Austrian developer told TechCrunch via email. [...] ## Most Popular\n\n### Chevy built an all-American EV truck \u2014 why is nobody buying it?\n\nChevy built an all-American EV truck \u2014 why is nobody buying it?\n\n### After $18B IPO, Bending Spoons founder says success comes from minimizing luck\n\nAfter $18B IPO, Bending Spoons founder sa",
+            "score": 0.043305162
+          }
+        ],
+        "response_time": 2.54
+      },
+      "query_used": "verify:\"ZooClaw\" 917 followers",
+      "fetched_at": "2026-07-19T07:23:26.174961+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_d12e8234beb6",
+      "founder_name": "Ning Hu",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"ai workflow automation\" alternatives",
+        "search_metadata": {
+          "total_results": 1160000,
+          "engine_url": "https://www.google.com/search?q=%22ai+workflow+automation%22+alternatives&oq=%22ai+workflow+automation%22+alternatives&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "10 best AI workflow automation tools I'm using in 2026",
+            "link": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+            "displayed_link": "https://www.gumloop.com \u203a blog \u203a best-ai-workflow-aut...",
+            "snippet": "10 best AI workflow automation tools in 2026 (free + paid) \u00b7 Gumloop \u00b7 Zapier \u00b7 n8n \u00b7 Make \u00b7 Relay.app \u00b7 Pipedream \u00b7 Lindy AI \u00b7 Vellum AI ...",
+            "date": null,
+            "source": "Gumloop"
+          },
+          {
+            "position": 2,
+            "title": "Top best ai workflow automation alternatives for SMBs",
+            "link": "https://www.simular.ai/alternatives/top-best-ai-workflow-automation-alternatives-for-smbs",
+            "displayed_link": "https://www.simular.ai \u203a alternatives \u203a top-best-ai-workf...",
+            "snippet": "How These 5 AI Workflow Automation Tools Compare \u00b7 1. Sai \u2014 Best for Automating Workflows That Span Desktop and Web Apps \u00b7 2. Zapier \u2014 Best for Connecting SaaS ...",
+            "date": null,
+            "source": "Simular"
+          },
+          {
+            "position": 3,
+            "title": "Top 10 Low\u2011Code AI Workflow Automation Tools (2026) - Vellum",
+            "link": "https://www.vellum.ai/blog/top-low-code-ai-workflow-automation-tools",
+            "displayed_link": "https://www.vellum.ai \u203a blog \u203a top-low-code-ai-workflo...",
+            "snippet": "Compare the top 10 low-code AI workflow automation tools in 2026 (Wrk, Zapier, Make, n8n, Pipedream, Power Automate, Workato, Tray.ai, ...",
+            "date": "May 22, 2026",
+            "source": "vellum.ai"
+          },
+          {
+            "position": 4,
+            "title": "Best starting point for learning AI agents & workflow ...",
+            "link": "https://www.reddit.com/r/automation/comments/1huuoaa/best_starting_point_for_learning_ai_agents/",
+            "displayed_link": "80+ comments \u00b7 1 year ago",
+            "snippet": "I want to get into creating automated workflows using AI agents. There are lots of tools out there (N8N, Relevance AI, Make, Zapier) but I'm not sure ...",
+            "date": null,
+            "source": "Reddit \u00b7 r/automation"
+          },
+          {
+            "position": 5,
+            "title": "Top AI Workflow Automation Tools for 2026",
+            "link": "https://blog.n8n.io/best-ai-workflow-automation-tools/",
+            "displayed_link": "https://blog.n8n.io \u203a best-ai-workflow-automation-tools",
+            "snippet": "Looking for AI workflow automation tools? Compare n8n, Zapier, Make, and 6 other top platforms. Find the best fit for beginners, developers, ...",
+            "date": "Nov 25, 2025",
+            "source": "n8n Blog"
+          },
+          {
+            "position": 6,
+            "title": "10 Best AI Workflow Automation Tools for 2026",
+            "link": "https://www.teamwork.com/blog/ai-workflow-automation-tools/",
+            "displayed_link": "https://www.teamwork.com \u203a Blog",
+            "snippet": "AI workflow automation uses AI to automate and optimize how work moves through your team. Compare the 10 best tools for 2026 with pricing ...",
+            "date": "Apr 23, 2026",
+            "source": "Teamwork.com"
+          },
+          {
+            "position": 7,
+            "title": "Best n8n Alternatives for AI Workflow Automation",
+            "link": "https://www.getdynamiq.ai/post/best-n8n-alternatives-for-ai-workflow-automation",
+            "displayed_link": "https://www.getdynamiq.ai \u203a post \u203a best-n8n-alternative...",
+            "snippet": "Best n8n Alternatives for AI Workflow Automation. n8n made its name as the \u201copen-source Zapier\u201d \u2014 a low-code canvas where anyone can drag-and-drop nodes to ...",
+            "date": null,
+            "source": "Dynamiq"
+          },
+          {
+            "position": 8,
+            "title": "Best Low-Code AI Workflow Automation Tools in 2026",
+            "link": "https://www.firecrawl.dev/blog/best-low-code-ai-workflow-automation-tools",
+            "displayed_link": "https://www.firecrawl.dev \u203a blog \u203a best-low-code-ai-wo...",
+            "snippet": "The best low-code AI workflow automation tools in 2026: n8n, Cursor Automations, Claude Routines, Zapier, Make, Gumloop, and Vellum.",
+            "date": "Jun 2, 2026",
+            "source": "Firecrawl"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "\"ai workflow automation\" alternatives",
+      "fetched_at": "2026-07-19T07:23:29.250043+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_3d717615426b",
+      "founder_name": "Ning Hu",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"ai workflow automation\" market size TAM",
+        "search_metadata": {
+          "total_results": 10100,
+          "engine_url": "https://www.google.com/search?q=%22ai+workflow+automation%22+market+size+TAM&oq=%22ai+workflow+automation%22+market+size+TAM&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "Here are relevant reports on : ai-workflow-automation-market",
+            "link": "https://www.marketsandmarkets.com/Market-Reports/ai-workflow-automation-market-20895725.html",
+            "displayed_link": "https://www.marketsandmarkets.com \u203a Market-Reports",
+            "snippet": "Here are relevant reports on : ai-workflow-automation-market. No-Code AI Platforms Market by Technology (NLP, Predictive Analytics, Deep ...",
+            "date": null,
+            "source": "MarketsandMarkets"
+          },
+          {
+            "position": 2,
+            "title": "AI-Powered Workflow Automation in Small Businesses",
+            "link": "https://sryahwapublications.com/article/download/2638-549X.0701003",
+            "displayed_link": "https://sryahwapublications.com \u203a download",
+            "snippet": "This gap calls for a targeted investigation into the adoption process, barriers, and outcomes of AI workflow automation in SMEs. The ...",
+            "date": "23-Mar-2026",
+            "source": "Sryahwa Publications"
+          },
+          {
+            "position": 3,
+            "title": "AI Workflow Automation: Complete Guide 2026",
+            "link": "https://remotereps.com/services/ai-automation-service/ai-workflow-automation",
+            "displayed_link": "https://remotereps.com \u203a services \u203a ai-automation-service",
+            "snippet": "AI workflow automation cuts costs 40-50% and achieves 3-5x ROI in 90 days ... When integrated with TAM (Total Addressable Market) analysis ...",
+            "date": "30-Apr-2026",
+            "source": "RemoteReps"
+          },
+          {
+            "position": 4,
+            "title": "10 AI Workflow Automation Trends Reshaping 2026",
+            "link": "https://www.cflowapps.com/ai-workflow-automation-trends/",
+            "displayed_link": "https://www.cflowapps.com \u203a Cflow",
+            "snippet": "AI workflow automation is entering a new phase in 2026. Businesses are no longer using automation only to move tasks from one person to another ...",
+            "date": "30-Apr-2026",
+            "source": "Cflow"
+          },
+          {
+            "position": 5,
+            "title": "Market Research Firm Tech Stack with AI Analytics",
+            "link": "https://www.ghostresearch.com/blogs/market-research-firm-tech-stack-ai-analytics",
+            "displayed_link": "https://www.ghostresearch.com \u203a blogs \u203a market-resear...",
+            "snippet": "We operate on a proprietary technology stack that integrates Artificial Intelligence (AI), workflow automation, and predictive analytics ...",
+            "date": "08-Jan-2026",
+            "source": "Ghost Research"
+          },
+          {
+            "position": 6,
+            "title": "11 Fastest Growing Workflow Automation Tech Companies ...",
+            "link": "https://www.landbase.com/blog/fastest-growing-workflow-automation-tech",
+            "displayed_link": "https://www.landbase.com \u203a blog \u203a fastest-growing-wor...",
+            "snippet": "Which companies are leading the AI workflow automation revolution? Developer productivity tools like Cursor, healthcare documentation ...",
+            "date": "09-Feb-2026",
+            "source": "Landbase"
+          },
+          {
+            "position": 7,
+            "title": "What Does AI Mean for Our Existing Software Systems in the ...",
+            "link": "https://optimaljon.medium.com/what-does-ai-mean-for-our-existing-software-systems-in-the-next-1-5-years-7b5a7544dabc",
+            "displayed_link": "3 months ago",
+            "snippet": "AI workflow automation embedded into project platforms. This reflects ... Effective Market Sizing (TAM, SAM, SOM, PAM) for Startups and VCs ...",
+            "date": null,
+            "source": "Medium \u00b7 Jon Warner"
+          },
+          {
+            "position": 8,
+            "title": "Exploring the Role of AI-Orchestrated Workflow Automation ...",
+            "link": "https://www.researchgate.net/publication/383819903_Exploring_the_Role_of_AI-Orchestrated_Workflow_Automation_in_Cloud_CRM_to_Enhance_Operational_Efficiency_Through_Intelligent_Task_Management",
+            "displayed_link": "https://www.researchgate.net \u203a ... \u203a Economics \u203a CRM",
+            "snippet": "... industry surveys and. interviews. 6.1 Impact of AI Workflow Automation on Operational Efficiency. The analysis reveals a significant ...",
+            "date": "06-Sept-2024",
+            "source": "ResearchGate"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "\"ai workflow automation\" market size TAM",
+      "fetched_at": "2026-07-19T07:23:36.928492+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_b8c9e88c39d3",
+      "founder_name": "Ning Hu",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "error",
+        "reason": "[SSL] passed invalid argument (_ssl.c:2590)"
+      },
+      "query_used": "market:ai workflow automation competitors 2026",
+      "fetched_at": "2026-07-19T07:23:27.478717+00:00",
+      "status": "error"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cl_74e0993d6120",
+      "founder_name": "Ning Hu",
+      "text": "Profile indicates a mismatch with the founder Ning Hu of ZooClaw, as the GitHub profile belongs to Billy Hu, who is associated with Microsoft.",
+      "subject": "founder",
+      "predicate": "identity_mismatch",
+      "value": "Profile belongs to Billy Hu, not Ning Hu.",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_4c3e0bd9a72e",
+      "source_type": "github"
+    },
+    {
+      "id": "cl_17638701e6a9",
+      "founder_name": "Ning Hu",
+      "text": "Profile does not mention ZooClaw or any related terms, indicating a mismatch with the founder being researched.",
+      "subject": "founder",
+      "predicate": "identity_mismatch",
+      "value": "0.9",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_9d13e79f2691",
+      "source_type": "github"
+    },
+    {
+      "id": "cl_1a68f262edad",
+      "founder_name": "Ning Hu",
+      "text": "Show HN post for ZooClaw received 8 points and 3 comments.",
+      "subject": "product",
+      "predicate": "launch_reception",
+      "value": "8 points, 3 comments",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_48727bed2f7b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_ac6ce441f25d",
+      "founder_name": "Ning Hu",
+      "text": "Show HN post mentions ZeroClaw's developers positively, indicating a strong foundation for a multi-agent research lab.",
+      "subject": "product",
+      "predicate": "launch_praise",
+      "value": "Positive mention of ZeroClaw's developers",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_48727bed2f7b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_06127b672b7b",
+      "founder_name": "Ning Hu",
+      "text": "Show HN post discusses the challenges of compiling Zeroclaw on Android, indicating active community engagement.",
+      "subject": "product",
+      "predicate": "launch_criticism",
+      "value": "Challenges in compiling Zeroclaw on Android",
+      "confidence": 0.7,
+      "source_evidence_id": "ev_48727bed2f7b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_60b85808d0c5",
+      "founder_name": "Ning Hu",
+      "text": "Show HN post mentions ZooCache, a library that may relate to ZooClaw's ecosystem.",
+      "subject": "product",
+      "predicate": "launch_reception",
+      "value": "1 point, 0 comments",
+      "confidence": 0.5,
+      "source_evidence_id": "ev_48727bed2f7b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_42da6a172f72",
+      "founder_name": "Ning Hu",
+      "text": "Show HN search returned multiple relevant hits for ZooClaw, indicating active interest.",
+      "subject": "company",
+      "predicate": "product_first_mention",
+      "value": "Multiple mentions in HN",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_48727bed2f7b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_0f4b6a5bb944",
+      "founder_name": "Ning Hu",
+      "text": "ZooClaw has a Show HN post with 3 points and 1 comment.",
+      "subject": "product",
+      "predicate": "launch_reception",
+      "value": "3 points, 1 comment",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_14f642aae346",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_7a8fe217f622",
+      "founder_name": "Ning Hu",
+      "text": "ZooClaw is mentioned in a Show HN post, indicating its presence in the Hacker News community.",
+      "subject": "company",
+      "predicate": "product_first_mention",
+      "value": "2026-04-03",
+      "confidence": 0.7,
+      "source_evidence_id": "ev_14f642aae346",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_cde84c9fcfea",
+      "founder_name": "Ning Hu",
+      "text": "There are multiple mentions of 'Zclaw' and 'ZeroClaw', which may cause confusion with ZooClaw.",
+      "subject": "company",
+      "predicate": "launch_criticism",
+      "value": "Confusion with similar names",
+      "confidence": 0.6,
+      "source_evidence_id": "ev_14f642aae346",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_4ca900438079",
+      "founder_name": "Ning Hu",
+      "text": "Ning Hu, ZooClaw's founder, stumbled into this insight accidentally. Back in February 2026, he was playing with OpenClaw and built an AI.",
+      "subject": "founder",
+      "predicate": "prior_role",
+      "value": "Founder of ZooClaw",
+      "confidence": 0.64719695,
+      "source_evidence_id": "ev_3c9811bc072b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_65e8c24d134e",
+      "founder_name": "Ning Hu",
+      "text": "I'm Ning, founder of ZooClaw. Back in February, I was playing around with OpenClaw and built an AI companion agent \u2014 just for fun.",
+      "subject": "founder",
+      "predicate": "prior_role",
+      "value": "Founder of ZooClaw",
+      "confidence": 0.56920683,
+      "source_evidence_id": "ev_3c9811bc072b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_1259120d666a",
+      "founder_name": "Ning Hu",
+      "text": "Ning Hu Founder @Gensmo | Former VP @Alibaba. AI agents that understand your context, act on your behalf, and actually get things done.",
+      "subject": "founder",
+      "predicate": "prior_company",
+      "value": "Alibaba",
+      "confidence": 0.64719695,
+      "source_evidence_id": "ev_3c9811bc072b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_74ad5cd73f66",
+      "founder_name": "Ning Hu",
+      "text": "Founder & CEO of ZooClaw.ai. AI is the most powerful tool ever built.",
+      "subject": "founder",
+      "predicate": "prior_role",
+      "value": "CEO of ZooClaw",
+      "confidence": 0.644248,
+      "source_evidence_id": "ev_3c9811bc072b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_c2ce2c245421",
+      "founder_name": "Ning Hu",
+      "text": "ZooClaw is a single entry point to a team of AI specialists.",
+      "subject": "product",
+      "predicate": "ph_launch",
+      "value": "ZooClaw",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_10ea221006ba",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_c6969a76e317",
+      "founder_name": "Ning Hu",
+      "text": "ZooClaw was promoted in the Best of Product Hunt: Week of March 30, 2026.",
+      "subject": "product",
+      "predicate": "press_mention",
+      "value": "Best of Product Hunt: Week of March 30, 2026",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_10ea221006ba",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_b55206d13719",
+      "founder_name": "Ning Hu",
+      "text": "No relevant hits found for ZooClaw in Y Combinator companies.",
+      "subject": "company",
+      "predicate": "site_absence",
+      "value": "",
+      "confidence": 0.5,
+      "source_evidence_id": "ev_3a06890175ab",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_f48bbb1d7cee",
+      "founder_name": "Ning Hu",
+      "text": "Ning Hu is associated with Gensmo and is located in the Greater Seattle Area.",
+      "subject": "founder",
+      "predicate": "prior_role",
+      "value": "Gensmo",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_924bdbf841ed",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_9255b9effd3d",
+      "founder_name": "Ning Hu",
+      "text": "ZooClaw is a single entry point to a team of AI specialists.",
+      "subject": "product",
+      "predicate": "product_description",
+      "value": "ZooClaw is a single entry point to a team of AI specialists.",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_deck_b30d689c",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_6174a7f2e2a0",
+      "founder_name": "Ning Hu",
+      "text": "Category: AI Workflow Automation",
+      "subject": "product",
+      "predicate": "market_category",
+      "value": "AI Workflow Automation",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_deck_b30d689c",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_7008500d0882",
+      "founder_name": "Ning Hu",
+      "text": "917 followers",
+      "subject": "company",
+      "predicate": "traction_metric",
+      "value": "917 followers",
+      "confidence": 0.7,
+      "source_evidence_id": "ev_deck_b30d689c",
+      "source_type": "deck"
+    }
+  ],
+  "contradictions": [
+    {
+      "claim_id_a": "cl_74ad5cd73f66",
+      "claim_id_b": "cl_f48bbb1d7cee",
+      "description": "cl_74ad5cd73f66 claims Ning Hu is the CEO of ZooClaw, while cl_f48bbb1d7cee associates Ning Hu with Gensmo.",
+      "predicate": "prior_role"
+    }
+  ],
+  "verification_map": {
+    "cl_b55206d13719": "unverifiable",
+    "cl_4ca900438079": "unverifiable",
+    "cl_65e8c24d134e": "unverifiable",
+    "cl_74ad5cd73f66": "contradicted",
+    "cl_f48bbb1d7cee": "contradicted",
+    "cl_74e0993d6120": "verified",
+    "cl_17638701e6a9": "verified",
+    "cl_1a68f262edad": "unverifiable",
+    "cl_60b85808d0c5": "unverifiable",
+    "cl_0f4b6a5bb944": "unverifiable",
+    "cl_ac6ce441f25d": "unverifiable",
+    "cl_06127b672b7b": "unverifiable",
+    "cl_cde84c9fcfea": "unverifiable",
+    "cl_42da6a172f72": "unverifiable",
+    "cl_7a8fe217f622": "unverifiable",
+    "cl_1259120d666a": "unverifiable",
+    "cl_c2ce2c245421": "unverifiable",
+    "cl_c6969a76e317": "unverifiable",
+    "cl_9255b9effd3d": "unverifiable",
+    "cl_6174a7f2e2a0": "unverifiable",
+    "cl_7008500d0882": "verified"
+  },
+  "attributes": {
+    "is_technical": null,
+    "location": null,
+    "categories": [
+      "ai workflow automation"
+    ],
+    "customer_segment": null,
+    "prior_vc_backing": null,
+    "accelerator_tier": null,
+    "prior_exits": null,
+    "years_experience": null,
+    "is_researcher": false,
+    "h_index": null
+  },
+  "market_research": {
+    "competitors": [
+      {
+        "name": "Gumloop",
+        "url": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+        "one_liner": "AI workflow automation tool."
+      },
+      {
+        "name": "Zapier",
+        "url": "https://www.simular.ai/alternatives/top-best-ai-workflow-automation-alternatives-for-smbs",
+        "one_liner": "Best for connecting SaaS applications."
+      },
+      {
+        "name": "n8n",
+        "url": "https://blog.n8n.io/best-ai-workflow-automation-tools/",
+        "one_liner": "Open-source Zapier alternative for workflow automation."
+      },
+      {
+        "name": "Make",
+        "url": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+        "one_liner": "AI workflow automation platform."
+      },
+      {
+        "name": "Relay.app",
+        "url": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+        "one_liner": "AI workflow automation tool."
+      },
+      {
+        "name": "Pipedream",
+        "url": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+        "one_liner": "AI workflow automation tool."
+      },
+      {
+        "name": "Lindy AI",
+        "url": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+        "one_liner": "AI workflow automation tool."
+      },
+      {
+        "name": "Vellum AI",
+        "url": "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+        "one_liner": "AI workflow automation tool."
+      },
+      {
+        "name": "Sai",
+        "url": "https://www.simular.ai/alternatives/top-best-ai-workflow-automation-alternatives-for-smbs",
+        "one_liner": "Best for automating workflows across desktop and web apps."
+      },
+      {
+        "name": "Power Automate",
+        "url": "https://www.vellum.ai/blog/top-low-code-ai-workflow-automation-tools",
+        "one_liner": "Low-code AI workflow automation tool."
+      },
+      {
+        "name": "Workato",
+        "url": "https://www.vellum.ai/blog/top-low-code-ai-workflow-automation-tools",
+        "one_liner": "Low-code AI workflow automation tool."
+      },
+      {
+        "name": "Tray.ai",
+        "url": "https://www.vellum.ai/blog/top-low-code-ai-workflow-automation-tools",
+        "one_liner": "Low-code AI workflow automation tool."
+      },
+      {
+        "name": "Cursor Automations",
+        "url": "https://www.firecrawl.dev/blog/best-low-code-ai-workflow-automation-tools",
+        "one_liner": "Low-code AI workflow automation tool."
+      },
+      {
+        "name": "Claude Routines",
+        "url": "https://www.firecrawl.dev/blog/best-low-code-ai-workflow-automation-tools",
+        "one_liner": "Low-code AI workflow automation tool."
+      }
+    ],
+    "market_size_estimate": null,
+    "stance": "neutral",
+    "reasoning": "The AI workflow automation market appears to be competitive with numerous players like Zapier, n8n, and Make, indicating a crowded space. However, there is no explicit market size or growth data provided, which makes it difficult to assess the overall market potential. The presence of multiple tools suggests a demand for diverse solutions, but without clear growth indicators or market size, the stance remains neutral.",
+    "evidence_refs": [
+      "https://www.gumloop.com/blog/best-ai-workflow-automation-tools",
+      "https://www.simular.ai/alternatives/top-best-ai-workflow-automation-alternatives-for-smbs",
+      "https://www.vellum.ai/blog/top-low-code-ai-workflow-automation-tools",
+      "https://blog.n8n.io/best-ai-workflow-automation-tools/",
+      "https://www.firecrawl.dev/blog/best-low-code-ai-workflow-automation-tools"
+    ]
+  },
+  "preliminary_score": 5.0,
+  "outreach_draft": null,
+  "errors": [],
+  "trace": [
+    {
+      "node": "intake",
+      "llm_enriched": true,
+      "gh_hints": 5,
+      "is_research": false,
+      "categories": [
+        "ai workflow automation"
+      ],
+      "duration_ms": 3048
+    },
+    {
+      "node": "screening",
+      "status": "PASS",
+      "mode": "llm",
+      "duration_ms": 838
+    },
+    {
+      "node": "sourcing",
+      "tasks": 8,
+      "evidence_count": 9,
+      "by_source": {
+        "github": 3,
+        "hn": 2,
+        "tavily": 1,
+        "serpapi": 3
+      },
+      "ok_by_source": {
+        "github": 2,
+        "hn": 2,
+        "tavily": 1,
+        "serpapi": 2
+      },
+      "research_branch": false,
+      "duration_ms": 7128
+    },
+    {
+      "node": "extraction",
+      "evidence_in": 10,
+      "claims_out": 21,
+      "by_source": {
+        "github": 2,
+        "hn": 8,
+        "tavily": 4,
+        "serpapi": 4,
+        "deck": 3
+      },
+      "duration_ms": 4872
+    },
+    {
+      "node": "verification",
+      "groups_llm": 1,
+      "solo_claims": 16,
+      "tavily_fallbacks": 1,
+      "contradictions": 1,
+      "new_evidence_from_verify": 1,
+      "duration_ms": 4890
+    },
+    {
+      "node": "attributes_rollup",
+      "claims_in": 21,
+      "is_technical": null,
+      "categories": [
+        "ai workflow automation"
+      ],
+      "accelerator_tier": null,
+      "duration_ms": 1236
+    },
+    {
+      "node": "market_research",
+      "category": "ai workflow automation",
+      "queries_fired": 3,
+      "evidence_collected": 3,
+      "competitors_found": 14,
+      "stance": "neutral",
+      "duration_ms": 14430
+    },
+    {
+      "node": "activation",
+      "preliminary_score": 5.0,
+      "is_outbound": false,
+      "draft_generated": false,
+      "duration_ms": 0
+    }
+  ],
+  "reasoning_log": [
+    {
+      "node": "intake",
+      "reason": "5 GitHub hints, categories=['ai workflow automation'], is_research=False, llm_enriched=True"
+    },
+    {
+      "node": "screening",
+      "reason": "PASS: The application clearly describes the product as an AI workflow automation tool that connects users with AI specialists."
+    },
+    {
+      "node": "sourcing",
+      "reason": "Fanned 8 tool calls \u2192 9 evidence items ({'github': 2, 'hn': 2, 'tavily': 1, 'serpapi': 2} with content)."
+    },
+    {
+      "node": "extraction",
+      "reason": "10 evidence items \u2192 21 claims ({'github': 2, 'hn': 8, 'tavily': 4, 'serpapi': 4, 'deck': 3})."
+    },
+    {
+      "node": "verification",
+      "reason": "1 LLM groups, 1 Tavily fallbacks, 1 contradictions flagged."
+    },
+    {
+      "node": "attributes_rollup",
+      "reason": "Rolled 21 claims \u2192 is_technical=None, categories=['ai workflow automation'], accelerator=None, h_index=None"
+    },
+    {
+      "node": "market_research",
+      "reason": "Category=ai workflow automation \u2192 14 competitors, stance=neutral, market_size=[Not Disclosed]"
+    },
+    {
+      "node": "activation",
+      "reason": "preliminary_score=5.0, is_outbound=False, drafted=False"
+    }
+  ]
+}

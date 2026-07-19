@@ -1,0 +1,83 @@
+{
+  "scanned_at": "2026-07-19T07:42:28.974203+00:00",
+  "hours_window": 168,
+  "candidates_discovered": 5,
+  "candidates_processed": 5,
+  "candidates": [
+    {
+      "founder_name": "Hiboy",
+      "company": "Hiboy S2 Electric Scooter",
+      "source": "devpost",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "devpost_extras": {
+        "hackathon_name": "IrvineHacks 2026",
+        "team_name": null,
+        "prize_or_placement": "Hacker\u2019s Choice",
+        "github_url": null
+      }
+    },
+    {
+      "founder_name": "Bose",
+      "company": "Bose QuietComfort SC Noise Canceling Headphones",
+      "source": "devpost",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "devpost_extras": {
+        "hackathon_name": "IrvineHacks 2026",
+        "team_name": null,
+        "prize_or_placement": "Best Beginner Hack",
+        "github_url": null
+      }
+    },
+    {
+      "founder_name": "Roots",
+      "company": "Roots Bluetooth\u00ae Speaker",
+      "source": "devpost",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "devpost_extras": {
+        "hackathon_name": "IrvineHacks 2026",
+        "team_name": null,
+        "prize_or_placement": "Best Sustainable Hack",
+        "github_url": null
+      }
+    },
+    {
+      "founder_name": "Meta",
+      "company": "Meta - Quest 3S 128GB",
+      "source": "devpost",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "devpost_extras": {
+        "hackathon_name": "IrvineHacks 2026",
+        "team_name": null,
+        "prize_or_placement": "Best Overall",
+        "github_url": null
+      }
+    },
+    {
+      "founder_name": "AI Safety at UCI",
+      "company": "AI Safety Hack",
+      "source": "devpost",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "devpost_extras": {
+        "hackathon_name": "IrvineHacks 2026",
+        "team_name": null,
+        "prize_or_placement": "Best AI Safety Hack \u2013 AI Safety at UCI",
+        "github_url": null
+      }
+    }
+  ]
+}

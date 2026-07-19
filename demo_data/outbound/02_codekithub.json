@@ -1,0 +1,83 @@
+{
+  "candidate_source": "hn_show",
+  "reference_url": "https://news.ycombinator.com/item?id=48965499",
+  "final_state": {
+    "founder_name": "qiaobax",
+    "company": "CodeKitHub",
+    "application_text": "Show HN launch: Show HN: CodeKitHub \u2013 Free browser-based tools, files never leave your device\n\nURL: https://codekithub.com/en/\n\nStory: ",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "qiaobax",
+        "qiaoba-x",
+        "qiaoba.x",
+        "qiaoba_x"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "dev tools"
+      ],
+      "product_urls": [
+        "https://codekithub.com/en/"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not provide a coherent product description or identify a target customer.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 4,
+        "is_research": false,
+        "categories": [
+          "dev tools"
+        ],
+        "duration_ms": 1
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 1
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "4 GitHub hints, categories=['dev tools'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not provide a coherent product description or identify a target customer."
+      }
+    ]
+  }
+}

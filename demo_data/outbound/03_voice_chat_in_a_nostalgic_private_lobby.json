@@ -1,0 +1,777 @@
+{
+  "candidate_source": "hn_show",
+  "reference_url": "https://news.ycombinator.com/item?id=48965355",
+  "final_state": {
+    "founder_name": "gpsmsn",
+    "company": "Voice chat in a nostalgic private lobby",
+    "application_text": "Show HN launch: Show HN: Voice chat in a nostalgic private lobby\n\nURL: https://thepregamelobby.com/\n\nStory: I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "gpsmsn",
+        "g.p.s.m.s.n",
+        "gps-msn",
+        "gps_msn",
+        "gps"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "social",
+        "voice chat"
+      ],
+      "product_urls": [
+        "https://thepregamelobby.com/"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "PASS",
+    "screen_reason": "The application clearly describes a product for voice chatting in private lobbies aimed at friends.",
+    "raw_evidence": [
+      {
+        "id": "ev_2612a0505343",
+        "founder_name": "gpsmsn",
+        "source_type": "github",
+        "source_url": "https://github.com/gpsmsn",
+        "raw_content": {
+          "status": "not_found",
+          "username": "gpsmsn"
+        },
+        "query_used": "gpsmsn",
+        "fetched_at": "2026-07-19T06:50:12.888084+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_5f5311e6a290",
+        "founder_name": "gpsmsn",
+        "source_type": "github",
+        "source_url": "https://github.com/g.p.s.m.s.n",
+        "raw_content": {
+          "status": "not_found",
+          "username": "g.p.s.m.s.n"
+        },
+        "query_used": "g.p.s.m.s.n",
+        "fetched_at": "2026-07-19T06:50:12.742345+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_95482bde8e30",
+        "founder_name": "gpsmsn",
+        "source_type": "github",
+        "source_url": "https://github.com/gps-msn",
+        "raw_content": {
+          "status": "not_found",
+          "username": "gps-msn"
+        },
+        "query_used": "gps-msn",
+        "fetched_at": "2026-07-19T06:50:12.717902+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_9a8fe5113aa7",
+        "founder_name": "gpsmsn",
+        "source_type": "hn",
+        "source_url": "https://hn.algolia.com/?q=Voice chat in a nostalgic private lobby&type=show_hn",
+        "raw_content": {
+          "status": "ok",
+          "nb_hits": 1,
+          "hits": [
+            {
+              "object_id": "48965355",
+              "title": "Show HN: Voice chat in a nostalgic private lobby",
+              "url": "https://thepregamelobby.com/",
+              "author": "gpsmsn",
+              "points": 1,
+              "num_comments": 0,
+              "story_text": "I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!",
+              "comment_text": "",
+              "created_at": "2026-07-19T05:54:29Z",
+              "hn_url": "https://news.ycombinator.com/item?id=48965355"
+            }
+          ]
+        },
+        "query_used": "show_hn:Voice chat in a nostalgic private lobby",
+        "fetched_at": "2026-07-19T06:50:12.817121+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_998842aba917",
+        "founder_name": "gpsmsn",
+        "source_type": "hn",
+        "source_url": "https://hn.algolia.com/?q=Voice chat in a nostalgic private lobby&type=story",
+        "raw_content": {
+          "status": "ok",
+          "nb_hits": 1,
+          "hits": [
+            {
+              "object_id": "48965355",
+              "title": "Show HN: Voice chat in a nostalgic private lobby",
+              "url": "https://thepregamelobby.com/",
+              "author": "gpsmsn",
+              "points": 1,
+              "num_comments": 0,
+              "story_text": "I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!",
+              "comment_text": "",
+              "created_at": "2026-07-19T05:54:29Z",
+              "hn_url": "https://news.ycombinator.com/item?id=48965355"
+            }
+          ]
+        },
+        "query_used": "story:Voice chat in a nostalgic private lobby",
+        "fetched_at": "2026-07-19T06:50:13.665841+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_64d7c155fdc4",
+        "founder_name": "gpsmsn",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"gpsmsn\" Voice chat in a nostalgic private lobby founder background",
+          "answer": null,
+          "results": [
+            {
+              "title": "What did people use for voice chat before Ventrilo? : r/pcgaming",
+              "url": "https://www.reddit.com/r/pcgaming/comments/ldngkn/what_did_people_use_for_voice_chat_before_ventrilo",
+              "content": "MSN had voice chat. There were platforms which functioned as a pre-game lobby as well it created cartoon panels with chat bubbles when people",
+              "score": 0.10901163
+            },
+            {
+              "title": "Let's chat with Anatoly Shashkin (DOS Nostalgic) - MS-DOS gaming ...",
+              "url": "https://www.youtube.com/watch?v=6iyzcA8a0To&vl=en",
+              "content": "Archivist, enthusiast, and YouTuber, Let's chat with Anatoly Shashkin (DOS Nostalgic) - MS-DOS gaming enthusiast & YouTuber! Chat about BIG BOX",
+              "score": 0.094820276
+            },
+            {
+              "title": "Fireside Chat with David Hornik, Founding Partner, Lobby Capital",
+              "url": "https://www.youtube.com/watch?v=x1aryiNYV28",
+              "content": "Fireside Chat with David Hornik, Founding Partner, Lobby Capital\nGraham & Walker\n152 subscribers\n1 likes\n106 views\n1 May 2024\n\u200b\u200bDavid Hornik is a Founding Partner with Lobby Capital and the creator and Executive Producer of The Lobby Conference. He invests broadly in information technology companies, with a focus on enterprise applications and infrastructure software, fintech, and consumer-facing software and services. He is the author of the first Venture Capital blog, VentureBlog and first Venture Capital podcast, VentureCast. Prior to Lobby Capital, David was a General Partner at August Capital for 20 years. David teaches business and law at Harvard Law School and Stanford\u2019s Graduate School of Business.\u200b\n\n\u200bThe fireside was between David and Leslie Feinzaig, founder and Managing Director of Graham & Walker. In 2017, she founded the Female Founders Alliance, the largest and most engaged community of its kind in America, and its popular founder programs, dubbed \u201cthe YC for Female Founders\u201d by Techcrunch. Leslie is a contributing writer at Fortune Magazine, Fast Company and Techcrunch. She was named one of Forbes Magazine's Most Powerful Women from Central America, Worth Magazine\u2019s Worthy 100, Puget Sound Business Journal 40 Under 40, and Seattle Magazine's Most Influential People. Born and raised in Costa Rica, Leslie moved to the US to attend Harvard Business School on a full scholarship. She now lives in Seattle with her husband and two young daughters.\n\n\u200b\u200bAbout Graham & Wa",
+              "score": 0.052062023
+            },
+            {
+              "title": "Gathering in MSN Zone chat lobby before shutdown",
+              "url": "https://www.facebook.com/groups/1624257187672486/posts/7543704255727720",
+              "content": "You are in 2006 and it's the last week of gathering with a community on MSN Zone chat lobby until the end of the server service",
+              "score": 0.04062067
+            },
+            {
+              "title": "Video Game History: Voice Chat \u2013 Source Gaming",
+              "url": "https://sourcegaming.info/2017/08/05/video-game-history-voice-chat",
+              "content": "Nintendo\u2019s voice chat solution for the Switch is, to put it lightly, divisive. \u201cVoice Chat\u201d is done using VoIP, or \u201cVoice over Internet Protocol.\u201d To put it in simple terms, it is merely the act of transmitting one\u2019s voice in real time from one IP address to another. Part of the reason for this is that third party options just were not as viable since game consoles tend to run on a closed system. *Alienfront Online* is the first game on the system to really use voice chat in the way we have come to expect. Really, the biggest difference between voice chat in this game and in modern games is that it was done with a mic and not with a headset. The Xbox was the first mainstream system to launch with a built in broadband adaptor, and Live would go on to be the blueprint for how online gaming on consoles would be portrayed moving forward.",
+              "score": 0.021716805
+            }
+          ],
+          "response_time": 1.12
+        },
+        "query_used": "\"gpsmsn\" Voice chat in a nostalgic private lobby founder background",
+        "fetched_at": "2026-07-19T06:50:14.161755+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_e259f996964c",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:producthunt.com \"Voice chat in a nostalgic private lobby\"",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=site%3Aproducthunt.com+%22Voice+chat+in+a+nostalgic+private+lobby%22&oq=site%3Aproducthunt.com+%22Voice+chat+in+a+nostalgic+private+lobby%22&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:producthunt.com \"Voice chat in a nostalgic private lobby\"",
+        "fetched_at": "2026-07-19T06:50:14.690568+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_3e4e472d4ddc",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:ycombinator.com/companies \"Voice chat in a nostalgic private lobby\"",
+          "search_metadata": {
+            "total_results": 163,
+            "engine_url": "https://www.google.com/search?q=site%3Aycombinator.com%2Fcompanies+%22Voice+chat+in+a+nostalgic+private+lobby%22&oq=site%3Aycombinator.com%2Fcompanies+%22Voice+chat+in+a+nostalgic+private+lobby%22&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "AI Assistant Startups funded by Y Combinator (YC) 2026",
+              "link": "https://www.ycombinator.com/companies/industry/ai-assistant",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": ". We replace the front office (calls, chats, follow-ups) with AI agents. AI-voice agents that can handle virtually any phone-based job, in-built chat,",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 2,
+              "title": "Generative AI Startups funded by Y Combinator (YC) 2026",
+              "link": "https://www.ycombinator.com/companies/industry/generative-ai",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "Our AI reps take voice calls and chats like other AI support agents. Your on-demand voice tutor is personal to you, adapting lessons and chats to your ...",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 3,
+              "title": "AI (Artificial Intelligence) Startups funded by ...",
+              "link": "https://www.ycombinator.com/companies/industry/ai",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "It tests chat, voice, browser, and coding agents without source code or a special integration.",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 4,
+              "title": "Credit and Lending Startups funded by Y Combinator (YC) ...",
+              "link": "https://www.ycombinator.com/companies/industry/credit-and-lending",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "Veritus is a omni-channel platform for deploying AI agents for loan servicing and collections, including inbound and outbound voice agents.",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 5,
+              "title": "Y Combinator Startups in the San Francisco Bay Area 2026",
+              "link": "https://www.ycombinator.com/companies/location/san-francisco-bay-area",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a location",
+              "snippet": "It tests chat, voice, browser, and coding agents without source code or a special integration. s firm helping early-stage companies monitor regulations, lobby ...",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 6,
+              "title": "B2B Software and Services Startups funded by ...",
+              "link": "https://www.ycombinator.com/companies/industry/b2b",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "Agnost AI helps teams building chat and voice AI agents understand what users want, where they get stuck, and why they drop off.",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 7,
+              "title": "Security Startups funded by Y Combinator (YC) 2026",
+              "link": "https://www.ycombinator.com/companies/industry/security",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "It tests chat, voice, browser, and coding agents without source code or a special integration. manipulation across SMS, voice, email, and social platforms,",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 8,
+              "title": "Black-founded YC companies",
+              "link": "https://www.ycombinator.com/companies/black-founders",
+              "displayed_link": "https://www.ycombinator.com \u203a black-founders",
+              "snippet": "We replace the front office (calls, chats, follow-ups) with AI agents that never miss a lead, then layer an internal AI copilot that understands products, ...",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 9,
+              "title": "Healthcare Startups funded by Y Combinator (YC) 2026",
+              "link": "https://www.ycombinator.com/companies/industry/healthcare",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "Our AI assistant takes a comprehensive medical history using an empathic chat or voice-based interface, uses sophisticated medical reasoning to narrow down ...",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 10,
+              "title": "Real Estate and Construction Startups funded by ...",
+              "link": "https://www.ycombinator.com/companies/industry/real-estate-and-construction",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "Browse 128 of the top Real Estate and Construction startups funded by Y Combinator.",
+              "date": null,
+              "source": "Y Combinator"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:ycombinator.com/companies \"Voice chat in a nostalgic private lobby\"",
+        "fetched_at": "2026-07-19T06:50:13.652258+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_e4f3e7652114",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:linkedin.com/in \"gpsmsn\" Voice chat in a nostalgic private lobby",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22gpsmsn%22+Voice+chat+in+a+nostalgic+private+lobby&oq=site%3Alinkedin.com%2Fin+%22gpsmsn%22+Voice+chat+in+a+nostalgic+private+lobby&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:linkedin.com/in \"gpsmsn\" Voice chat in a nostalgic private lobby",
+        "fetched_at": "2026-07-19T06:50:13.941271+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_deck_b1f97239",
+        "founder_name": "gpsmsn",
+        "source_type": "deck",
+        "source_url": null,
+        "raw_content": {
+          "application_text": "Show HN launch: Show HN: Voice chat in a nostalgic private lobby\n\nURL: https://thepregamelobby.com/\n\nStory: I built this to catch up on old times with friends, in a place that brings back memories.<p>Create a private lobby and chat with your friends!"
+        },
+        "query_used": "deck",
+        "fetched_at": "2026-07-19T06:50:14.691952+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_0711f6ca685e",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"social\" alternatives",
+          "search_metadata": {
+            "total_results": 0,
+            "engine_url": "https://www.google.com/search?q=%22social%22+alternatives&oq=%22social%22+alternatives&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Social Alternatives: Welcome",
+              "link": "https://socialalternatives.com/",
+              "displayed_link": "https://socialalternatives.com",
+              "snippet": "Social Alternatives is an independent, quarterly refereed journal which aims to promote public debate, commentary and dialogue about contemporary social, ...",
+              "date": null,
+              "source": "Social Alternatives"
+            },
+            {
+              "position": 2,
+              "title": "Social Alternatives",
+              "link": "https://search.informit.org/journal/socalt",
+              "displayed_link": "https://search.informit.org \u203a journal \u203a socalt",
+              "snippet": "Social Alternatives analyses, critiques, and reviews contemporary social issues and problems. The journal seeks to generate insight, knowledge, and ...",
+              "date": null,
+              "source": "Informit"
+            },
+            {
+              "position": 3,
+              "title": "Social Alternatives",
+              "link": "https://espace.library.uq.edu.au/view/UQ:94457",
+              "displayed_link": "https://espace.library.uq.edu.au \u203a view",
+              "snippet": "Title. Social Alternatives ; Publication year. 2001 ; ISSN. 0115-0306 ; Publisher. Post Pressed ; Open access status. Not yet assessed.",
+              "date": null,
+              "source": "The University of Queensland"
+            },
+            {
+              "position": 4,
+              "title": "Social Alternatives",
+              "link": "https://www.rosalux.de/en/topics/social-alternatives",
+              "displayed_link": "https://www.rosalux.de \u203a topics \u203a social-alternatives",
+              "snippet": "Social Alternatives. Criticism of the dominant social relations is a necessary foundation of all left-wing politics, but it is not enough.",
+              "date": null,
+              "source": "Rosa-Luxemburg-Stiftung"
+            },
+            {
+              "position": 5,
+              "title": "Social Alternative",
+              "link": "https://en.wikipedia.org/wiki/Social_Alternative",
+              "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a Social_Alternative",
+              "snippet": "Social Alternative (Italian: Alternativa Sociale) was a coalition of far-right political parties in Italy.",
+              "date": null,
+              "source": "Wikipedia"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "\"social\" alternatives",
+        "fetched_at": "2026-07-19T06:50:21.544278+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_9150614e2942",
+        "founder_name": "gpsmsn",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"social\" market size TAM",
+          "search_metadata": {
+            "total_results": 8980000,
+            "engine_url": "https://www.google.com/search?q=%22social%22+market+size+TAM&oq=%22social%22+market+size+TAM&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Social Commerce Market Size & Share Report, 2026-2033",
+              "link": "https://www.grandviewresearch.com/industry-analysis/social-commerce-market",
+              "displayed_link": "https://www.grandviewresearch.com \u203a industry-analysis",
+              "snippet": "Social commerce market size was valued at $1484.5 billion in 2025 and is projected to grow from $1925.3 billion in 2026 to $17828.8 billion by 2033, ...",
+              "date": null,
+              "source": "Grand View Research"
+            },
+            {
+              "position": 2,
+              "title": "Social Media Management Market Size, Share",
+              "link": "https://www.fortunebusinessinsights.com/industry-reports/social-media-management-market-100638",
+              "displayed_link": "https://www.fortunebusinessinsights.com \u203a industry-reports",
+              "snippet": "The global social media management market is projected to be worth $39.14 billion in 2026 and reach $164.52 billion by 2034, exhibiting a CAGR of 19.70%",
+              "date": null,
+              "source": "Fortune Business Insights"
+            },
+            {
+              "position": 3,
+              "title": "What Is Total Addressable Market? (TAM)",
+              "link": "https://www.salesforce.com/blog/sales/total-addressable-market/",
+              "displayed_link": "https://www.salesforce.com \u203a blog \u203a sales \u203a total-addres...",
+              "snippet": "Begin by identifying your target customers and determining the market size. ... Here's an example: One of the world's most well-known social media ...",
+              "date": "Mar 13, 2025",
+              "source": "Salesforce"
+            },
+            {
+              "position": 4,
+              "title": "Social Media Market Report 2026",
+              "link": "https://www.researchandmarkets.com/reports/5781298/social-media-market-report?srsltid=AfmBOooBU1GAu7llv9milxpIcE-HDgmzosvlE6pvWQ7_VdsfULxHe0Z4",
+              "displayed_link": "https://www.researchandmarkets.com \u203a reports \u203a social-...",
+              "snippet": "The Social Media Market, valued at USD 234.34B in 2026, is projected to reach USD 389.36B by 2030, growing at a 13.5% CAGR.",
+              "date": null,
+              "source": "Research and Markets"
+            },
+            {
+              "position": 5,
+              "title": "Total Addressable Market | Research Glossary",
+              "link": "https://visionone.co.uk/research-glossary/total-addressable-market/",
+              "displayed_link": "https://visionone.co.uk \u203a Research Glossaries",
+              "snippet": "TAM, SAM, and SOM are tools for sizing markets. TAM is the total demand ... Social Market Research \u00b7 Technology, IT & Digital Research \u00b7 Travel & Tourism ...",
+              "date": null,
+              "source": "Vision One Research"
+            },
+            {
+              "position": 6,
+              "title": "How to Grow Your Total Addressable Market in Today's ...",
+              "link": "https://www.idc.com/resource-center/blog/grow-your-total-addressable-market/",
+              "displayed_link": "https://www.idc.com \u203a resource-center \u203a blog \u203a grow-yo...",
+              "snippet": "Use social media and assets like IDC's social tile to reach a larger audience to expand your TAM, drive brand awareness, and attract new ...",
+              "date": "Apr 10, 2023",
+              "source": "IDC | Trusted Tech Intelligence"
+            },
+            {
+              "position": 7,
+              "title": "Total addressable market (TAM) is the amount of annual ...",
+              "link": "https://www.facebook.com/Semrush/posts/total-addressable-market-tam-is-the-amount-of-annual-revenue-your-business-would/986744233494834/",
+              "displayed_link": "9 reactions \u00b7 1 year ago",
+              "snippet": "Equation: Total Market Size x % of Market Segment = TAM \u27a1\ufe0f ... social media engagement, or online sales within that market segment.",
+              "date": null,
+              "source": "Facebook \u00b7 Semrush"
+            },
+            {
+              "position": 8,
+              "title": "the importance of the tam-sam-som model and how big ...",
+              "link": "https://www.researchgate.net/publication/377992593_THE_IMPORTANCE_OF_THE_TAM-SAM-SOM_MODEL_AND_HOW_BIG_DATA_AND_AI_HELP",
+              "displayed_link": "https://www.researchgate.net \u203a publication \u203a 37799259...",
+              "snippet": "THE IMPORTANCE OF THE TAM-SAM-SOM MODEL AND HOW BIG DATA AND AI HELP. January 2023; International Journal of Social ... Market Sizing Ladders (TAM ...",
+              "date": "Jun 23, 2026",
+              "source": "ResearchGate"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "\"social\" market size TAM",
+        "fetched_at": "2026-07-19T06:50:20.507271+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_35960a8548aa",
+        "founder_name": "gpsmsn",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "error",
+          "reason": "[SSL] passed invalid argument (_ssl.c:2590)"
+        },
+        "query_used": "market:social competitors 2026",
+        "fetched_at": "2026-07-19T06:50:18.630668+00:00",
+        "status": "error"
+      }
+    ],
+    "claims": [
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "Show HN post exists with 1 points and 0 comments",
+        "subject": "product",
+        "predicate": "launch_reception",
+        "value": "1 points, 0 comments",
+        "confidence": 0.9,
+        "source_evidence_id": "ev_9a8fe5113aa7",
+        "source_type": "hn"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "Show HN post exists with 1 points and 0 comments",
+        "subject": "product",
+        "predicate": "launch_reception",
+        "value": "1 points, 0 comments",
+        "confidence": 0.9,
+        "source_evidence_id": "ev_998842aba917",
+        "source_type": "hn"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "The founder is associated with nostalgic voice chat experiences reminiscent of MSN Zone chat lobby.",
+        "subject": "company",
+        "predicate": "press_mention",
+        "value": "Nostalgic voice chat experiences",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_64d7c155fdc4",
+        "source_type": "tavily"
+      },
+      {
+        "id": "ev_e259f996964c",
+        "founder_name": "gpsmsn",
+        "text": "Search returned no relevant hits.",
+        "subject": "product",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.3,
+        "source_evidence_id": "ev_e259f996964c",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "No relevant hits found for the company 'Voice chat in a nostalgic private lobby' on Y Combinator's website.",
+        "subject": "company",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_3e4e472d4ddc",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "No relevant hits found for gpsmsn on LinkedIn.",
+        "subject": "founder",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_e4f3e7652114",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "claim_1",
+        "founder_name": "gpsmsn",
+        "text": "Voice chat in a nostalgic private lobby",
+        "subject": "product",
+        "predicate": "product_description",
+        "value": "Voice chat in a nostalgic private lobby",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_deck_b1f97239",
+        "source_type": "deck"
+      },
+      {
+        "id": "claim_2",
+        "founder_name": "gpsmsn",
+        "text": "Create a private lobby and chat with your friends!",
+        "subject": "product",
+        "predicate": "product_description",
+        "value": "Create a private lobby and chat with your friends!",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_deck_b1f97239",
+        "source_type": "deck"
+      },
+      {
+        "id": "claim_3",
+        "founder_name": "gpsmsn",
+        "text": "I built this to catch up on old times with friends, in a place that brings back memories.",
+        "subject": "market",
+        "predicate": "problem_statement",
+        "value": "Catch up on old times with friends in a nostalgic setting.",
+        "confidence": 0.7,
+        "source_evidence_id": "ev_deck_b1f97239",
+        "source_type": "deck"
+      }
+    ],
+    "contradictions": [],
+    "verification_map": {
+      "ev_e259f996964c": "unverifiable",
+      "claim_1": "unverifiable",
+      "claim_2": "unverifiable",
+      "claim_3": "unverifiable"
+    },
+    "attributes": {
+      "is_technical": null,
+      "location": null,
+      "categories": [
+        "social",
+        "voice chat"
+      ],
+      "customer_segment": null,
+      "prior_vc_backing": null,
+      "accelerator_tier": null,
+      "prior_exits": null,
+      "years_experience": null,
+      "is_researcher": false,
+      "h_index": null
+    },
+    "market_research": {
+      "competitors": [],
+      "market_size_estimate": "[Not Disclosed]",
+      "stance": "neutral",
+      "reasoning": "The search results did not provide specific competitors for the 'voice chat in a nostalgic private lobby' category, nor did they reveal a specific market size for this niche. The broader social media and social commerce markets are projected to grow significantly, but without specific data on this niche, it's difficult to gauge its potential. The lack of direct competitors and market size information suggests a neutral stance, as there is insufficient evidence to determine whether the market is crowded or has significant growth potential.",
+      "evidence_refs": []
+    },
+    "preliminary_score": 35.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 5,
+        "is_research": false,
+        "categories": [
+          "social",
+          "voice chat"
+        ],
+        "duration_ms": 1119
+      },
+      {
+        "node": "screening",
+        "status": "PASS",
+        "mode": "llm",
+        "duration_ms": 1129
+      },
+      {
+        "node": "sourcing",
+        "tasks": 8,
+        "evidence_count": 9,
+        "by_source": {
+          "github": 3,
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 3
+        },
+        "ok_by_source": {
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 1
+        },
+        "research_branch": false,
+        "duration_ms": 2876
+      },
+      {
+        "node": "extraction",
+        "evidence_in": 10,
+        "claims_out": 9,
+        "by_source": {
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 3,
+          "deck": 3
+        },
+        "duration_ms": 2722
+      },
+      {
+        "node": "verification",
+        "groups_llm": 0,
+        "solo_claims": 6,
+        "tavily_fallbacks": 0,
+        "contradictions": 0,
+        "new_evidence_from_verify": 0,
+        "duration_ms": 0
+      },
+      {
+        "node": "attributes_rollup",
+        "claims_in": 9,
+        "is_technical": null,
+        "categories": [
+          "social",
+          "voice chat"
+        ],
+        "accelerator_tier": null,
+        "duration_ms": 1145
+      },
+      {
+        "node": "market_research",
+        "category": "social",
+        "queries_fired": 3,
+        "evidence_collected": 3,
+        "competitors_found": 0,
+        "stance": "neutral",
+        "duration_ms": 4526
+      },
+      {
+        "node": "activation",
+        "preliminary_score": 35.0,
+        "is_outbound": true,
+        "draft_generated": false,
+        "duration_ms": 0
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "5 GitHub hints, categories=['social', 'voice chat'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "PASS: The application clearly describes a product for voice chatting in private lobbies aimed at friends."
+      },
+      {
+        "node": "sourcing",
+        "reason": "Fanned 8 tool calls \u2192 9 evidence items ({'hn': 2, 'tavily': 1, 'serpapi': 1} with content)."
+      },
+      {
+        "node": "extraction",
+        "reason": "10 evidence items \u2192 9 claims ({'hn': 2, 'tavily': 1, 'serpapi': 3, 'deck': 3})."
+      },
+      {
+        "node": "verification",
+        "reason": "0 LLM groups, 0 Tavily fallbacks, 0 contradictions flagged."
+      },
+      {
+        "node": "attributes_rollup",
+        "reason": "Rolled 9 claims \u2192 is_technical=None, categories=['social', 'voice chat'], accelerator=None, h_index=None"
+      },
+      {
+        "node": "market_research",
+        "reason": "Category=social \u2192 0 competitors, stance=neutral, market_size=[Not Disclosed]"
+      },
+      {
+        "node": "activation",
+        "reason": "preliminary_score=35.0, is_outbound=True, drafted=False"
+      }
+    ]
+  }
+}
