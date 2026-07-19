@@ -128,7 +128,67 @@ def get_founder_display_name(opp):
 
 
 def get_analyzed_opportunities():
-    return [o for o in crud.get_all_opportunities() if o.screen_status not in (None, "pending")]
+    """Opportunities with a full analysis to show -- i.e. ones that
+    passed screening. Failed/pending ones have no scores/market/
+    SWOT/memo to render, so they're excluded from these tab pickers."""
+    return [o for o in crud.get_all_opportunities() if o.screen_status == "passed"]
+
+
+def render_claims_section(opp):
+    """Renders every claim extracted from this opportunity's evidence
+    -- the interpreted facts, as opposed to the raw evidence they
+    were derived from. Pulled from pipeline.get_claims()."""
+    claims = pipeline.get_claims(opp.id)
+    if not claims:
+        st.caption("No claims extracted yet -- run Analyze first.")
+        return
+
+    for claim in claims:
+        with st.container(border=True):
+            top = st.columns([2, 1])
+            top[0].markdown(f"**{claim['claim_type']}**")
+            confidence = claim["confidence"]
+            top[1].write(f"Confidence: {confidence:.0%}" if confidence is not None else "Confidence: —")
+            st.write(claim["claim_value"])
+            if claim["reasoning"]:
+                st.caption(f"Reasoning: {claim['reasoning']}")
+            if claim["evidence_refs"]:
+                st.caption(f"Backed by {len(claim['evidence_refs'])} evidence item(s)")
+
+
+def render_evidence_section(opp):
+    """Renders every evidence_item row collected for this opportunity.
+    This is what makes scoring traceable -- the user can see exactly
+    what backs a score instead of trusting a black-box number.
+    Pulled from pipeline.get_evidence()."""
+    evidence = pipeline.get_evidence(opp.id)
+    if not evidence:
+        st.caption("No evidence collected yet.")
+        return
+
+    for item in evidence:
+        source = item["source_type"]
+        trust = item["trust_score"]
+        content = item["content"]
+        reasoning = item["reasoning"]
+        title = item["title"]
+        source_url = item["source_url"]
+        created = item["created_at"]
+
+        with st.container(border=True):
+            top = st.columns([2, 1, 1])
+            top[0].markdown(f"**{source}**" + (f" — {title}" if title else ""))
+            top[1].write(f"Trust: {trust:.2f}" if trust is not None else "Trust: —")
+            try:
+                top[2].caption(created.strftime("%b %d, %H:%M") if created else "")
+            except Exception:
+                top[2].caption(str(created) if created else "")
+            if content:
+                st.write(content)
+            if source_url and source_url != "N/A":
+                st.caption(f"Source: {source_url}")
+            if reasoning:
+                st.caption(f"Reasoning: {reasoning}")
 
 
 def opportunity_selector(tab_key: str):
@@ -193,12 +253,15 @@ def render_overview_tab():
             )
 
             analyzed = opp.screen_status not in (None, "pending")
+            passed = opp.screen_status == "passed"
 
             if not analyzed:
                 header_cols[3].markdown("🕗 *Not yet analyzed*")
+            elif not passed:
+                header_cols[1].write("🚫 Screened out")
+                header_cols[2].caption(opp.screen_reason or "")
             else:
-                badge = "✅ Passed" if opp.screen_status == "passed" else "🚫 Screened out"
-                header_cols[1].write(badge)
+                header_cols[1].write("✅ Passed")
                 thesis_badge = "🎯 In thesis" if opp.thesis_status == "in_thesis" else "↗️ Outside thesis"
                 header_cols[2].write(thesis_badge)
 
@@ -229,7 +292,11 @@ def render_overview_tab():
                         st.session_state[confirm_key] = True
                         st.rerun()
 
-            if analyzed:
+            evidence_count = len(pipeline.get_evidence(opp.id))
+            with st.expander(f"🧾 Evidence ({evidence_count})"):
+                render_evidence_section(opp)
+
+            if passed:
                 score_cols = st.columns(4)
                 score_cols[0].metric("Founder", f"{opp.founder_score:.0f}" if opp.founder_score else "—")
                 score_cols[1].metric("Market", f"{opp.market_score:.0f}" if opp.market_score else "—")
@@ -249,8 +316,8 @@ def render_opportunity_detail(opp):
     if opp.thesis_reason:
         st.caption(f"Thesis: {opp.thesis_reason}")
 
-    tab_founder, tab_market, tab_swot, tab_memo = st.tabs(
-        ["👤 Founder", "📊 Market", "🔍 SWOT", "📝 Memo"]
+    tab_founder, tab_evidence, tab_claims, tab_market, tab_swot, tab_memo = st.tabs(
+        ["👤 Founder", "🧾 Evidence", "📑 Claims", "📊 Market", "🔍 SWOT", "📝 Memo"]
     )
 
     with tab_founder:
@@ -264,6 +331,12 @@ def render_opportunity_detail(opp):
         for flag in profile["risk_flags"]:
             st.warning(flag)
         st.caption(f"Scoring note: {profile['tier_note']}")
+
+    with tab_evidence:
+        render_evidence_section(opp)
+
+    with tab_claims:
+        render_claims_section(opp)
 
     with tab_market:
         research = pipeline.get_market_research(opp.id)
