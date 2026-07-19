@@ -100,6 +100,70 @@ async def serpapi_site_search(
     ]
 
 
+async def _serp_ai_mode(query: str) -> dict[str, Any]:
+    """Google AI Mode search — returns synthesized answer + citations."""
+    cache_key = f"serpapi_ai_mode:{query.lower()}"
+
+    async def _fetch() -> dict[str, Any]:
+        if not SERPAPI_API_KEY:
+            return {"status": "error", "reason": "SERPAPI_API_KEY not set"}
+        resp = await http_get_json(
+            _API,
+            params={
+                "engine": "google_ai_mode",
+                "q": query,
+                "api_key": SERPAPI_API_KEY,
+                "hl": "en",
+            },
+            timeout=45.0,  # AI Mode can be slow
+        )
+        if is_error(resp):
+            return {"status": "error", "reason": resp.get("reason")}
+
+        answer = (resp.get("reconstructed_markdown") or "").strip()
+        refs = []
+        for r in (resp.get("references") or [])[:20]:
+            refs.append({
+                "title": r.get("title") or "",
+                "link": r.get("link") or "",
+                "snippet": (r.get("snippet") or "")[:600],
+                "source": r.get("source") or "",
+            })
+        if not answer and not refs:
+            return {"status": "empty", "query": query}
+        return {
+            "status": "ok",
+            "query": query,
+            "answer_markdown": answer,
+            "text_blocks": (resp.get("text_blocks") or [])[:20],
+            "references": refs,
+        }
+
+    return await call_with_cache(cache_key, _fetch)
+
+
+async def serpapi_ai_mode(
+    query: str, founder_name: str
+) -> list[EvidenceItem]:
+    """Public wrapper — returns a single EvidenceItem containing the AI Mode
+    answer + references. Used by the market_research node."""
+    resp = await _serp_ai_mode(query)
+    status = resp.get("status", "error")
+    return [
+        EvidenceItem(
+            founder_name=founder_name,
+            source_type="serpapi",
+            source_url=None,
+            raw_content=resp,
+            query_used=f"ai_mode:{query}",
+            status=(
+                "ok" if status == "ok"
+                else ("not_found" if status == "empty" else "error")
+            ),
+        )
+    ]
+
+
 async def serpapi_open_search(
     query: str, founder_name: str, num: int = 10
 ) -> list[EvidenceItem]:

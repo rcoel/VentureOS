@@ -1,0 +1,1959 @@
+{
+  "candidate_source": "devpost",
+  "reference_url": "https://devpost.com/software/snap-cart",
+  "devpost_extras": {
+    "hackathon_name": "Square + Google AI Hackathon",
+    "team_name": "Snap Cart Team",
+    "prize_or_placement": "1st Place",
+    "github_url": null
+  },
+  "final_state": {
+    "founder_name": "Luke Roumy",
+    "company": "Snap Cart",
+    "application_text": "Devpost hackathon winner: Snap Cart\nHackathon: Square + Google AI Hackathon\nTeam: Snap Cart Team\nPrize/Placement: 1st Place\nProject URL: https://devpost.com/software/snap-cart\nGitHub: not disclosed\n\nDescription: Snap Cart provides an innovative shopping experience by using intelligent image recognition technology to streamline the checkout process and manage inventory efficiently for small businesses.",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "lukeroumy",
+        "luke-roumy"
+      ],
+      "research_domain": null,
+      "is_research_founder": false,
+      "category_labels": [
+        "shopping",
+        "image recognition",
+        "inventory management"
+      ],
+      "product_urls": [
+        "https://devpost.com/software/snap-cart"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "PASS",
+    "screen_reason": "The application clearly describes the product as an innovative shopping experience using image recognition technology and identifies small businesses as the target customers.",
+    "raw_evidence": [
+      {
+        "id": "ev_f93aa38201f6",
+        "founder_name": "Luke Roumy",
+        "source_type": "github",
+        "source_url": "https://github.com/lukeroumy",
+        "raw_content": {
+          "status": "not_found",
+          "username": "lukeroumy"
+        },
+        "query_used": "lukeroumy",
+        "fetched_at": "2026-07-19T11:33:52.805236+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_98a337d49c2a",
+        "founder_name": "Luke Roumy",
+        "source_type": "github",
+        "source_url": "https://github.com/luke-roumy",
+        "raw_content": {
+          "status": "not_found",
+          "username": "luke-roumy"
+        },
+        "query_used": "luke-roumy",
+        "fetched_at": "2026-07-19T11:33:52.823850+00:00",
+        "status": "not_found"
+      },
+      {
+        "id": "ev_c73842433b36",
+        "founder_name": "Luke Roumy",
+        "source_type": "hn",
+        "source_url": "https://hn.algolia.com/?q=Snap Cart&type=show_hn",
+        "raw_content": {
+          "status": "ok",
+          "nb_hits": 29,
+          "hits": [
+            {
+              "object_id": "32230329",
+              "title": "Show HN: PickCode \u2013 An educational coding environment for students after Scratch",
+              "url": "https://www.pickcode.io/",
+              "author": "csmeyer",
+              "points": 141,
+              "num_comments": 32,
+              "story_text": "PickCode is designed for use on desktop and tablet, and supports creating chatbots, visual designs, and 2D games. There is plenty of functionality missing - you can&#x27;t add media to games for instance, but the current version shows off the foundation of what I&#x27;m aiming at.<p>I taught myself to code using MIT&#x27;s App Inventor, so I have an enormous respect for block based languages like App Inventor, Scratch, Snap!, MakeCode, etc. PickCode is my attempt at adding options for students who want to learn more about programming without making the jump to text, or as an alternative to block coding for beginners coming to programming at an older age.<p>The visual language is meant to lower the barrier to entry to coding but the far more important aspect for me is giving students the ability to make things they&#x27;re proud of as quickly as possible. A JS&#x2F;Python API for controlling the chatbot and game engine are in the works.<p>As of now, there are sample programs to play with and an editor which saves your programs to local storage. Full user accounts, tutorials and administrator accounts for teachers to organize assignments are on their way soon. If you&#x27;re interested in using PickCode in a classroom or want to discuss feedback, send me an email at charlie@pickcode.io",
+              "comment_text": "",
+              "created_at": "2022-07-25T20:16:02Z",
+              "hn_url": "https://news.ycombinator.com/item?id=32230329"
+            },
+            {
+              "object_id": "30141037",
+              "title": "Show HN: An Instagram Alternative",
+              "url": null,
+              "author": "Fnalsk",
+              "points": 14,
+              "num_comments": 8,
+              "story_text": "We just launched the first version of Pidgeon. It\u2019s meant to be a sort of \u201creddit for photos\u201d, and we\u2019re trying to fix a lot of the problems instagram has.<p>Quite a lot of people these days hate instagram for one reason or another. Maybe you hate the amount of ads it has. Maybe you hate the algorithm. Maybe you hate the shop section that no one ever uses. Maybe you hate the data collection, or reels, or that it just seems like a giant popularity contest.<p>We want to address all of the above.<p><i>Organic outreach</i><p>The feed is organized chronologically. Here you will only see your own posts and the posts of people you follow. Don\u2019t worry about bots or engagement because that won\u2019t tank your reach.<p>The discovery queue is split into different categories, kind of like subreddits. Each post is then ranked by how good users think the photos in the post are, divided by a function of the age of the post - essentially the upvote&#x2F;downvote system that exists on reddit. There are also no hashtags, because we didn\u2019t want people to waste time coming up with a bunch. We think that in the long term, hashtags are a net negative as a feature.<p>Of course, you can\u2019t pay to promote your post, and this will never change.<p><i>Photo based chat rooms</i><p>When you share a photo, it\u2019s a natural thing to want to talk about it. But comments aren\u2019t always the nicest way to do this. So we made photo based chat rooms. You can create or join chat rooms and specify a couple categories for the room. Any time someone in the room makes a post to a category that\u2019s associated with the room, the post will be shared to the room as well.<p>So every time you make a post, your photos will be shared with a group of people who have a similar interest in the type of photo you\u2019re posting. This also has another effect - usually social platforms need a couple million users to reach a \u201ccritical mass\u201d, or a point where there\u2019s any value at all to using the app. But with a chat room, you only need a ",
+              "comment_text": "",
+              "created_at": "2022-01-30T21:01:02Z",
+              "hn_url": "https://news.ycombinator.com/item?id=30141037"
+            },
+            {
+              "object_id": "35055612",
+              "title": "Show HN: Can I Compost It? \u2013 Find Out What Goes in Your Compost Bin",
+              "url": "https://canicompostit.com",
+              "author": "balintkorosi",
+              "points": 9,
+              "num_comments": 7,
+              "story_text": "Composting is a great way to reduce waste and nourish your garden, but it can be confusing to know what items can and can&#x27;t be composted. That&#x27;s why I created canicompostit.com - a simple and fast way to find out.<p>With Can I Compost It?, you can quickly search for any item and get a simple &quot;Yes&quot; or &quot;No&quot; answer, along with some tips on how to compost it properly. My real-time database is constantly updated with new items (and if you search for something and it&#x27;s not in it, you can suggest it, then I research the item and add it to the DB). I included compost categories (brown or green) and references when applicable.<p>I first had the idea for this webapp years ago, and after some initial development, I posted it on Reddit (here: <a href=\"https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;lifehacks&#x2F;comments&#x2F;xicg1y&#x2F;find_out_\" rel=\"nofollow\">https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;lifehacks&#x2F;comments&#x2F;xicg1y&#x2F;find_out_</a>...). The response was overwhelmingly positive, with people asking for additional features and thanking me for creating a useful tool. I took their feedback to heart and rebuilt the webapp from the ground up using Nuxt.js, Tailwind, and a Google Sheet database. The result is a lean and efficient webapp that&#x27;s easy to use and navigate.<p>Can I Compost It? is free to use and ad-free.<p>Keisaku said in the Reddit thread: &quot;This is the kindve site that makes me want to put a dedicated tablet in the kitchen.&quot;<p>Now this is something that motivates me! Admittedly, this is a one stone two bird project: I&#x27;m trying to create something useful and at the same time, use it as an excuse to hone my dev skills.<p>Next up, I&#x27;m working on a mobile app that will allow you to snap a picture of an item and instantly find out if it&#x27;s compostable. My goal is to make composting as easy and convenient as possible.<p>If you find it helpful, please share it with others who might benefit",
+              "comment_text": "",
+              "created_at": "2023-03-07T14:20:06Z",
+              "hn_url": "https://news.ycombinator.com/item?id=35055612"
+            },
+            {
+              "object_id": "39684416",
+              "title": "Show HN: StableBuild \u2013 make any Docker container deterministic",
+              "url": "https://www.stablebuild.com/",
+              "author": "janjongboom",
+              "points": 8,
+              "num_comments": 3,
+              "story_text": "Hi HN!<p>I&#x27;ve posted this a few weeks back without much HN traction - today we&#x27;ve added a free community tier, so anyone can try it out.<p>TL;DR: We\u2019ve launched StableBuild, a new tool to easily freeze and pin Docker images, operating system packages, Python packages, and arbitrary build dependencies; in 5 lines of code: <a href=\"https:&#x2F;&#x2F;stablebuild.com\" rel=\"nofollow\">https:&#x2F;&#x2F;stablebuild.com</a> .<p>As the CTO at an ML startup w&#x2F; 75 people (<a href=\"https:&#x2F;&#x2F;edgeimpulse.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;edgeimpulse.com&#x2F;</a>) I\u2019ve grown incredibly frustrated with non-deterministic builds. Last year basically every week one of our containers (we have 40+ unique ones in prod) would stop working properly because some dependency was updated or removed. This ranges from Nvidia deleting cuda base images from Docker Hub, to Chromium being removed from the Ubuntu package registry in favor of the snap version, to pandas 2 being published with breaking APIs - while everyone just depends on e.g. pandas&gt;=1.4.<p>This has been super disruptive because builds break for no apparent reason: someone pushes some unrelated code change, a container needs to be rebuilt, now it gets the latest dependencies =&gt; boom, either a compile error or an integration test fails. Many times this even blocks deployment. If the build system has decided that a container on master needs to be rebuilt, we can\u2019t deploy the complete system if a dependency has shifted. And, fixing this naturally falls on the most senior engineers.<p>Anyway, to fix this I\u2019ve funded (together w&#x2F; my Edge Impulse cofounder) StableBuild. It\u2019s a set of mirrors and registries that let you easily freeze and pin Docker images, apt&#x2F;apk packages, Python packages, and arbitrary files and URLs from the internet. It currently consists of:<p>* A custom pull-through cache for Docker Hub, that makes any image pulled immutable. Protects against updated or removed images",
+              "comment_text": "",
+              "created_at": "2024-03-12T20:19:47Z",
+              "hn_url": "https://news.ycombinator.com/item?id=39684416"
+            },
+            {
+              "object_id": "39384828",
+              "title": "Show HN: StableBuild \u2013 pin and freeze any build dependency",
+              "url": "https://www.stablebuild.com/blog/launching-stablebuild-freeze-and-pin-all-your-dependencies",
+              "author": "janjongboom",
+              "points": 4,
+              "num_comments": 0,
+              "story_text": "Hi HN!<p>TL;DR: We\u2019ve launched StableBuild, a new tool to easily freeze and pin Docker images, operating system packages, Python packages, and arbitrary build dependencies; in 5 lines of code: <a href=\"https:&#x2F;&#x2F;stablebuild.com\" rel=\"nofollow\">https:&#x2F;&#x2F;stablebuild.com</a> .<p>As the CTO at an ML startup w&#x2F; 75 people (<a href=\"https:&#x2F;&#x2F;edgeimpulse.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;edgeimpulse.com&#x2F;</a>) I\u2019ve grown incredibly frustrated with non-deterministic builds. Last year basically every week one of our containers (we have 40+ unique ones in prod) would stop working properly because some dependency was updated or removed. This ranges from Nvidia deleting cuda base images from Docker Hub, to Chromium being removed from the Ubuntu package registry in favor of the snap version, to pandas 2 being published with breaking APIs - while everyone just depends on e.g. pandas&gt;=1.4.<p>This has been super disruptive because builds break for no apparent reason: someone pushes some unrelated code change, a container needs to be rebuilt, now it gets the latest dependencies =&gt; boom, either a compile error or an integration test fails. Many times this even blocks deployment. If the build system has decided that a container on master needs to be rebuilt, we can\u2019t deploy the complete system if a dependency has shifted. And, fixing this naturally falls on the most senior engineers.<p>Anyway, to fix this I\u2019ve funded (together w&#x2F; my Edge Impulse cofounder) StableBuild. It\u2019s a set of mirrors and registries that let you easily freeze and pin Docker images, apt&#x2F;apk packages, Python packages, and arbitrary files and URLs from the internet. It currently consists of:<p>* A custom pull-through cache for Docker Hub, that makes any image pulled immutable. Protects against updated or removed images; and as a nice byproduct also bypasses pull-rate limits in Docker Hub.<p>* Full daily copies of the Ubuntu, Debian and Alpine package regis",
+              "comment_text": "",
+              "created_at": "2024-02-15T16:37:21Z",
+              "hn_url": "https://news.ycombinator.com/item?id=39384828"
+            },
+            {
+              "object_id": "47267420",
+              "title": "Show HN: BurnShot v2.0 \u2013 Zero-Knowledge ephemeral sharing",
+              "url": "https://www.burnshot.app/",
+              "author": "axaysharma",
+              "points": 3,
+              "num_comments": 0,
+              "story_text": "Five months ago, I posted the beta of BurnShot here. It was a simple tool to share self-destructing images.<p>The top comment immediately pointed out the elephant in the room: &quot;Web based! Receiver can take a screenshot very easily.&quot;<p>They were 100% right. My immediate instinct as a builder was to try and fix it. I looked into CSS hacks, disabling right-clicks, and listening for print-screen keystrokes. But I quickly realized that doing so would be selling snake oil. You cannot reliably implement OS-level screenshot restrictions through a standard web browser. And even if you could, you can never defeat the &quot;analog hole&quot;\u2014someone simply holding up a second phone to snap a picture of their screen.<p>That single comment forced me to step back and act like a Product Manager. I had to ask: If I can&#x27;t stop the recipient from saving the image, what is the actual point of this product?<p>It made me completely redefine BurnShot&#x27;s threat model.<p>If you are sending data to a malicious actor you don&#x27;t trust, don&#x27;t use BurnShot. Nothing can protect you.<p>BurnShot is actually built for hygienic sharing with trusted (or semi-trusted) parties. For example in Strategy &amp; Transaction Advisory, I constantly see professionals sharing sensitive M&amp;A evaluations, tax computations, or proprietary trading charts over WhatsApp or Slack. You trust the recipient to read it, but you don&#x27;t trust the infrastructure. You don&#x27;t want that sensitive file sitting in their iCloud backup, lingering in your chat history for years, or residing in a central database waiting for a breach.<p>Once I accepted that I couldn&#x27;t control the recipient&#x27;s device, I realized I had to absolutely control the transit and the server.<p>So, I ripped out the backend and built BurnShot v2.0: A mathematically verifiable, Zero-Knowledge architecture.<p>Here is what changed under the hood:<p>- We embraced the web, but killed the server visibility: Payloads are",
+              "comment_text": "",
+              "created_at": "2026-03-05T21:17:35Z",
+              "hn_url": "https://news.ycombinator.com/item?id=47267420"
+            },
+            {
+              "object_id": "45073262",
+              "title": "Show HN: Warrify \u2013 Stop losing money on expired warranties",
+              "url": null,
+              "author": "akash-bilung",
+              "points": 2,
+              "num_comments": 1,
+              "story_text": "Every year, people lose thousands because they forget warranty dates or can&#x27;t find receipts. I built Warrify\n to fix that.<p>AI receipt scanning - snap&#x2F;upload a receipt, and it extracts product + warranty info instantly.\n Unlimited warranty storage - keep all your purchases organized in one place.\n Smart reminders - get notified before warranties expire.\n Data export - your data stays yours.\n Calendar sync (coming soon) - manage warranties alongside your schedule.<p>Stop losing money on expired warranties. Protect your purchases effortlessly.<p>Try it here: warrify.app",
+              "comment_text": "",
+              "created_at": "2025-08-30T09:32:25Z",
+              "hn_url": "https://news.ycombinator.com/item?id=45073262"
+            },
+            {
+              "object_id": "46067910",
+              "title": "Show HN: PyTorch-World \u2013 Modular Library to Build and Train World Models",
+              "url": "https://github.com/ParamThakkar123/pytorch-world",
+              "author": "paramthakkar",
+              "points": 2,
+              "num_comments": 0,
+              "story_text": "Hello everyone! I\u2019ve built PyTorch-World, a modular library for learning, training, and experimenting with world models.<p>While studying world models, I noticed that each new paper introduces a mix of new components and architectures\u2014but the core structure stays surprisingly consistent. Yet there wasn\u2019t an easy way to swap these components in and out, experiment with them independently, or understand how they interact to form a complete world model.<p>PyTorch-World aims to solve that: it provides a clean, modular framework where you can plug in different components, compare approaches, and learn how world models work from the inside out.<p>New updates rolling out soon, this is v0.0.3!<p>You can also install the library from pip\n<a href=\"https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;pytorch-world&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;pytorch-world&#x2F;</a><p>Currently this library supports PlaNet world model by Google, Here&#x27;s the code to train the model in a CartPole-v1 environment:<p>from world_models.models.planet import Planet<p>p = Planet(env=&quot;CartPole-v1&quot;, bit_depth=5, headless=True, max_episode_steps=100, action_repeats=1, results_dir=&quot;my_experiment&quot;)<p>p.train(epochs=1)",
+              "comment_text": "",
+              "created_at": "2025-11-27T10:38:28Z",
+              "hn_url": "https://news.ycombinator.com/item?id=46067910"
+            },
+            {
+              "object_id": "37224732",
+              "title": "Show HN: Kaleido \u2013 AI product manager for dev teams",
+              "url": "https://www.kaleido.so/",
+              "author": "KateBovk",
+              "points": 2,
+              "num_comments": 0,
+              "story_text": "Hey HN<p>Let&#x27;s talk about the ongoing debate: Will AI replace developers? Some say no, since setting clear tasks needs human touch, and well, product managers might not always get it. So, developers seem safe for now, as managers can&#x27;t predict everything.<p>But it seems developers might soon work without managers, figuring out tasks on their own. And we&#x27;re up for a challenge. That&#x27;s why we&#x27;ve built Kaleido, a tool to help devs understand users and nail important tasks without bugging the managers.<p>Here&#x27;s how Kaleido rolls:<p>Grabbing Feedback: Kaleido rounds up feedback from all over\u2014straight entries, custom forms, Slack, Telegram, even CSV files. It spices up the feedback with context about where it&#x27;s coming from.<p>Spotting Trends: Kaleido digs deep to find common threads. People often say similar things, just differently, and sometimes with a bunch of feelings. Kaleido&#x27;s unbiased AI jumps in, making sense of feedback, spotting trends, and laying it all out clearly.<p>Picking What Counts: Using numbers and words, Kaleido figures out what&#x27;s most important. It&#x27;s like sorting your priorities in a snap.<p>Making Specs: Kaleido drafts specs that you can tweak. No more blank-page jitters\u2014editing is easier than starting from scratch.<p>The cool part? Once you plug in a review source, Kaleido does its thing every few weeks. It collects user thoughts, and you can pluck out the gold when making backlog.<p>We&#x27;ve seen Kaleido shine for dev teams flying solo, no product manager in sight. It&#x27;s a common scene in service companies dealing with heaps of clients.<p>Give Kaleido a spin with your own product reviews <a href=\"https:&#x2F;&#x2F;app.kaleido.so&#x2F;addfeedback&#x2F;cca3da20-dc1d-4b02-8f88-347da3b4665e\" rel=\"nofollow noreferrer\">https:&#x2F;&#x2F;app.kaleido.so&#x2F;addfeedback&#x2F;cca3da20-dc1d-4b02-8f88-3...</a>, and shoot us your thoughts!",
+              "comment_text": "",
+              "created_at": "2023-08-22T16:08:31Z",
+              "hn_url": "https://news.ycombinator.com/item?id=37224732"
+            },
+            {
+              "object_id": "8284954",
+              "title": "Show HN: PassProtect \u2013 Password Manager App for iOS and Android",
+              "url": "",
+              "author": "passprotect",
+              "points": 1,
+              "num_comments": 1,
+              "story_text": "After months of work, my app PassProtect (free, iOS &amp; Android) has finally launched today.<p>What it does: PassProtect stores all your passwords in one place, so you don\u2019t have to remember the logins for all your online accounts. This allows you to have different passwords for each internet account without the fear that you\u2019ll forget your passwords. A built-in password generator encourages you to create complex passwords in the future.<p>Is it secure? Yes! PassProtect encrypts data using SHA256 and AES512. This means hackers can\u2019t access your data without a master key that you create when you setup the app. Also, the app logs the location of recent logins and snaps pictures of users using the front camera so you know exactly who is checking your passwords.<p>Why should you get it over the dozens of other password manager apps out there?\nIt\u2019s free! If you think you shouldn\u2019t have to spend $10 to find a decent Password Manager app, this app is for you. Anyways, it won\u2019t cost anything to give it a try :)\nIt\u2019s tried and tested. PassProtect shares its code base with an older app, iPasscode, which has been in production for 3 years, so I\u2019ve used the feedback from that to improve PassProtect.\nPassProtect has an aggressive roadmap with plans to add sync abilities, deeper integration with iOS and Android, and support for other platforms.<p>iOS Download: https:&#x2F;&#x2F;appsto.re&#x2F;i6gn4jF<p>Android Download: https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=co.passprotect<p>Website: http:&#x2F;&#x2F;www.passprotect.co",
+              "comment_text": "",
+              "created_at": "2014-09-08T14:37:39Z",
+              "hn_url": "https://news.ycombinator.com/item?id=8284954"
+            }
+          ]
+        },
+        "query_used": "show_hn:Snap Cart",
+        "fetched_at": "2026-07-19T11:33:53.177464+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_170d1d1ce47e",
+        "founder_name": "Luke Roumy",
+        "source_type": "hn",
+        "source_url": "https://hn.algolia.com/?q=Snap Cart&type=story",
+        "raw_content": {
+          "status": "ok",
+          "nb_hits": 95,
+          "hits": [
+            {
+              "object_id": "28380373",
+              "title": "Web building platform Duda snaps up e-commerce cart tool Snipcart",
+              "url": "https://techcrunch.com/2021/09/01/web-building-platform-duda-snaps-up-e-commerce-cart-tool-snipcart/",
+              "author": "JeanSebTr",
+              "points": 2,
+              "num_comments": 0,
+              "story_text": "",
+              "comment_text": "",
+              "created_at": "2021-09-01T14:36:23Z",
+              "hn_url": "https://news.ycombinator.com/item?id=28380373"
+            },
+            {
+              "object_id": "15133919",
+              "title": "A camera that snaps a GIF and ejects a cartridge that displays it",
+              "url": "http://imgur.com/gallery/CG9w4",
+              "author": "wyldfire",
+              "points": 1480,
+              "num_comments": 296,
+              "story_text": "",
+              "comment_text": "",
+              "created_at": "2017-08-30T17:11:55Z",
+              "hn_url": "https://news.ycombinator.com/item?id=15133919"
+            },
+            {
+              "object_id": "13400646",
+              "title": "In the Shopping Cart of a Food Stamp Household: Lots of Soda",
+              "url": "https://www.nytimes.com/2017/01/13/well/eat/food-stamp-snap-soda.html",
+              "author": "e15ctr0n",
+              "points": 3,
+              "num_comments": 1,
+              "story_text": "",
+              "comment_text": "",
+              "created_at": "2017-01-14T21:24:54Z",
+              "hn_url": "https://news.ycombinator.com/item?id=13400646"
+            },
+            {
+              "object_id": "31917455",
+              "title": "Ask HN: Possible to generate AI photorealistic avatars with webcam facetracking?",
+              "url": null,
+              "author": "oldgregg",
+              "points": 1,
+              "num_comments": 0,
+              "story_text": "I had never heard of ToonApp until recently and it&#x27;s pretty phenomenal. The AI that it&#x27;s using to generate cartoons is so artistic and detailed. All of the vtuber and face filter software (snap cam, animaze) I see around looks like pretty basic face tracking without any AI and not very photo realistic. Are there any technical reasons why someone couldn&#x27;t build vtuber software but with ToonApp level of photorealistic AI? Seems like that would be insane!!?? Why can&#x27;t AI just generate something near the level of CodeMiko?",
+              "comment_text": "",
+              "created_at": "2022-06-29T07:36:16Z",
+              "hn_url": "https://news.ycombinator.com/item?id=31917455"
+            },
+            {
+              "object_id": "10740454",
+              "title": "Tramchester UK's mobile deployment process Q&A",
+              "url": "https://blog.snap-ci.com/blog/2015/12/15/tramchester-ian-cartwright/",
+              "author": "motolouda",
+              "points": 1,
+              "num_comments": 0,
+              "story_text": "",
+              "comment_text": "",
+              "created_at": "2015-12-15T21:04:31Z",
+              "hn_url": "https://news.ycombinator.com/item?id=10740454"
+            }
+          ]
+        },
+        "query_used": "story:Snap Cart",
+        "fetched_at": "2026-07-19T11:33:54.085058+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_036bac47dad1",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"Luke Roumy\" Snap Cart founder background",
+          "answer": null,
+          "results": [
+            {
+              "title": "Luke Roumy - Snap Cart",
+              "url": "https://www.linkedin.com/posts/luke-roumy-b162ab224_snap-cart-activity-7128490555138813952-5wAf",
+              "content": "Luke Roumy Software Engineer. I was a part of a team that won 'Best use of image/audio model or combination of multiple modalities' The prize",
+              "score": 0.40938663
+            },
+            {
+              "title": "Luke Ramsey - Snap Inc.",
+              "url": "https://www.linkedin.com/in/lukeramsey1",
+              "content": "Luke is a software engineer who loves tackling challenging problems. Experience: Snap Inc. \u00b7 Education: UCLA \u00b7 Location: Los Angeles Metropolitan ... is a",
+              "score": 0.3105694
+            },
+            {
+              "title": "Snapcart: Revolutionizing the way Brands Connect with Shoppers ...",
+              "url": "https://thesiliconreview.com/magazine/profile/snapcart-revolutionizing-the-way-brands-connect-with-shoppers-through-real-time-insights",
+              "content": "ReynazranRoyono, Founder/CEO: Reynazran Royono is experienced in Consumer Goods, Consulting, and Technology. He held leadership roles at Procter & Gamble,",
+              "score": 0.28645408
+            },
+            {
+              "title": "Snapcart",
+              "url": "https://snapcart.global",
+              "content": "Snapcart provides real-time offline shopper engagement and data services for brands. Through its receipt-scanning cashback mobile application, man Subakat CEO",
+              "score": 0.16652656
+            },
+            {
+              "title": "Have you heard of Tap Cart? While in LA, Ben & Scott got the chance to fit ...",
+              "url": "https://www.facebook.com/thecutcreative/posts/have-you-heard-of-tap-cartwhile-in-la-ben-scott-got-the-chance-to-fit-in-an-inte/2785298074816902",
+              "content": "While in LA, Ben & Scott got the chance to fit in an interesting meeting with Sina Mobasser, co-founder of Tap Cart. Tap Cart is a very",
+              "score": 0.062749125
+            }
+          ],
+          "response_time": 0.77
+        },
+        "query_used": "\"Luke Roumy\" Snap Cart founder background",
+        "fetched_at": "2026-07-19T11:33:53.726785+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_076f5eddcabe",
+        "founder_name": "Luke Roumy",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:producthunt.com \"Snap Cart\"",
+          "search_metadata": {
+            "total_results": 27,
+            "engine_url": "https://www.google.com/search?q=site%3Aproducthunt.com+%22Snap+Cart%22&oq=site%3Aproducthunt.com+%22Snap+Cart%22&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Carrot: All your shopping, organized like magic",
+              "link": "https://www.producthunt.com/products/carrot-2",
+              "displayed_link": "https://www.producthunt.com \u203a products \u203a carrot-2",
+              "snippet": "Meet Carrot, the extension that automatically collects your carts as you shop. You can get back to products with a click, create shareable and gift-able ...",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 2,
+              "title": "Products used by Agora",
+              "link": "https://www.producthunt.com/products/agora-13/built-with",
+              "displayed_link": "https://www.producthunt.com \u203a agora-13 \u203a built-with",
+              "snippet": "Agora is an AI search engine for e-commerce products. We've indexed products sold on thousands of stores and made them easy to purchase with a single cart ...",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 3,
+              "title": "Rid: Sell with a Text",
+              "link": "https://www.producthunt.com/products/rid-sell-with-a-text",
+              "displayed_link": "https://www.producthunt.com \u203a products \u203a rid-sell-with...",
+              "snippet": "Rid.me makes selling old stuff as easy as texting a friend snap a pic, send the text, and they do the rest.",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 4,
+              "title": "UniLink for Instagram",
+              "link": "https://www.producthunt.com/products/unilink-for-instagram",
+              "displayed_link": "https://www.producthunt.com \u203a products \u203a unilink-for-i...",
+              "snippet": "Add a link in bio to your Instagram account and turn your feed into a clickable, optimized landing page. Get valuable insights, including clicks, pageviews, ...",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 5,
+              "title": "nate Competitors & Alternatives (2026)",
+              "link": "https://www.producthunt.com/products/nate/alternatives",
+              "displayed_link": "https://www.producthunt.com \u203a Products \u203a nate",
+              "snippet": "Discover nate alternatives like Shop by Shopify, Agora, and unmess to shop smarter with AI assistants, luxury deals, and visual search ...",
+              "date": "Jan 4, 2025",
+              "source": "Product Hunt"
+            },
+            {
+              "position": 6,
+              "title": "Amazon Lite: Removes ads, sponsored products and other ...",
+              "link": "https://www.producthunt.com/products/amazon-lite",
+              "displayed_link": "https://www.producthunt.com \u203a products \u203a amazon-lite",
+              "snippet": "Simplifies shopping on Amazon. Removes all unnecessary ad&#39;s, sponsored products and other clutter. Ad's upon ads, sliders, videos, sponsored products,",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 7,
+              "title": "Best of Product Hunt: June 14, 2017",
+              "link": "https://www.producthunt.com/leaderboard/daily/2017/6/14",
+              "displayed_link": "https://www.producthunt.com \u203a leaderboard \u203a daily",
+              "snippet": "Product Hunt is a curation of the best new products, every day. Discover the latest mobile apps, websites, and technology products that everyone's talking ...",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 8,
+              "title": "ID by amo Competitors & Alternatives (2026)",
+              "link": "https://www.producthunt.com/products/id-by-amo/alternatives",
+              "displayed_link": "https://www.producthunt.com \u203a Products \u203a ID by amo",
+              "snippet": "ID by amo is a new kind of social profile that you make with your friends, on a limitless board. No grid to curate, followers to collect, or meaningless story ...",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 9,
+              "title": "Velocity: AI User testing: Prompt AI prototypes then test with ...",
+              "link": "https://www.producthunt.com/products/velocity-8",
+              "displayed_link": "https://www.producthunt.com \u203a products \u203a velocity-8",
+              "snippet": "AI & human user testing for prototypes. Validate earlier and stop wasting human time.",
+              "date": null,
+              "source": "Product Hunt"
+            },
+            {
+              "position": 10,
+              "title": "EraseID Competitors & Alternatives (2026)",
+              "link": "https://www.producthunt.com/products/eraseid/alternatives",
+              "displayed_link": "https://www.producthunt.com \u203a Products \u203a EraseID",
+              "snippet": "Discover EraseID alternatives like Generated Photos, Facetopia, and PhotoLeaf.AI to edit faces, swap models, and scale flawless marketing images.",
+              "date": null,
+              "source": "Product Hunt"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:producthunt.com \"Snap Cart\"",
+        "fetched_at": "2026-07-19T11:33:56.114366+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_960e68be7bb7",
+        "founder_name": "Luke Roumy",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:ycombinator.com/companies \"Snap Cart\"",
+          "search_metadata": {
+            "total_results": 2,
+            "engine_url": "https://www.google.com/search?q=site%3Aycombinator.com%2Fcompanies+%22Snap+Cart%22&oq=site%3Aycombinator.com%2Fcompanies+%22Snap+Cart%22&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Marketplace Startups funded by Y Combinator (YC) 2026",
+              "link": "https://www.ycombinator.com/companies/industry/marketplace",
+              "displayed_link": "https://www.ycombinator.com \u203a companies \u203a industry",
+              "snippet": "We help our customers open a high-yield business account, get financing, manage transactions, and launch Web3 projects, all in one place. There are over 700k ...",
+              "date": null,
+              "source": "Y Combinator"
+            },
+            {
+              "position": 2,
+              "title": "Black-founded YC companies",
+              "link": "https://www.ycombinator.com/companies/black-founders?ref=haepihaekingkeulreob-geulrobeol-bijeuniseu-riseoci-keomyuniti",
+              "displayed_link": "https://www.ycombinator.com \u203a black-founders",
+              "snippet": "Built on public datasets provided by the USDA on BBCE and COVID-19 Waivers, they help people find out if they might be likely eligible for SNAP in all 50 states ...",
+              "date": null,
+              "source": "Y Combinator"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:ycombinator.com/companies \"Snap Cart\"",
+        "fetched_at": "2026-07-19T11:33:54.510579+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_fd11373b2b07",
+        "founder_name": "Luke Roumy",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "site:linkedin.com/in \"Luke Roumy\" Snap Cart",
+          "search_metadata": {
+            "total_results": 4,
+            "engine_url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22Luke+Roumy%22+Snap+Cart&oq=site%3Alinkedin.com%2Fin+%22Luke+Roumy%22+Snap+Cart&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Luke Roumy - Software Engineer",
+              "link": "https://www.linkedin.com/in/luke-roumy-b162ab224",
+              "displayed_link": "640+ followers",
+              "snippet": "Luke Roumy. Software Engineer. Johnson & Johnson Stevens Institute of Technology. Pipersville, Pennsylvania, United States.",
+              "date": null,
+              "source": "LinkedIn \u00b7 Luke Roumy"
+            },
+            {
+              "position": 2,
+              "title": "Aidan Ouckama - Software Engineer @ Moonshot AI",
+              "link": "https://www.linkedin.com/in/ouck",
+              "displayed_link": "24.5K+ followers",
+              "snippet": "Hi! My name is Aidan and I am a giant Computer Science nerd. Currently studying Computer Science at Stevens Institute of Technology.",
+              "date": null,
+              "source": "LinkedIn \u00b7 Aidan Ouckama"
+            },
+            {
+              "position": 3,
+              "title": "Alex D'Agostino - Cloud Engineer Analyst at Mizuho ...",
+              "link": "https://www.linkedin.com/in/alexdagostino",
+              "displayed_link": "320+ followers",
+              "snippet": "I am a Computer Science student at Stevens Institute of Technology. My current interests include mobile and web apps but I find all software development ...",
+              "date": null,
+              "source": "LinkedIn \u00b7 Alex D'Agostino"
+            },
+            {
+              "position": 4,
+              "title": "Oscar Schlimer - Student at Stevens Institute of Technology",
+              "link": "https://www.linkedin.com/in/oscar-schlimer-90a4b9273",
+              "displayed_link": "170+ followers",
+              "snippet": "Student at Stevens Institute of Technology \u00b7 Experience: PowerCon Associates, L.L.C. \u00b7 Education: Stevens Institute of Technology \u00b7 Location: Rutherford ...",
+              "date": null,
+              "source": "LinkedIn \u00b7 Oscar Schlimer"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "site:linkedin.com/in \"Luke Roumy\" Snap Cart",
+        "fetched_at": "2026-07-19T11:33:54.493679+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_deck_40a6a804",
+        "founder_name": "Luke Roumy",
+        "source_type": "deck",
+        "source_url": null,
+        "raw_content": {
+          "application_text": "Devpost hackathon winner: Snap Cart\nHackathon: Square + Google AI Hackathon\nTeam: Snap Cart Team\nPrize/Placement: 1st Place\nProject URL: https://devpost.com/software/snap-cart\nGitHub: not disclosed\n\nDescription: Snap Cart provides an innovative shopping experience by using intelligent image recognition technology to streamline the checkout process and manage inventory efficiently for small businesses."
+        },
+        "query_used": "deck",
+        "fetched_at": "2026-07-19T11:33:56.115699+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_6de1b9e50523",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"Snap Cart\" Snap Cart is a Devpost hackathon winner: 1st Place at the Square + Google AI Hackathon.",
+          "answer": "Snap Cart won first place in the Best use of image/audio model category at the Square + Google AI Hackathon. The team developed an AI-driven solution to eliminate barcode scanning for small businesses. The project was recognized for its innovative use of technology.",
+          "results": [
+            {
+              "title": "Announcing Winners of the Square + Google Cloud AI Hackathon",
+              "url": "https://developer.squareup.com/blog/announcing-winners-of-the-square-google-ai-hackathon",
+              "content": "## Best use of image/audio model or combination of multiple modalities: Snap Cart ($10,000)\n\nSnap Cart\n\nTeam: Luke Roumy, Aidan Ouckama, Alex D\u2019Agostino, Charles Canata, Steven Shu\n\nSnap Cart supports small businesses by reducing the need for barcodes on products. With Snapcart, customers simply need to show a product to the camera, and press \u201cadd to cart\u201d once the AI recognizes it. Snap Cart's intelligent image recognition technology identifies the product almost instantly, streamlining the checkout process and eliminating the need for barcode scanning or manual input.\n\n## Most potential for positive change: Elara ($7,500)\n\nElara\n\nTeam: Tariku Tessema [...] Submissions were judged on the following criteria:\n\nDrumroll please\u2026. the following describes the winning ideas for each category. Thank you to all who participated and submitted projects! Congrats to the developers behind these winning projects!\n\n## First Place Overall: SquareSense AI ($22,000)\n\nSquareSense AI - Personalized Ecommerce Intelligence\n\nCheck out the SquareSense AI demo video!\n\nTeam: Younes Laaroussi [...] ##### Square Developer\n\n\u00a9 2025 Square, Inc.\n\nTwitter\nFacebook\nInstagram",
+              "score": 0.78886026
+            },
+            {
+              "title": "Square + Google AI Hackathon: Build or update an app for Square sellers that uses both Square APIs and Google AI APIs. - Devpost",
+              "url": "https://square-google-ai.devpost.com/project-gallery",
+              "content": "SquareCubed \n\n##### SquareCubed\n\nInteractive 3D virtual showrooms for square sellers! Effortlessly add interactive 3D models, offering customers real-time, AI-driven customization.\n\nPayAssist \n\n##### PayAssist\n\nUnleash the Power of AI in Your Square Store\n\nSnap Cart \n\n##### Snap Cart\n\nA quick and cost effective POS solution for small businesses\n\nElara \n\n##### Elara\n\nIntentional giving at the Point of Sell (POS) with Google's Vertex AI and Square API\n\nSeller AI \n\n##### Seller AI\n\nSeller AI: Elevate your restaurant's efficiency and customer satisfaction with AI-powered menu management, real-time ingredient tracking, and Square API integration\n\nGetFeed \n\n##### GetFeed\n\nTurning Feedback into Actionable Insights\n\nGenPost \n\n##### GenPost [...] TaskMatic \n\n##### TaskMatic\n\nTaskMatic: Decentralized task management with AI agents, smart contracts, SQUARE payments, and open interfaces.\n\nIOTweight Payment \n\n##### IOTweight Payment\n\ne have developed smart iot weight machine and website that farmers can put weight of fruits and payment is calculated and saved on website. Also Google Ai detects ripe fruits using tensorflow model\n\nChatShop Assist \n\n##### ChatShop Assist\n\nEmpower Your Online Store with AI-Driven, Personalized Shopping Experience\n\nLoomen \n\n##### Loomen\n\nFreelancing and solo-business made easy\n\nMediSentry \n\n##### MediSentry\n\nMediSentry: Smart Assistance for Doctors\n\nSquareScanventory \n\n##### SquareScanventory [...] A.L.F.R.E.D. \n\n##### A.L.F.R.E.D.\n\nA.L.F.R.E.D. simplifies res",
+              "score": 0.70944256
+            },
+            {
+              "title": "Square + Google AI Hackathon: Build or update an app for Square sellers that uses both Square APIs and Google AI APIs. - Devpost",
+              "url": "https://square-google-ai.devpost.com",
+              "content": "$100,000 in prizes\n\n###### First Place Overall\n\n1 winner\n\n\\ $22,000 USD   \n\\ 60-minute video conference with the Google Cloud Payments Industry Engineering Team   \n\\ Opportunity to present to GCP FSI leadership   \n\\ Social recognition by Square\n\n###### Second Place Overall\n\n1 winner\n\n\\ $18,000 USD   \n\\ 60-minute video conference with the Google Cloud Payments Industry Engineering Team   \n\\ Social recognition by Square\n\n###### Best reinvention or unification of in-person and online experiences\n\n1 winner\n\n\\ $15,000   \n\\ Social recognition by Square\n\n###### Best use of a text or chat foundational model\n\n1 winner\n\n\\ $10,000 USD   \n\\ Social recognition by Square\n\n###### Best use of image/audio model or combination of multiple modalities\n\n1 winner [...] ##### Submission Specifics\n\n The Project must be capable of being successfully installed and must function as depicted in the video and/or expressed in the text description.\n The Project must run on the platform for which is specified in the Submission Requirements.\n The Entrant must make the Project available free of charge and without any restriction\n Multiple Submissions: An Entrant may submit more than one Submission, however, each submission must be unique and substantially different\n All Submission materials must be in English\n\nYour complete submission form on Devpost before the final deadline.\n\n### Hackathon Sponsors\n\n### Prizes\n\n$100,000 in prizes\n\n###### First Place Overall\n\n1 winner [...] 1 winner\n\n\\ $10,000 USD   \n\\ Socia",
+              "score": 0.6739866
+            },
+            {
+              "title": "Younes Laaroussi - Software Engineer",
+              "url": "https://youneslaaroussi.ca/blog/winning-first-place-at-the-2023-google-and-square-ai-hackathon",
+              "content": "Younes Laaroussi\n\nCybersecurity and Software EngineerCybersecurity and Software Engineer\n\n# Winning First Place at the 2023 Google and Square AI Hackathon\n\nWhen I first saw the announcement for the Google and Square AI Hackathon, I knew I had to participate. The challenge was clear: build something that makes e-commerce better using Square's APIs and Google's AI tools. What I didn't know was that this would turn into one of the most intense and rewarding months of development I'd ever experience.\n\n## The Idea\n\nThe inspiration came from a simple observation. Business owners are drowning in data. They have sales numbers, customer information, inventory levels, but most of them don't have the time or expertise to turn that data into actionable insights. I wanted to change that. [...] When the announcement came that SquareSense won first place overall, I was stunned. Competing against hundreds of developers and having judges recognize the work felt incredible. The feedback highlighted how the project successfully merged AI capabilities with practical business needs.\n\n## What I Learned\n\nThis hackathon taught me that the best solutions often come from observing real problems. Business owners don't need more complex tools; they need simpler ways to access the intelligence hidden in their data.\n\nI also learned the importance of balancing innovation with usability. Having cutting-edge AI is impressive, but if a busy store owner can't figure out how to use it in 30 seconds, it's not so",
+              "score": 0.5585443
+            },
+            {
+              "title": "Hackathon Winners",
+              "url": "https://square-google-ai.devpost.com/forum_topics/37991-hackathon-winners",
+              "content": "# Square + Google AI Hackathon\n\nBack to all discussions\n\nDhruv Roongta\n\nDhruv Roongta   \u2022   over 2 years ago\n\n### Hackathon Winners\n\nWill the Hackathon Winners be announced now?\n\n ### 1 comment\n Dani Ratner\n\n  Dani Ratner  Manager    \u2022   over 2 years ago\n\n  Hi! The winners were just announced. Please check out the gallery now for the full list.\n\nComments are closed.",
+              "score": 0.53517187
+            }
+          ],
+          "response_time": 2.44
+        },
+        "query_used": "verify:\"Snap Cart\" Snap Cart is a Devpost hackathon winner: 1st Place at the Square + Google AI Hackathon.",
+        "fetched_at": "2026-07-19T11:34:05.104630+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_1676bf27cf50",
+        "founder_name": "Luke Roumy",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "Market analysis for shopping startups in 2026: competitors, total addressable market, key opportunities, and main threats specifically for Snap Cart",
+          "answer_markdown": "### Executive Summary\n\nThe 2026 shopping startup landscape is defined by the convergence of fast\\-moving e\\-commerce trends, data\\-driven consumer tracking, and automated retail tech. Snapcart \\(often referenced alongside software suites like the Shopreme Snap Cart ecosystem\\) occupies a unique intersection: bridging offline consumer receipts with real\\-time retail analytics and powering digitized brick\\-and\\-mortar journeys. \\(https://sg.news.yahoo.com/ai\\-powered\\-analytics\\-startup\\-snapcart\\-raises\\-us\\-10m\\-210051253.html\\) [0] [1] [2] [3]\n\n### Total Addressable Market \\(TAM\\)\n\nThe market potential for shopping tech startups spans both digital storefront infrastructure and smart physical retail enhancements. [13] [14] [15]\n\n- Global E\\-Commerce Software & Retail Tech Market: Worldwide e\\-commerce retail sales have hit $6.88 trillion, with regional segments like the U.S. accounting for $1.38 trillion to $1.53 trillion. \\(https://www.mordorintelligence.com/industry\\-reports/united\\-states\\-ecommerce\\-market\\) [4] [5]\n- The Analytics & Smart Cart Beachhead: For specialized operators like Snapcart, the core TAM resides in the Smart Shopping Cart and Retail Media Network sectors. The global smart cart software and infrastructure market is valued at $2.74 billion. It is growing aggressively at a 24.6% to 25% CAGR, projected to reach over $6.53 billion by 2030. \\(https://www.researchandmarkets.com/reports/5953243/smart\\-shopping\\-cart\\-market\\-report\\) [6]\n\n### Key Competitors\n\nSnapcart faces a bifurcated competitive threat from traditional e\\-commerce aggregators and physical grocery tech providers: \\(https://tracxn.com/d/companies/snapcart/\\_\\_WgIy\\_E2P21S\\-BLe2lR3v41qJ8DXdSnVl\\-ETH2jkekYo\\) [7] [8]\n\n| Competitor Category | Primary Players | Market Dynamics & Strength |\n| --- | --- | --- |\n| Smart Cart Tech & Soft\\-POS | Instacart \\(Caper Carts\\), Veeve, Shopic | Dominating the in\\-store physical hardware layer. Instacart's Caper Carts natively track spending and integrate directly into grocery loyalty programs. |\n| E\\-Commerce & Insights Software | Shopify, Bazaarvoice, Snipcart | Large enterprise dominance over shopping cart software and decentralized digital consumer profiles. |\n| Loyalty & Data Aggregators | Fetch Rewards, Ibotta | Direct competitors to Snapcart\u2019s consumer receipt\\-scanning model, vying for user attention through cash\\-back incentives to build consumer insight databases. |\n\n### Key Opportunities for Snap Cart\n\n- Explosion of Retail Media Networks \\(RMNs\\):\nTurning cart tablets and receipt\\-scanning interfaces into advertising real estate. Startups can monetize consumer data by serving hyper\\-personalized, location\\-based ads directly to shoppers while they stand in store aisles. \\(https://shopreme.com/solutions/smart\\-shopping\\-cart\\-snap\\-cart\\) [3]\n- AI\\-Driven Hyper\\-Personalization:\nLeveraging AI to parse complete receipts or shopping histories to offer real\\-time, personalized coupon and recipe integration. For example, offering a one\\-tap budget\\-friendly meal kit option natively on a shopping application. \\(https://shopreme.com/solutions/smart\\-shopping\\-cart\\-snap\\-cart\\) [3] [1]\n- Algorithmic and Predictive Data Monetization:\nAs AI becomes the primary filter for retail traffic, product data accuracy is paramount. [Snapcart](https://snapcart.global/)\u2019s massive database of over half a billion processed receipt names gives it an advantage in selling raw, real\\-time consumer behavior analytics back to FMCG brands. \\(https://sg.news.yahoo.com/ai\\-powered\\-analytics\\-startup\\-snapcart\\-raises\\-us\\-10m\\-210051253.html\\)\n\n### Main Threats to Snap Cart\n\n- Hardware and Ecosystem Consolidation:\nMajor retail giants \\(e.g., Walmart, Amazon, Costco\\) control over a third of all retail sales and a massive percentage of growth. These giants build proprietary tech stacks, squeezing out third\\-party startup software integrations.\n- Rising Acquisition and Capital Costs:\nRetaining consumers on cash\\-back and receipt platforms requires heavy capital for rewards. With tighter funding environments for mid\\-tier startups, sustaining a large user base against well\\-funded incumbents is a core risk.\n- Logistical Fees and Margin Compression:\nFor branches of the product touching delivery or physical store rollouts, new carrier fees and rising automation labor costs are driving up operational expenses, forcing startups to optimize every fraction of their supply chains. \\(https://www.smurfitwestrock.com/blog/top\\-retail\\-trends\\-of\\-2026\\-what\\-to\\-expect\\) [7] [4] [10] [16] [17]\n\nIf you would like to explore this further, please tell me:\n\n- Do you want to focus heavily on the B2B data\\-selling side or the consumer\\-facing application side?\n- Which specific geographic market \\(e.g., Southeast Asia or North America\\) are you prioritizing for this analysis?\n- Should we build a financial model detailing the customer acquisition costs \\(CAC\\) for these shopping platforms? \\(https://pitchbook.com/profiles/company/123170\\-32\\) [11] [12]\n\n\n### References\n\n[0] [AI\\-powered analytics startup Snapcart raises US$10M to ...](https://sg.news.yahoo.com/ai-powered-analytics-startup-snapcart-raises-us-10m-210051253.html) \u2014 Established in 2015, Snapcart provides real\\-time offline shopper and consumer insights to brands. The app collects massive amount ...\n\n[1] [Analyzing Shopping Cart Software Market Size and Revenue ...](https://www.linkedin.com/pulse/analyzing-shopping-cart-software-market-size-revenue-gqy8c) \u2014 Currently, the market for shopping cart software is witnessing substantial growth due to the rising number of online consumers, increased mobile commerce, and the ...\n\n[2] [5 emerging e\\-commerce trends for 2026 \\- Alsendo](https://alsendo.com/five-trends-that-will-transform-online-sales-in-2026/) \u2014 E\\-commerce in 2026 \u2014 key takeaways \\* Sales increasingly start with algorithmic recommendations and video content rather than search\u2014raising the importance of produ...\n\n[3] [Smart Shopping Cart: shopreme snap cart software](https://shopreme.com/solutions/smart-shopping-cart-snap-cart) \u2014 The Smart Cart That's Just a Snap Away \\* Soft\\-POS Payment. Enable smooth, secure payments by card, Apple Pay, or loyalty\\-linked credit card \u2013 right on the tablet o...\n\n[4] [US E\\-Commerce Market Share, Size \\u0026 Overview \\- 2031](https://www.mordorintelligence.com/industry-reports/united-states-ecommerce-market) \u2014 Table\\_title: US E\\-commerce Market Size and Share Table\\_content: \\| Study Period \\| 2020 \\- 2031 \\| \\| \\-\\-\\- \\| \\-\\-\\- \\| \\| Forecast Data Period \\| 2026 \\- 2031 \\| \\| Base Year Mar...\n\n[5] [eCommerce Statistics \\(2026\\): Sales \\u0026 User Growth Trends](https://capitaloneshopping.com/research/ecommerce-statistics/) \u2014 Highlights. Worldwide, e\\-commerce retail sales will reach an estimated $6.88 trillion in 2026, representing 21.1% of all retail commerce. Over 2.77 billion people ...\n\n[6] [Smart Shopping Cart Market Report 2026](https://www.researchandmarkets.com/reports/5953243/smart-shopping-cart-market-report?srsltid=AfmBOooGs-rT2O0QsdV9BPs2Wc851dNvrOKDd4hy523Rcj6TKI1P5USX) \u2014 The smart shopping cart market size has grown exponentially in recent years. It will grow from $2.19 billion in 2025 to $2.74 billion in 2026 at a compound annual ...\n\n[7] [Snapcart \\- 2026 Company Profile \\u0026 Competitors \\- Tracxn](https://tracxn.com/d/companies/snapcart/__WgIy_E2P21S-BLe2lR3v41qJ8DXdSnVl-ETH2jkekYo) \u2014 Snapcart \\- About the company. Snapcart is an unfunded company, founded in 2023. It operates as an AI\\-based software solutions for e\\-commerce businesses. Snapcart h...\n\n[8] [Instacart adds SNAP spending tool to smart carts \\- Yahoo Finance](https://finance.yahoo.com/news/instacart-adds-snap-spending-tool-110600385.html) \u2014 Dive Brief: \\* Instacart announced Thursday that it has added a new tool to its Caper Carts that helps SNAP shoppers manage their spending by tracking eligible item...\n\n[9] [Connect Brands and Customers in a Snap](https://snapcart.global/) \u2014 Snapcart is a platform that helps brands connect with their customers. Snapcart's platform includes: \\* \\*\\*Format agnostic\\*\\* Ability to process over half a billion d...\n\n[10] [Top Retail Trends of 2026: What to Expect \\| Smurfit Westrock](https://www.smurfitwestrock.com/blog/top-retail-trends-of-2026-what-to-expect) \u2014 Kantar reports that Walmart, Amazon and Costco combined will account for a third of all U.S. retail sales and 32% of all U.S. online spending in 2025 for the retai...\n\n[11] [Snapcart 2026 Company Profile: Valuation, Funding \\u0026 Investors](https://pitchbook.com/profiles/company/123170-32) \u2014 Snapcart FAQs \\* When was Snapcart founded? Snapcart was founded in 2015. \\* Where is Snapcart headquartered? Snapcart is headquartered in Jakarta, Indonesia. \\* What...\n\n[12] [What is Customer Demographics and Target Market of Snap ...](https://businessmodelcanvastemplate.com/blogs/target-market/snap-target-market?srsltid=AfmBOoqExZBgpMY7PC-5gXo6QEMmreIdZFvtH7CgIzmS1Uo_wC3949ms) \u2014 Geographical Market Presence of Snap Inc. is concentrated in North America and Europe, with the United States remaining the most profitable market. As of early 202...\n\n[13] [Retail Market 2035 \\| Demand, industry, Size, Share, Growth](https://www.marketresearchfuture.com/reports/retail-industry-in-market-34684) \u2014 This upward trajectory in retail industry size signals robust opportunities for businesses investing in both physical and digital retail infrastructures.\n\n[14] [Smart Retail Market Size, Share, Industry Growth, Trends \\u0026 Analysis 2036](https://www.marketsandmarkets.com/Market-Reports/smart-retail-market-78791828.html) \u2014 Smart Retail Market Top 10 key takeaway Smart retail is transforming physical stores into intelligent digital ecosystems AI\\-driven personalization is enhancing cus...\n\n[15] [Top 30 Online Stores Where Shoppers Are Creating Carts in 2026](https://share-a-cart.com/blog/top-30-online-stores-2026) \u2014 The Big Takeaway. The 2026 year\\-to\\-date data reveals that cart sharing is not concentrated in any single retail vertical. Instead, it is distributed across a broad...\n\n[16] [Retail Trends 2026: Key Shifts Shaping Retail](https://www.olabi.ooo/blog/retail-trends-2026-future-of-retail/) \u2014 Retailers are facing rising operational costs and ongoing labor challenges, which are pushing increased adoption of automation technologies across stores.\n\n[17] [TMDT20D Group 4 Regular Test 02: Shopee's Market Analysis \\u0026 Challenges](https://www.studocu.vn/vn/document/tran-dai-nghia/reading-sentence-completiondocx/tmdt20d-group-4-regular-test-02-shopees-market-analysis-challenges/152023361) \u2014 Operational Challenges: Issues such as high logistics costs and counterfeit products affecting customer trust. Strategic Recommendations: Suggestions for Shopee to...",
+          "text_blocks": [
+            {
+              "type": "heading",
+              "snippet": "Executive Summary"
+            },
+            {
+              "type": "paragraph",
+              "snippet": "The 2026 shopping startup landscape is defined by the convergence of fast-moving e-commerce trends, data-driven consumer tracking, and automated retail tech. Snapcart (often referenced alongside software suites like the Shopreme Snap Cart ecosystem) occupies a unique intersection: bridging offline consumer receipts with real-time retail analytics and powering digitized brick-and-mortar journeys.",
+              "snippet_links": [
+                {
+                  "link": "https://sg.news.yahoo.com/ai-powered-analytics-startup-snapcart-raises-us-10m-210051253.html"
+                }
+              ],
+              "reference_indexes": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "Total Addressable Market (TAM)"
+            },
+            {
+              "type": "paragraph",
+              "snippet": "The market potential for shopping tech startups spans both digital storefront infrastructure and smart physical retail enhancements.",
+              "reference_indexes": [
+                13,
+                14,
+                15
+              ]
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "Global E-Commerce Software & Retail Tech Market: Worldwide e-commerce retail sales have hit $6.88 trillion, with regional segments like the U.S. accounting for $1.38 trillion to $1.53 trillion.",
+                  "snippet_links": [
+                    {
+                      "link": "https://www.mordorintelligence.com/industry-reports/united-states-ecommerce-market"
+                    }
+                  ],
+                  "reference_indexes": [
+                    4,
+                    5
+                  ]
+                },
+                {
+                  "snippet": "The Analytics & Smart Cart Beachhead: For specialized operators like Snapcart, the core TAM resides in the Smart Shopping Cart and Retail Media Network sectors. The global smart cart software and infrastructure market is valued at $2.74 billion. It is growing aggressively at a 24.6% to 25% CAGR, projected to reach over $6.53 billion by 2030.",
+                  "snippet_links": [
+                    {
+                      "link": "https://www.researchandmarkets.com/reports/5953243/smart-shopping-cart-market-report"
+                    }
+                  ],
+                  "reference_indexes": [
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "Key Competitors"
+            },
+            {
+              "type": "paragraph",
+              "snippet": "Snapcart faces a bifurcated competitive threat from traditional e-commerce aggregators and physical grocery tech providers:",
+              "snippet_links": [
+                {
+                  "link": "https://tracxn.com/d/companies/snapcart/__WgIy_E2P21S-BLe2lR3v41qJ8DXdSnVl-ETH2jkekYo"
+                }
+              ],
+              "reference_indexes": [
+                7,
+                8
+              ]
+            },
+            {
+              "type": "table",
+              "table": [
+                [
+                  "Competitor Category",
+                  "Primary Players",
+                  "Market Dynamics & Strength"
+                ],
+                [
+                  "Smart Cart Tech & Soft-POS",
+                  "Instacart (Caper Carts), Veeve, Shopic",
+                  "Dominating the in-store physical hardware layer. Instacart's Caper Carts natively track spending and integrate directly into grocery loyalty programs."
+                ],
+                [
+                  "E-Commerce & Insights Software",
+                  "Shopify, Bazaarvoice, Snipcart",
+                  "Large enterprise dominance over shopping cart software and decentralized digital consumer profiles."
+                ],
+                [
+                  "Loyalty & Data Aggregators",
+                  "Fetch Rewards, Ibotta",
+                  "Direct competitors to Snapcart\u2019s consumer receipt-scanning model, vying for user attention through cash-back incentives to build consumer insight databases."
+                ]
+              ],
+              "detailed": [
+                [
+                  {
+                    "snippet": "Competitor Category"
+                  },
+                  {
+                    "snippet": "Primary Players"
+                  },
+                  {
+                    "snippet": "Market Dynamics & Strength"
+                  }
+                ],
+                [
+                  {
+                    "snippet": "Smart Cart Tech & Soft-POS"
+                  },
+                  {
+                    "snippet": "Instacart (Caper Carts), Veeve, Shopic"
+                  },
+                  {
+                    "snippet": "Dominating the in-store physical hardware layer. Instacart's Caper Carts natively track spending and integrate directly into grocery loyalty programs."
+                  }
+                ],
+                [
+                  {
+                    "snippet": "E-Commerce & Insights Software"
+                  },
+                  {
+                    "snippet": "Shopify, Bazaarvoice, Snipcart"
+                  },
+                  {
+                    "snippet": "Large enterprise dominance over shopping cart software and decentralized digital consumer profiles."
+                  }
+                ],
+                [
+                  {
+                    "snippet": "Loyalty & Data Aggregators"
+                  },
+                  {
+                    "snippet": "Fetch Rewards, Ibotta"
+                  },
+                  {
+                    "snippet": "Direct competitors to Snapcart\u2019s consumer receipt-scanning model, vying for user attention through cash-back incentives to build consumer insight databases."
+                  }
+                ]
+              ],
+              "formatted": [
+                {
+                  "competitor_category": "Smart Cart Tech & Soft-POS",
+                  "primary_players": "Instacart (Caper Carts), Veeve, Shopic",
+                  "market_dynamics_strength": "Dominating the in-store physical hardware layer. Instacart's Caper Carts natively track spending and integrate directly into grocery loyalty programs."
+                },
+                {
+                  "competitor_category": "E-Commerce & Insights Software",
+                  "primary_players": "Shopify, Bazaarvoice, Snipcart",
+                  "market_dynamics_strength": "Large enterprise dominance over shopping cart software and decentralized digital consumer profiles."
+                },
+                {
+                  "competitor_category": "Loyalty & Data Aggregators",
+                  "primary_players": "Fetch Rewards, Ibotta",
+                  "market_dynamics_strength": "Direct competitors to Snapcart\u2019s consumer receipt-scanning model, vying for user attention through cash-back incentives to build consumer insight databases."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "Key Opportunities for Snap Cart"
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "Explosion of Retail Media Networks (RMNs):\nTurning cart tablets and receipt-scanning interfaces into advertising real estate. Startups can monetize consumer data by serving hyper-personalized, location-based ads directly to shoppers while they stand in store aisles.",
+                  "snippet_links": [
+                    {
+                      "link": "https://shopreme.com/solutions/smart-shopping-cart-snap-cart"
+                    }
+                  ],
+                  "reference_indexes": [
+                    3
+                  ]
+                },
+                {
+                  "snippet": "AI-Driven Hyper-Personalization:\nLeveraging AI to parse complete receipts or shopping histories to offer real-time, personalized coupon and recipe integration. For example, offering a one-tap budget-friendly meal kit option natively on a shopping application.",
+                  "snippet_links": [
+                    {
+                      "link": "https://shopreme.com/solutions/smart-shopping-cart-snap-cart"
+                    }
+                  ],
+                  "reference_indexes": [
+                    3,
+                    1
+                  ]
+                },
+                {
+                  "snippet": "Algorithmic and Predictive Data Monetization:\nAs AI becomes the primary filter for retail traffic, product data accuracy is paramount. Snapcart\u2019s massive database of over half a billion processed receipt names gives it an advantage in selling raw, real-time consumer behavior analytics back to FMCG brands.",
+                  "snippet_links": [
+                    {
+                      "text": "Snapcart",
+                      "link": "https://snapcart.global/"
+                    },
+                    {
+                      "link": "https://sg.news.yahoo.com/ai-powered-analytics-startup-snapcart-raises-us-10m-210051253.html"
+                    }
+                  ]
+                }
+              ],
+              "reference_indexes": [
+                0,
+                2,
+                9
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "Main Threats to Snap Cart"
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "Hardware and Ecosystem Consolidation:\nMajor retail giants (e.g., Walmart, Amazon, Costco) control over a third of all retail sales and a massive percentage of growth. These giants build proprietary tech stacks, squeezing out third-party startup software integrations."
+                },
+                {
+                  "snippet": "Rising Acquisition and Capital Costs:\nRetaining consumers on cash-back and receipt platforms requires heavy capital for rewards. With tighter funding environments for mid-tier startups, sustaining a large user base against well-funded incumbents is a core risk."
+                },
+                {
+                  "snippet": "Logistical Fees and Margin Compression:\nFor branches of the product touching delivery or physical store rollouts, new carrier fees and rising automation labor costs are driving up operational expenses, forcing startups to optimize every fraction of their supply chains.",
+                  "snippet_links": [
+                    {
+                      "link": "https://www.smurfitwestrock.com/blog/top-retail-trends-of-2026-what-to-expect"
+                    }
+                  ],
+                  "reference_indexes": [
+                    7,
+                    4,
+                    10,
+                    16,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "snippet": "If you would like to explore this further, please tell me:"
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "Do you want to focus heavily on the B2B data-selling side or the consumer-facing application side?"
+                },
+                {
+                  "snippet": "Which specific geographic market (e.g., Southeast Asia or North America) are you prioritizing for this analysis?"
+                },
+                {
+                  "snippet": "Should we build a financial model detailing the customer acquisition costs (CAC) for these shopping platforms?",
+                  "snippet_links": [
+                    {
+                      "link": "https://pitchbook.com/profiles/company/123170-32"
+                    }
+                  ],
+                  "reference_indexes": [
+                    11,
+                    12
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "title": "AI-powered analytics startup Snapcart raises US$10M to ...",
+              "link": "https://sg.news.yahoo.com/ai-powered-analytics-startup-snapcart-raises-us-10m-210051253.html",
+              "snippet": "Established in 2015, Snapcart provides real-time offline shopper and consumer insights to brands. The app collects massive amount ...",
+              "source": "Yahoo News Singapore"
+            },
+            {
+              "title": "Analyzing Shopping Cart Software Market Size and Revenue ...",
+              "link": "https://www.linkedin.com/pulse/analyzing-shopping-cart-software-market-size-revenue-gqy8c",
+              "snippet": "Currently, the market for shopping cart software is witnessing substantial growth due to the rising number of online consumers, increased mobile commerce, and the ...",
+              "source": "LinkedIn"
+            },
+            {
+              "title": "5 emerging e-commerce trends for 2026 - Alsendo",
+              "link": "https://alsendo.com/five-trends-that-will-transform-online-sales-in-2026/",
+              "snippet": "E-commerce in 2026 \u2014 key takeaways * Sales increasingly start with algorithmic recommendations and video content rather than search\u2014raising the importance of produ...",
+              "source": "alsendo.com"
+            },
+            {
+              "title": "Smart Shopping Cart: shopreme snap cart software",
+              "link": "https://shopreme.com/solutions/smart-shopping-cart-snap-cart",
+              "snippet": "The Smart Cart That's Just a Snap Away * Soft-POS Payment. Enable smooth, secure payments by card, Apple Pay, or loyalty-linked credit card \u2013 right on the tablet o...",
+              "source": "shopreme"
+            },
+            {
+              "title": "US E-Commerce Market Share, Size \\u0026 Overview - 2031",
+              "link": "https://www.mordorintelligence.com/industry-reports/united-states-ecommerce-market",
+              "snippet": "Table_title: US E-commerce Market Size and Share Table_content: | Study Period | 2020 - 2031 | | --- | --- | | Forecast Data Period | 2026 - 2031 | | Base Year Mar...",
+              "source": "Mordor Intelligence"
+            },
+            {
+              "title": "eCommerce Statistics (2026): Sales \\u0026 User Growth Trends",
+              "link": "https://capitaloneshopping.com/research/ecommerce-statistics/",
+              "snippet": "Highlights. Worldwide, e-commerce retail sales will reach an estimated $6.88 trillion in 2026, representing 21.1% of all retail commerce. Over 2.77 billion people ...",
+              "source": "Capital One Shopping"
+            },
+            {
+              "title": "Smart Shopping Cart Market Report 2026",
+              "link": "https://www.researchandmarkets.com/reports/5953243/smart-shopping-cart-market-report?srsltid=AfmBOooGs-rT2O0QsdV9BPs2Wc851dNvrOKDd4hy523Rcj6TKI1P5USX",
+              "snippet": "The smart shopping cart market size has grown exponentially in recent years. It will grow from $2.19 billion in 2025 to $2.74 billion in 2026 at a compound annual ...",
+              "source": "Research and Markets"
+            },
+            {
+              "title": "Snapcart - 2026 Company Profile \\u0026 Competitors - Tracxn",
+              "link": "https://tracxn.com/d/companies/snapcart/__WgIy_E2P21S-BLe2lR3v41qJ8DXdSnVl-ETH2jkekYo",
+              "snippet": "Snapcart - About the company. Snapcart is an unfunded company, founded in 2023. It operates as an AI-based software solutions for e-commerce businesses. Snapcart h...",
+              "source": "Tracxn"
+            },
+            {
+              "title": "Instacart adds SNAP spending tool to smart carts - Yahoo Finance",
+              "link": "https://finance.yahoo.com/news/instacart-adds-snap-spending-tool-110600385.html",
+              "snippet": "Dive Brief: * Instacart announced Thursday that it has added a new tool to its Caper Carts that helps SNAP shoppers manage their spending by tracking eligible item...",
+              "source": "Yahoo Finance"
+            },
+            {
+              "title": "Connect Brands and Customers in a Snap",
+              "link": "https://snapcart.global/",
+              "snippet": "Snapcart is a platform that helps brands connect with their customers. Snapcart's platform includes: * **Format agnostic** Ability to process over half a billion d...",
+              "source": "Snapcart"
+            },
+            {
+              "title": "Top Retail Trends of 2026: What to Expect | Smurfit Westrock",
+              "link": "https://www.smurfitwestrock.com/blog/top-retail-trends-of-2026-what-to-expect",
+              "snippet": "Kantar reports that Walmart, Amazon and Costco combined will account for a third of all U.S. retail sales and 32% of all U.S. online spending in 2025 for the retai...",
+              "source": "Smurfit Westrock"
+            },
+            {
+              "title": "Snapcart 2026 Company Profile: Valuation, Funding \\u0026 Investors",
+              "link": "https://pitchbook.com/profiles/company/123170-32",
+              "snippet": "Snapcart FAQs * When was Snapcart founded? Snapcart was founded in 2015. * Where is Snapcart headquartered? Snapcart is headquartered in Jakarta, Indonesia. * What...",
+              "source": "PitchBook"
+            },
+            {
+              "title": "What is Customer Demographics and Target Market of Snap ...",
+              "link": "https://businessmodelcanvastemplate.com/blogs/target-market/snap-target-market?srsltid=AfmBOoqExZBgpMY7PC-5gXo6QEMmreIdZFvtH7CgIzmS1Uo_wC3949ms",
+              "snippet": "Geographical Market Presence of Snap Inc. is concentrated in North America and Europe, with the United States remaining the most profitable market. As of early 202...",
+              "source": "businessmodelcanvastemplate.com"
+            },
+            {
+              "title": "Retail Market 2035 | Demand, industry, Size, Share, Growth",
+              "link": "https://www.marketresearchfuture.com/reports/retail-industry-in-market-34684",
+              "snippet": "This upward trajectory in retail industry size signals robust opportunities for businesses investing in both physical and digital retail infrastructures.",
+              "source": "Market Research Future"
+            },
+            {
+              "title": "Smart Retail Market Size, Share, Industry Growth, Trends \\u0026 Analysis 2036",
+              "link": "https://www.marketsandmarkets.com/Market-Reports/smart-retail-market-78791828.html",
+              "snippet": "Smart Retail Market Top 10 key takeaway Smart retail is transforming physical stores into intelligent digital ecosystems AI-driven personalization is enhancing cus...",
+              "source": "MarketsandMarkets"
+            },
+            {
+              "title": "Top 30 Online Stores Where Shoppers Are Creating Carts in 2026",
+              "link": "https://share-a-cart.com/blog/top-30-online-stores-2026",
+              "snippet": "The Big Takeaway. The 2026 year-to-date data reveals that cart sharing is not concentrated in any single retail vertical. Instead, it is distributed across a broad...",
+              "source": "Share-A-Cart"
+            },
+            {
+              "title": "Retail Trends 2026: Key Shifts Shaping Retail",
+              "link": "https://www.olabi.ooo/blog/retail-trends-2026-future-of-retail/",
+              "snippet": "Retailers are facing rising operational costs and ongoing labor challenges, which are pushing increased adoption of automation technologies across stores.",
+              "source": "Olabi"
+            },
+            {
+              "title": "TMDT20D Group 4 Regular Test 02: Shopee's Market Analysis \\u0026 Challenges",
+              "link": "https://www.studocu.vn/vn/document/tran-dai-nghia/reading-sentence-completiondocx/tmdt20d-group-4-regular-test-02-shopees-market-analysis-challenges/152023361",
+              "snippet": "Operational Challenges: Issues such as high logistics costs and counterfeit products affecting customer trust. Strategic Recommendations: Suggestions for Shopee to...",
+              "source": "Studocu Vietnam"
+            }
+          ]
+        },
+        "query_used": "ai_mode:Market analysis for shopping startups in 2026: competitors, total addressable market, key opportunities, and main threats specifically for Snap Cart",
+        "fetched_at": "2026-07-19T11:34:17.187810+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_eb325688af48",
+        "founder_name": "Luke Roumy",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"shopping\" alternatives",
+          "search_metadata": {
+            "total_results": 179000000,
+            "engine_url": "https://www.google.com/search?q=%22shopping%22+alternatives&oq=%22shopping%22+alternatives&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "Ethical alternatives to Amazon",
+              "link": "https://www.ethicalconsumer.org/ethical-campaigns/boycott-amazon/shopping-without-amazon",
+              "displayed_link": "https://www.ethicalconsumer.org \u203a boycott-amazon \u203a s...",
+              "snippet": "The clothing sector is luckily full of sustainable Amazon alternatives, offering Fairtrade, organic or other ethical fashion. If you're shopping ...",
+              "date": "Oct 31, 2025",
+              "source": "Ethical Consumer"
+            },
+            {
+              "position": 2,
+              "title": "Alternatives to Amazon for online shopping?",
+              "link": "https://www.facebook.com/groups/50501movement/posts/1179144437156217/",
+              "displayed_link": "860+ comments \u00b7 8 months ago",
+              "snippet": "Directly buying from company websites, using Etsy, and shopping at local stores like Costco, Aldi, and Trader Joe's are popular alternatives.",
+              "date": null,
+              "source": "Facebook \u00b7 The 50501 Movement"
+            },
+            {
+              "position": 3,
+              "title": "15 Ethical Shopping Alternatives To Amazon (2026)",
+              "link": "https://www.thegoodtrade.com/features/amazon-alternatives/",
+              "displayed_link": "https://www.thegoodtrade.com \u203a features \u203a amazon-alte...",
+              "snippet": "15 Ethical Shopping Alternatives To Amazon (2026) \u00b7 1. Thrive Market \u00b7 2. Martie \u00b7 3. Grove Collaborative \u00b7 4. Uncommon Goods \u00b7 5. Bookshop \u00b7 6. Credo ...",
+              "date": "Jul 8, 2026",
+              "source": "The Good Trade"
+            },
+            {
+              "position": 4,
+              "title": "What Prime alternatives are you using for shopping?",
+              "link": "https://www.reddit.com/r/amazonprime/comments/1px106f/what_prime_alternatives_are_you_using_for_shopping/",
+              "displayed_link": "30+ comments \u00b7 6 months ago",
+              "snippet": "Hi! What shopping alternatives are you using if you've canceled Prime that you love? It would be nice to have a list of where people have shopped and ...",
+              "date": null,
+              "source": "Reddit \u00b7 r/amazonprime"
+            },
+            {
+              "position": 5,
+              "title": "The Best Amazon Alternatives for Shopping Groceries, ...",
+              "link": "https://www.betterbattery.co/blogs/media/the-best-amazon-alternatives-for-shopping-groceries-home-essentials-books-and-beauty-products-online?srsltid=AfmBOooBrmZstX0P8EDtItjUyVKNY29BCgLwkjj-moOzyztzAbxWeVGm",
+              "displayed_link": "https://www.betterbattery.co \u203a blogs \u203a media \u203a the-best-a...",
+              "snippet": "The Best Amazon Alternatives for Shopping Groceries, Home Essentials, Books and Beauty Products Online \u00b7 Misfits Market \u00b7 Fashionphile \u00b7 Dropps \u00b7 Back Market.",
+              "date": null,
+              "source": "Better Battery Co."
+            },
+            {
+              "position": 6,
+              "title": "Transition from physical to online shopping alternatives ...",
+              "link": "https://www.sciencedirect.com/science/article/pii/S0965856423000642",
+              "displayed_link": "https://www.sciencedirect.com \u203a science \u203a article \u203a pii",
+              "snippet": "The Internet and communication technologies, in particular telecommuting and online shopping, have been promoted as alternatives allowing people to work and ...",
+              "date": null,
+              "source": "ScienceDirect.com"
+            },
+            {
+              "position": 7,
+              "title": "Tippy's List - Shopping alternatives to Amazon ...",
+              "link": "https://www.goodsthatmatter.com/blogs/matter-blog/tippys-list-ethical-shopping-answers-to-amazon-and-more?srsltid=AfmBOoo_Lzg7K8-zh50Z6FAO-ez_CGCM16Izj8-nevhLWS4NpDlta7-K",
+              "displayed_link": "https://www.goodsthatmatter.com \u203a blogs \u203a matter-blog",
+              "snippet": "Tippy's List - Shopping alternatives to Amazon + Companies keeping DEI policies (also those to avoid).",
+              "date": "Apr 19, 2025",
+              "source": "Goods that Matter"
+            },
+            {
+              "position": 8,
+              "title": "The Eleven Best Alternatives To Shopping On Amazon",
+              "link": "https://zerowasteoutlet.com/blogs/zero-waste-dad-blog/alternatives-to-shopping-on-amazon?srsltid=AfmBOooe6_PIepmsjWBgP1MtAEJtn7-iPezgqNtRvxOF76krQEj3UTFY",
+              "displayed_link": "https://zerowasteoutlet.com \u203a Zero Waste Outlet Blog",
+              "snippet": "If you want to expand your online shopping options, why not look beyond Amazon? Below are some alternative online websites for you. Happy online shopping!",
+              "date": "Oct 7, 2021",
+              "source": "Zero Waste Outlet"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "\"shopping\" alternatives",
+        "fetched_at": "2026-07-19T11:34:10.941347+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_d339965630f3",
+        "founder_name": "Luke Roumy",
+        "source_type": "serpapi",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"shopping\" market size TAM",
+          "search_metadata": {
+            "total_results": 7250000,
+            "engine_url": "https://www.google.com/search?q=%22shopping%22+market+size+TAM&oq=%22shopping%22+market+size+TAM&hl=en&sourceid=chrome&ie=UTF-8"
+          },
+          "organic_results": [
+            {
+              "position": 1,
+              "title": "eCommerce - Worldwide | Statista Market Forecast",
+              "link": "https://www.statista.com/outlook/emo/ecommerce/worldwide/?srsltid=AfmBOorAmBki8JwLPDsyegOqYfziJFND1pum1wmT0Kk7_mJm_35qi0Nb",
+              "displayed_link": "https://www.statista.com \u203a Market Insights \u203a Ecommerce",
+              "snippet": "The eCommerce market worldwide is witnessing remarkable growth, fueled by the surge in online shopping, changing consumer preferences, and the convenience ...",
+              "date": null,
+              "source": "Statista"
+            },
+            {
+              "position": 2,
+              "title": "E-commerce Market Size And Share Report, 2026-2033",
+              "link": "https://www.grandviewresearch.com/industry-analysis/e-commerce-market",
+              "displayed_link": "https://www.grandviewresearch.com \u203a industry-analysis",
+              "snippet": "E-commerce market size and growth forecast (2023-2033) ... The dominance of live commerce, social shopping, and real-time interactive streaming significantly ...",
+              "date": null,
+              "source": "Grand View Research"
+            },
+            {
+              "position": 3,
+              "title": "How do I calculate market size and TAM, SOM and SAM? ...",
+              "link": "https://www.bizplan.com/community/questions/2201/google-for-online-shopping-how-do-i-calculate-market-size-and-tam-som-and-sam",
+              "displayed_link": "https://www.bizplan.com \u203a community \u203a questions \u203a go...",
+              "snippet": "Google for Online Shopping: How do I calculate market size and TAM, SOM and SAM? Do the three have to be different? (Please refer to details). The product is ...",
+              "date": null,
+              "source": "Bizplan.com"
+            },
+            {
+              "position": 4,
+              "title": "TAM, SAM, and SOM: Made Simple for Growing Businesses",
+              "link": "https://www.salesforce.com/blog/small-business/tam-sam-som/",
+              "displayed_link": "https://www.salesforce.com \u203a blog \u203a small-business \u203a ta...",
+              "snippet": "... shopping for high-end luxury pieces. Using AI-driven insights from ... There are two ways to calculate market size with TAM, SAM, and ...",
+              "date": "Jun 25, 2025",
+              "source": "Salesforce"
+            },
+            {
+              "position": 5,
+              "title": "TAM SAM SOM: Market Sizing Strategies for Retail Startups",
+              "link": "https://qubit.capital/blog/tam-sam-som-market-sizing-retail-opportunity",
+              "displayed_link": "https://qubit.capital \u203a Industry-Specific Insights",
+              "snippet": "They calculated TAM by estimating the time customers saved on shopping (approximately 5 hours per month) and assigning economic value to that ...",
+              "date": "Dec 1, 2025",
+              "source": "Qubit Capital"
+            },
+            {
+              "position": 6,
+              "title": "E-commerce Market Size, Share & 2031 Growth Trends ...",
+              "link": "https://www.mordorintelligence.com/industry-reports/global-ecommerce-market",
+              "displayed_link": "https://www.mordorintelligence.com \u203a industry-reports",
+              "snippet": "E-commerce Market Size & Share Analysis - Growth Trends and Forecast (2026 - 2031) ... 23 Konga Online Shopping Ltd. 6.4.24 Lazada Group. 7.",
+              "date": "Jul 8, 2026",
+              "source": "Mordor Intelligence"
+            },
+            {
+              "position": 7,
+              "title": "Smart Retail Market Size, Analysis & Trends Report, 2033",
+              "link": "https://www.persistencemarketresearch.com/market-research/smart-retail-market.asp",
+              "displayed_link": "https://www.persistencemarketresearch.com \u203a smart-reta...",
+              "snippet": "... shopping environments. Key Insights, Details. Smart Retail Market Size (2026E), US$ 104.0 Bn. Market Value Forecast (2033F), US$ 482.3 Bn. Projected Growth ( ...",
+              "date": null,
+              "source": "Persistence Market Research"
+            },
+            {
+              "position": 8,
+              "title": "Total Addressable Market: How To Measure Your TAM",
+              "link": "https://www.shopify.com/il/blog/total-addressable-market",
+              "displayed_link": "https://www.shopify.com \u203a blog \u203a total-addressable-mar...",
+              "snippet": "An online shopping window with a sneaker on a green background with arrows pointing up. ... TAM = (Total market size) x (Market penetration ... What is the formula ...",
+              "date": null,
+              "source": "Shopify"
+            }
+          ],
+          "answer_box": null,
+          "knowledge_graph": null
+        },
+        "query_used": "\"shopping\" market size TAM",
+        "fetched_at": "2026-07-19T11:34:10.715902+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_b5e6f0fcff7f",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "shopping competitors 2026",
+          "answer": "In 2026, Walmart, Temu, and TikTok Shop are major competitors to Amazon. AI-led shopping and zero-friction checkout dominate the market. Amazon's rivals focus on price, discovery, and seamless experiences.",
+          "results": [
+            {
+              "title": "Amazon Competitors in 2026: 12 Biggest Rivals Every Seller Needs to Know",
+              "url": "https://avartexwholesalegroup.com/blog/amazon-competitors",
+              "content": "### eBay \u2014 Continues its D dominance in specialty markets:\n\neBay remains successful in collectibles, used electronics, auto parts and vintage items. Amazon is a mass-market retailer, while eBay is better for selling rare items and in auctions.\n\neBay provides more flexibility to list and fewer restrictions to fulfil when compared to the likes of Amazon, and it's an excellent option for sellers not under the influence of the algorithms.\n\n### Temu \u2013 The Price Disruptor:\n\nTemu has emerged as a major player among all amazon competitors in 2026. It has been following the factory direct pricing which means consumers can purchase the product at extremely low prices. [...] Amazon\u2019s dominance extends far beyond ecommerce through Amazon Web Services (AWS), the company\u2019s cloud computing division. AWS remains the market leader in global cloud infrastructure, but several major amazon cloud competitors are rapidly gaining ground in 2026.\n\nMicrosoft Azure continues expanding through enterprise software integration and AI partnerships, while Google Cloud is investing aggressively in machine learning and data infrastructure. Alibaba Cloud also remains a major force across Asian markets.\n\nFor businesses asking who competes with Amazon outside retail, cloud infrastructure is one of the most important battlegrounds. The growth of AI applications, enterprise automation, and data analytics has intensified competition between AWS, Azure, and Google Cloud. [...] Amazon Competitors in 2026: 12 Biggest",
+              "score": 0.8573986
+            },
+            {
+              "title": "Top Online Shopping Sites in 2026 \u2014 Proxidize Research",
+              "url": "https://proxidize.com/research/top-online-shopping-sites",
+              "content": "Temu and AliExpress offer the lowest prices, as they connect buyers directly with manufacturers based primarily in China. On the fashion front, Shein delivers budget fast-fashion at a level unparalleled by any other provider. Wish too provides low-cost variety items, while for second-hand savings, eBay, Vinted, and Depop offer competitive discounts on pre-owned goods. As for everyday items, Walmart consistently competes on prices. [...] Complete with a bunch of added-value features, such as Prime membership benefits and personalized recommendations that keep shoppers coming back, Amazon is the breadth-wielder of the online shopping world. Their domain encompasses a vast range of services, from hosting services, i.e. AWS, and extensive integration-capabilities, to streaming services like Prime Video. While rising e-commerce stars like AliBaba are trying to follow in their footsteps, with AliExpress for example, Amazon still reigns supreme going into 2026, with only one real contender: Temu.\n\n### 2. Temu is the Fastest-Growing E-Commerce Platform [...] In the United States, Amazon dominates with a massive 37.6% share of all US e-commerce sales. Walmart follows with its strong hold on the grocery and general merchandise segment, and eBay, Target, and Etsy round out the top five. Meanwhile, Best Buy leads in electronics and Chewy undisputedly dominates pet supplies. As for furniture, Wayfair holds the category while Sephora leads in the beauty market.",
+              "score": 0.846159
+            },
+            {
+              "title": "Amazon Competitors 2026: The New \"Big Three\" Eating ...",
+              "url": "https://closo.co/blogs/optimization-growth-strategies/amazon-competitors-2026-the-new-big-three-eating-bezos-lunch",
+              "content": "That was my wake-up call. I realized that my competition wasn't just \"other Amazon sellers.\" It was entirely different ecosystems. In 2026, the landscape of Amazon competitors has shifted from a one-horse race to a multi-front war. If you are still treating Amazon as the only game in town, you are playing by 2020 rules.\n\n## Who Is Amazon's Biggest Competitor? (The Walmart Factor)\n\nWhen people ask who is amazon's biggest competitor in the US, the answer is unequivocally Walmart. For years, Walmart was just a brick-and-mortar giant trying to figure out the internet. By 2026, they have figured it out. Walmart+ has become a legitimate alternative to Amazon Prime, largely because they leverage their 4,600 physical stores as fulfillment centers. [...] ## The \"Cheap\" Threat: Amazon Temu Competitor\n\nThe most aggressive search term in ecommerce right now is amazon temu competitor. Temu (owned by PDD Holdings) shocked everyone by surviving the initial \"fad\" phase and becoming a permanent fixture in 2026. They attacked Amazon's weakest point: Price.\n\nThe Strategy: Amazon is fast (2 days). Temu is cheap (10 days). In an economy where inflation is still a concern, millions of buyers are voting with their wallets. They are willing to wait a week to save $15 on a blender.\n\nComparison: Amazon vs. Temu [...] ## The Social Shopping Revolution: TikTok Shop\n\nIf Temu is the \"Dollar Store\" competitor, who is amazon's competitor for attention? It is TikTok Shop. Amazon is a search engine. You go th",
+              "score": 0.8377398
+            },
+            {
+              "title": "Top 10 Retail Companies Worldwide in 2026",
+              "url": "https://www.expertmarketresearch.com/blogs/top-retail-companies",
+              "content": "The competitive landscape in 2026 is being reshaped by leadership transitions at Walmart, the rollout of Amazon's first Costco-style superstore, Costco's aggressive 30+ warehouse expansion plan, and JD.com's accelerated international footprint with new JD MALL stores in Hong Kong. AI-powered retail platforms, automated freight, and centralised digital advertising businesses are emerging as the new battlegrounds for global retail leadership.\n\n## Latest Updates on Top Retail Companies [...] Costco, a membership warehouse club, prioritises offering members competitive prices on quality merchandise globally. With numerous locations worldwide, Costco ensures a diverse selection and convenient speciality departments for a satisfying shopping experience. As a multibillion-dollar retailer with operations in 11 countries, Costco upholds a reputation for excellence and ethical business practices. The company reported Q2 FY26 net sales of USD 68.2 billion, growing 9.1 percent year-over-year with digitally-enabled comparable sales surging 22.6 percent. Costco's 2026 strategy centres on disciplined global expansion with plans for 30-plus net new warehouse openings annually.\n\n### 4. The Home Depot, Inc. [...] Walmart Inc., a leading omni-channel retailer, prioritises customer savings and convenience across 20 countries. Innovating at the intersection of technology and service, Walmart aims to enhance the seamless shopping experience between physical stores and e-commerce platforms. With ap",
+              "score": 0.8252664
+            },
+            {
+              "title": "Instagram",
+              "url": "https://www.instagram.com/p/DSjkF9ECiTC",
+              "content": "Your #competitors are already #preparing for 2026 - are you? What worked in 2024\u20132025 is already outdated.  \n  \nIn 2026, #eCommerce is about AI-led shopping, zero-friction checkout, omnichannel experiences, BNPL, AR try-ons, and lightning-fast fulfillment and #brands that don\u2019t adapt will be invisible.  \n  \n\ud83d\udca1 The winners won\u2019t be the ones chasing trends\u2026They\u2019ll be the ones executing the right ones for revenue, loyalty, and scale.  \n  \nWe\u2019ve broken down:  \n\u2705 The Top eCommerce Trends of 2026  \n\u2705 The real opportunities behind them  \n\u2705 Exactly how to take advantage (without wasting budget)  \n  \nIf you\u2019re serious about growth, Read complete information here \ud83d\udc49  and follow @bitcotinc for the latest updates",
+              "score": 0.77055156
+            },
+            {
+              "title": "7 WORST and 7 BEST American Retailers to Buy From in 2026",
+              "url": "https://www.youtube.com/watch?v=ndF18F1euoM",
+              "content": "protect you if something goes wrong, Home Depot's service earns the premium. It faces the exact same quarterly earnings pressure as every corporation in the first half of this video, and it still chose to invest in employee training, United States sourcing, and veteran hiring at a level its competitors haven't matched. Costco held the hot dog. Home Depot held the price match. $157 billion and the commitment stack is still intact. You've seen what the other version looks like. This is what choosing right actually looks like at scale. Use the Home Depot app before every visit. Exact aisle and bay locations so you're not wandering for 20 minutes looking for caulk. For any large purchase, bring a competitor price. The match policy is real, and the staff are trained to honor it without an [...] hasn't changed that model in 50 years. A typical Walmart carries around 142,000 products. Aldi carries approximately 1,400. 1,400 items. Not a limitation, the whole model. Every item on that shelf earned its place. No shelf slotting fee, no brand paying for placement, no mediocre product sitting on a shelf because it generates a fee. Every single one of them had to earn the shelf. No exceptions. Someone actually ran the numbers in 2025, took the same grocery list to Aldi and to competing chains. Aldi came in around $55. The competitors? Around $65. That's a 15 to 20% difference every single week. Over a full year, that gap runs between $500 and $1,000 per household. Not a one-time deal, eve",
+              "score": 0.7555112
+            },
+            {
+              "title": "5 Commerce Megatrends For 2026",
+              "url": "https://commercetools.com/blog/trends-that-define-retail-success",
+              "content": "In 2026, zero-click commerce is the new frontline of competition, where brands \u201cwin by default\u201d because AI chooses them. The retailers preparing for this now \u2014 with structured product data, composable APIs, unified commerce foundations and agent-ready architectures \u2014 will be the ones AI recommends, purchases from, and amplifies automatically.\n\nIf a brand\u2019s data isn\u2019t structured, API-accessible and compatible with AI reasoning models, it simply won\u2019t surface. AI won\u2019t recommend what it cannot understand or trust. Retailers that resist agentic commerce will become invisible.\n\nHow commercetools enables AI-powered commerce: [...] Estimated reading time\n\n1\n\nminutes\n\nWhat you\u2019ll learn:\n\n How zero-click, agentic commerce is reshaping the customer journey and creating new opportunities for loyalty.\n Why human-like AI shopping assistants and immersive discovery experiences are setting a new standard for personalization.\n How context-aware conversational commerce makes interactions seamless, natural and cross-device.\n The importance of privacy, security and responsible AI as competitive differentiators for retail in 2026.\n How unified commerce and composable architectures enable truly omnichannel, AI-driven experiences in the retail customer journey. [...] ### Mobile-first digital commerce\n\nMobile commerce continues its rapid ascent, with consumers increasingly using their smartphones not only for online shopping, but also as in-store companions to research products, compare prices and",
+              "score": 0.73505294
+            },
+            {
+              "title": "Top 20 Shopping Trends of 2026",
+              "url": "https://meetglimpse.com/trends/shopping-trends",
+              "content": "This creates demand for proxy shopping sites\u2014platforms that let consumers place orders in foreign locations through local agents, who then ship the product to the consumer. The alternative to proxy shopping is to browse and order through Google Translate, a process that\u2019s both clunky and error-prone.\n\nThe model also applies within countries: ShipToHawaii.com, for example, is a similar proxy shopping site within the US. And there are other sites that add a purchase opportunity where one wasn\u2019t supposed to exist: Doordash had an early growth hack where it would post the menu of a restaurant online, accept orders, and deliver them\u2014all without telling the restaurant, or charging it. [...] ## Nostalgia draws adults to toys\n\nLEGO's physical stores give it an opportunity to market to both demographics by placing kid-friendly sets at a child's eye level and expensive sets at an adult's. This is particularly noticeable for Star Wars collections, where the products related to Baby Yoda will be lower down while the Millennium Falcon, tailor-made to appeal to a Generation X or older Millennial parent, will be higher up, tapping into millennial shopping trends fueled by nostalgia. [...] Walmart\u2019s 2 week return period means that their pallets of returned goods are in many cases more valuable than those from Amazon which have a 4 week return period. The longer a product is in a consumer\u2019s possession before being returned, the more wear and tear and potential for damage.\n\nThe name of these s",
+              "score": 0.7001783
+            }
+          ],
+          "response_time": 4.17
+        },
+        "query_used": "market:shopping competitors 2026",
+        "fetched_at": "2026-07-19T11:34:16.908338+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_c85de059ec93",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "shopping successful startups 2026 differentiation",
+          "answer": "Successful startups in 2026 differentiate through AI integration, innovative retail tech, and eco-friendly practices. Key examples include personalized AI shopping assistants and blockchain-based marketplaces. These startups focus on enhancing customer experience and sustainability.",
+          "results": [
+            {
+              "title": "The Best 15 Retail Startups Transforming Industry in 2026",
+              "url": "https://zoolatech.com/blog/best-retail-startups",
+              "content": "### 10. Stockwell\n\nWhat makes Stockwell unique: Stockwell offers the vending machines of the future. Clients only need an app to complete a purchase, the inventory is selected according to business needs at a particular location (think student campus vs gym), with each machine\u2019s stock fully managed by Stockwell. This is one of the retail startups in 2026 that will change the aesthetics of vending for good.\n\n### 11. Conex\n\nWhat makes Conex unique: Conex bridged the gap between the online and offline shopping experiences due to its sleek retail equipment design that incorporates digital elements with visual impact, like screens. The company provides a variety of products for premium retailers, e.g., smart screens, walls, platforms \u2013 to ensure a digitally-saturated offline experience. [...] ### 12. Farmstead\n\nWhat makes Farmstead unique: Designed to rival supermarket groceries in price, quality, and effort, this retail technology solution was primed for success from its conception.\n\nWith smart shopping lists including recipes, the option to receive free delivery when joining a neighbors\u2019 delivery route, automatic refill of every household\u2019s staples with \u201cRefill and Save\u201d program, Farmstead made 100,000+ deliveries in the Bay Area alone since 2016!\n\nthe best retail startup Farmstead\n\n### 13. Frayt\n\nWhat makes Frayt unique: The application connects clients with the drivers, who undergo meticulous background checks to become verified suppliers. A perfect solution for small and medi",
+              "score": 0.8095324
+            },
+            {
+              "title": "25+ Profitable eCommerce Business Ideas to Start in 2026",
+              "url": "https://appinventiv.com/blog/ecommerce-business-ideas",
+              "content": "Sephora\u2019s ecommerce success comes from merging online convenience with offline touchpoints. Its app uses AI and AR for virtual try-ons, while its loyalty program bridges online and in-store experiences. By combining personalization with community, Sephora has become one of the most innovative retail brands in the beauty industry.\n\nWhat to Learn: Sephora shows that personalization is now the heart of ecommerce. For modern ecommerce startups, this means integrating AI, machine learning, and customer data into your business early. When users feel understood, they stay longer and buy more often.\n\n## Profitability, Scalability, And Differentiation: Your Consideration Playbook [...] Your value proposition isn\u2019t just about price or looks but about what they get that others don\u2019t. A focused message backed by real customer insight is what separates successful ecommerce startups from those that fade out.\n\n### Shape the Brand and Experience\n\nNow build a brand that feels human. The logo, tone, packaging, and store layout should all tell the same story. Whether you\u2019re launching a boutique fashion label or a pet care line, keep your ecommerce business model simple \u2013 one that feels easy to run and easy to buy from.\n\nRemember: customers don\u2019t just buy the product; they buy how it makes them feel. Every detail adds up to trust.\n\n### Test Early, Improve Fast [...] This approach wins with authenticity. Partner with local roasters, share origin tales, include tasting notes \u2013 you\u2019ll have customer",
+              "score": 0.80070794
+            },
+            {
+              "title": "Best Ecommerce Startups (2026) | Seedtable",
+              "url": "https://seedtable.com/best-ecommerce-startups",
+              "content": "|  |  |  |  |  |\n ---  --- \n| 11 | AboundShopping | London, United Kingdom | Series B | 74 |\n| 12 | Shop CircleEnterprise software | London, United Kingdom | Series B | 74 |\n| 13 | Checkout.comFinance | London, United Kingdom | Series D | 73 |\n| 14 | Butternut BoxManufacturing | London, United Kingdom | Series D | 73 |\n| 15 | RefurbedClean technology | Vienna, Austria | Series A | 72 |\n| 16 | UpwayTransportation | Paris, France | Series B | 72 |\n| 17 | InsifySoftware as a service (SaaS) | Amsterdam, Netherlands | Series B | 72 |\n| 18 | Nordic KnotsE-commerce | Stockholm, Sweden | Other | 71 |\n| 19 | NinjaQ-commerce | Riyadh, Saudi Arabia | Series C | 71 |\n| 20 | WorldpayElectronic Payment Services | London, United Kingdom | Other | 71 | [...] | 21 | goPuffOnline Grocery | Philadelphia, United States | Other | 71 |\n| 22 | CarwowShopping | London, United Kingdom | Series C | 71 |\n| 23 | Redwood MaterialsClean technology | United States | Series C | 70 |\n| 24 | CapReleaseE-commerce | London, United Kingdom | Other | 70 |\n| 25 | LookieroClothing | Paris, France | \u2014 | 70 | [...] | # | Company | Location | Stage | Score |\n ---  --- \n| 1 | QuinceRetail | San Francisco, United States | Series E | 81 |\n| 2 | WhatnotE-commerce | Los Angeles, United States | Series E | 81 |\n| 3 | ElevenLabsAudio | London, United Kingdom | Series D | 81 |\n| 4 | NoonE-commerce | Riyadh, Saudi Arabia | Growth | 79 |\n| 5 | Rezolve AICryptocurrency | London, United Kingdom | Other | 79 |\n| 6 | CarOnSaleTrans",
+              "score": 0.72559077
+            },
+            {
+              "title": "Top 10 eCommerce Solutions to Watch in 2026 | StartUs Insights",
+              "url": "https://www.startus-insights.com/innovators-guide/ecommerce-solutions",
+              "content": "According to our data, we observe high startup activity in the USA and India, followed by the UK. The top 5 Startup Hubs for eCommerce are London, New York City, Dubai, Bangalore, and San Francisco.\n\n### Share this:\n\n## Discover Emerging eCommerce Startups to Watch in 2026\n\nWe hand-picked startups to showcase in this report by filtering for their technology, founding year, location, funding, and other metrics. These emerging eCommerce startups work on solutions ranging from an AI sales agent and post-purchase fulfillment to a customer support chatbot and a shopping cart plugin.\n\n### 1. EnlinkAI [...] They enable multi-channel marketing across different social media platforms. Moreover, the agents launch ads and marketing campaigns and analyze their daily performance. AI-driven image editing and SEO keyword tuning further optimize clickthrough rates. They support real-time A/B testing to improve product listings, increasing conversion rate.\n\n### 9. Penni Cart\n\nCanadian startup Penni Cart provides an eCommerce shopping cart plugin that uses prebuilt CMS-synced components for design control.\n\nThe plugin gives control over product displays, the final checkout screen, dynamic discount codes, shipping, pricing tiers, and more. It lets users customize their online store\u2019s design and functionality without requiring coding. [...] The AI acts as a virtual shopping assistant to customers. It offers product recommendations based on their preferences, aiding decision-making. Moreover, it ",
+              "score": 0.69399214
+            },
+            {
+              "title": "2026's Top 50 Scaleups: The Startups Reshaping Business",
+              "url": "https://europeanbusinessmagazine.com/scaleup-50-2026",
+              "content": "leads as Europe\u2019s most valuable startup at $75 billion, having evolved from a challenger bank into a financial super-app serving over 30 million customers across business banking, cryptocurrency trading and global transfers. Airwallex (Singapore) enables businesses to collect, convert and pay across borders without traditional banking friction. Stripe (US) continues innovating in payment infrastructure spanning treasury management, corporate cards and embedded finance. Capchase (US) lets high-growth SaaS companies access future subscription revenue immediately \u2014 a new asset class addressing the gap between customer acquisition costs and revenue recognition. Klarna (Sweden), the buy-now-pay-later pioneer, continues innovating with AI-powered shopping ~~assistants~~ and banking services [...] merchandise without inventory risk. Saie (US) achieved 140% year-over-year retail growth through radical transparency in clean beauty.",
+              "score": 0.69249696
+            },
+            {
+              "title": "E-commerce Startups funded by Y Combinator (YC) 2026",
+              "url": "https://www.ycombinator.com/companies/industry/e-commerce",
+              "content": "Channel3 is building a database of every product on the internet. Google and OpenAI maintain vast product graphs, but keep that valuable data to themselves. Channel3 gives every developer access, opening a world of possibility for new shopping experiences across any vertical. For instance, developers could build AI fashion stylists or give their agents shopping capabilities. We don\u2019t just collect product data; we actually understand it. With the latest image classification and reasoning models, we can match products across merchants\u2014even when listings and images differ\u2014recognize variants, and surface the perfect matches for every search. As we grow, we\u2019ll capture unique insights into what users want, click, and buy. As AI models get smarter and cheaper, our flywheel accelerates: our [...] b2b\n\n  artificial-intelligence\n\n  workflow-automation\n\n  logistics\n\n  e-commerce](/companies/handled) [Fetchr\n\n  Fetchr\n\n  W2023\n\n   \u2022 Active \u2022 4 employees \u2022 San Francisco\n\n  Fetchr is the first personalized shopping app for clothes. Let Fetchr buy you clothes uniquely tailored to you \u2014 without any work.\n\n  fashion\n\n  consumer\n\n  e-commerce\n\n  ai](/companies/fetchr) [Zaymo\n\n  Zaymo\n\n  W2024\n\n   \u2022 Active \u2022 13 employees \u2022 Lehi, UT, USA\n\n  Recent changes in email clients made it possible to embed a whole website inside an email. We've built the first email builder that lets Shopify brands create emails that are fully interactive like websites. Zaymo emails decrease friction and increase convers",
+              "score": 0.6765563
+            },
+            {
+              "title": "45 Startup Ideas for 2026 That Can Make Serious Money",
+              "url": "https://wellows.com/blog/startup-ideas",
+              "content": "3. Leverage Distribution Through VC-Backed Validation\n\n65% of total VC deal value in 2026 flows to AI startups, creating a signaling opportunity. When you raise funding, maximize PR distribution: Issue press release on Business Wire or PR Newswire (cited frequently by LLMs), secure investor quotes highlighting your differentiation, and update Crunchbase profile immediately (LLMs query funding databases).\n\nList on startup directories: Y Combinator Directory, Product Hunt, BetaList.\n\n4. Optimize for Platform-Specific Ranking Factors [...] The Problem: Print-on-demand eliminates inventory but Printful/Printify have slow shipping (7-14 days), generic products, limited differentiation. Creators want 2-3 day fulfillment, sustainable materials, unique products, AI design tools. The creator economy demands better merchandise infrastructure. Build it and they\u2019ll pay premium.\n Here\u2019s what you can build: Next-gen POD with distributed micro-factories (fast shipping), sustainable materials (organic cotton, recycled polyester), unique products, AI design tools. Partner with regional manufacturers, use APIs. Build for $40K over 20 weeks. Take 30-40% margin. At $100K monthly GMV, that\u2019s $360K-480K annually. Scale to $1M = $3.6M-4.8M. [...] This is where market size matters. Ideas targeting billion-dollar markets have room to grow without capping upside early.\n\nMost successful Tech Startups intentionally enter large, fragmented markets with room to compound. When founders compare the top tech",
+              "score": 0.67501575
+            },
+            {
+              "title": "Retail Startups funded by Y Combinator (YC) 2026",
+              "url": "https://www.ycombinator.com/companies/industry/retail",
+              "content": "Channel3 is building a database of every product on the internet. Google and OpenAI maintain vast product graphs, but keep that valuable data to themselves. Channel3 gives every developer access, opening a world of possibility for new shopping experiences across any vertical. For instance, developers could build AI fashion stylists or give their agents shopping capabilities. We don\u2019t just collect product data; we actually understand it. With the latest image classification and reasoning models, we can match products across merchants\u2014even when listings and images differ\u2014recognize variants, and surface the perfect matches for every search. As we grow, we\u2019ll capture unique insights into what users want, click, and buy. As AI models get smarter and cheaper, our flywheel accelerates: our [...] growing customer database, from ordering to payments. With our data-driven approach, we connects local, independent retailers with the right brands, distributors, and wholesalers to stock their store with the best products. This saves retailers and suppliers time and money, allowing them to focus on what's most important: building and running their business. borong is headquartered in Kuala Lumpur, Malaysia. [...] e-commerce\n\n  artificial-intelligence](/companies/channel3) [HABIT\n\n  HABIT\n\n  P2025\n\n   \u2022 Active \u2022 Los Angeles\n\n  Every month, our robots greet tens of thousands of Americans with a smile. They answer questions, upsell customers, and can be trained just like a human employee.\n\n  r",
+              "score": 0.6682966
+            }
+          ],
+          "response_time": 3.71
+        },
+        "query_used": "market:shopping successful startups 2026 differentiation",
+        "fetched_at": "2026-07-19T11:34:24.664380+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_8ec0c3f83316",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "\"Snap Cart\" limitations risks challenges",
+          "answer": "Snap Cart faces challenges in compliance, operational complexity, and adoption of online purchasing due to varying state regulations and technical requirements.",
+          "results": [
+            {
+              "title": "Decoding SNAP Compliance: Why Precision Matters for Retailers and Manufacturers\u00a0 - NIQ",
+              "url": "https://nielseniq.com/global/en/insights/analysis/2025/decoding-snap-compliance-why-precision-matters-for-retailers-and-manufacturers",
+              "content": "Let\u2019s turn to our expert to find out more:\n\nInterview\n\n## What are the biggest challenges retailers and manufacturers face when navigating SNAP compliance today?\n\nPreviously through SNAP benefits, shoppers were able to purchase nearly any food or beverage item aside from alcohol and tobacco across the country, making it fairly simple to decipher what products were able to be bought with SNAP benefits. For the first time, certain states have received USDA approval to inflict their own restrictions. With new regulations arising, limiting the products eligible through SNAP benefits, it is important that retailers and manufacturers are aware of how this could affect consumer buying behavior and impact their sales. [...] In this article we explore SNAP compliance challenges and ask one of our in-house experts Maggie Bruns, Junior Data Transformation Analyst to explain why accurate, detailed and up-to-date data is the answer.\n\n### Why SNAP Compliance Requires Precision\n\nSNAP eligibility isn\u2019t always straightforward. Determining which products qualify goes beyond general categories and requires deep, product-level insights into nutritional and ingredient data. Ambiguity or outdated information can result in errors that not only complicate operations but also impact the shopper experience.\n\nThat\u2019s why precision matters. Accurate, detailed product data is the foundation of compliance, and that\u2019s exactly what NIQ Brandbank is here to support you with.\n\nLet\u2019s turn to our expert to find ",
+              "score": 0.38970965
+            },
+            {
+              "title": "SNAP Food Restriction Waivers - Food Research & Action Center",
+              "url": "https://frac.org/snap-restrictions",
+              "content": "Image of man with shopping cart and his son in a grocery store parking lot\n\nChallenges in Researching the Diets of SNAP Recipients \u2013 This research brief outlines challenges in researching the diets of SNAP recipients and emphasizes the program's proven role in supporting health.\n\n## SNAP Works: Health & Wellbeing Impacts\n\nHunger is a health issue. Research shows that SNAP plays a critical role, not just in alleviating poverty and food insecurity, but also in improving dietary intake and health, especially among children. Learn more in the FRAC resources below.\n\nSmiling doctor examing a young baby boy with a stethoscope\n\n## Six Ways to Get Involved\n\nIf you have questions about SNAP choice or getting involved, please contact FRAC\u2019s SNAP Director Gina Plata-Nino, gplata-nino@frac.org. [...] ## Call To Action HTML\n\nMany large school districts across the country report significant challenges keeping children fed and school nutrition\u202foperations running effectively.\n\n## Call To Action HTML\n\nDirector of Government Affairs\n\neteller@frac.org\n\n## Call To Action HTML\n\nSee the momentum building across the country for Healthy School Meals for All!\n\n## Call To Action HTML\n\njbaker@frac.org\n\n(202) 640-1118\n\n## Call To Action HTML\n\nThe fight to protect critical nutrition programs is more urgent than ever. Historic SNAP cuts will harm millions of families and ripple across other programs, including school meals. Your support of FRAC has never been more crucial.\n\n## Call To Action HTML\n\nAdvanced",
+              "score": 0.38096678
+            },
+            {
+              "title": "Smart Shopping Cart: shopreme snap cart software",
+              "url": "https://shopreme.com/solutions/smart-shopping-cart-snap-cart",
+              "content": "#### Advantages of modular smart cart solutions:\n\n Minimized hardware costs: No cart replacement necessary\n Efficient charging infrastructure without major store modifications\n Tablets remain in the store, so there is no need to modify the parking lot and less risk of hardware damage from weather conditions.\n Easier smart cart replacement and scaling\n\n## The shopreme snap cart ecosystem\n\n#### Scan and Go\n\nLet customers scan\n\nproducts and pay in the app\n\nshopreme scan and go#### matrix\n\nSelf-Checkout Kiosk\n\n#### snap cart\n\nScan & Go on the\n\nsmart shopping cart\n\nshopreme snap cart smart shopping cart solution for Self-Checkout#### Employee App\n\nshopreme supervisor employee app screen for Self-Checkout#### Analytics [...] In collaboration with our retail customers, we developed snap cart to reduce checkout bottlenecks while providing retailers with valuable insights. Our modular approach upgrades existing carts, saving retailers significant hardware and store modification costs.   \n  \nLeveraging our proven UX design expertise, we are able to provide targeted retail media strategies directly on the cart.\n\nIn collaboration with our retail customers, we developed snap cart to reduce checkout bottlenecks while providing retailers with valuable insights. Our modular approach upgrades existing carts, saving retailers significant hardware and store modification costs.   \n  \nLeveraging our proven UX design expertise, we are able to provide targeted retail media strategies directly on th",
+              "score": 0.20481901
+            },
+            {
+              "title": "Promoting Equitable Expansion of the SNAP Online ...",
+              "url": "https://healthyeatingresearch.org/wp-content/uploads/2021/07/HER-Online-Purchasing-Brief-FINAL.pdf",
+              "content": "challenging. Key findings related to utilization of the SNAP Online Purchasing Pilot are as follows: \u25a0Utilization of online purchasing has increased during the pandemic. Early evidence from states participating in the Pilot shows that in the first several months of the pandemic, up to 5% of monthly SNAP redemptions occurred online.23 In an average month, 2% of SNAP recipients in Vermont and up to 17% in Kentucky used SNAP online purchasing. In many states, including Washington, Maryland, Nebraska, and Texas, increases in adoption seen during the early months of the pandemic plateaued in later months. \u25a0Among families with lower incomes, online grocery shopping is generally perceived as convenient and time-saving, and viewed as being particularly beneficial for people with disabilities, [...] certain products or in certain areas is high.39 \u25a0Lack of time, resources, and infrastructure for placing online orders, accepting deliveries, and picking up groceries ordered online may be a challenge. Even if EBT is used for food purchases, placing an order online is difficult without a bank account or access to credit, since having a debit or credit card is often needed to cover delivery and other fees.27 Some households may lack safe and secure delivery or pick-up locations or the transport options necessary for curbside pick-up.26 Many online retailers, including food retailers, offer dynamically priced delivery, whereby customers are offered differential delivery prices based on the d",
+              "score": 0.20131063
+            },
+            {
+              "title": "SnapCart.com",
+              "url": "https://www.snapcart.com",
+              "content": "SnapCart is currently under development, and we can't wait to bring you a smarter way to shop! Stay tuned for updates.\n\nGoogle Sites\n\nReport abuse\n\nGoogle Sites\n\nReport abuse [...] Search this site\n\nEmbedded Files\n\nSnapCart.com\n\n### SnapCart \u2013 Smart Shopping, Simplified\n\nSnapCart is a next-generation shopping platform designed to make your purchasing experience seamless, personalized, and rewarding. Whether you're shopping for everyday essentials or discovering the latest trends, SnapCart helps you find the best deals, manage your purchases, and earn exclusive rewards.\n\nWhat We Offer [...] What We Offer\n\n\u2705 AI-Powered Shopping Assistant \u2013 Get personalized product recommendations based on your preferences.  \n \u2705 Price Tracking & Alerts \u2013 Never miss a great deal with real-time price updates.  \n \u2705 One-Click Checkout \u2013 Simplify your shopping experience with fast, secure payments.  \n \u2705 Exclusive Rewards \u2013 Earn cashback and loyalty points on every purchase.  \n \u2705 Smart Cart Management \u2013 Easily organize and manage your shopping lists.\n\nFor Businesses\n\nSnapCart partners with brands and retailers to enhance their online presence, optimize customer engagement, and increase sales through AI-driven insights.\n\nNeed Assistance?\n\n\ud83d\udce7 General Inquiries: info@snapcart.com  \n \ud83d\udce7 Customer Support: support@snapcart.com",
+              "score": 0.108387195
+            },
+            {
+              "title": "Snapcart: E-Commerce Case Study | PDF | Snapchat | Retail",
+              "url": "https://www.scribd.com/document/327892900/Snap-cart-case-study",
+              "content": "Scribd\n\n# Snapcart: E-Commerce Case Study\n\nSnapcart: E-Commerce Case Study\n\n## Uploaded by\n\nAI-enhanced title and description\n\n# Snapcart: E-Commerce Case Study\n\nThis document provides an overview of Snapcart, a mobile application in Indonesia that allows users to upload receipts from offline purchases to earn cash back rewards. Snapcart collects and analyzes receipt data to generate insights about consumer shopping behaviors that can be used by brands to better target customers. It describes how Snapcart works, its founders and team, partnerships with major brands, and benefits for both consumers and retailers. Snapcart bridges the gap between offline shopping data and digital marketing by transforming discarded receipts into valuable consumer behavior analytics. [...] # Snapcart: E-Commerce Case Study\n\nSnapcart: E-Commerce Case Study\n\n## Uploaded by\n\nAI-enhanced title and description\n\n## Share this document\n\n## Footer menu\n\n## About\n\n## Support\n\n## Legal\n\n## Social\n\n## Get our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play\n\n## About\n\n## Legal\n\n## Support\n\n## Social\n\n## Get our free apps\n\nScribd - Download on the App Store\nScribd - Get it on Google Play",
+              "score": 0.09695367
+            },
+            {
+              "title": "Smarter shopping carts are coming but usability and privacy concerns loom - SiliconANGLE",
+              "url": "https://siliconangle.com/2023/07/31/smarter-shopping-carts-coming-usability-privacy-concerns-loom",
+              "content": "However, that\u2019s what was predicted for the in-store self-checkout scanners decades ago and it hasn\u2019t been met with universal love. Part of the problem is that people shop differently: Some, like my wife, just go up and down every aisle and use that to jog their memory of what to buy. Others come with lists and know their store layouts. Having a digital system that can meet everyone\u2019s shopping style is a challenge, let alone insuring that the equipment will function properly.\n\nThat brings us to the privacy challenge: These new shopping methods certainly come with a creepiness factor. One plus for Instacart is removing the \u201cwatching over the shoulder\u201d experience found with Amazon One technology-enabled stores. [...] Amazon has two different relevant tech stacks, Go and One. Go is first a smartphone app, which works just like other retail point-of-sale systems such as Toast, Clover and Block\u2019s Square. This is where a shopper scans a QR code that associates the person\u2019s smartphone with the purchase stream at a checkout lane. One is the palm-reading app.\n\nThese \u201ccontactless\u201d apps got a big boost during the pandemic. The challenge for Amazon is: Why should a consumer download yet another one of them?\n\nBut Amazon also brands its Go physical storefronts, where a shopper \u201cjust walks out\u201d of the store: There are no checkout lanes because the store is outfitted with numerous cameras watching their movements. Think your average Vegas casino, only more obvious. [...] There\u2019s a lot of tech",
+              "score": 0.09292641
+            },
+            {
+              "title": "SNAP: High Costs, Low Nutrition | Cato Institute",
+              "url": "https://www.cato.org/briefing-paper/snap-high-costs-low-nutrition",
+              "content": "EBT card skimming is a growing problem. Criminals steal card numbers and PINs and then drain benefits from accounts. EBT cards are a good theft target because they do not have chips.33 SNAP is difficult to police because it includes about 250,000 retailers and 42 million recipients who have changing income levels, jobs statuses, and other factors that affect eligibility and benefit levels. [...] Haywood Talcove, the head of LexisNexis Risk Solutions, has tracked the rise of SNAP abuse. He says that we are seeing an \u201calarming attack on the food stamp program,\u201d which could cost $20 billion a year. And he argues, \u201cWhat happened during the pandemic was a seismic shift in benefit fraud in government programs. The criminals learned that government is really easy to steal from because they don\u2019t have technology.\u201d34\n\n## Reform Options\n\nA USDA website says that \u201cpoor nutrition is a leading cause of illness in the United States, associated with more than half a million deaths per year,\u201d yet the agency\u2019s largest program, SNAP, delivers poor nutrition.35 The USDA warns Americans against consuming sugary drinks, but sugary drinks are the largest item purchased in SNAP. [...] However, SNAP does not deliver \u201cnutritious food\u201d and \u201chealthy eating patterns\u201d for many recipients. Recipients can use their EBT cards for virtually any food item in grocery and convenience stores except alcohol, hot items, and items for on\u2010\u200bpremises consumption. SNAP can be used to purchase soda, candy, potato chips,",
+              "score": 0.074157745
+            }
+          ],
+          "response_time": 3.29
+        },
+        "query_used": "market:\"Snap Cart\" limitations risks challenges",
+        "fetched_at": "2026-07-19T11:34:20.634935+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_4964af319964",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "query": "shopping emerging trends 2026 gaps opportunity",
+          "answer": "In 2026, AI and mobile-first strategies dominate retail trends, with a focus on personalized, frictionless shopping experiences. Social commerce and digital product passports are key innovations. Brands leverage AI for real-time personalization and operational efficiency.",
+          "results": [
+            {
+              "title": "Retail Industry Trends 2026 | Slalom",
+              "url": "https://www.slalom.com/us/en/insights/retail-outlook-2026",
+              "content": "###### The retail renaissance is ripe with opportunity. Old commerce boundaries are dissolving as AI, data, and human ingenuity converge.\n\n2026 brings new opportunities for agility, personalization, and operational excellence. Today\u2019s leaders are reengineering customer journeys through three simultaneous shifts: delivering hyper-personalized customer experiences that evoke emotional loyalty beyond transactional rewards; enabling frictionless, omnichannel global commerce; and orchestrating supply chains that respond in real time. All of these produce incremental growth and profit contribution at a lower cost. [...] Imagine a future where every interaction is powered by data-driven insights, transforming the way businesses operate and serve their customers. In 2026, the use of workforce analytics is ready to reform the industry, tackling labor challenges and skyrocketing productivity. Store associates will be equipped with real-time data, allowing them to make personalized recommendations that not only enhance customer service but also create notable shopping experiences. AI acts as a vital tool, providing instant access to information and helping associates assist customers efficiently. [...] In 2026, companies will focus on end-to-end precision\u2014where AI redefines every aspect of merchandising and sales planning, execution, and course correction. This type of accuracy is a shift toward data-driven, tech-enabled operations that deliver measurable impact.\n\nWhat\u2019s new this year i",
+              "score": 0.7876867
+            },
+            {
+              "title": "5 Trends That Will Shape the 2026 eCommerce Landscape",
+              "url": "https://www.akeneo.com/blog/2026-ecommerce-trends",
+              "content": "User-generated content (UGC) also plays a massive role in this transformation. Shoppers trust people who look and talk like them more than polished brand campaigns. Reviews, unboxings, and \u201cTikTok Made Me Buy It\u201d videos are today\u2019s word of mouth, and they convert at remarkable rates. Live shopping events, creator collaborations, and shoppable posts blur the line between entertainment and eCommerce, making shopping feel less transactional and more experiential.\n\nBy 2026, expect social commerce to become fully normalized. Platforms like Instagram, TikTok, and YouTube are continuing to refine in-app checkout options, allowing users to buy instantly without leaving their feeds. [...] For brands, this is both a compliance challenge and a storytelling opportunity. Consumers increasingly want to know the \u201cwhy\u201d behind what they buy; where it came from, who made it, and what impact it has. With DPP, a customer will be able to scan a QR code on a sweater and see its full history: which factory produced it, how much carbon it generated, and how to recycle or repair it later. \n\nBy 2026, expect to see Digital Product Passports popping up across Europe and beyond. And once consumers get used to this level of visibility, there\u2019s no going back.\n\nSee how Akeneo & Ocode can help you create Digital Product Passports.\n\n## 4. Social commerce & user generated content (UGC) [...] # 5 Trends That Will Shape the 2026 eCommerce Landscape\n\nPredicting the future of eCommerce is no simple task, but 2026 ",
+              "score": 0.76951396
+            },
+            {
+              "title": "10 trends and predictions for retail in 2026",
+              "url": "https://nrf.com/blog/10-trends-and-predictions-for-retail-in-2026",
+              "content": "### 4. Marketing analytics, next generation technology and social strategies will be the three markers of success for retail CMOs in 2026.\n\nThe three are inseparable as consumers look for brands that tell authentic stories using technologies like AI and hyper-personalization to get a clearer picture of the opportunities that lie between intent and action.\n\nMuch of the spotlight for 2025 was on how agentic shopping agents upended traditional search. Experts foresee these agents driving even more product discovery and purchases in the coming months, with Forrester research predicting that one-quarter of shoppers will use specialty retail chatbots in 2026. [...] In apparel, retailers are adjusting inventory in effort to do a better job of size assortments. Modern Retail reported that apparel companies are shifting to stock more smaller sizes and slightly fewer larger sizes, due to surging demand for smaller sizes among GLP-1 users. And there\u2019s been an uptick in \u201crevenge shopping,\u201d which in this case suggests that shoppers are indulging in \u201crewards\u201d by purchasing new clothing pieces.\n\nIt will be interesting to watch the resale, secondhand and rental niches within the industry as those who have dropped pounds and sizes offload their larger-size wardrobes in favor of updated togs that are not only smaller, but more body-conscious. [...] Agents have changed the way shoppers purchase items online; that transformation will become even more embedded in the year ahead. With the ability ",
+              "score": 0.7646988
+            },
+            {
+              "title": "The Top 10 Consumer Trends To Watch in 2026",
+              "url": "https://www.salsify.com/blog/top-10-consumer-trends-to-watch",
+              "content": "Although there\u2019s an AI trust gap that leaves some shoppers wary of AI, detailed, time-saving (32%), convenience (32%), and personalized product recommendations (31%) are enough to sway shoppers to purchase an AI-recommended product, according to Salsify\u2019s \u201c2026 Consumer Research\u201d report.\n\nIf brands can showcase the benefits of using AI, they\u2019re more likely to sway shoppers.\n\n## 2. The Evolution of the Economy\n\nAfter a year of economic downturn, Salsify consumer research reports that global ecommerce sales are expected to increase. eMarketer predicts that global ecommerce sales will account for 21.1% of total retail sales in 2026. [...] While some trends are short-lived, others have more staying power. Here are 10 consumer trends to watch in 2026, what they mean for your brand, and how you can make them work for you.\n\n## 1. The Growing Adoption of Artificial Intelligence (AI)\n\nAI adoption grew steadily throughout 2025 and is expected to continue in 2026. According to Salsify\u2019s \u201c2026 Consumer Research\u201d report, 22% of shoppers use AI search tools like ChatGPT for product research.\n\nMillennials (30%) and Gen Zers (26%) are the most interested in using AI, while baby boomers (5%) are unsurprisingly the most resistant.",
+              "score": 0.7625837
+            },
+            {
+              "title": "5 Commerce Megatrends For 2026",
+              "url": "https://commercetools.com/blog/trends-that-define-retail-success",
+              "content": "### Mobile-first digital commerce\n\nMobile commerce continues its rapid ascent, with consumers increasingly using their smartphones not only for online shopping, but also as in-store companions to research products, compare prices and check inventory in real time.\n\nAs mobile commerce becomes the norm, brands must prioritize mobile-first strategies, ensuring their apps and mobile sites offer the functionality and user experience consumers expect. Failure to do so risks falling behind in an increasingly competitive digital marketplace.\n\n### Retail Media Networks [...] In this new retail reality, the journey doesn\u2019t stop at checkout. It continues across fulfillment, post-purchase experiences and ongoing engagement, all powered by data, automation and connected systems.\n\n## From trends to action with commercetools\n\nAs AI, agentic systems, zero-click journeys and unified commerce redefine the retail landscape, the brands that succeed in 2026 will be those that innovate boldly while maintaining operational excellence and customer trust. The rise of autonomous shopping agents and real-time personalization is transforming the way consumers discover and purchase products. [...] As agentic commerce becomes mainstream in 2026, AI systems are not just assisting shoppers \u2014 increasingly, they\u2019re acting on their behalf. This shift dramatically elevates the importance of trust. While the industry headlines often spotlight AI\u2019s dazzling capabilities, the true battleground emerging is around pr",
+              "score": 0.7593865
+            },
+            {
+              "title": "Five Surprising Retail Trends to Watch in 2026 - NetChoice",
+              "url": "https://netchoice.org/five-surprising-retail-trends-to-watch-in-2026",
+              "content": "Contact Us\n\nRetail\n\nPosted 01/21/2026  |  Articles\n\n# Five Surprising Retail Trends to Watch in 2026\n\nKrista Chavez\n\nDirector of Communications\n\n00:00 0:00\n\nShare\n\nThe retail sector has never been more inventive, and there are a lot of exciting things happening in 2026. While splashy trends like AI, personalization and automation may dominate the headlines, there are many quieter changes that are already reshaping how products are bought and sold.\n\nHere are five emerging trends that signal where retail is headed:\n\n#### 1. Returns as a Business Model [...] ### Retail is evolving faster than consumers realize, and these emerging trends show just how creative and adaptive the sector is. 2026 will be a year defined by a more intentional, experience-forward retail landscape that we\u2019ve been watching grow over the past year.\n\nImage via Unsplash.\n\n### Related\n\nRetail\n\nNRF 2026 Highlights a Comeback for Brick-and-Mortar Retail Retail\n\nRetail\u2019s Plot Twist: The Biggest Black Friday Ever Retail\n\nThe American Mall, Reinvented Retail\n\nAre Conventions the New Face of Experiential Retail? [...] Besides partnering with shipping services like UPS and FedEx, more brands are offering \u201ckeep it or donate it\u201d options when an item isn\u2019t worth the cost of shipping back. Others are launching programs where a product is automatically assigned a \u201csecond-life value,\u201d making it easier to resell or trade in later.\n\n#### 2. Wellness as Retail\u2019s New Anchor Tenant\n\nA decade ago, the main draw at a shopping ce",
+              "score": 0.7568076
+            },
+            {
+              "title": "Top 20 Shopping Trends of 2026 \u2013 Glimpse",
+              "url": "https://meetglimpse.com/trends/shopping-trends",
+              "content": "## Nostalgia draws adults to toys\n\nLEGO's physical stores give it an opportunity to market to both demographics by placing kid-friendly sets at a child's eye level and expensive sets at an adult's. This is particularly noticeable for Star Wars collections, where the products related to Baby Yoda will be lower down while the Millennium Falcon, tailor-made to appeal to a Generation X or older Millennial parent, will be higher up, tapping into millennial shopping trends fueled by nostalgia. [...] Digital Transformation Trends \n\nMobile-first designLocalized AIVirtual mailCyber threatsSmart objectsAPI-first systemsApp-based designHealthcare telemedicineCloud agilityAnalytics toolsAI in businessWork phones\n\nRetail Trends \n\nValue-driven shoppersLive sellingMulti-gen toysShelf-stable demandRefurbishment toolsProxy appsTemu shoppingFreebie swaps\n\nEcommerce Trends \n\nLive sellingAI customer supportBNPL growthProxy appsTemu shoppingRefurbishment toolsPhoto studio softwareMarketing packagingShelf-stable goodsBin shoppingDelivery security\n\nShopping Trends \n\nAdult toy nostalgiaLive sellingRegistry expansionCultural grocersValue-driven spendingProxy appsTemu shoppingBin shoppingFree item trading\n\nFinance Trends [...] This creates demand for proxy shopping sites\u2014platforms that let consumers place orders in foreign locations through local agents, who then ship the product to the consumer. The alternative to proxy shopping is to browse and order through Google Translate, a process that\u2019s both c",
+              "score": 0.7230167
+            },
+            {
+              "title": "The Future of Retail Technology: Key Shifts and Trends in 2026",
+              "url": "https://www.youtube.com/watch?v=S-eWXJL54ro",
+              "content": "Retail is changing fast and 2026 is shaping up to be a major turning point. AI, unified commerce, and real-time intelligence are no longer optional. They're becoming the foundation for how retailers run their businesses, connect with customers, and stay competitive. So, what's actually changing? First, AI is stepping into the driver's seat. It's no longer just analyzing data. It's helping retailers make pricing, inventory, and merchandising decisions in real time. Next, unified commerce is becoming the norm. Instead of juggling disconnected systems, retailers are bringing stores, e-commerce, inventory, and customer data into one clear view. You'll also see more searchless, and predictive shopping. AI starts anticipating what shoppers want and surfaces products before they even type a [...] shoppers want and surfaces products before they even type a search. At the same time, automation is scaling across retail operations. From inventory and fulfillment to store tasks, automation is helping teams work smarter, not replacing associates, but supporting them. Stores themselves are evolving, too. Smart connected stores are turning into experience hubs powered by mobile [music] tools and live data instead of manual processes. Behind the scenes, real [music] time intelligence is replacing static reports. Retailers are moving from weekly summaries to live dashboards and predictive alerts that help them act faster. And of course, personalization is everywhere, online, in store, and acr",
+              "score": 0.7190094
+            }
+          ],
+          "response_time": 4.34
+        },
+        "query_used": "market:shopping emerging trends 2026 gaps opportunity",
+        "fetched_at": "2026-07-19T11:34:12.373833+00:00",
+        "status": "ok"
+      },
+      {
+        "id": "ev_754b901b9be0",
+        "founder_name": "Luke Roumy",
+        "source_type": "tavily",
+        "source_url": null,
+        "raw_content": {
+          "status": "error",
+          "reason": "[SSL] passed invalid argument (_ssl.c:2590)"
+        },
+        "query_used": "market:shopping market saturation risks crowded",
+        "fetched_at": "2026-07-19T11:34:06.836410+00:00",
+        "status": "error"
+      },
+      {
+        "id": "ev_1252967dca65",
+        "founder_name": "Luke Roumy",
+        "source_type": "semantic_scholar",
+        "source_url": null,
+        "raw_content": {
+          "status": "ok",
+          "domain": "shopping",
+          "papers": [
+            {
+              "paper_id": "d561d7d131829d6e69770a9a53087e37d71bb823",
+              "title": "Intelligent Shopping Soft Assistant: A Digital Solution for Collaborative and Efficient Shopping",
+              "year": 2025,
+              "venue": "2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)",
+              "citation_count": 69,
+              "abstract": "The Intelligent Shopping Soft Assistant (ISSA) is a web-based platform that transforms shopping by merging digital convenience with offline flexibility. a web-based platform designed to modernize shopping experiences by integrating collaborative digital lists, real-time price synchronization, and hybrid support for both online and offline stores. Traditional shopping methods suffer from static lists and fragmented seller-customer communication\u2019 while existing e-commerce platforms often neglect local store integration. ISSA addresses these gaps by enabling users to create, share, and manage dynamic shopping lists with real-time price updates from sellers. Built using HTML, CSS, JavaScript, PHP, and MySQL, ISSA reduces shopping time by 85percent(based on user trials), enhances collaboration for group procurement, and provides business analytics for local vendors. Challenges included EDI integration and data privacy assurance. Future work will expand location-based seller recommendations ",
+              "authors": [
+                "Jogesh Roy",
+                "Shahnaz Parvin Mila",
+                "Md. Tabil Ahammed"
+              ],
+              "url": "https://www.semanticscholar.org/paper/d561d7d131829d6e69770a9a53087e37d71bb823"
+            },
+            {
+              "paper_id": "8f1f2c9c04143df7e7b2a096eae2c9655a3d0978",
+              "title": "DeepShop: A Benchmark for Deep Research Shopping Agents",
+              "year": 2025,
+              "venue": "arXiv.org",
+              "citation_count": 38,
+              "abstract": "Web agents for online shopping have shown great promise in automating user interactions across e-commerce platforms. Benchmarks for assessing such agents do not reflect the complexity of real-world shopping scenarios, as they often consist of overly simple queries with deterministic paths, such as\"Find iPhone 15.\"Real shopping scenarios are inherently more layered, involving multi-dimensional product attributes, search filters, and user-specific sorting preferences. To address this gap, we introduce DeepShop, a benchmark designed to evaluate web agents in complex and realistic online shopping environments. DeepShop comprises three key components. (1) Query diversity evolution: Starting from real user queries, we generate diverse queries across five popular online shopping domains. (2) Query complexity evolution: We further evolve these queries to increase complexity, considering product attributes, search filters, and sorting preferences, and classify them into three levels: easy, medi",
+              "authors": [
+                "Yougang Lyu",
+                "Xiaoyu Zhang",
+                "Lingyong Yan",
+                "M. D. Rijke",
+                "Zhaochun Ren",
+                "Xiuyi Chen"
+              ],
+              "url": "https://www.semanticscholar.org/paper/8f1f2c9c04143df7e7b2a096eae2c9655a3d0978"
+            },
+            {
+              "paper_id": "350238473c1a0054340615a7948d22bb2414c665",
+              "title": "Impact of Influencer Marketing on Consumer Behavior and Online Shopping Preferences",
+              "year": 2025,
+              "venue": "Journal of Theoretical and Applied Electronic Commerce Research",
+              "citation_count": 38,
+              "abstract": "Influencer marketing has emerged as a crucial element in digital marketing, significantly shaping consumer behavior and online shopping preferences. This study examined the multidimensional impact of influencer marketing by analyzing engagement metrics, marketing effectiveness, and consumer decision-making processes, based on consumers in the Greek sector. Through a structured methodological framework, the research employed a questionnaire-based survey, statistical modeling, and Fuzzy Cognitive Mapping (FCM) scenarios to assess consumer interactions with influencer-driven content. Findings highlight that while influencer marketing enhances brand engagement and sales, its effectiveness varies based on content authenticity, transparency, and user trust. Additionally, consumer purchasing decisions are influenced by social media visibility, personalized marketing strategies, and digital platform usability. This study underscores the need for strategic influencer selection and information-d",
+              "authors": [
+                "Stavros P. Migkos",
+                "N. Giannakopoulos",
+                "D. Sakas"
+              ],
+              "url": "https://www.semanticscholar.org/paper/350238473c1a0054340615a7948d22bb2414c665"
+            },
+            {
+              "paper_id": "5e25e42386facdfd664c0154f427d73cb8bfb00d",
+              "title": "Factors Affecting Online Shopping Behavior of Consumers",
+              "year": 2025,
+              "venue": "Journal of Management and Entrepreneurship",
+              "citation_count": 33,
+              "abstract": "This study investigates the factors influencing online shopping behavior, focusing on variables such\nas trust, word of mouth, social media influence, pricing, and website quality. Using Partial Least\nSquares Structural Equation Modeling (PLS-SEM), data was collected via structured questionnaires\nand analyzed for reliability, validity, and predictive relevance. Findings highlight trust and word of\nmouth as the strongest drivers, with significant roles for website quality, social media influence,\npricing, and promotions. In this study we have taken the overview of 300 respondents which\ninclude students and working professionals. The study offers practical insights for e-commerce\nplatforms to enhance consumer trust, leverage social media, and adopt competitive pricing\nstrategies, contributing to both academic knowledge and industry practices.",
+              "authors": [
+                "P. Priya",
+                "N.M.K. Bhatta",
+                "Vallinayagam A",
+                "Rishav Jha"
+              ],
+              "url": "https://www.semanticscholar.org/paper/5e25e42386facdfd664c0154f427d73cb8bfb00d"
+            },
+            {
+              "paper_id": "ca0ef2104b31c53b6bb00cdb3e0f5dcd8e51ec90",
+              "title": "Cyber Shopping Beyond Boundaries: The Metaverse Revolution in e\u2010Commerce and Consumer Behavior",
+              "year": 2025,
+              "venue": "Human Behavior and Emerging Technologies",
+              "citation_count": 56,
+              "abstract": "The metaverse is swiftly flattering an important player in the e\u2010commerce domain. It provides innumerable opportunities and indicates a revolutionary paradigm shift in e\u2010commerce. Online businesses can now create virtual storefronts that enable immersive, lifelike product exploration within the metaverse, in contrast to traditional brick\u2010and\u2010mortar stores that cater to local customers. Current research offers a novel conceptual framework based on theories of interactive media effects and the stimulus\u2013organism\u2013response paradigm to understand consumer purchase intentions in the metaverse. Carefully gathered data from 342 survey participants were then examined using the analytical tools of structural equation modelling (SEM) and importance\u2013performance map analysis (IPMA). The results of the study shed light on how much perceived augmentation and interaction affect consumers\u2019 cognitive and emotive reactions, including feelings of realism, immersion, and telepresence. Remarkably, these reac",
+              "authors": [
+                "Rana Muhammad Sohail Jafar",
+                "Manahil Jabeen",
+                "Safdar Hussain",
+                "Ben Niu",
+                "Rohana Sham",
+                "A. Al-Adwan"
+              ],
+              "url": "https://www.semanticscholar.org/paper/ca0ef2104b31c53b6bb00cdb3e0f5dcd8e51ec90"
+            }
+          ]
+        },
+        "query_used": "papers:shopping",
+        "fetched_at": "2026-07-19T11:34:08.564269+00:00",
+        "status": "ok"
+      }
+    ],
+    "claims": [
+      {
+        "id": "cl_8bcc0f6bb6a4",
+        "founder_name": "Luke Roumy",
+        "text": "A Show HN post for Snap Cart has 0 points and 0 comments, indicating no traction on Hacker News.",
+        "subject": "company",
+        "predicate": "launch_reception",
+        "value": "0 points, 0 comments",
+        "confidence": 0.7,
+        "source_evidence_id": "ev_c73842433b36",
+        "source_type": "hn"
+      },
+      {
+        "id": "cl_f7904b8ee4cb",
+        "founder_name": "Luke Roumy",
+        "text": "No relevant hits found for Snap Cart on Hacker News.",
+        "subject": "company",
+        "predicate": "hn_absence",
+        "value": "",
+        "confidence": 0.6,
+        "source_evidence_id": "ev_170d1d1ce47e",
+        "source_type": "hn"
+      },
+      {
+        "id": "cl_f17bad0933b1",
+        "founder_name": "Luke Roumy",
+        "text": "Luke Roumy is a software engineer who was part of a team that won 'Best use of image/audio model or combination of multiple modalities'.",
+        "subject": "founder",
+        "predicate": "prior_role",
+        "value": "Software Engineer",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_036bac47dad1",
+        "source_type": "tavily"
+      },
+      {
+        "id": "cl_5102ccef5b9d",
+        "founder_name": "Luke Roumy",
+        "text": "Luke Roumy has experience working at Snap Inc. and studied at UCLA.",
+        "subject": "founder",
+        "predicate": "prior_company",
+        "value": "Snap Inc.",
+        "confidence": 0.7,
+        "source_evidence_id": "ev_036bac47dad1",
+        "source_type": "tavily"
+      },
+      {
+        "id": "cl_8ad37ced681c",
+        "founder_name": "Luke Roumy",
+        "text": "Luke Roumy is located in the Los Angeles Metropolitan area.",
+        "subject": "founder",
+        "predicate": "location",
+        "value": "Los Angeles Metropolitan",
+        "confidence": 0.6,
+        "source_evidence_id": "ev_036bac47dad1",
+        "source_type": "tavily"
+      },
+      {
+        "id": "cl_b2ed828fb661",
+        "founder_name": "Luke Roumy",
+        "text": "Search returned no relevant hits for Snap Cart on Product Hunt.",
+        "subject": "company",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_076f5eddcabe",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "cl_7581646c788f",
+        "founder_name": "Luke Roumy",
+        "text": "Search returned no relevant hits for Snap Cart in Y Combinator companies.",
+        "subject": "company",
+        "predicate": "site_absence",
+        "value": "",
+        "confidence": 0.5,
+        "source_evidence_id": "ev_960e68be7bb7",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "cl_4db7b9bcd8ec",
+        "founder_name": "Luke Roumy",
+        "text": "Luke Roumy. Software Engineer. Johnson & Johnson Stevens Institute of Technology. Pipersville, Pennsylvania, United States.",
+        "subject": "founder",
+        "predicate": "prior_role",
+        "value": "Software Engineer",
+        "confidence": 0.9,
+        "source_evidence_id": "ev_fd11373b2b07",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "cl_fec4025ded45",
+        "founder_name": "Luke Roumy",
+        "text": "Luke Roumy. Software Engineer. Johnson & Johnson Stevens Institute of Technology. Pipersville, Pennsylvania, United States.",
+        "subject": "founder",
+        "predicate": "education",
+        "value": "Stevens Institute of Technology",
+        "confidence": 0.9,
+        "source_evidence_id": "ev_fd11373b2b07",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "cl_285430b43883",
+        "founder_name": "Luke Roumy",
+        "text": "Luke Roumy. Software Engineer. Johnson & Johnson Stevens Institute of Technology. Pipersville, Pennsylvania, United States.",
+        "subject": "founder",
+        "predicate": "location",
+        "value": "Pipersville, Pennsylvania, United States",
+        "confidence": 0.9,
+        "source_evidence_id": "ev_fd11373b2b07",
+        "source_type": "serpapi"
+      },
+      {
+        "id": "cl_44f019c9aeee",
+        "founder_name": "Luke Roumy",
+        "text": "Snap Cart provides an innovative shopping experience by using intelligent image recognition technology to streamline the checkout process and manage inventory efficiently for small businesses.",
+        "subject": "product",
+        "predicate": "product_description",
+        "value": "Snap Cart provides an innovative shopping experience by using intelligent image recognition technology to streamline the checkout process and manage inventory efficiently for small businesses.",
+        "confidence": 0.8,
+        "source_evidence_id": "ev_deck_40a6a804",
+        "source_type": "deck"
+      },
+      {
+        "id": "cl_8bf4c995f0f1",
+        "founder_name": "Luke Roumy",
+        "text": "Snap Cart is a Devpost hackathon winner: 1st Place at the Square + Google AI Hackathon.",
+        "subject": "company",
+        "predicate": "traction_metric",
+        "value": "1st Place at the Square + Google AI Hackathon",
+        "confidence": 0.7,
+        "source_evidence_id": "ev_deck_40a6a804",
+        "source_type": "deck"
+      }
+    ],
+    "contradictions": [
+      {
+        "claim_id_a": "cl_8ad37ced681c",
+        "claim_id_b": "cl_285430b43883",
+        "description": "Tavily claims Luke Roumy is in Los Angeles, while Serpapi claims he is in Pipersville, Pennsylvania.",
+        "predicate": "location"
+      }
+    ],
+    "verification_map": {
+      "cl_f7904b8ee4cb": "unverifiable",
+      "cl_b2ed828fb661": "unverifiable",
+      "cl_7581646c788f": "unverifiable",
+      "cl_f17bad0933b1": "verified",
+      "cl_4db7b9bcd8ec": "verified",
+      "cl_8ad37ced681c": "contradicted",
+      "cl_285430b43883": "contradicted",
+      "cl_8bcc0f6bb6a4": "unverifiable",
+      "cl_5102ccef5b9d": "unverifiable",
+      "cl_fec4025ded45": "unverifiable",
+      "cl_44f019c9aeee": "unverifiable",
+      "cl_8bf4c995f0f1": "verified"
+    },
+    "attributes": {
+      "is_technical": true,
+      "location": null,
+      "categories": [
+        "shopping",
+        "image recognition",
+        "inventory management"
+      ],
+      "customer_segment": "smb",
+      "prior_vc_backing": null,
+      "accelerator_tier": null,
+      "prior_exits": null,
+      "years_experience": null,
+      "is_researcher": false,
+      "h_index": null
+    },
+    "market_research": {
+      "competitors": [
+        {
+          "name": "Instacart (Caper Carts)",
+          "url": "https://finance.yahoo.com/news/instacart-adds-snap-spending-tool-110600385.html",
+          "one_liner": "Dominating the in-store physical hardware layer with Caper Carts that track spending and integrate with grocery loyalty programs."
+        },
+        {
+          "name": "Veeve",
+          "url": null,
+          "one_liner": "Competes in the smart cart technology space."
+        },
+        {
+          "name": "Shopic",
+          "url": null,
+          "one_liner": "Competes in the smart cart technology space."
+        },
+        {
+          "name": "Shopify",
+          "url": null,
+          "one_liner": "Dominates e-commerce and insights software with a large enterprise presence."
+        },
+        {
+          "name": "Bazaarvoice",
+          "url": null,
+          "one_liner": "Competes in e-commerce and insights software."
+        },
+        {
+          "name": "Snipcart",
+          "url": null,
+          "one_liner": "Competes in e-commerce and insights software."
+        },
+        {
+          "name": "Fetch Rewards",
+          "url": null,
+          "one_liner": "Competes with Snapcart in consumer receipt-scanning and loyalty programs."
+        },
+        {
+          "name": "Ibotta",
+          "url": null,
+          "one_liner": "Competes with Snapcart in consumer receipt-scanning and loyalty programs."
+        }
+      ],
+      "market_size_estimate": "$2.74 billion (Smart Shopping Cart Market)",
+      "stance": "neutral",
+      "reasoning": "The market for smart shopping carts is growing rapidly, with a projected value of $2.74 billion and a high growth rate. However, the presence of strong competitors like Instacart and Shopify in related spaces suggests a competitive environment. The market's growth potential is balanced by these competitive pressures, leading to a neutral stance.",
+      "evidence_refs": [
+        "https://www.researchandmarkets.com/reports/5953243/smart-shopping-cart-market-report",
+        "https://finance.yahoo.com/news/instacart-adds-snap-spending-tool-110600385.html",
+        "https://tracxn.com/d/companies/snapcart/__WgIy_E2P21S-BLe2lR3v41qJ8DXdSnVl-ETH2jkekYo"
+      ]
+    },
+    "swot_analysis": {
+      "strengths": [
+        {
+          "text": "Snap Cart's innovative use of AI and image recognition technology enhances the shopping experience.",
+          "source_url": null,
+          "source_title": null,
+          "reasoning": "Derived from: Snap Cart's product description highlights its use of intelligent image recognition technology to streamline checkout and manage inventory, which is a significant strength."
+        },
+        {
+          "text": "The smart shopping cart market is projected to grow to $2.74 billion by 2026, indicating strong market potential.",
+          "source_url": "https://www.researchandmarkets.com/reports/5953243/smart-shopping-cart-market-report?srsltid=AfmBOooGs-rT2O0QsdV9BPs2Wc851dNvrOKDd4hy523Rcj6TKI1P5USX",
+          "source_title": "Smart Shopping Cart Market Report 2026",
+          "reasoning": "The projected growth of the smart shopping cart market indicates a favorable environment for Snap Cart's business model."
+        }
+      ],
+      "weaknesses": [
+        {
+          "text": "Snap Cart is currently under development, indicating it has not yet reached the market.",
+          "source_url": "https://www.snapcart.com",
+          "source_title": "SnapCart.com",
+          "reasoning": "The statement on SnapCart's website that it is under development suggests a lack of market presence."
+        },
+        {
+          "text": "There is no traction for Snap Cart on major platforms like Hacker News and Product Hunt.",
+          "source_url": null,
+          "source_title": null,
+          "reasoning": "Derived from: Claims about the absence of Snap Cart on Hacker News and Product Hunt indicate a lack of visibility and traction."
+        }
+      ],
+      "opportunities": [
+        {
+          "text": "The rise of mobile-first digital commerce presents an opportunity for Snap Cart to integrate mobile strategies.",
+          "source_url": "https://commercetools.com/blog/trends-that-define-retail-success",
+          "source_title": "5 Commerce Megatrends For 2026",
+          "reasoning": "The increasing importance of mobile commerce offers Snap Cart a chance to leverage mobile-first strategies to enhance user experience."
+        },
+        {
+          "text": "Social commerce is expected to become fully normalized by 2026, offering new channels for engagement.",
+          "source_url": "https://www.akeneo.com/blog/2026-ecommerce-trends",
+          "source_title": "5 Trends That Will Shape the 2026 eCommerce Landscape",
+          "reasoning": "The normalization of social commerce provides Snap Cart with opportunities to engage consumers through new social channels."
+        }
+      ],
+      "threats": [
+        {
+          "text": "Instacart's Caper Carts dominate the in-store physical hardware layer, posing a competitive threat.",
+          "source_url": "https://finance.yahoo.com/news/instacart-adds-snap-spending-tool-110600385.html",
+          "source_title": "Instacart adds SNAP spending tool to smart carts - Yahoo Finance",
+          "reasoning": "Instacart's established presence with Caper Carts in the smart cart space presents a significant competitive threat to Snap Cart."
+        }
+      ]
+    },
+    "preliminary_score": 52.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 2,
+        "explicit_url_handles": [],
+        "search_handles": [
+          "lukeroumy",
+          "luke-roumy"
+        ],
+        "is_research": false,
+        "categories": [
+          "shopping",
+          "image recognition",
+          "inventory management"
+        ],
+        "duration_ms": 3411
+      },
+      {
+        "node": "screening",
+        "status": "PASS",
+        "mode": "llm",
+        "duration_ms": 1191
+      },
+      {
+        "node": "sourcing",
+        "tasks": 7,
+        "evidence_count": 8,
+        "by_source": {
+          "github": 2,
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 3
+        },
+        "ok_by_source": {
+          "hn": 2,
+          "tavily": 1,
+          "serpapi": 3
+        },
+        "research_branch": false,
+        "duration_ms": 4320
+      },
+      {
+        "node": "extraction",
+        "evidence_in": 9,
+        "claims_out": 12,
+        "by_source": {
+          "hn": 2,
+          "tavily": 3,
+          "serpapi": 5,
+          "deck": 2
+        },
+        "duration_ms": 4118
+      },
+      {
+        "node": "verification",
+        "groups_llm": 2,
+        "solo_claims": 5,
+        "tavily_fallbacks": 1,
+        "contradictions": 1,
+        "new_evidence_from_verify": 1,
+        "duration_ms": 4869
+      },
+      {
+        "node": "attributes_rollup",
+        "claims_in": 12,
+        "is_technical": true,
+        "categories": [
+          "shopping",
+          "image recognition",
+          "inventory management"
+        ],
+        "accelerator_tier": null,
+        "duration_ms": 1618
+      },
+      {
+        "node": "market_research",
+        "category": "shopping",
+        "queries_fired": 9,
+        "evidence_collected": 9,
+        "competitors_found": 8,
+        "stance": "neutral",
+        "ai_mode_ok": true,
+        "ai_mode_refs": 18,
+        "swot_bullets": 7,
+        "duration_ms": 28792
+      },
+      {
+        "node": "activation",
+        "preliminary_score": 52.0,
+        "is_outbound": true,
+        "draft_generated": false,
+        "duration_ms": 0
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "2 GitHub handle hints (2 from Tavily search) \u2014 SerpAPI returned no github URLs \u2192 fallback: ['lukeroumy', 'luke-roumy']. Categories=['shopping', 'image recognition', 'inventory management'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "PASS: The application clearly describes the product as an innovative shopping experience using image recognition technology and identifies small businesses as the target customers."
+      },
+      {
+        "node": "sourcing",
+        "reason": "Fanned 7 tool calls \u2192 8 evidence items ({'hn': 2, 'tavily': 1, 'serpapi': 3} with content)."
+      },
+      {
+        "node": "extraction",
+        "reason": "9 evidence items \u2192 12 claims ({'hn': 2, 'tavily': 3, 'serpapi': 5, 'deck': 2})."
+      },
+      {
+        "node": "verification",
+        "reason": "2 LLM groups, 1 Tavily fallbacks, 1 contradictions flagged."
+      },
+      {
+        "node": "attributes_rollup",
+        "reason": "Rolled 12 claims \u2192 is_technical=True, categories=['shopping', 'image recognition', 'inventory management'], accelerator=None, h_index=None"
+      },
+      {
+        "node": "market_research",
+        "reason": "AI Mode: 18 refs; Category=shopping \u2192 8 competitors, stance=neutral, market_size=$2.74 billion (Smart Shopping Cart Market), SWOT bullets: 7 (S=2, W=2, O=2, T=1)"
+      },
+      {
+        "node": "activation",
+        "reason": "preliminary_score=52.0, is_outbound=True, drafted=False"
+      }
+    ]
+  }
+}

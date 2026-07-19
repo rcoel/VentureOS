@@ -125,6 +125,33 @@ class MarketResearch(BaseModel):
 
 
 # --------------------------------------------------------------------------- #
+# SWOT analysis (citation-backed)                                             #
+# --------------------------------------------------------------------------- #
+
+
+class SWOTBullet(BaseModel):
+    """One SWOT bullet with a citation.
+
+    `source_url` should point back to a Tavily/SerpAPI result URL (or an
+    EvidenceItem URL) that supports the bullet. When no external source
+    exists (e.g., derived from a deck claim), `source_url` is null and
+    `reasoning` explains where it came from.
+    """
+
+    text: str
+    source_url: str | None = None
+    source_title: str | None = None
+    reasoning: str = ""
+
+
+class SWOTAnalysis(BaseModel):
+    strengths: list[SWOTBullet] = Field(default_factory=list)
+    weaknesses: list[SWOTBullet] = Field(default_factory=list)
+    opportunities: list[SWOTBullet] = Field(default_factory=list)
+    threats: list[SWOTBullet] = Field(default_factory=list)
+
+
+# --------------------------------------------------------------------------- #
 # Intake summary                                                              #
 # --------------------------------------------------------------------------- #
 

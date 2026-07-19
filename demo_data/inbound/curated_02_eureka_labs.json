@@ -1,0 +1,2204 @@
+{
+  "founder_name": "Andrej Karpathy",
+  "company": "Eureka Labs",
+  "application_text": "Eureka Labs is a new AI-native school. We're building the teacher-student loop for the AI age, starting with a course on training large language models from scratch.\n\nFounder Andrej Karpathy has a PhD from Stanford in computer vision and deep learning under Fei-Fei Li. He was a founding member and research scientist at OpenAI, then led AI at Tesla (Autopilot, Tesla Vision) from 2017 to 2022. He returned to OpenAI in 2023 and left in 2024 to start Eureka. Author of the widely-used 'nanoGPT' repo and the 'Neural Networks: Zero to Hero' YouTube series.\n\nCategory: AI applications, edtech, AI-native tools.\nLocation: San Francisco. Highly technical solo founder to start; hiring.",
+  "thesis_config": {
+    "sectors": [
+      "dev tools",
+      "AI infra"
+    ],
+    "stage": "pre-seed",
+    "geography": [
+      "US",
+      "EU"
+    ],
+    "check_size": [
+      25000,
+      150000
+    ],
+    "ownership_target": 0.05,
+    "risk_appetite": "high"
+  },
+  "is_outbound": false,
+  "intake": {
+    "github_handle_hints": [
+      "andrejkarpathy",
+      "andrej-karpathy"
+    ],
+    "research_domain": "large language models",
+    "is_research_founder": true,
+    "category_labels": [
+      "ai applications",
+      "edtech",
+      "ai-native tools"
+    ],
+    "product_urls": [],
+    "location_hint": "san francisco"
+  },
+  "screen_status": "PASS",
+  "screen_reason": "The application clearly describes the product as an AI-native school focused on training large language models, identifies the target customer as students, and categorizes itself within AI applications and edtech.",
+  "raw_evidence": [
+    {
+      "id": "ev_0479a416de70",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "github",
+      "source_url": "https://github.com/andrejkarpathy",
+      "raw_content": {
+        "status": "ok",
+        "profile": {
+          "login": "andrejkarpathy",
+          "name": null,
+          "bio": null,
+          "company": null,
+          "location": null,
+          "blog": "",
+          "email": null,
+          "twitter_username": null,
+          "public_repos": 0,
+          "followers": 8,
+          "following": 2,
+          "created_at": "2025-04-01T05:27:44Z",
+          "html_url": "https://github.com/andrejkarpathy"
+        },
+        "repos": [],
+        "activity": {
+          "total_events": 0,
+          "push_events": 0,
+          "days_active": 0,
+          "event_types": {}
+        },
+        "fetched_at": "2026-07-19T09:32:58.545764+00:00"
+      },
+      "query_used": "andrejkarpathy",
+      "fetched_at": "2026-07-19T11:35:51.086694+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_98b2460b2e82",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "github",
+      "source_url": "https://github.com/andrej-karpathy",
+      "raw_content": {
+        "status": "not_found",
+        "username": "andrej-karpathy"
+      },
+      "query_used": "andrej-karpathy",
+      "fetched_at": "2026-07-19T11:35:51.087053+00:00",
+      "status": "not_found"
+    },
+    {
+      "id": "ev_021313cf1a27",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "hn",
+      "source_url": "https://hn.algolia.com/?q=Eureka Labs&type=show_hn",
+      "raw_content": {
+        "status": "ok",
+        "nb_hits": 3,
+        "hits": [
+          {
+            "object_id": "41057030",
+            "title": "Show HN: A personalised AI tutor with < 1s voice responses",
+            "url": "https://educationbot.cerebrium.ai/",
+            "author": "za_mike157",
+            "points": 72,
+            "num_comments": 24,
+            "story_text": "TLDR: We created a personalised Andrej Karpathy tutor that can response to questions about his Youtube videos in sub 1 second responses (voice-to-voice). We do this using a voice enabled RAG agent. See later in the post for demo link, Github Repo and blog write up.<p>A few weeks ago we released the worlds fastest voice bot, achieving 500ms voice-to-voice response times, including a 200ms delay waiting for a user to stop speaking.<p>After reaching the front page of HN, we thought about how we could take this a step further based on feedback we were getting from the community. Many companies were looking for a way to implement function calling and RAG with voice interfaces while retaining a low enough latency. We couldn\u2019t find many resources about how to do this online that:<p>1. Allowed us to achieve sub-second voice-to-voice latency\n2. Was more flexible than existing solutions. Vapi, Retell, [Bland.ai](<a href=\"http:&#x2F;&#x2F;Bland.ai\" rel=\"nofollow\">http:&#x2F;&#x2F;Bland.ai</a>) are too opinionated plus since they just orchestrate API\u2019s which incur network latency at every step. See requirement above\n3. The unit economics actually work at scale.<p>So we decided to create a implementation of our own.<p>Process:<p>As we mentioned in our previous release, if you want to achieve response times this low you need to make everything as local as possible. So below was our setup<p>- Local STT: Deepgram model\n- Local Embedding model: Nomic v1.5\n- Local VectorDB: Turso\n- Local LLM: Llama 3B\n- Local TTS: Deepgram model<p>From our previous example, the only new components where:<p>- Local Embedding model: We chose Nomic Embed text v1.5 model that gave a processing time of roughly ~200ms\n- Turso offers local embedded replicas combined with edgeDB\u2019s which meant we were able to achieve 0.01 second read times. Pinecone also gave us good times of 0.043 seconds.<p>The above changes led us to achieve sub 1 second voice-to-voice response times<p>Application:<p>With Andrej Karpathy\u2019s",
+            "comment_text": "",
+            "created_at": "2024-07-24T13:41:10Z",
+            "hn_url": "https://news.ycombinator.com/item?id=41057030"
+          },
+          {
+            "object_id": "37432793",
+            "title": "Show HN: Trickle \u2013 Let GPT-4 Understand Your Screenshots",
+            "url": "https://www.trickle.so/",
+            "author": "jarodxu",
+            "points": 20,
+            "num_comments": 13,
+            "story_text": "Hey there HN!<p>It took nearly 5 years for my team and me to truly find right direction. So, after introducing our work, I&#x27;m keen to share the story behind it. The following content is divided into two parts. If you&#x27;re not interested in the backstory of the product, feel free to skip the content after the divider.<p>&gt; The Problem We&#x27;re Solving:\nDuring a casual afternoon, while brainstorming what to do next on a WeWork sofa, we realized that almost everyone present had a habit of saving information via screenshots. When I opened my photo gallery, I was astonished to see that more than half were such screenshots. Given that traditional OCR and gallery apps hadn&#x27;t really addressed our screenshot chaos, we decided to build something to solve our own problem.<p>&gt; How it works:\nAt first glance, you might think Trickle is a manual screenshot version of Rewind. But in reality, they&#x27;re vastly different. All you need to do is send your screenshots, and let Trickle handle the rest:<p>[1] Trickle doesn&#x27;t constantly record the entire desktop, so it won&#x27;t consume all your Mac&#x27;s storage or affect its performance. Moreover, it won&#x27;t give you the unsettling feeling of being constantly watched.<p>[2] Although we have a Mac screenshot tool, and a browser extension is on its way, you don&#x27;t actually need to install them. You can easily upload your screenshots via a web page. This makes it platform-agnostic; you can browse, search, and ask about your historical screenshots at any time via a browser. Of course, it doesn&#x27;t occupy any of your local storage. Last but not least, it&#x27;s Windows-user friendly.<p>[3] User-controlled screenshots mean that the embedded chunks are semantically more precise. Beyond the advanced reasoning capabilities of GPT-4, we&#x27;ve integrated some tricks of our own, allowing Trickle to truly comprehend your screenshots, rather than just summarizing the text. Sometimes you might be surprised when T",
+            "comment_text": "",
+            "created_at": "2023-09-08T12:44:58Z",
+            "hn_url": "https://news.ycombinator.com/item?id=37432793"
+          },
+          {
+            "object_id": "41808868",
+            "title": "Show HN: I made an AI humanizer that does not mess up your text",
+            "url": "https://ai-text-humanizer.com/",
+            "author": "Gablopreneur",
+            "points": 1,
+            "num_comments": 4,
+            "story_text": "In the ever evolving world of ... naaah, I can&#x27;t see it anymore. Everywhere the same phrases, words, and patterns. Sometimes people even leave the GPT-generated ** and the ### characters in the text. I noticed that I immediately distrust any text that looks like copy &amp; paste GPT content.<p>&quot;Are there tools to solve that problem?&quot; I thought.<p>I fired good ol&#x27; Google to see if there are any good tools to &quot;humanize&quot; AI content.<p>Let me tell you: There were plenty!<p>But to make a long story short: The first few results on Google were horrible. They add mistakes to your text or mess it up with weird words that even destroy the meaning of your message. All that just to get a 0% AI score from any AI detector. Even ahrefs jumped on the humanizer keyword train and made another mediocre tool. It&#x27;s all about SEO traffic, I guess?!<p>My last few years circled about plain language and how it helps people understand your message. Simple language builds trust. It converts visitors into customers, into fans.\nPlus I&#x27;ve been programming for about 25 years now.\nPlus I already did a few things with the GPT API and lots of things with regular expressions and text manipulation.<p>So, this seems like a job for me, right?<p>Two months of trial and error until - EUREKA - behold - yet another humanizer!<p>My humanizer is about a month old now and already gets organic traffic from Google, Reddit, and some AI directories. The traffic has a promising upward trend. The tool attracted more than 3,500 users and 130 paying subscribers, which is insane. I didn&#x27;t expect a lot, even though I did my SEO homework (as far as I am able to as a dev).<p>How did I do it? A few takeaways:<p>1. Start with a strong main keyword and build your page around it (title tag, headings).<p>2. Look at the top Google results for your keyword and do what they do - just better.<p>3. Create a few easy backlinks on AI directories, but not too fast, or Google thinks you are ",
+            "comment_text": "",
+            "created_at": "2024-10-11T12:24:45Z",
+            "hn_url": "https://news.ycombinator.com/item?id=41808868"
+          }
+        ]
+      },
+      "query_used": "show_hn:Eureka Labs",
+      "fetched_at": "2026-07-19T11:35:51.088776+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_ab584feb269b",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "hn",
+      "source_url": "https://hn.algolia.com/?q=Eureka Labs&type=story",
+      "raw_content": {
+        "status": "ok",
+        "nb_hits": 14,
+        "hits": [
+          {
+            "object_id": "40978474",
+            "title": "Eureka Labs",
+            "url": "https://eurekalabs.ai/",
+            "author": "pouwerkerk",
+            "points": 21,
+            "num_comments": 1,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2024-07-16T17:27:10Z",
+            "hn_url": "https://news.ycombinator.com/item?id=40978474"
+          },
+          {
+            "object_id": "48320822",
+            "title": "Ask HN: What happened with Eureka Labs, Karpathy's startup?",
+            "url": null,
+            "author": "alexmolas",
+            "points": 6,
+            "num_comments": 0,
+            "story_text": "In 2024 Andrej Karpathy launched Eureka Labs [1], an AI-first education startup.<p>Since the initial announcement, I haven&#x27;t seen much public activity or updates, and the GitHub org [2] and course repo [3] appear empty or unused.<p>Also, Recently Karpathy also joined Anthropic. He even removed Eureka Labs from his LinkedIn.<p>Does anyone know what happened to Eureka Labs?<p>[1]: https:&#x2F;&#x2F;eurekalabs.ai&#x2F;\n[2]: https:&#x2F;&#x2F;github.com&#x2F;EurekaLabsAI\n[3]: https:&#x2F;&#x2F;github.com&#x2F;karpathy&#x2F;LLM101n",
+            "comment_text": "",
+            "created_at": "2026-05-29T09:07:10Z",
+            "hn_url": "https://news.ycombinator.com/item?id=48320822"
+          },
+          {
+            "object_id": "40984328",
+            "title": "Eureka Labs: Andrej Karpathy new venture in education and AI",
+            "url": "https://eurekalabs.ai/",
+            "author": "fgfm",
+            "points": 1,
+            "num_comments": 0,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2024-07-17T10:20:56Z",
+            "hn_url": "https://news.ycombinator.com/item?id=40984328"
+          },
+          {
+            "object_id": "41057030",
+            "title": "Show HN: A personalised AI tutor with < 1s voice responses",
+            "url": "https://educationbot.cerebrium.ai/",
+            "author": "za_mike157",
+            "points": 72,
+            "num_comments": 24,
+            "story_text": "TLDR: We created a personalised Andrej Karpathy tutor that can response to questions about his Youtube videos in sub 1 second responses (voice-to-voice). We do this using a voice enabled RAG agent. See later in the post for demo link, Github Repo and blog write up.<p>A few weeks ago we released the worlds fastest voice bot, achieving 500ms voice-to-voice response times, including a 200ms delay waiting for a user to stop speaking.<p>After reaching the front page of HN, we thought about how we could take this a step further based on feedback we were getting from the community. Many companies were looking for a way to implement function calling and RAG with voice interfaces while retaining a low enough latency. We couldn\u2019t find many resources about how to do this online that:<p>1. Allowed us to achieve sub-second voice-to-voice latency\n2. Was more flexible than existing solutions. Vapi, Retell, [Bland.ai](<a href=\"http:&#x2F;&#x2F;Bland.ai\" rel=\"nofollow\">http:&#x2F;&#x2F;Bland.ai</a>) are too opinionated plus since they just orchestrate API\u2019s which incur network latency at every step. See requirement above\n3. The unit economics actually work at scale.<p>So we decided to create a implementation of our own.<p>Process:<p>As we mentioned in our previous release, if you want to achieve response times this low you need to make everything as local as possible. So below was our setup<p>- Local STT: Deepgram model\n- Local Embedding model: Nomic v1.5\n- Local VectorDB: Turso\n- Local LLM: Llama 3B\n- Local TTS: Deepgram model<p>From our previous example, the only new components where:<p>- Local Embedding model: We chose Nomic Embed text v1.5 model that gave a processing time of roughly ~200ms\n- Turso offers local embedded replicas combined with edgeDB\u2019s which meant we were able to achieve 0.01 second read times. Pinecone also gave us good times of 0.043 seconds.<p>The above changes led us to achieve sub 1 second voice-to-voice response times<p>Application:<p>With Andrej Karpathy\u2019s",
+            "comment_text": "",
+            "created_at": "2024-07-24T13:41:10Z",
+            "hn_url": "https://news.ycombinator.com/item?id=41057030"
+          },
+          {
+            "object_id": "40988153",
+            "title": "The n-gram Language Model",
+            "url": "https://github.com/EurekaLabsAI/ngram",
+            "author": "bovem",
+            "points": 13,
+            "num_comments": 1,
+            "story_text": "",
+            "comment_text": "",
+            "created_at": "2024-07-17T17:22:36Z",
+            "hn_url": "https://news.ycombinator.com/item?id=40988153"
+          }
+        ]
+      },
+      "query_used": "story:Eureka Labs",
+      "fetched_at": "2026-07-19T11:35:51.090243+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_fda04b965f2b",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"Andrej Karpathy\" Eureka Labs founder background",
+        "answer": null,
+        "results": [
+          {
+            "title": "OpenAI Co-Founder Andrej Karpathy Announces Eureka Labs, an AI Education Startup",
+            "url": "https://www.inc.com/ben-sherry/openai-co-founder-andrej-karpathy-announces-eureka-labs-an-ai-education-startup.html",
+            "content": "Image 2: andrej-karpathy-eureka-labs-inc-1321808924. Andrej Karpathy, a renowned artificial intelligence educator, former head of AI at Tesla, and founding member of OpenAI, has announced Eureka Labs, a new startup aimed at creating \u201ca new kind of school that is AI native.\u201d Karpathy says Eureka Labs\u2019 first course will teach students how to create their own large language model, or LLM. In a post on X, Karpathy wrote that one of the most enduring problems with education is that there is a dearth of \u201csubject matter experts who are deeply passionate, great at teaching, infinitely patient and fluent in all of the world\u2019s languages,\u201d but then added that recent advancements in generative AI could make it possible for the world\u2019s best teachers to massively scale up their programs. Karpathy outlined a process that would see teachers design materials for a class, which are \u201csupported, leveraged and scaled,\u201d by a generative AI-powered teaching assistant that can guide students through the course.",
+            "score": 0.82117355
+          },
+          {
+            "title": "How Andrej Karpathy built Eureka Labs | Paul Roetzer posted on the topic | LinkedIn",
+            "url": "https://www.linkedin.com/posts/paulroetzer_there-are-very-few-people-in-the-ai-space-activity-7237507471261495299-AGRV",
+            "content": "[Skip to main content](https://www.linkedin.com/posts/paulroetzer_there-are-very-few-people-in-the-ai-space-activity-7237507471261495299-AGRV#main-content)[LinkedIn](https://www.linkedin.com/?trk=public_post_nav-header-logo). *   [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fpaulroetzer_there-are-very-few-people-in-the-ai-space-activity-7237507471261495299-AGRV&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-reporting). [![Image 4](https://static.licdn.com/aero-v1/sc/h/bn39hirwzjqj18ej1fkz55671)![Image 5](https://static.licdn.com/aero-v1/sc/h/asiqslyf4ooq7ggllg4fyo4o2)![Image 6](https://static.licdn.com/aero-v1/sc/h/2tzoeodxy0zug4455msr0oq0v) 126](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fpaulroetzer_there-are-very-few-people-in-the-ai-space-activity-7237507471261495299-AGRV&trk=public_post_social-actions-reactions)[19 Comments](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fpaulroetzer_there-are-very-few-people-in-the-ai-space-activity-7237507471261495299-AGRV&trk=public_post_social-actions-comments). [Like](https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fposts%2Fpaulroetzer_there-are-very-few-people-in-the-ai-space-activity-7237507471261495299-AGRV&trk=public_post_like-cta)[Comment](https://www.linke",
+            "score": 0.8124067
+          },
+          {
+            "title": "Former OpenAI, Tesla engineer Andrej Karpathy starts AI education platform",
+            "url": "https://www.reuters.com/technology/artificial-intelligence/former-openai-tesla-engineer-andrej-karpathy-starts-ai-education-platform-2024-07-16",
+            "content": "Exclusive news, data and analytics for financial market professionals Learn more about Refinitiv. ## Browse World. ## Browse Business. ## Browse Legal. Figurines with computers and smartphones are seen in front of the words \"Artificial Intelligence AI\" in this illustration taken, February 19, 2024. July 16 (Reuters) - Computer scientist Andrej Karpathy announced on Tuesday that he was starting an AI-integrated education platform named Eureka Labs, leveraging years of experience at ChatGPT developer OpenAI and Tesla (TSLA.O), opens new tab. \"Eureka Labs is the culmination of my passion in both AI and education over about 2 decades,\" Karpathy said in the post, opens new tab. Our Standards: The Thomson Reuters Trust Principles., opens new tab. ### Browse. *   Media Center, opens new tab. *   Reuters News Agency, opens new tab. *   Reuters and AI, opens new tab. *   Reuters Leadership, opens new tab. *   #### World-Check, opens new tab.",
+            "score": 0.7520312
+          },
+          {
+            "title": "Andrej Karpathy - Pre-training Lead @ Anthropic",
+            "url": "https://www.crunchbase.com/person/andrej-karpathy-7d6e",
+            "content": "He attended the University of Toronto. Founder at Eureka Labs . 2024 Education Andrej Karpathy studied at University of Toronto and University of British",
+            "score": 0.7140107
+          },
+          {
+            "title": "Andrej Karpathy unveils Eureka Labs, an AI education start-up",
+            "url": "https://www.siliconrepublic.com/machines/andrej-karpathy-eureka-labs-ai-startup-education-platform-llm101n",
+            "content": "OpenAI co-founder Andrej Karpathy has announced a new company called Eureka Labs that will enable students to study a wide variety of subjects through its AI platform. The former director of AI at Tesla wrote in a post on X yesterday (16 July) that Eureka Labs will be a \u201cnew kind of school that is AI native\u201d and where an AI teaching assistant will \u201chelp guide students\u201d through course materials designed by real teachers. \u201cActually, being at OpenAI over the last year has been really great \u2013 the team is really strong, the people are wonderful, and the roadmap is very exciting, and I think we all have a lot to look forward to,\u201d Karpathy wrote on X. What that looks like is an AI course titled LLM101n that will be the first product at Eureka Labs, according to Karpathy\u2019s latest post.",
+            "score": 0.70702106
+          }
+        ],
+        "response_time": 1.73
+      },
+      "query_used": "\"Andrej Karpathy\" Eureka Labs founder background",
+      "fetched_at": "2026-07-19T11:35:51.088630+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_09f3df38ab00",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "site:producthunt.com \"Eureka Labs\"",
+        "search_metadata": {
+          "total_results": 1,
+          "engine_url": "https://www.google.com/search?q=site%3Aproducthunt.com+%22Eureka+Labs%22&oq=site%3Aproducthunt.com+%22Eureka+Labs%22&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "nanochat: Build your own ChatGPT for $100 on a single GPU",
+            "link": "https://www.producthunt.com/products/nanochat",
+            "displayed_link": "https://www.producthunt.com \u203a na...",
+            "snippet": "nanochat is Andrej Karpathy's capstone project for LLM101n by Eureka Labs. It's a full-stack LLM implementation in ~1000 lines of clean, hackable code ...",
+            "date": null,
+            "source": "Product Hunt"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "site:producthunt.com \"Eureka Labs\"",
+      "fetched_at": "2026-07-19T11:35:51.087596+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_e6737721e11f",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "site:ycombinator.com/companies \"Eureka Labs\"",
+        "search_metadata": {
+          "total_results": 0,
+          "engine_url": "https://www.google.com/search?q=site%3Aycombinator.com%2Fcompanies+%22Eureka+Labs%22&oq=site%3Aycombinator.com%2Fcompanies+%22Eureka+Labs%22&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "site:ycombinator.com/companies \"Eureka Labs\"",
+      "fetched_at": "2026-07-19T11:35:51.087961+00:00",
+      "status": "not_found"
+    },
+    {
+      "id": "ev_a1687da2109a",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "site:linkedin.com/in \"Andrej Karpathy\" Eureka Labs",
+        "search_metadata": {
+          "total_results": 711,
+          "engine_url": "https://www.google.com/search?q=site%3Alinkedin.com%2Fin+%22Andrej+Karpathy%22+Eureka+Labs&oq=site%3Alinkedin.com%2Fin+%22Andrej+Karpathy%22+Eureka+Labs&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "Andrej Karpathy - I don't use or check my ...",
+            "link": "https://www.linkedin.com/in/andrej-karpathy-9a650716",
+            "displayed_link": "165.4K+ followers",
+            "snippet": "Andrej Karpathy. I don't use or check my LinkedIn and only have an account to view recruiting candidates. Contact me via X/email.",
+            "date": null,
+            "source": "LinkedIn \u00b7 Andrej Karpathy"
+          },
+          {
+            "position": 2,
+            "title": "Tyler Vann-Campbell - Facebook",
+            "link": "https://www.linkedin.com/in/tyler-vann-campbell-54314b2",
+            "displayed_link": "260+ followers",
+            "snippet": "Deliver an engaging, evidence-based, culturally responsive curriculum and differentiated enrichment experience in high school classrooms.",
+            "date": null,
+            "source": "LinkedIn \u00b7 Tyler Vann-Campbell"
+          },
+          {
+            "position": 3,
+            "title": "Sriharsha Tikkireddy - Databricks",
+            "link": "https://www.linkedin.com/in/sriharsha-tikkireddy",
+            "displayed_link": "1.9K+ followers",
+            "snippet": "Currently like to work on GenAI infra, inference and optimizations, like learning about\u2026 \u00b7 Experience: Databricks \u00b7 Education: Stony Brook University ...",
+            "date": null,
+            "source": "LinkedIn \u00b7 Sriharsha Tikkireddy"
+          },
+          {
+            "position": 4,
+            "title": "Alain Nyeck - AI Developer | Specializing in Computer ...",
+            "link": "https://ca.linkedin.com/in/alain-nyeck-5b13a6373",
+            "displayed_link": "https://ca.linkedin.com \u203a ...",
+            "snippet": "Software developer with over 20 years of experience in image processing and computer vision (C/C++), currently specializing in Artificial Intelligence (AI)",
+            "date": null,
+            "source": "LinkedIn"
+          },
+          {
+            "position": 5,
+            "title": "Vera Kotorova",
+            "link": "https://kz.linkedin.com/in/vera-kotorova-529156314",
+            "displayed_link": "1.3K+ followers",
+            "snippet": "Designed and led the development of Tamyr, an AI-driven preventive health mobile app. As the backend developer, I built the core infrastructure and integrated ...",
+            "date": null,
+            "source": "LinkedIn \u00b7 Vera Kotorova"
+          },
+          {
+            "position": 6,
+            "title": "Kaustubh Agrawal - CSE (AI) Student",
+            "link": "https://in.linkedin.com/in/kaustubh-agrawal-a73111288",
+            "displayed_link": "420+ followers",
+            "snippet": "I'm a Computer Science undergraduate specializing in Artificial Intelligence, driven by the vision of solving real-world problems that create meaningful impact.",
+            "date": null,
+            "source": "LinkedIn \u00b7 Kaustubh Agrawal"
+          },
+          {
+            "position": 7,
+            "title": "Vadim Kositsky - Helping you search patent infringements ...",
+            "link": "https://ca.linkedin.com/in/vkositsky",
+            "displayed_link": "950+ followers",
+            "snippet": "Expert in Building Practical AI Solutions & Driving R&D | Specialist in Machine Learning, Deep Learning & Cloud Software. Vaughan, Ontario, Canada",
+            "date": null,
+            "source": "LinkedIn \u00b7 Vadim Kositsky"
+          },
+          {
+            "position": 8,
+            "title": "Jem Kim - Software Engineer at Facebook",
+            "link": "https://www.linkedin.com/in/jem-kim-29014146",
+            "displayed_link": "390+ followers",
+            "snippet": "Software engineer with interest in adtech. Education: California Polytechnic State. Seattle, Washington, United States 395 followers 392. Software engineer ...",
+            "date": null,
+            "source": "LinkedIn \u00b7 Jem Kim"
+          },
+          {
+            "position": 9,
+            "title": "Paul S. - Let us own strip malls and cat sanctuaries!",
+            "link": "https://www.linkedin.com/in/hi-ocean",
+            "displayed_link": "500+ followers",
+            "snippet": "I'm an up-and-coming real estate investor. As the co-founder of CornerCat Investments, I buy, renovate, and bring-to-market single-family homes in the Houston ...",
+            "date": null,
+            "source": "LinkedIn \u00b7 Paul S."
+          },
+          {
+            "position": 10,
+            "title": "Kate Park - Director of Product at Scale AI",
+            "link": "https://www.linkedin.com/in/kateparkmenlo",
+            "displayed_link": "12.8K+ followers",
+            "snippet": "After joining Tesla Autopilot in 2018 as a computer vision researcher, Kate became the first PM for Andrej Karpathy's AI team for which she built the data ...",
+            "date": null,
+            "source": "LinkedIn \u00b7 Kate Park"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "site:linkedin.com/in \"Andrej Karpathy\" Eureka Labs",
+      "fetched_at": "2026-07-19T11:35:51.088520+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_59daac4c386c",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "semantic_scholar",
+      "source_url": "https://www.semanticscholar.org/author/2354728",
+      "raw_content": {
+        "status": "ok",
+        "author": {
+          "author_id": "2354728",
+          "name": "A. Karpathy",
+          "affiliations": [],
+          "homepage": null,
+          "h_index": 16,
+          "paper_count": 37,
+          "citation_count": 66031,
+          "url": "https://www.semanticscholar.org/author/2354728"
+        },
+        "recent_papers": [
+          {
+            "paper_id": "62816cbfda28b49200a9c37d8954f5a9fd378f22",
+            "title": "Bibby AI - AI Latex Editor writing assistant for researchers vs Overleaf Alternative vs OpenAI Prism. (Bibby AI Latex Editor)",
+            "year": 2026,
+            "venue": "arXiv.org",
+            "citation_count": 0,
+            "abstract": "",
+            "authors": [
+              "Nilesh jain",
+              "Rohit Yadav",
+              "A. Karpathy"
+            ],
+            "url": "https://www.semanticscholar.org/paper/62816cbfda28b49200a9c37d8954f5a9fd378f22"
+          },
+          {
+            "paper_id": "aa5e33111cfa35bd030b29eb956005ead9112988",
+            "title": "Bibby AI -- AI Latex Editor writing assistant for researchers vs Overleaf Alternative vs OpenAI Prism. (Bibby AI Latex Editor)",
+            "year": 2026,
+            "venue": "",
+            "citation_count": 0,
+            "abstract": "Large language models are increasingly integrated into academic writing workflows; however, the most widely used \\LaTeX\\ editors remain AI-peripheral -- offering compilation and collaboration, but no native intelligence. This separation forces researchers to leave their editing environment for AI assistance, fragmenting document context and interrupting writing flow. We present Bibby AI (trybibby.com), a native, AI-first \\LaTeX\\ editor that unifies the complete research writing lifecycle within a single interface. Bibby embeds an AI writing assistant, smart citation search, AI table and equation generation, an AI paper reviewer, abstract generator, literature review drafting, a deep research assistant, and real-time \\LaTeX\\ error detection and auto-fix -- all natively, without plugins or copy-paste workflows. We introduce LaTeXBench-500, a benchmark of 500 real-world compilation errors across six categories. Bibby achieves 91.4\\% detection accuracy and 83.7\\% one-click fix accuracy, ou",
+            "authors": [
+              "Nilesh jain",
+              "Rohit Yadav",
+              "A. Karpathy"
+            ],
+            "url": "https://www.semanticscholar.org/paper/aa5e33111cfa35bd030b29eb956005ead9112988"
+          },
+          {
+            "paper_id": "d503a7f08b8333f96cb6298085b96cb87f3fea4c",
+            "title": "Understanding LLMs\u2019 summarization capabilities: an analysis of biomedical abstract and lay summary generation",
+            "year": 2026,
+            "venue": "Annual Meeting of the Association for Computational Linguistics",
+            "citation_count": 0,
+            "abstract": "Scientific abstracts and lay summaries serve distinct but critical roles in research communication. Abstracts use technical language for academic audiences, while lay summaries aim to make findings accessible to non-specialists. With the rise of large language models (LLMs), there is increasing interest in automating the generation of both types of sum-maries\u2014especially in the biomedical domain, where clarity and factual accuracy are essential. This study evaluates the performance of lightweight LLMs (under 8B parameters) in generating biomedical abstracts and lay summaries in a zero-shot setting. We assess outputs across three key dimensions: relevance, read-ability, and factuality. Additionally, we introduce a novel analysis of the sectional origin and desirability of information\u2014where desirability reflects the utility of content from the reader\u2019s perspective. We further compare human and LLM preferences using an objective ranking task. Our results show that LLM-generated summaries o",
+            "authors": [
+              "Batuhan Nursal",
+              "Cassie S. Mitchell",
+              "Rita Gonz\u00e1lez-M\u00e1rquez",
+              "Luca Schmidt",
+              "Benjamin M. Schmidt",
+              "Philipp Berens"
+            ],
+            "url": "https://www.semanticscholar.org/paper/d503a7f08b8333f96cb6298085b96cb87f3fea4c"
+          },
+          {
+            "paper_id": "042527cf922c53bcaa831699276205a110c42fbb",
+            "title": "DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?",
+            "year": 2025,
+            "venue": "Conference on Empirical Methods in Natural Language Processing",
+            "citation_count": 7,
+            "abstract": ",",
+            "authors": [
+              "Jianxiang Peng",
+              "Ling Shi",
+              "Xinwei Wu",
+              "Hanwen Zhang",
+              "Fujiang Liu",
+              "Haocheng Lyu"
+            ],
+            "url": "https://www.semanticscholar.org/paper/042527cf922c53bcaa831699276205a110c42fbb"
+          },
+          {
+            "paper_id": "57d7977bb8ae533de61a317d907d8fa505ed1af3",
+            "title": "Jailbreak Distillation: Renewable Safety Benchmarking",
+            "year": 2025,
+            "venue": "Conference on Empirical Methods in Natural Language Processing",
+            "citation_count": 4,
+            "abstract": "Large language models (LLMs) are rapidly deployed in critical applications, raising urgent needs for robust safety benchmarking. We propose Jailbreak Distillation (JBDistill), a novel benchmark construction framework that\"distills\"jailbreak attacks into high-quality and easily-updatable safety benchmarks. JBDistill utilizes a small set of development models and existing jailbreak attack algorithms to create a candidate prompt pool, then employs prompt selection algorithms to identify an effective subset of prompts as safety benchmarks. JBDistill addresses challenges in existing safety evaluation: the use of consistent evaluation prompts across models ensures fair comparisons and reproducibility. It requires minimal human effort to rerun the JBDistill pipeline and produce updated benchmarks, alleviating concerns on saturation and contamination. Extensive experiments demonstrate our benchmarks generalize robustly to 13 diverse evaluation models held out from benchmark construction, inclu",
+            "authors": [
+              "Jingyue Zhang",
+              "Ahmed Elgohary",
+              "Xiawei Wang",
+              "Ahmed Magooda",
+              "Benjamin Van Durme",
+              "Daniel Khashabi"
+            ],
+            "url": "https://www.semanticscholar.org/paper/57d7977bb8ae533de61a317d907d8fa505ed1af3"
+          },
+          {
+            "paper_id": "5bb43f774e28724c885580eaec11f5b040878c88",
+            "title": "Can LLMs Help Encoder Models Maintain Both High Accuracy and Consistency in Temporal Relation Classification?",
+            "year": 2025,
+            "venue": "International Conference on Natural Language Generation",
+            "citation_count": 0,
+            "abstract": "",
+            "authors": [
+              "A. Meir",
+              "K. Bar",
+              "Aaron Grattafiori",
+              "Abhimanyu Dubey",
+              "Abhinav Jauhri",
+              "Abhinav Pandey"
+            ],
+            "url": "https://www.semanticscholar.org/paper/5bb43f774e28724c885580eaec11f5b040878c88"
+          },
+          {
+            "paper_id": "7fef3016487f62db760ac776d90034370e151467",
+            "title": "MNLP at PerAnsSumm: A Classifier-Refiner Architecture for Improving the Classification of Consumer Health User Responses",
+            "year": 2025,
+            "venue": "Proceedings of the Second Workshop on Patient-Oriented Language Processing (CL4Health)",
+            "citation_count": 1,
+            "abstract": ",",
+            "authors": [
+              "Jooyeon Lee",
+              "Luan Huy Pham",
+              "\u00d6zlem Uzuner",
+              "Aaron Hurst",
+              "Adam Lerer",
+              "Adam P. Goucher"
+            ],
+            "url": "https://www.semanticscholar.org/paper/7fef3016487f62db760ac776d90034370e151467"
+          },
+          {
+            "paper_id": "940a6c393afb01004c18aba9a586d993df05b67d",
+            "title": "Balancing Knowledge Delivery and Emotional Comfort in Healthcare Conversational Systems",
+            "year": 2025,
+            "venue": "International Workshop on Spoken Dialogue Systems Technology",
+            "citation_count": 1,
+            "abstract": "With the advancement of large language models, many dialogue systems are now capable of providing reasonable and informative responses to patients' medical conditions. However, when patients consult their doctor, they may experience negative emotions due to the severity and urgency of their situation. If the model can provide appropriate comfort and empathy based on the patient's negative emotions while answering medical questions, it will likely offer a more reassuring experience during the medical consultation process. To address this issue, our paper explores the balance between knowledge sharing and emotional support in the healthcare dialogue process. We utilize a large language model to rewrite a real-world interactive medical dialogue dataset, generating patient queries with negative emotions and corresponding medical responses aimed at soothing the patient's emotions while addressing their concerns. The modified data serves to refine the latest large language models with variou",
+            "authors": [
+              "Shang-Chi Tsai",
+              "Yun-Nung Chen",
+              "Seiya Kawano Angel",
+              "Garcia Contr-eras",
+              "Koichiro Yoshino",
+              "Zeming Chen"
+            ],
+            "url": "https://www.semanticscholar.org/paper/940a6c393afb01004c18aba9a586d993df05b67d"
+          },
+          {
+            "paper_id": "b1175c2344c7acf7d0048650204506384a2e5184",
+            "title": "From KMMLU-Redux to Pro: A Professional Korean Benchmark Suite for LLM Evaluation",
+            "year": 2025,
+            "venue": "Conference on Empirical Methods in Natural Language Processing",
+            "citation_count": 3,
+            "abstract": "The development of Large Language Models (LLMs) requires robust benchmarks that encompass not only academic domains but also industrial fields to effectively evaluate their applicability in real-world scenarios. In this paper, we introduce two Korean expert-level benchmarks. KMMLU-Redux, reconstructed from the existing KMMLU, consists of questions from the Korean National Technical Qualification exams, with critical errors removed to enhance reliability. KMMLU-Pro is based on Korean National Professional Licensure exams to reflect professional knowledge in Korea. Our experiments demonstrate that these benchmarks comprehensively represent industrial knowledge in Korea. We release our dataset publicly available.",
+            "authors": [
+              "Seokhee Hong",
+              "SunKyoung Kim",
+              "Guijin Son",
+              "Soyeon Kim",
+              "Yeonjung Hong",
+              "Jinsik Lee"
+            ],
+            "url": "https://www.semanticscholar.org/paper/b1175c2344c7acf7d0048650204506384a2e5184"
+          },
+          {
+            "paper_id": "cc49f5f58ea39f7cdd1d8af1470b4f3996e40488",
+            "title": "Dialect Normalization using Large Language Models and Morphological Rules",
+            "year": 2025,
+            "venue": "Annual Meeting of the Association for Computational Linguistics",
+            "citation_count": 4,
+            "abstract": "Natural language understanding systems struggle with low-resource languages, including many dialects of high-resource ones. Dialect-to-standard normalization attempts to tackle this issue by transforming dialectal text so that it can be used by standard-language tools downstream. In this study, we tackle this task by introducing a new normalization method that combines rule-based linguistically informed transformations and large language models (LLMs) with targeted few-shot prompting, without requiring any parallel data. We implement our method for Greek dialects and apply it on a dataset of regional proverbs, evaluating the outputs using human annotators. We then use this dataset to conduct downstream experiments, finding that previous results regarding these proverbs relied solely on superficial linguistic information, including orthographic artifacts, while new observations can still be made through the remaining semantics.",
+            "authors": [
+              "Antonios Dimakis",
+              "John Pavlopoulos",
+              "Antonios Anastasopoulos",
+              "\u0391. Archimedes",
+              "Aaron Grattafiori",
+              "Abhimanyu Dubey"
+            ],
+            "url": "https://www.semanticscholar.org/paper/cc49f5f58ea39f7cdd1d8af1470b4f3996e40488"
+          }
+        ]
+      },
+      "query_used": "author:Andrej Karpathy",
+      "fetched_at": "2026-07-19T11:35:51.089337+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_da9d035c818c",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "semantic_scholar",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "domain": "large language models",
+        "papers": [
+          {
+            "paper_id": "afe0998d191f3ea8490c7df100a3ffc5dcc62c5e",
+            "title": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+            "year": 2024,
+            "venue": "International Conference on Learning Representations",
+            "citation_count": 1842,
+            "abstract": "Large Language Models (LLMs) applied to code-related applications have emerged as a prominent field, attracting significant interest from both academia and industry. However, as new and improved LLMs are developed, existing evaluation benchmarks (e.g., HumanEval, MBPP) are no longer sufficient for assessing their capabilities. In this work, we propose LiveCodeBench, a comprehensive and contamination-free evaluation of LLMs for code, which continuously collects new problems over time from contests across three competition platforms, namely LeetCode, AtCoder, and CodeForces. Notably, our benchmark also focuses on a broader range of code related capabilities, such as self-repair, code execution, and test output prediction, beyond just code generation. Currently, LiveCodeBench hosts four hundred high-quality coding problems that were published between May 2023 and May 2024. We have evaluated 18 base LLMs and 34 instruction-tuned LLMs on LiveCodeBench. We present empirical findings on conta",
+            "authors": [
+              "Naman Jain",
+              "King Han",
+              "Alex Gu",
+              "Wen-Ding Li",
+              "Fanjia Yan",
+              "Tianjun Zhang"
+            ],
+            "url": "https://www.semanticscholar.org/paper/afe0998d191f3ea8490c7df100a3ffc5dcc62c5e"
+          },
+          {
+            "paper_id": "c7f9706898bdfa3241601e075b1305649b174ff1",
+            "title": "ChatGLM: A Family of Large Language Models from GLM-130B to GLM-4 All Tools",
+            "year": 2024,
+            "venue": "arXiv.org",
+            "citation_count": 1642,
+            "abstract": "We introduce ChatGLM, an evolving family of large language models that we have been developing over time. This report primarily focuses on the GLM-4 language series, which includes GLM-4, GLM-4-Air, and GLM-4-9B. They represent our most capable models that are trained with all the insights and lessons gained from the preceding three generations of ChatGLM. To date, the GLM-4 models are pre-trained on ten trillions of tokens mostly in Chinese and English, along with a small set of corpus from 24 languages, and aligned primarily for Chinese and English usage. The high-quality alignment is achieved via a multi-stage post-training process, which involves supervised fine-tuning and learning from human feedback. Evaluations show that GLM-4 1) closely rivals or outperforms GPT-4 in terms of general metrics such as MMLU, GSM8K, MATH, BBH, GPQA, and HumanEval, 2) gets close to GPT-4-Turbo in instruction following as measured by IFEval, 3) matches GPT-4 Turbo (128K) and Claude 3 for long context",
+            "authors": [
+              "Team Glm Aohan Zeng",
+              "Bin Xu",
+              "Bowen Wang",
+              "Chenhui Zhang",
+              "Da Yin",
+              "Diego Rojas"
+            ],
+            "url": "https://www.semanticscholar.org/paper/c7f9706898bdfa3241601e075b1305649b174ff1"
+          },
+          {
+            "paper_id": "f82f49c20c6acc69f884f05e3a9f1ceea91061ce",
+            "title": "Detecting hallucinations in large language models using semantic entropy",
+            "year": 2024,
+            "venue": "Nature",
+            "citation_count": 1460,
+            "abstract": "Large language model (LLM) systems, such as ChatGPT1 or Gemini2, can show impressive reasoning and question-answering capabilities but often \u2018hallucinate\u2019 false outputs and unsubstantiated answers3,4. Answering unreliably or without the necessary information prevents adoption in diverse fields, with problems including fabrication of legal precedents5 or untrue facts in news articles6 and even posing a risk to human life in medical domains such as radiology7. Encouraging truthfulness through supervision or reinforcement has been only partially successful8. Researchers need a general method for detecting hallucinations in LLMs that works even with new and unseen questions to which humans might not know the answer. Here we develop new methods grounded in statistics, proposing entropy-based uncertainty estimators for LLMs to detect a subset of hallucinations\u2014confabulations\u2014which are arbitrary and incorrect generations. Our method addresses the fact that one idea can be expressed in many wa",
+            "authors": [
+              "Sebastian Farquhar",
+              "Jannik Kossen",
+              "Lorenz Kuhn",
+              "Y. Gal"
+            ],
+            "url": "https://www.semanticscholar.org/paper/f82f49c20c6acc69f884f05e3a9f1ceea91061ce"
+          },
+          {
+            "paper_id": "b34c0b0169925a6c7f14e3de9764ed9505f30de3",
+            "title": "Toward expert-level medical question answering with large language models",
+            "year": 2025,
+            "venue": "Nature Medicine",
+            "citation_count": 1035,
+            "abstract": "Large language models (LLMs) have shown promise in medical question answering, with Med-PaLM being the first to exceed a \u2018passing\u2019 score in United States Medical Licensing Examination style questions. However, challenges remain in long-form medical question answering and handling real-world workflows. Here, we present Med-PaLM 2, which bridges these gaps with a combination of base LLM improvements, medical domain fine-tuning and new strategies for improving reasoning and grounding through ensemble refinement and chain of retrieval. Med-PaLM 2 scores up to 86.5% on the MedQA dataset, improving upon Med-PaLM by over 19%, and demonstrates dramatic performance increases across MedMCQA, PubMedQA and MMLU clinical topics datasets. Our detailed human evaluations framework shows that physicians prefer Med-PaLM 2 answers to those from other physicians on eight of nine clinical axes. Med-PaLM 2 also demonstrates significant improvements over its predecessor across all evaluation metrics, particu",
+            "authors": [
+              "Karan Singhal",
+              "Tao Tu",
+              "Juraj Gottweis",
+              "R. Sayres",
+              "Ellery Wulczyn",
+              "Mohamed Amin"
+            ],
+            "url": "https://www.semanticscholar.org/paper/b34c0b0169925a6c7f14e3de9764ed9505f30de3"
+          },
+          {
+            "paper_id": "175720cc5b1ae343711044c4a5c2af3bf14f06c4",
+            "title": "Dream 7B: Diffusion Large Language Models",
+            "year": 2025,
+            "venue": "arXiv.org",
+            "citation_count": 407,
+            "abstract": "We introduce Dream 7B, the most powerful open diffusion large language model to date. Unlike autoregressive (AR) models that generate tokens sequentially, Dream 7B employs discrete diffusion modeling to refine sequences in parallel through iterative denoising. Our model consistently outperforms existing diffusion language models on general, mathematical, and coding tasks. Dream 7B demonstrates superior planning abilities and inference flexibility, including arbitrary-order generation, infilling capabilities, and tunable quality-speed trade-offs. These results are achieved through simple yet effective training techniques, including AR-based LLM initialization and context-adaptive token-level noise rescheduling. We release both Dream-Base and Dream-Instruct to facilitate further research in diffusion-based language modeling.",
+            "authors": [
+              "Jiacheng Ye",
+              "Zhihui Xie",
+              "Lin Zheng",
+              "Jiahui Gao",
+              "Zirui Wu",
+              "Xin Jiang"
+            ],
+            "url": "https://www.semanticscholar.org/paper/175720cc5b1ae343711044c4a5c2af3bf14f06c4"
+          }
+        ]
+      },
+      "query_used": "papers:large language models",
+      "fetched_at": "2026-07-19T11:35:51.088402+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_deck_032b1a31",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "deck",
+      "source_url": null,
+      "raw_content": {
+        "application_text": "Eureka Labs is a new AI-native school. We're building the teacher-student loop for the AI age, starting with a course on training large language models from scratch.\n\nFounder Andrej Karpathy has a PhD from Stanford in computer vision and deep learning under Fei-Fei Li. He was a founding member and research scientist at OpenAI, then led AI at Tesla (Autopilot, Tesla Vision) from 2017 to 2022. He returned to OpenAI in 2023 and left in 2024 to start Eureka. Author of the widely-used 'nanoGPT' repo and the 'Neural Networks: Zero to Hero' YouTube series.\n\nCategory: AI applications, edtech, AI-native tools.\nLocation: San Francisco. Highly technical solo founder to start; hiring."
+      },
+      "query_used": "deck",
+      "fetched_at": "2026-07-19T11:35:51.091264+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_3de8539216ff",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "Market analysis for ai applications startups in 2026: competitors, total addressable market, key opportunities, and main threats specifically for Eureka Labs",
+        "answer_markdown": "The global artificial intelligence market is projected to reach approximately $601 billion to $617 billion in 2026, with enterprise software and specialized vertical application startups experiencing rapid acceleration. For Eureka Labs, the AI\\-native education startup founded by Andrej Karpathy, the market centers on the transition from traditional EdTech to autonomous, agentic AI tutor frameworks. \\(https://techcrunch.com/2024/07/16/after\\-tesla\\-and\\-openai\\-andrej\\-karpathys\\-startup\\-aims\\-to\\-apply\\-ai\\-assistants\\-to\\-education/\\) [0] [1] [2] [3] [4] [5]\n\n### Total Addressable Market \\(TAM\\)\n\n- Global AI Market Share: The broader AI market is expanding rapidly, on track to hit over $1.4 trillion by 2032.\n- AI Software Sector: The AI software and application market stands at over $150\\+ billion in 2026, growing at a 25% CAGR.\n- AI\\-Native EdTech Segment: Within the educational domain, the addressable market encompasses both higher\\-education institutions and professional upskilling. Startups in this niche are targeting a multi\\-billion\\-dollar slice of global corporate training and digital learning infrastructure. \\(https://www.youtube.com/watch?t=302&v=aBHxHaN\\-A3o\\) [2] [3] [6] [7] [11]\n\n### Competitors\n\nEureka Labs positions itself in the \"Teacher \\+ AI symbiosis\" space. Its competitors span established platforms integrating AI and emerging vertical applications: \\(https://eurekalabs.ai/\\) [4] [0] [8]\n\n- Khan Academy \\(Khanmigo\\): Backed by a deep partnership with Microsoft, they represent the strongest institutional competitor with mature AI\\-guided tutors. \\(https://learningfuturesdigest.substack.com/p/eureka\\-labs\\-a\\-glimpse\\-into\\-the\\-future\\) [5]\n- PhysicsWallah \\(AI Guru\\): Leading regional deployment of 24/7 personalized AI teaching assistants. \\(https://www.linkedin.com/posts/analytics\\-india\\-magazine\\_in\\-a\\-recent\\-keynote\\-at\\-the\\-uc\\-berkeley\\-ai\\-activity\\-7219932804556496896\\-M6lv\\) [5]\n- Praktika: Dominating the conversational and avatar\\-driven niche of language learning using specialized AI characters. \\(https://learningfuturesdigest.substack.com/p/eureka\\-labs\\-a\\-glimpse\\-into\\-the\\-future\\) [9]\n- Traditional Moocs \\(Coursera / Udacity\\): Upgrading their tech stacks to feature custom AI\\-driven curriculum builders, compressing the time required to deploy new specialized courses. \\(https://www.linkedin.com/posts/analytics\\-india\\-magazine\\_in\\-a\\-recent\\-keynote\\-at\\-the\\-uc\\-berkeley\\-ai\\-activity\\-7219932804556496896\\-M6lv\\) [5] [11]\n\n### Key Opportunities\n\n- Agentic AI Classrooms: Gartner notes that task\\-specific AI agents will hit 40% adoption in applications by the end of 2026. Eureka Labs can use autonomous agents to manage entire course tracks rather than basic Q&A bots.\n- Personalization at Scale: Scaling world\\-class instruction \\(like Eureka's flagship LLM101n course\\) to millions of non\\-native speakers concurrently using real\\-time translation and adaptive difficulty tiers.\n- Developer Upskilling Boom: As the developer landscape shifts toward \"agentic engineering\" over basic code generation, there is a massive wave of engineers looking for rigorous, under\\-the\\-hood AI training. \\(https://eurekalabs.ai/\\) [8] [3] [10] [11]\n\n### Main Threats\n\n- Founder Deferral Risk: In May 2026, founder Andrej Karpathy officially [joined Anthropic's pretraining team](https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/). While he remains passionate about Eureka Labs, this operational pause creates an immediate execution vacuum.\n- The \"Vibe Coding\" Disconnect: Karpathy noted that AI\\-generated code still suffers from brittle abstractions. Relying heavily on AI teaching assistants introduces text hallucinations and technical validation gaps in production\\-level cohorts.\n- Regulatory Compliance: The full application of the EU AI Act in August 2026 brings strict requirements for high\\-risk educational AI systems, increasing compliance overhead for startups deploying global AI tutors. \\(https://techcrunch.com/2026/05/19/openai\\-co\\-founder\\-andrej\\-karpathy\\-joins\\-anthropics\\-pre\\-training\\-team/\\) [4] [10] [13] [14] [15]\n\nIf you want to dive deeper into this landscape, let me know:\n\n- Should we focus on funding trends for AI applications in 2026?\n- Do you want a breakdown of agentic vs. traditional chatbot architectures?\n- Would you like an analysis of competitor pricing models for AI tutoring? \\(https://www.abiresearch.com/news\\-resources/chart\\-data/report\\-artificial\\-intelligence\\-market\\-size\\-global\\) [3] [16]\n\n\n### References\n\n[0] [After Tesla and OpenAI, Andrej Karpathy's startup aims to ...](https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/) \u2014 Andrej Karpathy, former head of AI at Tesla and researcher at OpenAI, is launching Eureka Labs, an \u201cAI native\u201d education platform. In tech speak, that usually mean...\n\n[1] [Artificial Intelligence \\(AI\\) Market Report 2026\\-2033, by ...](https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-market-74851580.html) \u2014 Source: Secondary Research, Interviews with Experts, MarketsandMarkets Analysis. The artificial intelligence market, valued at USD 601.93 billion in 2026, is proje...\n\n[2] [Artificial Intelligence \\- Worldwide \\| Market Forecast \\- Statista](https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide/?srsltid=AfmBOorH4t4md8CDle3ui-Xs4JpjemSBergsF4uFhoznbWIaC5HAT4Ee) \u2014 Highlights \\* The Artificial Intelligence market worldwide is expected to achieve a remarkable value of US$617.62bn by the year 2026. \\* Furthermore, it is anticipat...\n\n[3] [Artificial Intelligence \\(AI\\) Software Market Size: 2024 to 2030](https://www.abiresearch.com/news-resources/chart-data/report-artificial-intelligence-market-size-global) \u2014 Highlights. The Artificial Intelligence \\(AI\\) software market size was valued at US$122 billion in 2024. Growing at a Compound Annual Growth Rate \\(CAGR\\) of 25%, the...\n\n[4] [Discover 20 AI Startups Everyone Will Be Talking About in 2026 \ud83d\udd25 ...](https://www.facebook.com/AIPlanetXCom/posts/discover-20-ai-startups-everyone-will-be-talking-about-in-2026-from-ai-agentsto-/1565789608675269/) \u2014 This year's winners, selected from over 17,000 companies, are transforming industries with innovations in AI horizontal applications, and vertical\\-specific solutio...\n\n[5] [Meet Eureka Labs, a school of AI tutors \\| AIM posted on the topic](https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv) \u2014 In a recent keynote at the UC Berkeley AI Awards Hackathon, OpenAI co\\-founder Andrej Karpathy announced his new venture, Eureka Labs, an AI\\-native school combining...\n\n[6] [Andrej Karpathy's Eureka Labs \\| A NotebookLM Deep Dive](https://www.youtube.com/watch?t=302&v=aBHxHaN-A3o) \u2014 it's about rethinking how we learn and to do that I think it helps to look at some concrete examples of how AI is already being used in education okay so we've got\n\n[7] [The Impact of AI\\-Native Education Platforms on Associations](https://sidecar.ai/blog/the-impact-of-ai-native-education-platforms-on-associations-eureka-labs-and-the-future-of-learning) \u2014 Why Eureka Labs Matters for Associations \\* Enhanced Education Delivery: AI\\-powered personalization could allow associations to tailor learning experiences to indiv...\n\n[8] [Eureka Labs](https://eurekalabs.ai/) \u2014 Highlights. The Artificial Intelligence \\(AI\\) software market size was valued at US$122 billion in 2024. Growing at a Compound Annual Growth Rate \\(CAGR\\) of 25%, the...\n\n[9] [Eureka Labs: a glimpse into the future of \\\"AI\\-native\\\" education?](https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future) \u2014 A warm welcome to the July edition of Learning Futures\\! This month, we've seen significant advancements in AI and education: Key Themes: Innovative AI Platforms: F...\n\n[10] [AI in 2026: Predictions, Trends \\u0026 Industry Forecast \\- Digital Applied](https://www.digitalapplied.com/blog/ai-predictions-2026-trends-forecast) \u2014 Key Takeaways \\* 40% of enterprise apps will leverage AI agents by 2026: Gartner predicts task\\-specific AI agent adoption jumps from less than 5% in 2025 to 40% by ...\n\n[11] [Andrej Karpathy unveils Eureka Labs, an AI education start\\-up](https://www.siliconrepublic.com/machines/andrej-karpathy-eureka-labs-ai-startup-education-platform-llm101n) \u2014 Andrej Karpathy unveils Eureka Labs, an AI education start\\-up. Andrej Karpathy unveils Eureka Labs, an AI education start\\-up. by Vish Gain. 17 Jul 2024. Image: And...\n\n[12] [Andrej Karpathy on Agentic Engineering: Why He's Never Felt ...](https://websearchapi.ai/blog/andrej-karpathy-from-vibe-coding-to-agentic-engineering) \u2014 Andrej Karpathy sat down with Stephanie Zhan at Sequoia Capital's AI Ascent 2026, one year after he coined the term \\\"vibe coding.\\\" He co\\-founded OpenAI, ran AI at ...\n\n[13] [OpenAI co\\-founder Andrej Karpathy joins Anthropic's pre ...](https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/) \u2014 An Anthropic spokesperson told TechCrunch that Karpathy will start a team focused on using Claude to accelerate pre\\-training research. Karpathy is one of the few r...\n\n[14] [Andrej Karpathy Joins Anthropic to Lead Claude Pre\\-\u2026 \\| StartupHub.ai](https://www.startuphub.ai/ai-news/ai-figures/2026/figure-andrej-karpathy-anthropic-pretraining-2026-05-31) \u2014 What it means. Karpathy has been explicit that the Anthropic move is a deferral of Eureka Labs, not a closure. That framing matters because Eureka Labs is a reason...\n\n[15] [Karpathy: Vibe Coding Is Still Awkward \u2014 AI Code Lessons 2026](https://enersys.co.th/en/insights/karpathy-vibe-coding-awkward-gross-2026) \u2014 TL;DR. On April 30, 2026, at Sequoia Capital, Andrej Karpathy \u2014 former Tesla AI head, founding member of OpenAI, and the person who coined \\\"vibe coding\\\" in Februar...\n\n[16] [The Global Startup Ecosystem Report 2026](https://startupgenome.com/report/the-global-startup-ecosystem-report-2026/global-startup-ecosystem-ranking-2026-top-40) \u2014 The rebound has been driven in significant part by large rounds in AI\\-related companies, particularly in North America. In the chart below, the majority of Q1 2026...",
+        "text_blocks": [
+          {
+            "type": "paragraph",
+            "snippet": "The global artificial intelligence market is projected to reach approximately $601 billion to $617 billion in 2026, with enterprise software and specialized vertical application startups experiencing rapid acceleration. For Eureka Labs, the AI-native education startup founded by Andrej Karpathy, the market centers on the transition from traditional EdTech to autonomous, agentic AI tutor frameworks.",
+            "snippet_links": [
+              {
+                "link": "https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/"
+              }
+            ],
+            "reference_indexes": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "type": "heading",
+            "snippet": "Total Addressable Market (TAM)"
+          },
+          {
+            "type": "list",
+            "list": [
+              {
+                "snippet": "Global AI Market Share: The broader AI market is expanding rapidly, on track to hit over $1.4 trillion by 2032."
+              },
+              {
+                "snippet": "AI Software Sector: The AI software and application market stands at over $150+ billion in 2026, growing at a 25% CAGR."
+              },
+              {
+                "snippet": "AI-Native EdTech Segment: Within the educational domain, the addressable market encompasses both higher-education institutions and professional upskilling. Startups in this niche are targeting a multi-billion-dollar slice of global corporate training and digital learning infrastructure.",
+                "snippet_links": [
+                  {
+                    "link": "https://www.youtube.com/watch?v=aBHxHaN-A3o&t=302"
+                  }
+                ],
+                "reference_indexes": [
+                  2,
+                  3,
+                  6,
+                  7,
+                  11
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "snippet": "Competitors"
+          },
+          {
+            "type": "paragraph",
+            "snippet": "Eureka Labs positions itself in the \"Teacher + AI symbiosis\" space. Its competitors span established platforms integrating AI and emerging vertical applications:",
+            "snippet_links": [
+              {
+                "link": "https://eurekalabs.ai/"
+              }
+            ],
+            "reference_indexes": [
+              4,
+              0,
+              8
+            ]
+          },
+          {
+            "type": "list",
+            "list": [
+              {
+                "snippet": "Khan Academy (Khanmigo): Backed by a deep partnership with Microsoft, they represent the strongest institutional competitor with mature AI-guided tutors.",
+                "snippet_links": [
+                  {
+                    "link": "https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future"
+                  }
+                ],
+                "reference_indexes": [
+                  5
+                ]
+              },
+              {
+                "snippet": "PhysicsWallah (AI Guru): Leading regional deployment of 24/7 personalized AI teaching assistants.",
+                "snippet_links": [
+                  {
+                    "link": "https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv"
+                  }
+                ],
+                "reference_indexes": [
+                  5
+                ]
+              },
+              {
+                "snippet": "Praktika: Dominating the conversational and avatar-driven niche of language learning using specialized AI characters.",
+                "snippet_links": [
+                  {
+                    "link": "https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future"
+                  }
+                ],
+                "reference_indexes": [
+                  9
+                ]
+              },
+              {
+                "snippet": "Traditional Moocs (Coursera / Udacity): Upgrading their tech stacks to feature custom AI-driven curriculum builders, compressing the time required to deploy new specialized courses.",
+                "snippet_links": [
+                  {
+                    "link": "https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv"
+                  }
+                ],
+                "reference_indexes": [
+                  5,
+                  11
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "snippet": "Key Opportunities"
+          },
+          {
+            "type": "list",
+            "list": [
+              {
+                "snippet": "Agentic AI Classrooms: Gartner notes that task-specific AI agents will hit 40% adoption in applications by the end of 2026. Eureka Labs can use autonomous agents to manage entire course tracks rather than basic Q&A bots."
+              },
+              {
+                "snippet": "Personalization at Scale: Scaling world-class instruction (like Eureka's flagship LLM101n course) to millions of non-native speakers concurrently using real-time translation and adaptive difficulty tiers."
+              },
+              {
+                "snippet": "Developer Upskilling Boom: As the developer landscape shifts toward \"agentic engineering\" over basic code generation, there is a massive wave of engineers looking for rigorous, under-the-hood AI training.",
+                "snippet_links": [
+                  {
+                    "link": "https://eurekalabs.ai/"
+                  }
+                ],
+                "reference_indexes": [
+                  8,
+                  3,
+                  10,
+                  11
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "snippet": "Main Threats"
+          },
+          {
+            "type": "list",
+            "list": [
+              {
+                "snippet": "Founder Deferral Risk: In May 2026, founder Andrej Karpathy officially joined Anthropic's pretraining team. While he remains passionate about Eureka Labs, this operational pause creates an immediate execution vacuum.",
+                "snippet_links": [
+                  {
+                    "text": "joined Anthropic's pretraining team",
+                    "link": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+                  }
+                ]
+              },
+              {
+                "snippet": "The \"Vibe Coding\" Disconnect: Karpathy noted that AI-generated code still suffers from brittle abstractions. Relying heavily on AI teaching assistants introduces text hallucinations and technical validation gaps in production-level cohorts."
+              },
+              {
+                "snippet": "Regulatory Compliance: The full application of the EU AI Act in August 2026 brings strict requirements for high-risk educational AI systems, increasing compliance overhead for startups deploying global AI tutors.",
+                "snippet_links": [
+                  {
+                    "link": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+                  }
+                ],
+                "reference_indexes": [
+                  4,
+                  10,
+                  13,
+                  14,
+                  15
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "snippet": "If you want to dive deeper into this landscape, let me know:"
+          },
+          {
+            "type": "list",
+            "list": [
+              {
+                "snippet": "Should we focus on funding trends for AI applications in 2026?"
+              },
+              {
+                "snippet": "Do you want a breakdown of agentic vs. traditional chatbot architectures?"
+              },
+              {
+                "snippet": "Would you like an analysis of competitor pricing models for AI tutoring?",
+                "snippet_links": [
+                  {
+                    "link": "https://www.abiresearch.com/news-resources/chart-data/report-artificial-intelligence-market-size-global"
+                  }
+                ],
+                "reference_indexes": [
+                  3,
+                  16
+                ]
+              }
+            ]
+          }
+        ],
+        "references": [
+          {
+            "title": "After Tesla and OpenAI, Andrej Karpathy's startup aims to ...",
+            "link": "https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/",
+            "snippet": "Andrej Karpathy, former head of AI at Tesla and researcher at OpenAI, is launching Eureka Labs, an \u201cAI native\u201d education platform. In tech speak, that usually mean...",
+            "source": "TechCrunch"
+          },
+          {
+            "title": "Artificial Intelligence (AI) Market Report 2026-2033, by ...",
+            "link": "https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-market-74851580.html",
+            "snippet": "Source: Secondary Research, Interviews with Experts, MarketsandMarkets Analysis. The artificial intelligence market, valued at USD 601.93 billion in 2026, is proje...",
+            "source": "MarketsandMarkets"
+          },
+          {
+            "title": "Artificial Intelligence - Worldwide | Market Forecast - Statista",
+            "link": "https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide/?srsltid=AfmBOorH4t4md8CDle3ui-Xs4JpjemSBergsF4uFhoznbWIaC5HAT4Ee",
+            "snippet": "Highlights * The Artificial Intelligence market worldwide is expected to achieve a remarkable value of US$617.62bn by the year 2026. * Furthermore, it is anticipat...",
+            "source": "Statista"
+          },
+          {
+            "title": "Artificial Intelligence (AI) Software Market Size: 2024 to 2030",
+            "link": "https://www.abiresearch.com/news-resources/chart-data/report-artificial-intelligence-market-size-global",
+            "snippet": "Highlights. The Artificial Intelligence (AI) software market size was valued at US$122 billion in 2024. Growing at a Compound Annual Growth Rate (CAGR) of 25%, the...",
+            "source": "ABI Research"
+          },
+          {
+            "title": "Discover 20 AI Startups Everyone Will Be Talking About in 2026 \ud83d\udd25 ...",
+            "link": "https://www.facebook.com/AIPlanetXCom/posts/discover-20-ai-startups-everyone-will-be-talking-about-in-2026-from-ai-agentsto-/1565789608675269/",
+            "snippet": "This year's winners, selected from over 17,000 companies, are transforming industries with innovations in AI horizontal applications, and vertical-specific solutio...",
+            "source": "Facebook"
+          },
+          {
+            "title": "Meet Eureka Labs, a school of AI tutors | AIM posted on the topic",
+            "link": "https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv",
+            "snippet": "In a recent keynote at the UC Berkeley AI Awards Hackathon, OpenAI co-founder Andrej Karpathy announced his new venture, Eureka Labs, an AI-native school combining...",
+            "source": "LinkedIn"
+          },
+          {
+            "title": "Andrej Karpathy's Eureka Labs | A NotebookLM Deep Dive",
+            "link": "https://www.youtube.com/watch?v=aBHxHaN-A3o&t=302",
+            "snippet": "it's about rethinking how we learn and to do that I think it helps to look at some concrete examples of how AI is already being used in education okay so we've got",
+            "source": "YouTube"
+          },
+          {
+            "title": "The Impact of AI-Native Education Platforms on Associations",
+            "link": "https://sidecar.ai/blog/the-impact-of-ai-native-education-platforms-on-associations-eureka-labs-and-the-future-of-learning",
+            "snippet": "Why Eureka Labs Matters for Associations * Enhanced Education Delivery: AI-powered personalization could allow associations to tailor learning experiences to indiv...",
+            "source": "sidecar.ai"
+          },
+          {
+            "title": "Eureka Labs",
+            "link": "https://eurekalabs.ai/",
+            "snippet": "Highlights. The Artificial Intelligence (AI) software market size was valued at US$122 billion in 2024. Growing at a Compound Annual Growth Rate (CAGR) of 25%, the...",
+            "source": "Eureka Labs"
+          },
+          {
+            "title": "Eureka Labs: a glimpse into the future of \\\"AI-native\\\" education?",
+            "link": "https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future",
+            "snippet": "A warm welcome to the July edition of Learning Futures! This month, we've seen significant advancements in AI and education: Key Themes: Innovative AI Platforms: F...",
+            "source": "Substack"
+          },
+          {
+            "title": "AI in 2026: Predictions, Trends \\u0026 Industry Forecast - Digital Applied",
+            "link": "https://www.digitalapplied.com/blog/ai-predictions-2026-trends-forecast",
+            "snippet": "Key Takeaways * 40% of enterprise apps will leverage AI agents by 2026: Gartner predicts task-specific AI agent adoption jumps from less than 5% in 2025 to 40% by ...",
+            "source": "Digital Applied"
+          },
+          {
+            "title": "Andrej Karpathy unveils Eureka Labs, an AI education start-up",
+            "link": "https://www.siliconrepublic.com/machines/andrej-karpathy-eureka-labs-ai-startup-education-platform-llm101n",
+            "snippet": "Andrej Karpathy unveils Eureka Labs, an AI education start-up. Andrej Karpathy unveils Eureka Labs, an AI education start-up. by Vish Gain. 17 Jul 2024. Image: And...",
+            "source": "Silicon Republic"
+          },
+          {
+            "title": "Andrej Karpathy on Agentic Engineering: Why He's Never Felt ...",
+            "link": "https://websearchapi.ai/blog/andrej-karpathy-from-vibe-coding-to-agentic-engineering",
+            "snippet": "Andrej Karpathy sat down with Stephanie Zhan at Sequoia Capital's AI Ascent 2026, one year after he coined the term \\\"vibe coding.\\\" He co-founded OpenAI, ran AI at ...",
+            "source": "WebsearchAPI.ai"
+          },
+          {
+            "title": "OpenAI co-founder Andrej Karpathy joins Anthropic's pre ...",
+            "link": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+            "snippet": "An Anthropic spokesperson told TechCrunch that Karpathy will start a team focused on using Claude to accelerate pre-training research. Karpathy is one of the few r...",
+            "source": "TechCrunch"
+          },
+          {
+            "title": "Andrej Karpathy Joins Anthropic to Lead Claude Pre-\u2026 | StartupHub.ai",
+            "link": "https://www.startuphub.ai/ai-news/ai-figures/2026/figure-andrej-karpathy-anthropic-pretraining-2026-05-31",
+            "snippet": "What it means. Karpathy has been explicit that the Anthropic move is a deferral of Eureka Labs, not a closure. That framing matters because Eureka Labs is a reason...",
+            "source": "StartupHub.ai"
+          },
+          {
+            "title": "Karpathy: Vibe Coding Is Still Awkward \u2014 AI Code Lessons 2026",
+            "link": "https://enersys.co.th/en/insights/karpathy-vibe-coding-awkward-gross-2026",
+            "snippet": "TL;DR. On April 30, 2026, at Sequoia Capital, Andrej Karpathy \u2014 former Tesla AI head, founding member of OpenAI, and the person who coined \\\"vibe coding\\\" in Februar...",
+            "source": "Enersys Co., Ltd."
+          },
+          {
+            "title": "The Global Startup Ecosystem Report 2026",
+            "link": "https://startupgenome.com/report/the-global-startup-ecosystem-report-2026/global-startup-ecosystem-ranking-2026-top-40",
+            "snippet": "The rebound has been driven in significant part by large rounds in AI-related companies, particularly in North America. In the chart below, the majority of Q1 2026...",
+            "source": "Startup Genome"
+          }
+        ]
+      },
+      "query_used": "ai_mode:Market analysis for ai applications startups in 2026: competitors, total addressable market, key opportunities, and main threats specifically for Eureka Labs",
+      "fetched_at": "2026-07-19T11:36:01.290284+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_640d1f026c40",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"ai applications\" alternatives",
+        "search_metadata": {
+          "total_results": 4680000,
+          "engine_url": "https://www.google.com/search?q=%22ai+applications%22+alternatives&oq=%22ai+applications%22+alternatives&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "10+ Free AI tools for 2026",
+            "link": "https://cloud.google.com/use-cases/free-ai-tools",
+            "displayed_link": "https://cloud.google.com \u203a use-cases \u203a free-ai-tools",
+            "snippet": "Train and deploy machine learning models and AI applications. Read documentation. Learn about Free Tier monthly usage limits. Read documentation. Take free AI ...",
+            "date": null,
+            "source": "Google Cloud"
+          },
+          {
+            "position": 2,
+            "title": "What AI applications do you use on your phone? These are ...",
+            "link": "https://www.reddit.com/r/perplexity_ai/comments/1l3498a/what_ai_applications_do_you_use_on_your_phone/",
+            "displayed_link": "80+ comments \u00b7 1 year ago",
+            "snippet": "What AI applications do you use on your phone? These are mine, ranked by usage frequency . misc.",
+            "date": null,
+            "source": "Reddit \u00b7 r/perplexity_ai"
+          },
+          {
+            "position": 3,
+            "title": "mahseema/awesome-ai-tools: A curated list ...",
+            "link": "https://github.com/mahseema/awesome-ai-tools",
+            "displayed_link": "https://github.com \u203a mahseema \u203a awesome-ai-tools",
+            "snippet": "Context Data - Data Processing & ETL infrastructure for Generative AI applications; ezJobs - Automated job search and applications; Compass - AI driven ...",
+            "date": null,
+            "source": "GitHub"
+          },
+          {
+            "position": 4,
+            "title": "13 Best ChatGPT Alternatives I Have Tested in 2026",
+            "link": "https://www.igmguru.com/blog/chatgpt-alternatives",
+            "displayed_link": "https://www.igmguru.com \u203a blog \u203a chatgpt-alternatives",
+            "snippet": "Mistral AI is widely used for enterprise AI applications, software development, document processing, customer support automation, and by ...",
+            "date": "Jul 3, 2026",
+            "source": "igmGuru"
+          },
+          {
+            "position": 5,
+            "title": "LangChain Alternatives | IBM",
+            "link": "https://www.ibm.com/think/insights/langchain-alternatives",
+            "displayed_link": "https://www.ibm.com \u203a think \u203a insights \u203a langchain-alte...",
+            "snippet": "LangChain streamlines building artificial intelligence (AI) applications by providing ready-made building blocks that developers can use to connect LLMs with ...",
+            "date": null,
+            "source": "IBM"
+          },
+          {
+            "position": 6,
+            "title": "AI Applications: Tools, Use Cases, and Platforms",
+            "link": "https://www.databricks.com/blog/ai-applications",
+            "displayed_link": "https://www.databricks.com \u203a ... \u203a Data + AI Foundations",
+            "snippet": "Explore AI applications across industries\u2014generative AI tools, machine learning use cases, healthcare, finance, manufacturing, and how to deploy AI at ...",
+            "date": null,
+            "source": "Databricks"
+          },
+          {
+            "position": 7,
+            "title": "Best AI Development Tools for 2026 - Anaconda",
+            "link": "https://www.anaconda.com/guides/ai-development-tools",
+            "displayed_link": "https://www.anaconda.com \u203a Guides",
+            "snippet": "Docker ensures environment consistency from development to production, which is critical for AI applications with complex dependency graphs.",
+            "date": "Jun 23, 2026",
+            "source": "anaconda.com"
+          },
+          {
+            "position": 8,
+            "title": "Best Free Alternatives to Paid AI Tools \ud83d\ude80 | by Neha Singh",
+            "link": "https://medium.com/codetodeploy/best-free-alternatives-to-paid-ai-tools-3da6f4c4734b",
+            "displayed_link": "1.4K+ likes \u00b7 9 months ago",
+            "snippet": "Most AI applications waste thousands of dollars every month on unnecessary tokens, oversized prompts, and expensive model calls. Here are 8 ...",
+            "date": null,
+            "source": "Medium \u00b7 CodeToDeploy"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "\"ai applications\" alternatives",
+      "fetched_at": "2026-07-19T11:36:01.288808+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_93db9db98449",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "serpapi",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"ai applications\" market size TAM",
+        "search_metadata": {
+          "total_results": 147000,
+          "engine_url": "https://www.google.com/search?q=%22ai+applications%22+market+size+TAM&oq=%22ai+applications%22+market+size+TAM&hl=en&sourceid=chrome&ie=UTF-8"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "Artificial Intelligence Market Size & Share Report, 2026-2033",
+            "link": "https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-ai-market",
+            "displayed_link": "https://www.grandviewresearch.com \u203a industry-analysis",
+            "snippet": "Artificial intelligence software includes libraries that help design and deploy AI applications. These libraries offer tools for tasks like linear algebra ...",
+            "date": null,
+            "source": "Grand View Research"
+          },
+          {
+            "position": 2,
+            "title": "Artificial Intelligence - Worldwide | Market Forecast",
+            "link": "https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide/?srsltid=AfmBOopMCGIQZC6funiyFDP-xtqOOaCl4Varu7wGbwxtZYNGcU-sANF6",
+            "displayed_link": "https://www.statista.com \u203a Market Insights \u203a Technology",
+            "snippet": "The Artificial Intelligence (AI) market includes software, hardware, and services that enable organizations to develop and deploy AI applications. Structure:.",
+            "date": null,
+            "source": "Statista"
+          },
+          {
+            "position": 3,
+            "title": "Artificial Intelligence (AI) Software Market Size: 2024 to 2030",
+            "link": "https://www.abiresearch.com/news-resources/chart-data/report-artificial-intelligence-market-size-global",
+            "displayed_link": "https://www.abiresearch.com \u203a chart-data \u203a report-artifi...",
+            "snippet": "The Artificial Intelligence (AI) software market size was valued at US$122 billion in 2024. ... AI applications and use cases through 2030. pie-chart-gen-ai-value ...",
+            "date": null,
+            "source": "ABI Research"
+          },
+          {
+            "position": 4,
+            "title": "Artificial Intelligence (AI) Market Report 2026-2033, by ...",
+            "link": "https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-market-74851580.html",
+            "displayed_link": "https://www.marketsandmarkets.com \u203a Market-Reports",
+            "snippet": "Mistral, Cohere, and Anyscale have gained meaningful traction across startups and SMEs by focusing on specialized AI applications, positioning themselves as ...",
+            "date": null,
+            "source": "MarketsandMarkets"
+          },
+          {
+            "position": 5,
+            "title": "Artificial Intelligence (AI) Market Size to Hit USD ...",
+            "link": "https://www.precedenceresearch.com/artificial-intelligence-market",
+            "displayed_link": "https://www.precedenceresearch.com \u203a ICT",
+            "snippet": "Artificial Intelligence (AI) Market Size, Share and Trends 2026 to 2035 ... AI applications. Generally, AI projects are complex, they require ...",
+            "date": null,
+            "source": "Precedence Research"
+          },
+          {
+            "position": 6,
+            "title": "AI Agents to boost enterprise software market size",
+            "link": "https://www.linkedin.com/posts/boxaaron_ai-agents-will-unlock-completely-new-technology-activity-7324816701286469633-QM1g",
+            "displayed_link": "450+ reactions \u00b7 1 year ago",
+            "snippet": "... TAM compared to traditional software. For the most part, enterprise ... AI Applications in Business (Apr 2026) \u667a\u80fd\u6218\u7565 \u00b7 \u4e1c\u897f\u65b9\u6865\u6881. 1y.",
+            "date": null,
+            "source": "LinkedIn \u00b7 Aaron Levie"
+          },
+          {
+            "position": 7,
+            "title": "AI markets aren't SaaS markets OR services markets",
+            "link": "https://x.com/EverettRandle/status/2049158296330989676",
+            "displayed_link": "120+ likes \u00b7 2 months ago",
+            "snippet": "... market (TAM) of AI applications roughly equals existing human labor spend in their respective categories. But that claim rests on two ...",
+            "date": null,
+            "source": "X \u00b7 EverettRandle"
+          },
+          {
+            "position": 8,
+            "title": "Generative AI Market Size, Share, Value Report [2026-2034]",
+            "link": "https://www.fortunebusinessinsights.com/generative-ai-market-107837",
+            "displayed_link": "https://www.fortunebusinessinsights.com \u203a generative-ai-...",
+            "snippet": "Enterprises increasingly deploy AI applications across healthcare, manufacturing, financial services, telecommunications, and retail to automate ...",
+            "date": "Jun 29, 2026",
+            "source": "Fortune Business Insights"
+          }
+        ],
+        "answer_box": null,
+        "knowledge_graph": null
+      },
+      "query_used": "\"ai applications\" market size TAM",
+      "fetched_at": "2026-07-19T11:36:01.287802+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_1bce2a5a4464",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "error",
+        "reason": "[SSL] passed invalid argument (_ssl.c:2590)"
+      },
+      "query_used": "market:ai applications competitors 2026",
+      "fetched_at": "2026-07-19T11:36:01.286811+00:00",
+      "status": "error"
+    },
+    {
+      "id": "ev_e7eb78bc9dc4",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "AI applications successful startups 2026 differentiation",
+        "answer": "In 2026, AI startups like Mistral and DeepSeek differentiate through unique models and problem-solving. Leading firms focus on practical applications and rapid growth. The most successful startups solve specific industry challenges.",
+        "results": [
+          {
+            "title": "Hottest AI Startups In 2026: The Companies Defining The Next Wave ...",
+            "url": "https://elearningindustry.com/advertise/elearning-marketing-resources/blog/hottest-ai-startups-the-companies-defining-the-next-wave-of-ai",
+            "content": "Fast adoption: Hot AI innovation startups grow quickly, showing real-world usage and early traction.\n Funding momentum: Recent investment signals confidence in their vision and ability to scale.\n Product differentiation: They create new categories or solve problems in ways others haven't.\n Early enterprise pilots: Strong customer engagement proves their solutions work in practical settings.\n Ecosystem visibility: Recognition among developers, operators, and buyers boosts credibility.\n Experimentation culture: These startups thrive on testing bold ideas, iterating fast, and prioritizing momentum over sheer size.\n\n## The AI Startup Landscape In 2026 [...] ### 3. Mistral\n\n Arthur Mensch, Guillaume Lample, and Timoth\u00e9e Lacroix founded the fast-growing AI startup in Paris.\n It is building open, efficient AI models and tools.\n It has raised over $1B from top investors and competes as Europe's leading homegrown AI model maker.\n\n### 4. DeepSeek\n\n Liang Wenfeng founded DeepSeek in China, making it one of the hottest AI startups.\n Tech experts often cite it as a top GenAI contender, and is known for unified multimodal models and advanced reasoning architectures.\n The company hasn't relied on traditional AI startup funding. Instead, its parent company, High-Flyer, has funded DeepSeek entirely.\n\n### 5. Cursor [...] Learn more\n\n## Key Takeaway\n\nThe AI landscape has reached a tipping point where innovation outpaces tradition. The hottest AI startups are no longer fringe disruptors. They're",
+            "score": 0.8785752
+          },
+          {
+            "title": "12 Trailblazing AI Startups to Watch in 2026 | Accountability Now",
+            "url": "https://accountabilitynow.net/ai-startups",
+            "content": "Evaluating ai startups in 2026 requires more than just tracking headlines and hype. With the rapid pace of innovation, investors and enterprises must apply a disciplined approach to identify which ai startups offer true differentiation, sustainable growth, and long-term strategic value.\n\n### Core Criteria for Evaluating AI Startups\n\nA thorough evaluation starts with four pillars:\n\n| Criteria | What to Look For |\n --- |\n| Technology Differentiation | Proprietary models, unique algorithms, or defensible IP |\n| Market Fit | Clear target market, product-market traction, reference customers |\n| Leadership Team | Proven founders, technical depth, industry expertise |\n| Growth Metrics | Consistent user growth, revenue, and customer retention | [...] 12 Trailblazing AI Startups to Watch in 2026 - Exonic\n\n12 Trailblazing AI Startups to Watch in 2026 - Exonic\n\nExonic\u2019s open platform has already been validated in liver cancer research, surpassing state-of-the-art benchmarks in synthetic enhancer design. The main challenge is sustaining community engagement to drive continued progress.\n\nTheir success illustrates how ai startups are breaking down barriers in scientific research and unlocking new possibilities through openness.\n\n### LogosGuard\n\nLogosGuard has emerged as a leader in ai startups focused on enterprise AI policy compliance and monitoring. Their platform ensures responsible AI scaling by automating risk management and providing continuous monitoring with executable controls. [.",
+            "score": 0.84707206
+          },
+          {
+            "title": "10 Best AI Startups to Watch in 2026 | Funding, Products & Trends",
+            "url": "https://www.buildmvpfast.com/blog/ai-startups-to-watch-2026",
+            "content": "Open-source models are commoditizing the foundation layer. DeepSeek and Mistral prove you don\u2019t need $50 billion to build competitive AI. For founders, this means the cost of adding AI to your product drops every quarter. The AI app ideas that were too expensive to build last year are now viable.\n\nThe infrastructure winners are already profitable. Databricks is free-cash-flow positive at $5.4 billion ARR. ElevenLabs grew 175% while maintaining healthy unit economics. Synthesia\u2019s 140% net revenue retention shows customers expand rather than churn. These aren\u2019t hype plays. They\u2019re businesses that work.\n\nThe window for building AI-native products is wide open. Foundation model costs are dropping. Vertical AI niches remain underserved. And the tools to ship fast have never been better. [...] We tracked funding rounds, product launches, and revenue milestones across dozens of AI companies. These 10 stand out for their combination of market traction, technical differentiation, and relevance to founders building products right now.\n\n## How We Evaluated These AI Startups\n\nEach startup was scored on four criteria:\n\nWe intentionally mix foundation model labs, vertical AI specialists, creative AI platforms, and open-source challengers. The AI market isn\u2019t one race. It\u2019s several running simultaneously.\n\n## Foundation Model Giants\n\n### 1. OpenAI\n\nDigital tablet displaying analytics dashboard with data visualizations\n\nDigital tablet displaying analytics dashboard with data visualizations [",
+            "score": 0.846159
+          },
+          {
+            "title": "25 Top AI Startups (July 2026)",
+            "url": "https://explodingtopics.com/startups/ai",
+            "content": "### 1. apilayer\n\nExploding Growth\n\nExploding Growth\n\nOpen API marketplace offering a curated selection of APIs across various categories such as machine learning, financial data, and URL shorteners. The platform differentiates itself by handpicking the best APIs for\u2026\n\nRead More\n\nStartup Details\n\nVienna\n\nLocation\n\nFeb 2015\n\nFounded Date\n\nPro\n\nTotal Funding\n\nPro\n\nLatest Round\n\nData & Forecast\n\n+720%\n\n2 years Growth\n\n8.1K/mo\n\nSearch Volume\n\nPro\n\n12 Month Forecast\n\nPro\n\nAdvanced Filtering\n\nCategories\n\nbusiness technology software ai programming automation\n\nKey Indicators\n\nGrowth\n\nPeaked\n\nRegular\n\nExploding\n\nVolatility\n\nHigh\n\nMedium\n\nLow\n\nSpeed\n\nSlow\n\nMedium\n\nExponential\n\nSeasonality\n\nHigh\n\nMedium\n\nLow\n\nMembers Only\n\nStart 7-Day Free Trial\n\nImage 9\n\n### 2. Lila sciences\n\nExploding Growth [...] +1675%\n\n2 years Growth\n\n110K/mo\n\nSearch Volume\n\nPro\n\n12 Month Forecast\n\nPro\n\nAdvanced Filtering\n\nCategories\n\ntechnology software ai programming automation\n\nKey Indicators\n\nGrowth\n\nPeaked\n\nRegular\n\nExploding\n\nVolatility\n\nHigh\n\nMedium\n\nLow\n\nSpeed\n\nSlow\n\nMedium\n\nExponential\n\nSeasonality\n\nHigh\n\nMedium\n\nLow\n\nMembers Only\n\nStart 7-Day Free Trial\n\nImage 28\n\n### 21. Channel ai\n\nExploding Growth\n\nExploding Growth\n\nPlatform offering AI-driven tools for companionship, image creation, and video generation, aimed at enhancing content creation. It provides unique capabilities for developing characters and media content through\u2026\n\nRead More\n\nStartup Details\n\nPalo Alto\n\nLocation\n\n-\n\nFounded Date\n\nPro\n\nTotal ",
+            "score": 0.83678174
+          },
+          {
+            "title": "85 Hottest AI Startups to Watch in 2026 [By Valuation, ...",
+            "url": "https://wellows.com/blog/ai-startups",
+            "content": "Evaluate AI Startup Visibility with a Free Trial\n\nTL;DR\n\nThe hottest AI startups of 2026 are building autonomous agents and vertical AI platforms, with OpenAI ($500B), xAI ($200B+), Anthropic ($183B), and Databricks ($134B) dominating, while fastest growing AI Startups like Anysphere, Cognition AI, and Harvey are scaling from zero to unicorn status.\n\nTop 5 Leading & Highly Funded AI Startups:\n\n OpenAI: Frontier AI models, $500B valuation\n Anthropic: Safety-focused AI, $183B, $13B Series F\n xAI: AGI ambitions, $200B+, $20B Jan 2026\n Databricks: Enterprise AI platform, $134B, $4.8B ARR\n Anysphere (Cursor): AI coding assistant, $29.3B, $1B ARR\n\nOther Hot Startups: [...] ## Final Thoughts\n\nThe hottest AI startups of 2026 show a simple shift. Money is going to companies that save time, reduce manual work, and fit naturally into daily jobs like healthcare, law, and software. Growth and real usage matter more than big promises.\n\nAt the same time, smaller and early tools show how fast good ideas can turn into real products. In 2026, the startups that win will be easy to use, solve clear problems, and grow through real demand.\n\n\ud83d\udcac Join the Conversation:\n\n Which startup from this list will IPO first in 2026? (OpenAI, Databricks, Cerebras, or Perplexity)\n Are you building an AI startup? (Share your story \u2013 we\u2019d love to feature emerging founders!)\n\n\ud83d\udccc Bookmark this page \u2013 we update this list with the latest valuations, funding rounds, and emerging players. [...] Speed to $100M ARR: The fas",
+            "score": 0.83452857
+          },
+          {
+            "title": "AI Startups You Should Know",
+            "url": "https://medium.com/jonathans-musings/ai-startups-you-should-know-48d69d1ddf61",
+            "content": "Here is a readable map of the companies worth knowing.\n\nNumbers are based on public reporting as of May 5, 2026. Some are primary rounds, some are reported talks, and some are secondary-market signals, so treat them as directional rather than gospel.\n\n## 1. Frontier model labs\n\nThese are the companies building the most capable general-purpose AI models.\n\n## OpenAI\n\n$852 billion valuation. $122 billion latest funding round (closed March 31, 2026). Estimated annualized revenue around $25 billion. OpenAI remains the default brand in AI, with ChatGPT, the API platform, Codex, Sora, and enterprise products all pushing toward the same goal: becoming the operating system for AI work.\n\n## Anthropic [...] ## Replit\n\nRaised $400 million Series D at a $9 billion valuation in March 2026\u20133x its valuation from just six months prior. Annualized revenue reportedly grew from $2.8 million to $150 million in less than a year. Replit is becoming an AI app-building platform for both developers and non-developers, with Agent 3 pushing it further into autonomous software creation.\n\n## Lovable\n\n$6.6 billion valuation after a $330 million Series B (December 2025). Reported ARR has been cited around $200 million to $400 million depending on source and timing. Lovable is one of the clearest winners in \u201cvibe coding,\u201d letting users generate full-stack apps from prompts.\n\n## Cognition / Devin [...] ## Sierra\n\nOver $15 billion valuation after a $950 million round (announced May 4, 2026); previously reporte",
+            "score": 0.79561085
+          },
+          {
+            "title": "Top 10 AI Startups to Watch in 2026 | SwitchPitch Insights",
+            "url": "https://switchpitch.com/blog/top-ai-startups-2026",
+            "content": "By SwitchPitch \u00b7 May 2026 \u00b7 5 min read\n\nThese 10 artificial intelligence and machine learning startups ranked highest on SwitchPitch's IRL (Innovation Readiness Level) score \u2014 a measure of real enterprise deployment, not just funding. All are at Seed, Series A, or Series B stage, actively piloted or deployed inside large organizations, and backed by institutional investors. Data reflects SwitchPitch rankings as of May 2026.\n\n1. 1\n\n   Avaamo\n\n   AV\n\n   Avaamo IRL 10/10Series A$30M raised\n\n   Avaamo is a deep learning Virtual Assistant Platform for the enterprise.\n\n   Backed by Alchemist Accelerator, Intel Capital, Streamlined Ventures\ud83d\udccd Los Altos, United States\n\n   94\n\n   SP Score\n2. 2\n\n   Indico Data\n\n   IN\n\n   Indico Data IRL 10/10Venture$49M raised [...] IN\n\n   Indico Data IRL 10/10Venture$49M raised\n\n   Indico Data provides machine learning solutions for automating data extraction and analysis from unstructured content.\n\n   Backed by .406 Ventures, Aviva Ventures, General Catalyst\ud83d\udccd Boston, United States\n\n   85\n\n   SP Score\n3. 3\n\n   Rohirrim\n\n   RO\n\n   Rohirrim IRL 9/10Venture$18M raised\n\n   Rohirrim uses generative AI for RFP automation and knowledge management, automating repetitive tasks for proposal teams.\n\n   Backed by Bessemer Venture Partners, Insight Partners, GPVC\ud83d\udccd Reston, United States\n\n   80\n\n   SP Score\n4. 4\n\n   dotData\n\n   DO\n\n   dotData IRL 10/10Series B$75M raised\n\n   DotData is an end-to-end data science automation platform that accelerates, democratizes, and",
+            "score": 0.79484755
+          },
+          {
+            "title": "Top Edge AI Startups by Fundraising (2026)",
+            "url": "https://newmarketpitch.com/blogs/news/edge-ai-top-startups-fundraising",
+            "content": "| 13 | Applied Intuition | Vehicle intelligence software | $1.2B | 6 | June 2025 | $600M | Series F | BlackRock, Kleiner Perkins, QIA | Active | Partial |\n| 14 | Waabi | Autonomous trucking AI | $1.0B | 3 | January 2026 | $750M | Series C | Khosla Ventures, G2 Venture Partners, NVIDIA | Active | Strong |\n| 15 | Stack AV | Autonomous trucking technology | $1.0B | 1 | September 2023 | $1.0B | Series unknown | SoftBank Group | Active | Full |\n| 16 | Apptronik | Humanoid robots for industrial work | $935M | 3 | February 2026 | $520M | Series A extension | Google, Mercedes-Benz, QIA | Active | Partial |\n| 17 | Skydio | Autonomous drones for enterprises | $825M | 8 | April 2026 | $85M | Later-stage round | Hercules Capital, Greenline | Active | Strong | [...] | 4 | Wayve | Embodied AI for autonomous driving | $2.5B | 6 | February 2026 | $1.2B | Series D | Eclipse, Balderton, SoftBank Vision Fund 2 | Active | Strong |\n| 5 | Shield AI | AI pilots for military aircraft | $2.4B | 7 | March 2026 | $1.5B | Series G | Advent International, JPMorganChase SRI, Snowpoint Ventures | Active | Partial |\n| 6 | Nuro | Autonomous delivery vehicles | $2.3B | 5 | August 2025 | $203M | Series E | NVIDIA, Uber, T. Rowe Price | Active | Strong |\n| 7 | Zipline | Autonomous drone delivery logistics | $2.0B | 8 | March 2026 | $800M | Series H | Fidelity, Odenn Ventures, Avitas Capital | Active | Partial |\n| 8 | Figure | General-purpose humanoid robots | $1.8B | 4 | September 2025 | $1.0B | Series C | Park",
+            "score": 0.79022324
+          }
+        ],
+        "response_time": 4.67
+      },
+      "query_used": "market:ai applications successful startups 2026 differentiation",
+      "fetched_at": "2026-07-19T11:36:01.287569+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_ab34cca6bda6",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "\"Eureka Labs\" limitations risks challenges",
+        "answer": "Eureka Labs faces challenges in AI teaching assistant integration, funding, and data privacy; it also risks competition and ethical concerns in AI education. The startup's funding status remains unclear.",
+        "results": [
+          {
+            "title": "Eureka Labs: a New Kind of School that is AI Native",
+            "url": "https://aiexpert.network/eureka-labs",
+            "content": "## Challenges and Risks\n\nEureka Labs faces several challenges, including the development and integration of effective AI teaching assistants and proving their efficacy in real-world educational settings. Additionally, the startup must navigate the competitive landscape of AI education and secure sufficient funding to sustain and scale its operations. Ensuring data privacy and addressing ethical concerns around AI in education are also critical risks.\n\nTo get the latest AI transformation case studies straight to your inbox, subscribe to AI in Action by AIX \u2014 your weekly newsletter dedicated to the exploration of AI adoption in business.\n\nElevate your understanding of AI transformation. Browse AI adoption case studies searchable by company, industry, use case, and technology. [...] ## Investors and Funding\n\nCurrently, it is unclear whether Eureka Labs is self-funded or has secured external investment. There are no public filings of any investments related to the startup, and the LLC filing with California\u2019s Secretary of State is signed solely by Karpathy. The funding details remain speculative at this stage.\n\n## Achievements and Milestones\n\nThe primary milestone for Eureka Labs is the launch of its first product, the LLM101n course. This course represents the startup\u2019s initial step towards creating a comprehensive AI-integrated education platform. Additional achievements include Karpathy\u2019s announcement and the establishment of the company\u2019s online presence.\n\n## Challenges and R",
+            "score": 0.8815438
+          },
+          {
+            "title": "The Impact of AI-Native Education Platforms on Associations: Eureka Labs and the Future of Learning",
+            "url": "https://sidecar.ai/blog/the-impact-of-ai-native-education-platforms-on-associations-eureka-labs-and-the-future-of-learning",
+            "content": "### Preparing for AI-Native Education: Steps for Associations\n\nAs AI-native education platforms like Eureka Labs continue to develop, associations need to start preparing. Here are some steps:\n\n### Potential Challenges and Considerations\n\nWhile the potential of AI-native education is exciting, it's important to approach it with a balanced perspective. Some challenges to consider include:\n\n### The Future of Association Education\n\nAs AI-native education platforms like Eureka Labs mature, they could fundamentally change the landscape of professional development. Associations might evolve from being primary content creators to curators of AI-enhanced learning experiences, leveraging their industry expertise to ensure that AI-driven education aligns with the specific needs of their field. [...] ### Why Eureka Labs Matters for Associations\n\nAssociations often consider education as the heart of their value proposition. So, Eureka Labs and similar AI-native platforms represent both an opportunity and a challenge for optimizing education.\n\nThe potential benefits for associations are significant:\n\n### Comparing Eureka Labs to Existing Platforms\n\nWhile Eureka Labs is breaking new ground, it's not the first attempt to integrate AI into education. A notable comparison can be made with Khanmigo, the AI tutor developed by Khan Academy.\n\nKhanmigo has demonstrated the potential of AI in education:\n\nEureka Labs seems to be taking this concept even further, with a more comprehensive platform th",
+            "score": 0.564027
+          },
+          {
+            "title": "AI in education: Andrej Karpathy's Eureka Labs | A NotebookLM Deep ...",
+            "url": "https://www.youtube.com/watch?v=aBHxHaN-A3o",
+            "content": "risks or issues associated with using or acting upon what's presented in this video. [...] This video is published online for entertainment purposes only. Since AI can hallucinate or generate inaccuracies or falsehoods, it cannot be used as educational or informational material. Regarding this, the sources are listed above for transparency. All views expressed in this video are not necessarily the uploader's, generator's, or Google's. It does not endorse or promote any product, brand, business, or person mentioned. In addition, it is not a substitute for any advice and it should not be relied on as professional, medical, health, career, financial, business, legal, moral or life advice. Always seek the guidance of a qualified professional if you want help with one or more of the nine. This channel is not liable for risks or issues associated with using or acting upon what's [...] whole AI education Revolution their first product might surprise you it's not an AI teaching assistant just yet okay it's a course on building your own AI hold on we're going from AI teaching assistance to building our own AI it does sound like a jump right but it speaks to carpy's whole philosophy to really get AI you need to engage with it even build it so instead of just using AI as a tool he wants us to understand how it works at its core exactly and by doing so we gain a deeper understanding of its potential its limitations all of it plus who knows maybe someone listening will be the one to devel",
+            "score": 0.3967697
+          },
+          {
+            "title": "How We Built an AI Implementation Program for 110+ Engineers",
+            "url": "https://eurekalabs.io/blog/becoming-cyborgs",
+            "content": "Oct 21, 2025\n\n# How We Built an AI Implementation Program for 110+ Engineers\n\n# How We Built an AI Implementation Program for 110+ Engineers\n\n# How We Built an AI Implementation Program for 110+ Engineers\n\nThe technology landscape is evolving faster than ever. New tools, emerging paradigms, and transformative challenges are reshaping how teams build, deliver, and think about software. At Eureka Labs, we see this not as a threat but as an opportunity to amplify what we do best: think critically, build fast, and enjoy the work we do together. [...] Introducing AI into this environment amplifies the challenge. AI is fast-moving, hyped, and often misunderstood. Without a thoughtful approach, teams risk misalignment, miscommunication, and lost opportunities. That\u2019s why we approached our AI program not just as a technical initiative, but as a company-wide evolution. A stage in Eureka Labs\u2019 journey rather than a standalone program.\n\n#### Building AI Capability: The Program\n\nOver two months, an interdisciplinary team worked on designing a structured roadmap for integrating AI across the company. Our focus was threefold: enhance our software development framework, ensure responsible AI adoption, and accelerate skills development for every role.\n\n1. AI-Augmented Software Development Lifecycle [...] 1. AI-Augmented Software Development Lifecycle\n\nAt the heart of our approach is our AI-augmented Software Development Lifecycle (SDLC). By integrating AI into every phase of software develop",
+            "score": 0.37655488
+          },
+          {
+            "title": "Eureka Labs \u00b7 Product Studio | Human + AI",
+            "url": "https://eurekalabs.io/privacy-policy",
+            "content": "to comply with any court order, law, or legal process, including to respond to any government or regulatory request; to enforce or apply our Terms of Use; protect our, our customers, or other rights, property, or safety; to analyze the measure success of marketing and promotional efforts of our products or Services and any third-party products or services offered to you through our Site or Services; to scrub any information that specifically identifies you to include in an aggregated database that we may use or permit others to use for any commercial purposes, in our sole discretion; and We may use or disclose personal information for research purposes, provided that an institutional review board authorized by law or a privacy board waives the authorization requirement and provided that [...] to comply with any court order, law, or legal process, including to respond to any government or regulatory request; to enforce or apply our Terms of Use; protect our, our customers, or other rights, property, or safety; to analyze the measure success of marketing and promotional efforts of our products or Services and any third-party products or services offered to you through our Site or Services; to scrub any information that specifically identifies you to include in an aggregated database that we may use or permit others to use for any commercial purposes, in our sole discretion; and We may use or disclose personal information for research purposes, provided that an institutional rev",
+            "score": 0.2839382
+          },
+          {
+            "title": "Opinions on Eureka Labs \u2014 LessWrong",
+            "url": "https://www.lesswrong.com/posts/BpcPwPk86rfEHJdbr/opinions-on-eureka-labs",
+            "content": "In the meantime, Eureka Labs faces an interesting alignment problem: Can they ensure that their AI teachers teach only true things? It will be tempting to make teachers that only seem to teach well. I hope they figure out how to navigate that!\n\nModeration Log\n\nA\n\n20\n\nEducationAIPersonal Blog\n\n# 6\n\nMore fromjmh\n\nView more\n\nCurated and popular this week [...] Safety-wise, I think Andrej cares a lot about routine AI safety matters (being in charge of AI for Tesla autopilot for many years makes one to care for routine safety in a very visceral sense). I don't have a feel for his position on X-risk. I think he tends to be skeptical of AI regulation efforts.\n\nThe plan for their future AI course I link above does not seem to have any safety-oriented content whatsoever, but, perhaps, this might change, if people who can create that kind of content were to eventually join that effort.\n\nNisan\n\n### \n\n20\n\nThis is the perfect time to start an AI + education project. AI today is not quite reliable enough to be a trustworthy teacher; and in the near future generic AI assistants will likely be smart enough to teach anything well (if they want to). [...] More seriously I can currious about what quality the cource might be, I assume some here know something about Kartaphy and how his company might present the information. I would also be interested in thought from a pure AI Safety perspective. One might suspect some see this a bit as teaching any or everyone how to build a nuclear bomb or make",
+            "score": 0.2648945
+          },
+          {
+            "title": "Eureka Labs \u2014 Hands-on Labs for Learning Security and AI",
+            "url": "https://eurekalabs.net",
+            "content": "Skip to labs\n\nAbout Labs People\n\nCybersecurity and AI Education\n\n# Hands-on labs for learning Cybersecurity and AI\n\nSupporting students, practitioners, and educators in learning security and AI concepts through inquiry-based, hands-on experiences. Free, open, and designed for every skill level.\n\n Browse the labs \n\nSupported in part by the National Science Foundation\n\nMission\n\nBuilt for curiosity  \nand rigor\n\nEureka Labs is a collection of inquiry-based hands-on lab activities that guide learners through authentic scenarios, each highlighting key cybersecurity and AI concepts and principles. Our goal is to provide free, easy-to-use, and high-quality security education materials. [...] For educators, each lab includes teaching procedures, assessment instruments, and adaptable resources. Our team continuously refines materials to reflect the latest threats, techniques, and best practices in the field.\n\nWe call these laboratory projects Eureka Experiences in reference to the \"aha!\" moment of understanding a previously incomprehensible concept.\n\nCatalog\n\nLab collection\n\nEach lab includes procedures, learning objectives, and resources. Search, sort, or filter by category and level.\n\nCategory\n\nLevel\n\nSort\n\nNo labs match the selected filters.\n\nPeople\n\nContributors\n\nThe researchers and educators behind Eureka Labs.\n\nCollaborators\n\nCurrent Research Assistants\n\nFormer Research Assistants",
+            "score": 0.25691864
+          },
+          {
+            "title": "Eureka Labs",
+            "url": "https://eurekalabs.ai",
+            "content": "# Introducing Eureka Labs\n\n## July 16, 2024\n\nWe are Eureka Labs and we are building a new kind of school that is AI native.\n\nHow can we approach an ideal experience for learning something new? For example, in the case of physics one could imagine working through very high quality course materials together with Feynman, who is there to guide you every step of the way. Unfortunately, subject matter experts who are deeply passionate, great at teaching, infinitely patient and fluent in all of the world's languages are also very scarce and cannot personally tutor all 8 billion of us on demand. [...] However, with recent progress in generative AI, this learning experience feels tractable. The teacher still designs the course materials, but they are supported, leveraged and scaled with an AI Teaching Assistant who is optimized to help guide the students through them. This Teacher + AI symbiosis could run an entire curriculum of courses on a common platform. If we are successful, it will be easy for anyone to learn anything, expanding education in both reach (a large number of people learning something) and extent (any one person learning a large amount of subjects, beyond what may be possible today unassisted).",
+            "score": 0.25572497
+          }
+        ],
+        "response_time": 2.79
+      },
+      "query_used": "market:\"Eureka Labs\" limitations risks challenges",
+      "fetched_at": "2026-07-19T11:36:01.289408+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_75f87230238b",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "AI applications emerging trends 2026 gaps opportunity",
+        "answer": "AI trends in 2026 focus on collaboration, safety, and ethical use. Agentic AI enhances decision-making and task automation. AI governance and security are critical.",
+        "results": [
+          {
+            "title": "What's next in AI: 7 trends to watch in 2026",
+            "url": "https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026",
+            "content": "## What\u2019s next in AI:7 trends to watch in 2026\n\nby Susanna Ray\n\nAI is entering a new phase, one defined by real-world impact.\n\nAfter several years of experimentation, 2026 is shaping up to be the year AI evolves from instrument to partner, transforming how we work, create and solve problems. Across industries, AI is moving beyond answering questions to collaborating with people and amplifying their expertise.\n\nThis transformation is visible everywhere. In medicine, AI is helping close gaps in care. In software development, it\u2019s learning not just code but the context behind it. In scientific research, it\u2019s becoming a true lab assistant. In quantum computing, new hybrid approaches are heralding breakthroughs once thought impossible. [...] As AI agents become digital colleagues and take on specific tasks at human direction, organizations are strengthening security to keep pace with new risks. The infrastructure powering these advances is also maturing, with smarter, more efficient systems.\n\nThese seven trends to watch in 2026 show what\u2019s possible when people join forces with AI.\n\nImage 4\n\n## AI will amplify what people can achieve together\n\nAparna Chennapragada, Microsoft\u2019s chief product officer for AI experiences, sees 2026 as a new era for alliances between technology and people. If recent years were about AI answering questions and reasoning through problems, the next wave will be about true collaboration, Chennapragada says.\n\n\u201cThe future isn\u2019t about replacing humans,\u201d she sa",
+            "score": 0.87782305
+          },
+          {
+            "title": "The trends that will shape AI and tech in 2026",
+            "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026",
+            "content": "\u201cThe most significant trend we see emerging next year is the shift from AI experimentation and excitement to private and secure deployments with real ROI expectations within enterprises,\u201d David Lanstein, Cofounder and CEO of Atolio, told IBM Think.\n\n\u201cData leaks continue to erode enterprise trust,\u201d he said. \u201cThe unsolved challenge of prompt injection attacks in production environments makes data sovereignty and first-class permissioning non-negotiable requirements.\u201d\n\nThe solution isn\u2019t bigger models, but smarter data. As Lanstein puts it: \u201cTrue value will come from feeding models high-quality, permission-aware structured data to generate intelligent, relevant and trustworthy answers.\u201d [...] At the same time, Staar believes that open-source AI will continue to shape the competitive landscape. \u201cThe ones in the lead want to keep it closed, and the ones catching up go open,\u201d he said.\n\nWith NVIDIA emerging as a major driver of open ecosystems \u2014largely because its business depends on widespread GPU adoption rather than proprietary models\u2014Staar predicts collaboration will accelerate as AI moves beyond screens and into the physical world.\n\n### AI will shift from giant models to domain\u2011specific reasoning systems | Anthony Annunziata, Director of Open Source AI, IBM and the AI Alliance [...] Transformers made this possible. \u201cThey gave us systems that can absorb enormous bodies of text, code and history, then respond with nuance and precision with effective guardrails in place,\u201d Aberle s",
+            "score": 0.86331123
+          },
+          {
+            "title": "AI Trends 2026",
+            "url": "https://www.infotech.com/research/ss/ai-trends-2026",
+            "content": "AI Trends 2026 Report\n\n  \n\n## FIVE AI TRENDS FOR 2026\n\nThis report highlights five key AI trends in emerging and leading-edge technologies and practices, offering actionable insights that can help guide your organization toward its strategic goals.\n\n   ### Foundational AI principles will rewrite organizational DNA\n\n AI strategies will be informed by an emerging set of principles.\n   ### From copilots to vibe coding: AI will continue to reinvent IT\n\n The ecosystem of AI solutions for IT will grow with the introduction of new categories.\n   ### Agentic AI will come of age and power the exponential enterprise\n\n Agentic AI will increase in adoption and enable outcomes across the organization, powering exponential growth and change.\n   ### Risk management will be the price of admission for AI [...] Establish foundational AI principles to address AI risks and reflect strategic principles. \n   Adopt a solution-centric approach and focus on driving business value with AI tools and applications that align to foundational AI principles.\n   Select business-driven use cases for agentic AIand include human oversight when developing agentic AI applications.\n   Implement a risk management program that\u2019s focused on delivering value and mitigating potential AI risks. \n   Develop an adaptive AI governance framework to provide safeguards and self-regulate regardless of the legislative environment.\n\nRead our AI Trends report now to make smarter, faster AI decisions for the coming year \u2013 and year",
+            "score": 0.8616433
+          },
+          {
+            "title": "Emerging AI Technologies: Top 10 AI Trends for Business ...",
+            "url": "https://www.hristovdevelopment.com/post/emerging-ai-technologies",
+            "content": "Some of the most important emerging AI technologies in 2026 include Agentic AI, AI-Assisted Software Development, Enterprise AI Platforms, Small Language Models (SLMs), Edge AI, Explainable AI (XAI), AI Governance, Multimodal AI, Industry-Specific AI Models, and AI-Powered Cybersecurity. Each technology addresses different business challenges and opportunities.\n\n### How Is AI Changing Business in 2026?\n\nAI is helping businesses automate routine tasks, improve decision-making, strengthen cybersecurity, accelerate software development, and make better use of data. Rather than replacing existing business processes, many organizations are using AI to improve efficiency and support employees in their daily work.\n\n### Will AI Replace Human Workers? [...] In this article, we'll explore ten emerging AI technologies that are shaping business in 2026, along with practical applications, real-world examples, and the reasons these trends matter for organizations looking to make smarter investments in AI.\n\n## 1. Agentic AI and Autonomous Agents\n\n### What Is Agentic AI?\n\nMost AI tools today can answer questions, generate content, or help users find information. Agentic AI takes things a step further.\n\nInstead of simply responding to requests, Agentic AI can take action. These systems are designed to complete tasks, make decisions based on goals, and work through multiple steps with little human involvement. [...] What makes 2026 different is that AI is becoming more practical and accessible",
+            "score": 0.86108357
+          },
+          {
+            "title": "12+ AI Trends Businesses Must Watch in 2026",
+            "url": "https://appinventiv.com/blog/ai-trends",
+            "content": "### 3. Advancements in AI Reasoning\n\nThe development of AI reasoning capabilities is enhancing decision-making processes. Companies are investing in custom silicon and AI reasoning models to meet the growing demand for advanced AI applications.\n\n### 5. Focus on AI Safety and Ethics\n\nAs AI systems become more powerful, ensuring their safety and ethical use is paramount. The International AI Safety Report highlights risks such as privacy violations and the potential for AI misuse, underscoring the need for robust governance frameworks.  \n While these broad AI advancements are key for the next few years, C-Suite leaders should dive deeper into specific machine learning trends to inform capital investment and talent strategy.\n\n## Keep Pace with the Latest AI Trends with Appinventiv [...] ### Q. What emerging trends in AI search should businesses prepare for?\n\nA. AI search is evolving at a breakneck speed. Thus, businesses need to prepare for the following searches:\n\n Conversational AI: As search engines evolve, AI-powered chatbots and conversational interfaces are becoming the new norm. This offers more personalized, natural interactions for users.\n Context-Aware Search: Future search engines will be more attuned to user intent, providing more relevant and tailored results based on the context of the query.\n Visual and Voice Search: The integration of voice and image recognition in search tools is gaining momentum. This allows users to interact with search engines in more intuiti",
+            "score": 0.8306082
+          },
+          {
+            "title": "New Jobs Creation in the AI Age (SDN/2026/001)",
+            "url": "https://www.imf.org/-/media/files/publications/sdn/2026/english/sdnea2026001.pdf",
+            "content": "New AI -related skills have become a significant component of emerging skills in recent years. This trend \n\nis especially noteworthy considering that previous analysis has established that 40 percent of global \n\nemployment is potentially exposed to AI, albeit with notable differences across countries (Cazzaniga and others \n\n2024). Although in advanced economies this share rises to 60 percent , in emerging markets it remains at 40 \n\npercen t, and in low -income countries it stands at 28 percent. In the United States \u2014the country with the longest \n\nposting series \u2014AI skills appeared in fewer than 1 percent of postings before 2015 but in almost 5 percent by \n\n2025. The analysis further distinguishes between AI -user skills \u2014use of generative -AI applications integrated",
+            "score": 0.8266142
+          },
+          {
+            "title": "Emerging healthcare AI trends in 2026 so far",
+            "url": "https://www.philips.com/a-w/about/news/archive/features/2026/this-years-emerging-trends-in-healthcare-ai-so-far.html",
+            "content": "Bringing AI into the heart of the procedure room  \n   \n AI is no longer limited to analyzing medical information or supporting diagnostic decisions. It is being integrated directly into the procedure room, reshaping how complex interventions are performed in real time. This innovation brings opportunities for transforming minimally invasive, image-guided therapies, where clinicians must navigate tiny devices through moving anatomy. [...] Healthcare systems across the globe are starting to invest in agentic AI, with several notable organizations taking the lead in implementing these AI agents. In the US, Mount Sinai Health System in New York and Minnesota-based Mayo Clinic are using these technologies to streamline workflows, automate repetitive tasks and enable more meaningful, personalized care . The UK\u2019s NHS recently launched a project focused on responsible, collaborative and sustainable deployment of agentic AI across the system . Interest in AI agents is predicted to increase rapidly in 2026, as more healthcare systems \u2013 particularly in Asia, Australia and Europe \u2013 look to harness the power of these proactive, goal-driven AI collaborators . [...] Healthcare AI is rapidly evolving from standalone tools into intelligent systems that actively support clinicians across the care continuum, helping them reclaim time to focus on their patients. These innovations are helping to improve workflows, strengthen clinical decision-making and deliver better care for more people. As the",
+            "score": 0.8080827
+          },
+          {
+            "title": "The 9 most important trends in BI, AI & data-driven working for 2026",
+            "url": "https://www.passionned.com/9-most-important-trends-bi-ai-2026",
+            "content": "## 4. The rise of multi-agent and multimodal AI\n\nWhereas until recently we spoke of one large language model that had to do and answer everything (think of ChatGPT), a new generation of smaller, specialized models that communicate with each other is now emerging. We refer to this as agentic AI: an architecture in which multiple AI agents work together and can independently perform tasks. [...] Icon that represents AI\nIcon that represents AI\n\nIn 2026, the focus will shift from output to input: generative AI will primarily be used to improve data quality. Think of automatic classification of customer information, detecting inconsistencies, or enriching metadata. Humans will remain at the helm. This is not a \u201csexy\u201d application, but it is the most impactful one\u2014because only when data is reliable can AI truly deliver value, especially in strategic applications. Many mid-sized organizations are discovering that generative AI offers the greatest value precisely here: not at the front end, but deep in the engine room of their data-driven ecosystem. [...] Whereas 2025 was mainly about \u201cgetting the technology in order,\u201d 2026 is the year in which organizations must finally convert their data-driven foundation into real value. The need for a single data platform, the rise of real-time analytics, and the growing focus on data quality are no longer emerging trends; they are now prerequisites. And the generative AI hype? It hasn\u2019t disappeared, but it has transformed. Whereas 2025 was still ",
+            "score": 0.79637206
+          }
+        ],
+        "response_time": 4.1
+      },
+      "query_used": "market:ai applications emerging trends 2026 gaps opportunity",
+      "fetched_at": "2026-07-19T11:36:01.289850+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_0fe3e0004f7c",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "tavily",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "query": "AI applications market saturation risks crowded",
+        "answer": "AI market faces saturation due to widespread adoption of generative tools, but opportunities remain in underexplored domains and interdisciplinary applications. Challenges like bias and scalability persist, but ongoing research promises to overcome these limitations. Vast potential exists in sectors like healthcare and supply chain management.",
+        "results": [
+          {
+            "title": "Has AI reached its saturation point?",
+            "url": "https://tekh.co.uk/blog/has-ai-reached-its-saturation-point",
+            "content": "From a market perspective, the apparent saturation in AI\nstems from the proliferation of generative AI tools and platforms, which have\ndominated public and commercial discourse. For instance, applications like\nChatGPT(link), DALL-E 3(link), Nvidia\u2019s fugatto (link),\nand SORA(link)\nhave reached mass adoption levels, making AI more accessible than ever. Yet,\nthis widespread adoption creates a perception of market crowding and\nredundancy. Industry reports, such as McKinsey's 2024 AI survey (link),\nreveal that while adoption of generative AI is growing, the integration of AI\ninto core business processes remains limited, especially in industries like\nhealthcare, energy, and supply chain management. [...] While AI has made\nsignificant strides and captured the public\u2019s imagination with generative AI\ntools, it is far from reaching its peak. Numerous challenges, such as\ngeneralisation, bias, scalability, data scarcity, and environmental impact,\ncontinue to hinder its full potential. However, ongoing research in areas like\nneurosymbolic AI, multimodal AI, quantum AI, explainable AI, federated\nlearning, and privacy-preserving techniques holds the promise of overcoming\nthese limitations. By focusing on robust, ethical, and scalable solutions, AI\nhas the potential to revolutionise industries and address global challenges.\nWhile certain market segments, like generative AI, appear crowded, vast\nopportunities remain in underexplored domains and interdisciplinary applications. [...] Additional",
+            "score": 0.8319231
+          },
+          {
+            "title": "The AI Era: Opportunities in the Face of Market Saturation",
+            "url": "https://medium.com/@jannadikhemais/the-ai-era-opportunities-in-the-face-of-market-saturation-6886e2d50a3d",
+            "content": "AI is driving unprecedented innovation, delivering solutions and efficiencies that were unimaginable just a few years ago. However, this rapid progress is accompanied by equally swift market saturation, as many AI sectors become crowded with competitors. The result is fierce competition, shrinking profit margins, and a shorter time window to establish and maintain market leadership.\n\nThis dynamic creates a high-stakes environment for new business leaders, investors, and innovators. The core\u2026\n\n## Create an account to read the full story.\n\nThe author made this story available to Medium members only.\n\nIf you\u2019re new to Medium, create a new account to read this story on us.\n\nContinue in app\n\nOr, continue in mobile web\n\nSign up with Google\n\nSign up with Facebook\n\nSign up with email [...] Sitemap\n\nOpen in app\n\nSign up\n\nSign in\n\n has rapidly evolved from a specialized academic field into one of the most powerful forces shaping the global economy. Over the past decade, breakthroughs in machine learning, deep learning, and generative AI have transformed how businesses operate, how products are built, and how decisions are made. The arrival of multimodal systems, capable of processing and combining text, images, audio, and other inputs, and the emergence of agentic AI, which can act with greater autonomy, are pushing the boundaries of what AI can achieve.\n\nHowever, this extraordinary progress presents a double-edged reality:",
+            "score": 0.72254705
+          },
+          {
+            "title": "The impact of AI adoption on market dynamics",
+            "url": "https://www.oecd.org/en/publications/artificial-intelligence-and-competitive-dynamics-in-downstream-markets_ccf0624a-en/full-report/component-5.html",
+            "content": "The CCI market study notes that competition risks in the AI ecosystem are multifaceted and evolving. It further highlights concerns about market concentration, particularly the dominance of large technology firms across multiple layers of the AI stack, data, infrastructure, and foundational models, which can create high entry barriers for startups. The market study identifies risks such as algorithmic collusion, price discrimination, self-preferencing, and opaque decision-making, which may distort market outcomes and reduce consumer choice. It also warns of ecosystem lock-in, where users become dependent on specific platforms due to high switching costs. These dynamics, if unchecked, could entrench incumbents, stifle innovation, and undermine fair competition. [...] This could potentially raise risks of refusal to supply, tying, self-preferencing or exploitative pricing, similar in effect as what has been observed in jurisprudence under Article 102 TFEU in Europe [(European Commission, 2018)](/en/publications/artificial-intelligence-and-competitive-dynamics-in-downstream-markets_ccf0624a-en/full-report/component-8.html#Eur181_e6c915d34c). Such risks could arise in cloud marketplaces (Model-as-a-Service), where hyperscalers act as both suppliers and gatekeepers [(OECD, 2025)](/en/publications/artificial-intelligence-and-competitive-dynamics-in-downstream-markets_ccf0624a-en/full-report/component-8.html#Kapp_595859c5_e6c915d34c). The French Autorit\u00e9 de la concurrence notably ha",
+            "score": 0.53021276
+          },
+          {
+            "title": "Artificial Intelligence (AI) Market | Global Report 2034",
+            "url": "https://www.fortunebusinessinsights.com/industry-reports/artificial-intelligence-market-100114",
+            "content": "According to a recent BMC survey, 69% of businesses are implementing advanced technologies, such as artificial intelligence, in their IT service management and IT operations management processes, which are called ServiceOps. The reason for integrating AI into their services was to improve operational efficiencies. The service operation segment is expected to account for 20.86% of the market share in 2026.\n\nRisk is estimated to grow with the highest CAGR of 32.40% during the forecast period. Modern enterprises face multi-dimensional risks such as fraud, data breaches, regulatory violations, climate-related impacts, and supply chain disruptions. Traditional risk management systems are static and reactive, whereas AI enables real-time and predictive risk intelligence. [...] Download Free sample to learn more about this report.\n\nQuantum AI has the potential to enhance climate modeling by improving the accuracy of predictions for climate change and its impacts, which is essential for developing effective mitigation strategies. In the field of cybersecurity, Quantum AI could present both significant risks, such as potentially compromising current encryption methods, and opportunities, such as creating new quantum-resistant encryption. [...] According to industry experts, AI could contribute up to 13.6% of the GCC\u2019s GDP through the banking sector alone by 2030, indicating significant efficiency gains. The BFSI segment holds 18.90% of the market share in 2025.\n\nThe healthcare industr",
+            "score": 0.44189036
+          },
+          {
+            "title": "[PDF] (Artificial) Intelligence saturation and the future of work",
+            "url": "https://www.brookings.edu/wp-content/uploads/9999/11/IntelligenceSaturation_final_with-cover-page.pdf",
+            "content": "We then allow AI to grow. This elasticity of substitution between sectors governs whether wages and output saturate as AI capital increases past full automation of intelligence tasks: when physical and intelligence sectors are gross complements (\u03c1 < 0), there is intelligence saturation.\nOverall, these findings contradict the singularity narrative that posits unbounded returns to intelligence. Even powerful AI faces physical and institutional bottlenecks that bound returns when P is fixed. A car cannot be built by intelligence alone; a building cannot be constructed with pure computation; a meal cannot be cooked with algorithms alone. [...] Finally, in a third scenario, we continue assuming slower AI growth, but also make physical and intelligence sectors much more substitutable, with \u03c1 = 0.25 (corresponding to a 1.33 elasticity of substitution). In this case, we observe a wage decrease before full automation of intelligence tasks, after which wages slowly grow again. Importantly, in this scenario with \u03c1 > 0, there is no intelligence saturation, so in the long run adding more AI always keeps increasing wages.\nTo sum up, as AI increases exponentially, wages saturate when physical and intelligence sectors are gross complements, but can grow without bounds when they are substitutes. [...] the price of AI is decreasing exponentially at a rate much faster than most inputs in the economy. The fact that AI is getting cheaper so fast makes it more and more economically advantageous to",
+            "score": 0.39501804
+          },
+          {
+            "title": "Understanding the Economic Risks of the AI Revolution",
+            "url": "https://deeptech.duke.edu/blog-post/caution-and-opportunity-understanding-economic-risks-ai-revolution",
+            "content": "#### Historical Parallel: The Dot-Com Bubble\n\nThe dot-com bubble of the late 1990s is a classic example of how technological enthusiasm can fuel market excess, and how damaging the collapse can be. From 1995 to 2000, the NASDAQ index soared over 800%, reflecting investor optimism about internet-driven business. By early 2000, many startup companies with little or no revenue had reached multi-billion dollar valuations, and aggregate venture investment in internet firms topped $100 billion.\n\nWhen the bubble burst began in March 2000:\n\n The NASDAQ fell by 76%, erasing over $5 trillion in market value by 2002.\n More than half of all publicly traded dot-com companies either went bankrupt or disappeared.\n Roughly 300,000 tech workers lost their jobs in the following two years. [...] On the supply side, the AI sector\u2019s dependence on hardware from a limited pool of suppliers, most notably Nvidia and TSMC, renders it particularly susceptible to disruptions arising from geopolitical tensions or supply bottlenecks.  Compounding this vulnerability, conventional systemic risk assessment tools like credit spreads, expected shortfall, and other standard metrics may offer an incomplete picture for regulators, as intricate financial linkages and overlapping ownership obscure true risk exposures.  As a result, policymakers are weighing stricter limitations on bank lending to AI startups in an effort to curb risk accumulation and are considering more robust methods for assessing actual consumer",
+            "score": 0.29119292
+          },
+          {
+            "title": "Artificial Intelligence (AI) Market Report 2026-2033, by ...",
+            "url": "https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-market-74851580.html",
+            "content": "The artificial intelligence market is being influenced by several key themes that span across different geographies, industries, and types of buyers. Enterprise buyers are increasingly moving away from standalone AI tools and are opting for comprehensive platforms that integrate data infrastructure, model deployment, and workflow automation into a single environment. Generative AI has now become a fundamental expectation, and organizations are grappling with the challenge of how to scale it responsibly without introducing new risks related to accuracy, compliance, and oversight. Following this trend is the emergence of agentic AI, where systems can plan and execute multi-step workflows with minimal human intervention. This shift is beginning to redefine what enterprise automation looks [...] and energy\u2014companies are leveraging AI for demand forecasting, predictive maintenance, inventory optimization, route planning, and supplier risk management. As a result, operations have the widest range of monetizable AI applications. [...] The artificial intelligence market is experiencing a significant structural change in how revenue is generated and where it is headed. On the hardware side, spending is shifting from general-purpose computing to specialized AI accelerators. The demand for NVIDIA GPUs and custom silicon from major cloud providers is reshaping capital expenditure priorities globally. In terms of software, revenue is moving away from standalone point solutions and toward ",
+            "score": 0.27919716
+          },
+          {
+            "title": "Artificial Intelligence - Worldwide | Market Forecast",
+            "url": "https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide",
+            "content": "### Market definition\n\nMarket definition\n\nDefinition: Artificial intelligence (AI) is a branch of computer science that focuses on creating machines able to perform tasks traditionally requiring human intelligence, such as perception, reasoning, and learning. The Artificial Intelligence (AI) market includes a wide range of applications, such as speech recognition, image processing, and autonomous vehicles and has seen rapid growth in recent years due to advancements in technology and increased investment. The Artificial Intelligence (AI) market includes software, hardware, and services that enable organizations to develop and deploy AI applications.\n\nStructure:\n\nThe Artificial Intelligence (AI) market is structured into six markets based on the technology:\n\nAdditional Information: [...] ### Highlights\n\nHighlights\n\nDefinition: Artificial intelligence (AI) is a branch of computer science that focuses on creating machines able to perform tasks traditionally requiring human intelligence, such as perception, reasoning, and learning. The Artificial Intelligence (AI) market includes a wide range of applications, such as speech recognition, image processing, and autonomous vehicles and has seen rapid growth in recent years due to advancements in technology and increased investment. The Artificial Intelligence (AI) market includes software, hardware, and services that enable organizations to develop and deploy AI applications.\n\nStructure:\n\nThe Artificial Intelligence (AI) market is st",
+            "score": 0.27821067
+          }
+        ],
+        "response_time": 4.83
+      },
+      "query_used": "market:ai applications market saturation risks crowded",
+      "fetched_at": "2026-07-19T11:36:01.288437+00:00",
+      "status": "ok"
+    },
+    {
+      "id": "ev_9a96b2181cc4",
+      "founder_name": "Andrej Karpathy",
+      "source_type": "semantic_scholar",
+      "source_url": null,
+      "raw_content": {
+        "status": "ok",
+        "domain": "AI applications",
+        "papers": [
+          {
+            "paper_id": "4335d3867c0f32cdde5044e7fc4f4d5130189cd6",
+            "title": "AI Applications in Supply Chain Management: A Survey",
+            "year": 2025,
+            "venue": "Applied Sciences",
+            "citation_count": 45,
+            "abstract": "The advent of Industry 4.0 and the integration of Artificial Intelligence (AI) is transforming supply chain management (SCM), improving efficiency, resilience and strategic decision-making capabilities. This research study provides a comprehensive overview of AI applications in key SCM processes, including customer relationship management, inventory management, transportation networks, procurement, demand forecasting and risk management. AI technologies such as Machine Learning, Natural Language Processing and Generative AI offer transformative solutions to streamline logistics, reduce operational risk and improve demand forecasting. In addition, this study identifies barriers to AI adoption, such as implementation challenges, organizational readiness and ethical concerns, and highlights the critical role of AI in promoting supply chain visibility and resilience in the midst of global crises. Future trends emphasize human-centric AI, increasing digital maturity, and addressing ethical ",
+            "authors": [
+              "Adamos Daios",
+              "N. Kladovasilakis",
+              "Athanasios Kelemis",
+              "Ioannis Kostavelis"
+            ],
+            "url": "https://www.semanticscholar.org/paper/4335d3867c0f32cdde5044e7fc4f4d5130189cd6"
+          },
+          {
+            "paper_id": "81ba30f543d19ec9736156e5a06db41eb33f9e1a",
+            "title": "Artificial Intelligence for Sustainability: A Systematic Review and Critical Analysis of AI Applications, Challenges, and Future Directions",
+            "year": 2025,
+            "venue": "Sustainability",
+            "citation_count": 43,
+            "abstract": "This comprehensive review critically analyzes the multifaceted role of artificial intelligence (AI) in advancing global sustainability and achieving the Sustainable Development Goals (SDGs). While AI offers powerful solutions for climate action, resource management, and other challenges, its own significant ecological footprint and potential for bias present critical risks that must be proactively managed. This study provides a synthesis of the recent literature (published between 2018 and 2024) to address three primary research questions: (1) What are the main applications of AI for sustainability and their contribution to specific SDGs? (2) What are the primary ecological, socio-economic, and ethical risks of AI adoption? (3) What are the key research gaps and future directions for more sustainable and responsible AI application? A key contribution is a comprehensive, multi-dimensional framework that connects AI applications with an in-depth analysis of their interconnected ecologica",
+            "authors": [
+              "M. Todera\u0219"
+            ],
+            "url": "https://www.semanticscholar.org/paper/81ba30f543d19ec9736156e5a06db41eb33f9e1a"
+          },
+          {
+            "paper_id": "6cb6a24eb3283cb71ad656d01c96fc0912efa805",
+            "title": "AI Applications to Reduce Loneliness Among Older Adults: A Systematic Review of Effectiveness and Technologies",
+            "year": 2025,
+            "venue": "Healthcare",
+            "citation_count": 51,
+            "abstract": "Background/Objectives: Loneliness among older adults is a prevalent issue, significantly impacting their quality of life and increasing the risk of physical and mental health complications. The application of artificial intelligence (AI) technologies in behavioral interventions offers a promising avenue to overcome challenges in designing and implementing interventions to reduce loneliness by enabling personalized and scalable solutions. This study systematically reviews the AI-enabled interventions in addressing loneliness among older adults, focusing on the effectiveness and underlying technologies used. Methods: A systematic search was conducted across eight electronic databases, including PubMed and Web of Science, for studies published up to 31 January 2024. Inclusion criteria were experimental studies involving AI applications to mitigate loneliness among adults aged 55 and older. Data on participant demographics, intervention characteristics, AI methodologies, and effectiveness ",
+            "authors": [
+              "Yuyi Yang",
+              "Chenyu Wang",
+              "Xiaoling Xiang",
+              "R. An"
+            ],
+            "url": "https://www.semanticscholar.org/paper/6cb6a24eb3283cb71ad656d01c96fc0912efa805"
+          },
+          {
+            "paper_id": "931898b1a0443e96b06ff7391c38562820a985ce",
+            "title": "AI Applications for Power Quality Issues in Distribution Systems: A Systematic Review",
+            "year": 2025,
+            "venue": "IEEE Access",
+            "citation_count": 38,
+            "abstract": "The integration of distributed generation (DG), renewable energy sources (RES), and power electronic converters into distribution systems (DSs) has introduced significant power quality (PQ) challenges, such as voltage fluctuations, harmonic distortions, and transients. These issues can undermine the reliability and stability of power systems, making it essential to address them to ensure a consistent and resilient power supply, especially as RES adoption continues to grow. While previous reviews have explored artificial intelligence (AI) applications for PQ management, most have been limited to specific AI techniques or targeted PQ problems, such as harmonics. This review, however, offers a comprehensive synthesis of AI-based approaches across a wide range of PQ applications, encompassing detection, classification, and improvement, while also considering the specific PQ issues addressed in each case. By adopting an integrated approach, this review identifies key research gaps, particul",
+            "authors": [
+              "Mitra Nabian Dehaghani",
+              "T. Kor\u00f5tko",
+              "A. Rosin"
+            ],
+            "url": "https://www.semanticscholar.org/paper/931898b1a0443e96b06ff7391c38562820a985ce"
+          },
+          {
+            "paper_id": "20f0dfa03a4fb46f1e760403d5aeea2fe5c6f930",
+            "title": "Trust and Acceptance Challenges in the Adoption of AI Applications in Health Care: Quantitative Survey Analysis",
+            "year": 2025,
+            "venue": "Journal of Medical Internet Research",
+            "citation_count": 64,
+            "abstract": "Background Artificial intelligence (AI) has potential to transform health care, but its successful implementation depends on the trust and acceptance of consumers and patients. Understanding the factors that influence attitudes toward AI is crucial for effective adoption. Despite AI\u2019s growing integration into health care, consumer and patient acceptance remains a critical challenge. Research has largely focused on applications or attitudes, lacking a comprehensive analysis of how factors, such as demographics, personality traits, technology attitudes, and AI knowledge, affect and interact across different health care AI contexts. Objective We aimed to investigate people\u2019s trust in and acceptance of AI across health care use cases and determine how context and perceived risk affect individuals\u2019 propensity to trust and accept AI in specific health care scenarios. Methods We collected and analyzed web-based survey data from 1100 Finnish participants, presenting them with 8 AI use cases in",
+            "authors": [
+              "Janne Kauttonen",
+              "Rebekah A. Rousi",
+              "Ari Alam\u00e4ki"
+            ],
+            "url": "https://www.semanticscholar.org/paper/20f0dfa03a4fb46f1e760403d5aeea2fe5c6f930"
+          }
+        ]
+      },
+      "query_used": "papers:ai applications",
+      "fetched_at": "2026-07-19T11:36:01.290661+00:00",
+      "status": "ok"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cl_b674f876d2a9",
+      "founder_name": "Andrej Karpathy",
+      "text": "The GitHub profile for 'andrejkarpathy' has no activity and no public repositories, indicating a lack of engagement.",
+      "subject": "founder",
+      "predicate": "github_absence",
+      "value": "0",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_0479a416de70",
+      "source_type": "github"
+    },
+    {
+      "id": "cl_bffe90dab0de",
+      "founder_name": "Andrej Karpathy",
+      "text": "A personalised AI tutor with < 1s voice responses was launched, receiving 72 points and 24 comments on HN.",
+      "subject": "product",
+      "predicate": "launch_reception",
+      "value": "72 points, 24 comments",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_021313cf1a27",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_a1378f45af61",
+      "founder_name": "Andrej Karpathy",
+      "text": "The personalised AI tutor was created to respond to questions about Andrej Karpathy's Youtube videos.",
+      "subject": "product",
+      "predicate": "launch_reception",
+      "value": "72 points, 24 comments",
+      "confidence": 0.85,
+      "source_evidence_id": "ev_021313cf1a27",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_87aa750ef977",
+      "founder_name": "Andrej Karpathy",
+      "text": "The founder Andrej Karpathy is mentioned in the context of a new AI product that utilizes his content.",
+      "subject": "founder",
+      "predicate": "founder_hn_activity",
+      "value": "Andrej Karpathy",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_021313cf1a27",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_f68ac0807197",
+      "founder_name": "Andrej Karpathy",
+      "text": "The launch of the AI tutor received positive feedback from the community, indicating a strong reception.",
+      "subject": "product",
+      "predicate": "launch_praise",
+      "value": "community feedback",
+      "confidence": 0.75,
+      "source_evidence_id": "ev_021313cf1a27",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_e9cf6a243ebe",
+      "founder_name": "Andrej Karpathy",
+      "text": "Eureka Labs launched with 21 points and 1 comment on HN.",
+      "subject": "company",
+      "predicate": "launch_reception",
+      "value": "21 points, 1 comment",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_ab584feb269b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_8b665b820d40",
+      "founder_name": "Andrej Karpathy",
+      "text": "In 2024, Andrej Karpathy launched Eureka Labs, an AI-first education startup, but there has been little public activity since.",
+      "subject": "company",
+      "predicate": "launch_criticism",
+      "value": "Little public activity since launch",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_ab584feb269b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_03a0a7239189",
+      "founder_name": "Andrej Karpathy",
+      "text": "Eureka Labs is Andrej Karpathy's new venture in education and AI.",
+      "subject": "company",
+      "predicate": "launch_reception",
+      "value": "1 point, 0 comments",
+      "confidence": 0.7,
+      "source_evidence_id": "ev_ab584feb269b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_8cf6a0c58b96",
+      "founder_name": "Andrej Karpathy",
+      "text": "A personalised AI tutor was created based on Andrej Karpathy's content, achieving voice responses in under 1 second.",
+      "subject": "product",
+      "predicate": "launch_reception",
+      "value": "72 points, 24 comments",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_ab584feb269b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_e81162ab8009",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy is actively involved in discussions on HN, indicating his engagement with the community.",
+      "subject": "founder",
+      "predicate": "founder_hn_activity",
+      "value": "Active engagement",
+      "confidence": 0.85,
+      "source_evidence_id": "ev_ab584feb269b",
+      "source_type": "hn"
+    },
+    {
+      "id": "cl_d231359950de",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy, a renowned artificial intelligence educator, former head of AI at Tesla, and founding member of OpenAI, has announced Eureka Labs, a new startup aimed at creating 'a new kind of school that is AI native.'",
+      "subject": "company",
+      "predicate": "press_mention",
+      "value": "Eureka Labs",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_fda04b965f2b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_db36b8f3b98d",
+      "founder_name": "Andrej Karpathy",
+      "text": "Eureka Labs will enable students to study a wide variety of subjects through its AI platform, with an AI teaching assistant to guide students through course materials designed by real teachers.",
+      "subject": "product",
+      "predicate": "press_mention",
+      "value": "Eureka Labs",
+      "confidence": 0.7,
+      "source_evidence_id": "ev_fda04b965f2b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_cff44f61c94c",
+      "founder_name": "Andrej Karpathy",
+      "text": "Karpathy outlined a process that would see teachers design materials for a class, which are 'supported, leveraged and scaled,' by a generative AI-powered teaching assistant.",
+      "subject": "product",
+      "predicate": "press_mention",
+      "value": "Eureka Labs",
+      "confidence": 0.7,
+      "source_evidence_id": "ev_fda04b965f2b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_6dd23a873edd",
+      "founder_name": "Andrej Karpathy",
+      "text": "Karpathy studied at the University of Toronto and University of British Columbia.",
+      "subject": "founder",
+      "predicate": "education",
+      "value": "University of Toronto, University of British Columbia",
+      "confidence": 0.6,
+      "source_evidence_id": "ev_fda04b965f2b",
+      "source_type": "tavily"
+    },
+    {
+      "id": "cl_3e5dcd490954",
+      "founder_name": "Andrej Karpathy",
+      "text": "nanochat is Andrej Karpathy's capstone project for LLM101n by Eureka Labs.",
+      "subject": "product",
+      "predicate": "ph_launch",
+      "value": "nanochat",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_09f3df38ab00",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_31ab40567cd8",
+      "founder_name": "Andrej Karpathy",
+      "text": "No relevant hits found for Eureka Labs on Y Combinator's companies page.",
+      "subject": "company",
+      "predicate": "site_absence",
+      "value": "",
+      "confidence": 0.5,
+      "source_evidence_id": "ev_e6737721e11f",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_557a2d978f63",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy. I don't use or check my LinkedIn and only have an account to view recruiting candidates. Contact me via X/email.",
+      "subject": "founder",
+      "predicate": "site_absence",
+      "value": "",
+      "confidence": 0.3,
+      "source_evidence_id": "ev_a1687da2109a",
+      "source_type": "serpapi"
+    },
+    {
+      "id": "cl_5b35d0a31d74",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy has an h-index of 16, indicating significant research impact.",
+      "subject": "founder",
+      "predicate": "h_index",
+      "value": "16",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_59daac4c386c",
+      "source_type": "semantic_scholar"
+    },
+    {
+      "id": "cl_47016bf6c93f",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy has published a total of 37 papers.",
+      "subject": "founder",
+      "predicate": "paper_count",
+      "value": "37",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_59daac4c386c",
+      "source_type": "semantic_scholar"
+    },
+    {
+      "id": "cl_4d67d4d9a60d",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy has received a total of 66,031 citations for his work.",
+      "subject": "founder",
+      "predicate": "citation_count",
+      "value": "66031",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_59daac4c386c",
+      "source_type": "semantic_scholar"
+    },
+    {
+      "id": "cl_8d0f73ec0cb3",
+      "founder_name": "Andrej Karpathy",
+      "text": "Andrej Karpathy is actively researching, with recent papers published in 2026.",
+      "subject": "founder",
+      "predicate": "active_research",
+      "value": "true",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_59daac4c386c",
+      "source_type": "semantic_scholar"
+    },
+    {
+      "id": "cl_716850f2db5a",
+      "founder_name": "Andrej Karpathy",
+      "text": "Research activity in the field of large language models is ongoing, with multiple recent papers published in 2024 and 2025.",
+      "subject": "market",
+      "predicate": "research_field_activity",
+      "value": "Active research in large language models with recent publications.",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_da9d035c818c",
+      "source_type": "semantic_scholar"
+    },
+    {
+      "id": "cl_891606103388",
+      "founder_name": "Andrej Karpathy",
+      "text": "Eureka Labs is a new AI-native school.",
+      "subject": "company",
+      "predicate": "product_description",
+      "value": "Eureka Labs is a new AI-native school.",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_599445b8cea1",
+      "founder_name": "Andrej Karpathy",
+      "text": "We're building the teacher-student loop for the AI age, starting with a course on training large language models from scratch.",
+      "subject": "product",
+      "predicate": "product_description",
+      "value": "We're building the teacher-student loop for the AI age, starting with a course on training large language models from scratch.",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_c4a206ec26d0",
+      "founder_name": "Andrej Karpathy",
+      "text": "Founder Andrej Karpathy has a PhD from Stanford in computer vision and deep learning under Fei-Fei Li.",
+      "subject": "founder",
+      "predicate": "education",
+      "value": "PhD from Stanford in computer vision and deep learning",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_5302f10bbf6e",
+      "founder_name": "Andrej Karpathy",
+      "text": "He was a founding member and research scientist at OpenAI, then led AI at Tesla (Autopilot, Tesla Vision) from 2017 to 2022.",
+      "subject": "founder",
+      "predicate": "prior_role",
+      "value": "founding member and research scientist at OpenAI; led AI at Tesla from 2017 to 2022",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_9badcefb0b2a",
+      "founder_name": "Andrej Karpathy",
+      "text": "He returned to OpenAI in 2023 and left in 2024 to start Eureka.",
+      "subject": "founder",
+      "predicate": "prior_company",
+      "value": "OpenAI",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_c153db384cd4",
+      "founder_name": "Andrej Karpathy",
+      "text": "Category: AI applications, edtech, AI-native tools.",
+      "subject": "market",
+      "predicate": "market_category",
+      "value": "AI applications, edtech, AI-native tools",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_5065b02f8787",
+      "founder_name": "Andrej Karpathy",
+      "text": "Location: San Francisco.",
+      "subject": "company",
+      "predicate": "location",
+      "value": "San Francisco",
+      "confidence": 0.9,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    },
+    {
+      "id": "cl_63b0f3a09c54",
+      "founder_name": "Andrej Karpathy",
+      "text": "Highly technical solo founder to start; hiring.",
+      "subject": "founder",
+      "predicate": "team_size",
+      "value": "solo founder; hiring",
+      "confidence": 0.8,
+      "source_evidence_id": "ev_deck_032b1a31",
+      "source_type": "deck"
+    }
+  ],
+  "contradictions": [],
+  "verification_map": {
+    "cl_b674f876d2a9": "unverifiable",
+    "cl_31ab40567cd8": "unverifiable",
+    "cl_557a2d978f63": "unverifiable",
+    "cl_6dd23a873edd": "unverifiable",
+    "cl_c4a206ec26d0": "unverifiable",
+    "cl_bffe90dab0de": "unverifiable",
+    "cl_a1378f45af61": "unverifiable",
+    "cl_e9cf6a243ebe": "unverifiable",
+    "cl_03a0a7239189": "unverifiable",
+    "cl_8cf6a0c58b96": "unverifiable",
+    "cl_87aa750ef977": "unverifiable",
+    "cl_e81162ab8009": "unverifiable",
+    "cl_f68ac0807197": "unverifiable",
+    "cl_8b665b820d40": "unverifiable",
+    "cl_d231359950de": "unverifiable",
+    "cl_db36b8f3b98d": "unverifiable",
+    "cl_cff44f61c94c": "unverifiable",
+    "cl_3e5dcd490954": "unverifiable",
+    "cl_5b35d0a31d74": "verified",
+    "cl_47016bf6c93f": "verified",
+    "cl_4d67d4d9a60d": "verified",
+    "cl_8d0f73ec0cb3": "verified",
+    "cl_716850f2db5a": "verified",
+    "cl_891606103388": "unverifiable",
+    "cl_599445b8cea1": "unverifiable",
+    "cl_5302f10bbf6e": "unverifiable",
+    "cl_9badcefb0b2a": "unverifiable",
+    "cl_c153db384cd4": "unverifiable",
+    "cl_5065b02f8787": "unverifiable",
+    "cl_63b0f3a09c54": "unverifiable"
+  },
+  "attributes": {
+    "is_technical": null,
+    "location": "San Francisco",
+    "categories": [
+      "ai applications",
+      "edtech",
+      "ai-native tools"
+    ],
+    "customer_segment": null,
+    "prior_vc_backing": null,
+    "accelerator_tier": null,
+    "prior_exits": null,
+    "years_experience": null,
+    "is_researcher": true,
+    "h_index": 16
+  },
+  "market_research": {
+    "competitors": [
+      {
+        "name": "Khan Academy (Khanmigo)",
+        "url": "https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future",
+        "one_liner": "Strong institutional competitor with mature AI-guided tutors."
+      },
+      {
+        "name": "PhysicsWallah (AI Guru)",
+        "url": "https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv",
+        "one_liner": "Leading regional deployment of 24/7 personalized AI teaching assistants."
+      },
+      {
+        "name": "Praktika",
+        "url": "https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future",
+        "one_liner": "Dominating the conversational and avatar-driven niche of language learning."
+      },
+      {
+        "name": "Coursera / Udacity",
+        "url": "https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv",
+        "one_liner": "Upgrading tech stacks to feature custom AI-driven curriculum builders."
+      }
+    ],
+    "market_size_estimate": "$601 billion to $617 billion in 2026",
+    "stance": "bullish",
+    "reasoning": "The AI applications market is projected to grow significantly, reaching up to $617 billion by 2026, with rapid acceleration in enterprise software and specialized vertical applications. The presence of strong competitors like Khan Academy and PhysicsWallah indicates a vibrant and competitive market, but the growth potential and innovation in AI-native education platforms like Eureka Labs suggest ample opportunities for new entrants. The market's expansion and the shift towards AI-driven education solutions support a bullish stance.",
+    "evidence_refs": [
+      "https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/",
+      "https://www.marketsandmarkets.com/Market-Reports/artificial-intelligence-market-74851580.html",
+      "https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide/?srsltid=AfmBOorH4t4md8CDle3ui-Xs4JpjemSBergsF4uFhoznbWIaC5HAT4Ee",
+      "https://www.abiresearch.com/news-resources/chart-data/report-artificial-intelligence-market-size-global",
+      "https://learningfuturesdigest.substack.com/p/eureka-labs-a-glimpse-into-the-future",
+      "https://www.linkedin.com/posts/analytics-india-magazine_in-a-recent-keynote-at-the-uc-berkeley-ai-activity-7219932804556496896-M6lv"
+    ]
+  },
+  "swot_analysis": {
+    "strengths": [
+      {
+        "text": "Andrej Karpathy's leadership at Eureka Labs is backed by his experience as former head of AI at Tesla and a founding member of OpenAI.",
+        "source_url": "https://techcrunch.com/2024/07/16/after-tesla-and-openai-andrej-karpathys-startup-aims-to-apply-ai-assistants-to-education/",
+        "source_title": "After Tesla and OpenAI, Andrej Karpathy's startup aims to ...",
+        "reasoning": "Karpathy's extensive background in AI provides a strong foundation for Eureka Labs, enhancing its credibility and potential for innovation."
+      },
+      {
+        "text": "The AI applications market is projected to grow significantly, reaching up to $617 billion by 2026.",
+        "source_url": "https://www.statista.com/outlook/tmo/artificial-intelligence/worldwide/?srsltid=AfmBOorH4t4md8CDle3ui-Xs4JpjemSBergsF4uFhoznbWIaC5HAT4Ee",
+        "source_title": "Artificial Intelligence - Worldwide | Market Forecast - Statista",
+        "reasoning": "The substantial growth forecast for the AI market indicates a favorable environment for Eureka Labs to expand and capture market share."
+      }
+    ],
+    "weaknesses": [
+      {
+        "text": "Eureka Labs faces challenges in proving the efficacy of AI teaching assistants in real-world educational settings.",
+        "source_url": "https://aiexpert.network/eureka-labs",
+        "source_title": "Eureka Labs: a New Kind of School that is AI Native",
+        "reasoning": "The effectiveness of AI teaching assistants is crucial for Eureka Labs' success, yet it remains unproven in practical applications."
+      },
+      {
+        "text": "The competitive landscape of AI education is intense, requiring Eureka Labs to secure sufficient funding to sustain operations.",
+        "source_url": "https://sidecar.ai/blog/the-impact-of-ai-native-education-platforms-on-associations-eureka-labs-and-the-future-of-learning",
+        "source_title": "The Impact of AI-Native Education Platforms on Associations",
+        "reasoning": "Eureka Labs must navigate a crowded market and secure funding to maintain and grow its operations."
+      }
+    ],
+    "opportunities": [
+      {
+        "text": "AI is moving beyond experimentation to real-world applications, creating opportunities for Eureka Labs to leverage AI in education.",
+        "source_url": "https://news.microsoft.com/source/features/ai/whats-next-in-ai-7-trends-to-watch-in-2026",
+        "source_title": "What's next in AI: 7 trends to watch in 2026",
+        "reasoning": "The shift towards practical AI applications presents a chance for Eureka Labs to implement AI-driven educational solutions effectively."
+      },
+      {
+        "text": "Emerging AI technologies like Agentic AI and Explainable AI offer new avenues for innovation in education.",
+        "source_url": "https://www.hristovdevelopment.com/post/emerging-ai-technologies",
+        "source_title": "Emerging AI Technologies: Top 10 AI Trends for Business ...",
+        "reasoning": "These technologies can enhance Eureka Labs' offerings, providing more personalized and transparent educational experiences."
+      }
+    ],
+    "threats": [
+      {
+        "text": "The AI market is experiencing saturation, with many sectors becoming crowded with competitors.",
+        "source_url": "https://tekh.co.uk/blog/has-ai-reached-its-saturation-point",
+        "source_title": "Has AI reached its saturation point?",
+        "reasoning": "Market saturation poses a risk to Eureka Labs as it competes for attention and resources in a crowded field."
+      },
+      {
+        "text": "Large technology firms dominate the AI ecosystem, creating high entry barriers for startups like Eureka Labs.",
+        "source_url": "https://www.oecd.org/en/publications/artificial-intelligence-and-competitive-dynamics-in-downstream-markets_ccf0624a-en/full-report/component-5.html",
+        "source_title": "The impact of AI adoption on market dynamics",
+        "reasoning": "The dominance of established firms in AI can limit Eureka Labs' ability to gain market traction and compete effectively."
+      }
+    ]
+  },
+  "preliminary_score": 95.0,
+  "outreach_draft": null,
+  "errors": [],
+  "trace": [
+    {
+      "node": "intake",
+      "llm_enriched": true,
+      "gh_hints": 2,
+      "explicit_url_handles": [],
+      "search_handles": [
+        "andrejkarpathy",
+        "andrej-karpathy"
+      ],
+      "is_research": true,
+      "categories": [
+        "ai applications",
+        "edtech",
+        "ai-native tools"
+      ],
+      "duration_ms": 1185
+    },
+    {
+      "node": "screening",
+      "status": "PASS",
+      "mode": "llm",
+      "duration_ms": 1114
+    },
+    {
+      "node": "sourcing",
+      "tasks": 9,
+      "evidence_count": 10,
+      "by_source": {
+        "github": 2,
+        "hn": 2,
+        "tavily": 1,
+        "serpapi": 3,
+        "semantic_scholar": 2
+      },
+      "ok_by_source": {
+        "github": 1,
+        "hn": 2,
+        "tavily": 1,
+        "serpapi": 2,
+        "semantic_scholar": 2
+      },
+      "research_branch": true,
+      "duration_ms": 9
+    },
+    {
+      "node": "extraction",
+      "evidence_in": 11,
+      "claims_out": 30,
+      "by_source": {
+        "github": 1,
+        "hn": 9,
+        "tavily": 4,
+        "serpapi": 3,
+        "semantic_scholar": 5,
+        "deck": 8
+      },
+      "duration_ms": 7370
+    },
+    {
+      "node": "verification",
+      "groups_llm": 1,
+      "solo_claims": 25,
+      "tavily_fallbacks": 0,
+      "contradictions": 0,
+      "new_evidence_from_verify": 0,
+      "duration_ms": 923
+    },
+    {
+      "node": "attributes_rollup",
+      "claims_in": 30,
+      "is_technical": null,
+      "categories": [
+        "ai applications",
+        "edtech",
+        "ai-native tools"
+      ],
+      "accelerator_tier": null,
+      "duration_ms": 1888
+    },
+    {
+      "node": "market_research",
+      "category": "ai applications",
+      "queries_fired": 9,
+      "evidence_collected": 9,
+      "competitors_found": 4,
+      "stance": "bullish",
+      "ai_mode_ok": true,
+      "ai_mode_refs": 17,
+      "swot_bullets": 8,
+      "duration_ms": 11487
+    },
+    {
+      "node": "activation",
+      "preliminary_score": 95.0,
+      "is_outbound": false,
+      "draft_generated": false,
+      "duration_ms": 0
+    }
+  ],
+  "reasoning_log": [
+    {
+      "node": "intake",
+      "reason": "2 GitHub handle hints (2 from Tavily search) \u2014 SerpAPI returned no github URLs \u2192 fallback: ['andrejkarpathy', 'andrej-karpathy']. Categories=['ai applications', 'edtech', 'ai-native tools'], is_research=True, llm_enriched=True"
+    },
+    {
+      "node": "screening",
+      "reason": "PASS: The application clearly describes the product as an AI-native school focused on training large language models, identifies the target customer as students, and categorizes itself within AI applications and edtech."
+    },
+    {
+      "node": "sourcing",
+      "reason": "Fanned 9 tool calls \u2192 10 evidence items ({'github': 1, 'hn': 2, 'tavily': 1, 'serpapi': 2, 'semantic_scholar': 2} with content)."
+    },
+    {
+      "node": "extraction",
+      "reason": "11 evidence items \u2192 30 claims ({'github': 1, 'hn': 9, 'tavily': 4, 'serpapi': 3, 'semantic_scholar': 5, 'deck': 8})."
+    },
+    {
+      "node": "verification",
+      "reason": "1 LLM groups, 0 Tavily fallbacks, 0 contradictions flagged."
+    },
+    {
+      "node": "attributes_rollup",
+      "reason": "Rolled 30 claims \u2192 is_technical=None, categories=['ai applications', 'edtech', 'ai-native tools'], accelerator=None, h_index=16"
+    },
+    {
+      "node": "market_research",
+      "reason": "AI Mode: 17 refs; Category=ai applications \u2192 4 competitors, stance=bullish, market_size=$601 billion to $617 billion in 2026, SWOT bullets: 8 (S=2, W=2, O=2, T=2)"
+    },
+    {
+      "node": "activation",
+      "reason": "preliminary_score=95.0, is_outbound=False, drafted=False"
+    }
+  ]
+}

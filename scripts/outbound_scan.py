@@ -25,6 +25,7 @@ import argparse
 import asyncio
 import json
 import logging
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -37,13 +38,12 @@ from ventureos.graph import build_graph
 from ventureos.llm import fast_model, openai_json
 from ventureos.models import (
     DevpostWinnerList,
-    HackathonList,
     ProjectRefList,
 )
 from ventureos.prompts import load_prompt
 from ventureos.state import initial_state
 from ventureos.tools.base import http_get_json, unwrap_list
-from ventureos.tools.tavily_tool import tavily_extract
+from ventureos.tools.tavily_tool import tavily_extract, tavily_site_search
 
 DEVPOST_INDEX_URL = (
     "https://devpost.com/hackathons?"
@@ -195,48 +195,61 @@ async def _discover_github_trending(hours: int, limit: int) -> list[dict[str, An
 # --------------------------------------------------------------------------- #
 
 
+_SUBDOMAIN_RE = re.compile(r"^https?://([a-z0-9-]+)\.devpost\.com", re.IGNORECASE)
+
+
+def _hackathon_subdomain(url: str) -> str | None:
+    """Return the hackathon subdomain root (e.g. 'https://gitlab.devpost.com')
+    for any URL that lives under that subdomain. None if not a hackathon URL."""
+    m = _SUBDOMAIN_RE.match(url)
+    if not m:
+        return None
+    sub = m.group(1).lower()
+    # Ignore infrastructure subdomains that aren't hackathons.
+    if sub in ("www", "api", "help", "info", "secure", "static", "assets"):
+        return None
+    return f"https://{sub}.devpost.com"
+
+
 async def _fetch_hackathons(limit: int) -> list[dict[str, Any]]:
-    """Step 1: extract the Devpost hackathons index page and parse ended hackathons."""
-    resp = await tavily_extract(
-        [DEVPOST_INDEX_URL],
-        query="ended hackathons managed by devpost recently added",
-    )
-    if resp.get("status") != "ok" or not resp.get("results"):
-        log.warning("Devpost index extract failed: %s", resp.get("reason"))
-        return []
+    """Step 1: find ended Devpost hackathons.
 
-    page = resp["results"][0]
-    raw_content = page.get("raw_content", "") or ""
-    if len(raw_content) < 200:
-        return []
+    The Devpost hackathons index page (devpost.com/hackathons?...) is
+    JavaScript-rendered, so Tavily Extract can only see the header nav.
+    Instead we use Tavily Search restricted to devpost.com and find
+    hackathon subdomain root URLs (like https://gitlab.devpost.com/) from
+    the search index — these are static pages that Tavily can see fully.
+    """
+    # Queries designed to surface hackathon landing pages and winner posts.
+    queries = [
+        "hackathon winners announced project gallery",
+        "hackathon grand prize winners",
+        "hackathon best use of AI winners",
+    ]
+    subdomain_names: dict[str, str] = {}  # subdomain root URL → best name
 
-    try:
-        parsed = await openai_json(
-            system=load_prompt("devpost_hackathons"),
-            user={"url": DEVPOST_INDEX_URL, "content": raw_content},
-            schema=HackathonList,
-            model=fast_model(),
-        )
-    except Exception as e:
-        log.warning("Devpost index LLM parse failed: %s", e)
-        return []
-
-    hackathons: list[dict[str, Any]] = []
-    seen_urls = set()
-    for h in parsed.hackathons:
-        # Only ended (or unknown) — we filtered the URL by status[]=ended
-        # so most entries should be ended; keep unknowns since the LLM
-        # may not always infer status reliably.
-        if h.status not in ("ended", "unknown"):
+    for q in queries:
+        resp = await tavily_site_search("devpost.com", q, max_results=limit * 4)
+        if resp.get("status") != "ok":
             continue
-        url = h.url.rstrip("/")
-        if url in seen_urls or "devpost.com" not in url:
-            continue
-        seen_urls.add(url)
-        hackathons.append({"name": h.name, "url": url, "status": h.status})
-        if len(hackathons) >= limit:
-            break
-    log.info("Devpost index: found %d ended hackathons.", len(hackathons))
+        for r in resp.get("results", []):
+            url = (r.get("url") or "").strip()
+            title = (r.get("title") or "").strip()
+            sub = _hackathon_subdomain(url)
+            if not sub:
+                continue
+            # Prefer a title that isn't the generic project-gallery title
+            existing = subdomain_names.get(sub)
+            if not existing or (title and len(title) < len(existing)):
+                # Trim off " - Devpost" and " | Devpost" suffixes
+                cleaned = re.split(r"\s+[\|\-]\s+Devpost", title)[0][:80]
+                subdomain_names[sub] = cleaned or existing or sub
+
+    hackathons: list[dict[str, Any]] = [
+        {"name": name or sub, "url": sub, "status": "ended"}
+        for sub, name in list(subdomain_names.items())[:limit]
+    ]
+    log.info("Devpost: found %d candidate hackathons from search.", len(hackathons))
     return hackathons
 
 
@@ -449,16 +462,26 @@ async def discover_candidates(
     per_source: int,
     devpost_limit: int = 8,
 ) -> list[dict[str, Any]]:
-    """Fan out to all discovery sources."""
+    """Fan out to all discovery sources, then round-robin interleave so a
+    small `--limit` still gets a fair mix from every source."""
     show_hn, gh, devpost = await asyncio.gather(
         _discover_show_hn(hours, per_source),
         _discover_github_trending(hours, per_source),
         _discover_devpost(limit_hackathons=per_source, limit_winners=devpost_limit),
     )
+
+    # Round-robin interleave: [hn0, gh0, dp0, hn1, gh1, dp1, ...]
+    from itertools import zip_longest
+    interleaved: list[dict[str, Any]] = []
+    for triple in zip_longest(show_hn, gh, devpost):
+        for c in triple:
+            if c is not None:
+                interleaved.append(c)
+
     # Dedupe by (founder_name, company)
     seen = set()
     unique: list[dict[str, Any]] = []
-    for c in show_hn + gh + devpost:
+    for c in interleaved:
         key = (c["founder_name"].lower(), c["company"].lower())
         if key in seen:
             continue

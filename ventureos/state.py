@@ -14,6 +14,7 @@ from ventureos.models import (
     FounderAttributes,
     IntakeSummary,
     MarketResearch,
+    SWOTAnalysis,
 )
 
 
@@ -53,6 +54,7 @@ class GraphState(TypedDict, total=False):
 
     # === Market research ===
     market_research: MarketResearch | None
+    swot_analysis: SWOTAnalysis | None
 
     # === Activation ===
     preliminary_score: float  # internal only; NEVER displayed. Person B computes founder_score.
@@ -86,6 +88,7 @@ def initial_state(
         verification_map={},
         attributes=None,
         market_research=None,
+        swot_analysis=None,
         preliminary_score=0.0,
         outreach_draft=None,
         errors=[],

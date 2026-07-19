@@ -1,0 +1,90 @@
+{
+  "candidate_source": "github_trending",
+  "reference_url": "https://github.com/JustVugg/colibri",
+  "devpost_extras": null,
+  "final_state": {
+    "founder_name": "JustVugg",
+    "company": "colibri",
+    "application_text": "GitHub trending repo: JustVugg/colibri\n\nDescription: Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine \u2014 pure C, zero deps, experts streamed from disk. Tiny engine, immense model. \ud83d\udc26\nStars: 16260\nURL: https://github.com/JustVugg/colibri\nLanguage: C\nCreated: 2026-07-01T12:27:49Z\n",
+    "thesis_config": {
+      "sectors": [
+        "dev tools",
+        "AI infra"
+      ],
+      "stage": "pre-seed",
+      "geography": [
+        "US",
+        "EU"
+      ],
+      "check_size": [
+        25000,
+        150000
+      ],
+      "ownership_target": 0.05,
+      "risk_appetite": "high"
+    },
+    "is_outbound": true,
+    "intake": {
+      "github_handle_hints": [
+        "justvugg"
+      ],
+      "research_domain": "large language models",
+      "is_research_founder": false,
+      "category_labels": [
+        "dev tools",
+        "ai infra"
+      ],
+      "product_urls": [
+        "https://github.com/JustVugg/colibri"
+      ],
+      "location_hint": null
+    },
+    "screen_status": "FAIL",
+    "screen_reason": "The application does not clearly describe who the target customer or user is.",
+    "raw_evidence": [],
+    "claims": [],
+    "contradictions": [],
+    "verification_map": {},
+    "attributes": null,
+    "market_research": null,
+    "swot_analysis": null,
+    "preliminary_score": 0.0,
+    "outreach_draft": null,
+    "errors": [],
+    "trace": [
+      {
+        "node": "intake",
+        "llm_enriched": true,
+        "gh_hints": 1,
+        "explicit_url_handles": [
+          "justvugg"
+        ],
+        "search_handles": [
+          "justvugg"
+        ],
+        "is_research": false,
+        "categories": [
+          "dev tools",
+          "ai infra"
+        ],
+        "duration_ms": 1365
+      },
+      {
+        "node": "screening",
+        "status": "FAIL",
+        "mode": "llm",
+        "duration_ms": 906
+      }
+    ],
+    "reasoning_log": [
+      {
+        "node": "intake",
+        "reason": "1 GitHub handle hints (1 from deck URL(s) + 1 from Tavily search) \u2014 SerpAPI: 1 candidate(s) \u2192 1 verified. justvugg: \u2713 handle 'justvugg' ~= name (similarity=1.00). Categories=['dev tools', 'ai infra'], is_research=False, llm_enriched=True"
+      },
+      {
+        "node": "screening",
+        "reason": "FAIL: The application does not clearly describe who the target customer or user is."
+      }
+    ]
+  }
+}

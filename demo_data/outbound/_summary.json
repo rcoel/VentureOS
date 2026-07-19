@@ -1,83 +1,98 @@
 {
-  "scanned_at": "2026-07-19T07:42:28.974203+00:00",
-  "hours_window": 168,
-  "candidates_discovered": 5,
-  "candidates_processed": 5,
+  "scanned_at": "2026-07-19T11:35:24.882636+00:00",
+  "hours_window": 720,
+  "candidates_discovered": 8,
+  "candidates_processed": 8,
   "candidates": [
     {
-      "founder_name": "Hiboy",
-      "company": "Hiboy S2 Electric Scooter",
-      "source": "devpost",
+      "founder_name": "untaken1583",
+      "company": "WrumWrum",
+      "source": "hn_show",
       "screen_status": "FAIL",
       "preliminary_score": 0.0,
       "outreach_drafted": false,
-      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "reference_url": "https://news.ycombinator.com/item?id=48967051",
+      "devpost_extras": null
+    },
+    {
+      "founder_name": "xai-org",
+      "company": "grok-build",
+      "source": "github_trending",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://github.com/xai-org/grok-build",
+      "devpost_extras": null
+    },
+    {
+      "founder_name": "Ahmad Nurfadilah",
+      "company": "PayAssist",
+      "source": "devpost",
+      "screen_status": "PASS",
+      "preliminary_score": 11.0,
+      "outreach_drafted": false,
+      "reference_url": "https://devpost.com/software/payassist",
       "devpost_extras": {
-        "hackathon_name": "IrvineHacks 2026",
-        "team_name": null,
-        "prize_or_placement": "Hacker\u2019s Choice",
+        "hackathon_name": "Square + Google AI Hackathon",
+        "team_name": "Fahad Sami, Abhijit Roy, Gus Ibarra",
+        "prize_or_placement": "Winner",
         "github_url": null
       }
     },
     {
-      "founder_name": "Bose",
-      "company": "Bose QuietComfort SC Noise Canceling Headphones",
-      "source": "devpost",
+      "founder_name": "ulrischa",
+      "company": "devkram",
+      "source": "hn_show",
       "screen_status": "FAIL",
       "preliminary_score": 0.0,
       "outreach_drafted": false,
-      "reference_url": "https://irvinehacks-2026.devpost.com",
+      "reference_url": "https://news.ycombinator.com/item?id=48967004",
+      "devpost_extras": null
+    },
+    {
+      "founder_name": "JustVugg",
+      "company": "colibri",
+      "source": "github_trending",
+      "screen_status": "FAIL",
+      "preliminary_score": 0.0,
+      "outreach_drafted": false,
+      "reference_url": "https://github.com/JustVugg/colibri",
+      "devpost_extras": null
+    },
+    {
+      "founder_name": "Luke Roumy",
+      "company": "Snap Cart",
+      "source": "devpost",
+      "screen_status": "PASS",
+      "preliminary_score": 52.0,
+      "outreach_drafted": false,
+      "reference_url": "https://devpost.com/software/snap-cart",
       "devpost_extras": {
-        "hackathon_name": "IrvineHacks 2026",
-        "team_name": null,
-        "prize_or_placement": "Best Beginner Hack",
+        "hackathon_name": "Square + Google AI Hackathon",
+        "team_name": "Snap Cart Team",
+        "prize_or_placement": "1st Place",
         "github_url": null
       }
     },
     {
-      "founder_name": "Roots",
-      "company": "Roots Bluetooth\u00ae Speaker",
-      "source": "devpost",
+      "founder_name": "nullure",
+      "company": "Akashic",
+      "source": "hn_show",
       "screen_status": "FAIL",
       "preliminary_score": 0.0,
       "outreach_drafted": false,
-      "reference_url": "https://irvinehacks-2026.devpost.com",
-      "devpost_extras": {
-        "hackathon_name": "IrvineHacks 2026",
-        "team_name": null,
-        "prize_or_placement": "Best Sustainable Hack",
-        "github_url": null
-      }
+      "reference_url": "https://news.ycombinator.com/item?id=48966939",
+      "devpost_extras": null
     },
     {
-      "founder_name": "Meta",
-      "company": "Meta - Quest 3S 128GB",
-      "source": "devpost",
-      "screen_status": "FAIL",
-      "preliminary_score": 0.0,
+      "founder_name": "langchain-ai",
+      "company": "openwiki",
+      "source": "github_trending",
+      "screen_status": "PASS",
+      "preliminary_score": 32.0,
       "outreach_drafted": false,
-      "reference_url": "https://irvinehacks-2026.devpost.com",
-      "devpost_extras": {
-        "hackathon_name": "IrvineHacks 2026",
-        "team_name": null,
-        "prize_or_placement": "Best Overall",
-        "github_url": null
-      }
-    },
-    {
-      "founder_name": "AI Safety at UCI",
-      "company": "AI Safety Hack",
-      "source": "devpost",
-      "screen_status": "FAIL",
-      "preliminary_score": 0.0,
-      "outreach_drafted": false,
-      "reference_url": "https://irvinehacks-2026.devpost.com",
-      "devpost_extras": {
-        "hackathon_name": "IrvineHacks 2026",
-        "team_name": null,
-        "prize_or_placement": "Best AI Safety Hack \u2013 AI Safety at UCI",
-        "github_url": null
-      }
+      "reference_url": "https://github.com/langchain-ai/openwiki",
+      "devpost_extras": null
     }
   ]
 }

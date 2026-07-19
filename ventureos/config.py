@@ -27,8 +27,25 @@ SEMANTIC_SCHOLAR_API_KEY: str | None = os.getenv("SEMANTIC_SCHOLAR_API_KEY") or 
 DATABASE_URL: str | None = os.getenv("DATABASE_URL")
 
 # === Runtime ===
-CACHE_PATH: Path = Path(os.getenv("VENTUREOS_CACHE_PATH", ".cache/ventureos.db"))
-LOG_LEVEL: str = os.getenv("VENTUREOS_LOG_LEVEL", "INFO")
+def _resolve_cache_path() -> Path:
+    """Determine cache DB path.
+
+    Priority:
+      1. VENTUREOS_CACHE_PATH (explicit override)
+      2. $VENTUREOS_DATA_DIR/.cache/ventureos.db (deployment scenario, e.g. Render)
+      3. .cache/ventureos.db (local dev)
+    """
+    explicit = os.getenv("VENTUREOS_CACHE_PATH")
+    if explicit:
+        return Path(explicit)
+    data_dir = os.getenv("VENTUREOS_DATA_DIR", "").strip()
+    if data_dir:
+        return Path(data_dir) / ".cache" / "ventureos.db"
+    return Path(".cache/ventureos.db")
+
+
+CACHE_PATH: Path = _resolve_cache_path()
+LOG_LEVEL: str = os.getenv("VENTUREOS_LOG_LEVEL", os.getenv("LOG_LEVEL", "INFO"))
 
 # === Constants ===
 HTTP_TIMEOUT_SECONDS: float = 15.0

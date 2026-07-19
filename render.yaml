@@ -1,0 +1,115 @@
+# Render.com Blueprint — https://render.com/docs/blueprint-spec
+#
+# Deploys VentureOS as a single Streamlit web service on the "starter" plan
+# ($7/mo) with a 1 GB persistent disk mounted at /data. The Streamlit app,
+# both SQLite databases (UI + tool cache), and the demo_data seed files
+# survive redeploys because they live on the disk.
+#
+# Deploy this by pointing Render Dashboard → New → Blueprint at this repo.
+# After the first deploy, set the 5 secrets flagged `sync: false` in the
+# Render Dashboard's Environment tab.
+
+services:
+  - type: web
+    name: ventureos
+    runtime: python
+    plan: starter
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: |
+      pip install -U pip uv
+      uv sync --frozen --no-dev
+    startCommand: bash scripts/render_start.sh
+    healthCheckPath: /
+
+    envVars:
+      # Pipeline + UI knobs (safe to hardcode)
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: "true"
+      - key: STREAMLIT_SERVER_ENABLE_CORS
+        value: "false"
+      - key: STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION
+        value: "false"
+      - key: STREAMLIT_BROWSER_GATHER_USAGE_STATS
+        value: "false"
+      - key: LOG_LEVEL
+        value: "INFO"
+
+      # Persistent storage — both SQLite files live on the mounted disk.
+      # `render_start.sh` symlinks .cache/ → $VENTUREOS_DATA_DIR/.cache.
+      - key: VENTUREOS_DATA_DIR
+        value: /data
+
+      # Auto-load demo_data/**/*.json on first boot if the DB is empty
+      - key: VENTUREOS_AUTOLOAD_ON_EMPTY
+        value: "true"
+
+      # Secrets — set these in Render Dashboard → Environment tab.
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: SERPAPI_API_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: SEMANTIC_SCHOLAR_API_KEY
+        sync: false
+
+    disk:
+      name: ventureos-data
+      mountPath: /data
+      sizeGB: 1
+
+  # -----------------------------------------------------------------------
+  # Scheduled outbound scan — runs weekly to discover new founders from
+  # Show HN + GitHub trending + Devpost, then loads them into the same DB
+  # the web service reads from (via the shared /data disk).
+  # -----------------------------------------------------------------------
+  - type: cron
+    name: ventureos-outbound-cron
+    runtime: python
+    plan: starter
+    branch: main
+    # Sunday at 06:00 UTC each week. Adjust as needed:
+    #   "0 6 * * *"   — daily 6am UTC
+    #   "0 */6 * * *" — every 6 hours
+    schedule: "0 6 * * 0"
+    buildCommand: |
+      pip install -U pip uv
+      uv sync --frozen --no-dev
+    startCommand: bash scripts/render_cron_outbound.sh
+
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: LOG_LEVEL
+        value: "INFO"
+
+      # Share the persistent disk with the web service
+      - key: VENTUREOS_DATA_DIR
+        value: /data
+
+      # Scan configuration — override in Dashboard if needed
+      - key: OUTBOUND_HOURS
+        value: "168"        # 7-day look-back window
+      - key: OUTBOUND_PER_SOURCE
+        value: "5"
+      - key: OUTBOUND_LIMIT
+        value: "5"
+      - key: OUTBOUND_DEVPOST_LIMIT
+        value: "5"
+
+      # Same secrets as the web service — Render supports fromService for shared vars
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: SERPAPI_API_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: SEMANTIC_SCHOLAR_API_KEY
+        sync: false

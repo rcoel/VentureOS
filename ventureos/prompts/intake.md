@@ -6,11 +6,9 @@ containing hints for downstream tools.
 
 Fields to fill:
 
-- **github_handle_hints**: up to 5 plausible GitHub usernames for this
-  founder. Rules:
-  - Include any explicit `github.com/xxx` URLs in the text.
-  - Then add name-based guesses: firstlast, first-last, first.last, first_last, first.
-  - No spaces. Lowercase. Deduplicated.
+- **github_handle_hints**: leave empty. GitHub handle discovery is now
+  handled search-side (Tavily site:github.com) by the Python pipeline, so
+  we only accept what the search finds.
 
 - **research_domain**: if the deck describes technical research (papers,
   algorithms, ML models), fill with a short domain string like

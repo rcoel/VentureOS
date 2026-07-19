@@ -1,16 +1,11 @@
 {
-  "candidate_source": "devpost",
-  "reference_url": "https://irvinehacks-2026.devpost.com",
-  "devpost_extras": {
-    "hackathon_name": "IrvineHacks 2026",
-    "team_name": null,
-    "prize_or_placement": "Hacker\u2019s Choice",
-    "github_url": null
-  },
+  "candidate_source": "github_trending",
+  "reference_url": "https://github.com/xai-org/grok-build",
+  "devpost_extras": null,
   "final_state": {
-    "founder_name": "Hiboy",
-    "company": "Hiboy S2 Electric Scooter",
-    "application_text": "Devpost hackathon winner: Hiboy S2 Electric Scooter\nHackathon: IrvineHacks 2026\nTeam: Hiboy\nPrize/Placement: Hacker\u2019s Choice\nProject URL: https://irvinehacks-2026.devpost.com\nGitHub: not disclosed\n\nDescription: Hiboy S2 Electric Scooter is recognized for its innovative design and functionality.",
+    "founder_name": "xai-org",
+    "company": "grok-build",
+    "application_text": "GitHub trending repo: xai-org/grok-build\n\nDescription: SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.\nStars: 19662\nURL: https://github.com/xai-org/grok-build\nLanguage: Rust\nCreated: 2026-07-14T20:04:23Z\n",
     "thesis_config": {
       "sectors": [
         "dev tools",
@@ -31,20 +26,15 @@
     "is_outbound": true,
     "intake": {
       "github_handle_hints": [
-        "hiboy",
-        "hiboyscooter",
-        "hiboy_s2",
-        "hiboy-s2",
-        "hiboy.s2"
+        "xai-org"
       ],
       "research_domain": null,
       "is_research_founder": false,
       "category_labels": [
-        "transportation",
-        "electric scooters"
+        "dev tools"
       ],
       "product_urls": [
-        "https://irvinehacks-2026.devpost.com"
+        "https://github.com/xai-org/grok-build"
       ],
       "location_hint": null
     },
@@ -56,6 +46,7 @@
     "verification_map": {},
     "attributes": null,
     "market_research": null,
+    "swot_analysis": null,
     "preliminary_score": 0.0,
     "outreach_draft": null,
     "errors": [],
@@ -63,25 +54,30 @@
       {
         "node": "intake",
         "llm_enriched": true,
-        "gh_hints": 5,
+        "gh_hints": 1,
+        "explicit_url_handles": [
+          "xai-org"
+        ],
+        "search_handles": [
+          "xai-org"
+        ],
         "is_research": false,
         "categories": [
-          "transportation",
-          "electric scooters"
+          "dev tools"
         ],
-        "duration_ms": 1566
+        "duration_ms": 1199
       },
       {
         "node": "screening",
         "status": "FAIL",
         "mode": "llm",
-        "duration_ms": 1227
+        "duration_ms": 968
       }
     ],
     "reasoning_log": [
       {
         "node": "intake",
-        "reason": "5 GitHub hints, categories=['transportation', 'electric scooters'], is_research=False, llm_enriched=True"
+        "reason": "1 GitHub handle hints (1 from deck URL(s) + 1 from Tavily search) \u2014 SerpAPI: 1 candidate(s) \u2192 1 verified. xai-org: \u2713 handle 'xai-org' ~= name (similarity=1.00). Categories=['dev tools'], is_research=False, llm_enriched=True"
       },
       {
         "node": "screening",
